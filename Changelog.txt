@@ -1,3 +1,11 @@
+1.02
+20AUG20
+
+Changed some events into long_character_events to fit the description text.
+Pauper Mode no longer clears your wealth before stealing from you. That's just kicking you when you're down.
+Minor text fixes.
+Super Seducer is no longer a random trait.
+
 1.01
 20AUG20
 

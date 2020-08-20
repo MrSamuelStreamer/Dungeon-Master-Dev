@@ -12,7 +12,7 @@ character_event = {			#Pauper Mode#
 
 	option = {
 		name = DMCoreEvt1OptA
-		clear_wealth = yes
+		#clear_wealth = yes
 		scaled_wealth = -10
 		custom_tooltip = {
 			text = DMEventTooltip1
@@ -147,7 +147,7 @@ character_event = {			#Dwarf Fortress - Dante Mordicain#
 	}
 }
 
-character_event = {			#Thigh Rendering#
+long_character_event = {			#Thigh Rendering#
 	id = DMPlay.8
 	title = DMCoreEvttitle8
 	desc = DMCoreEvtdesc8
@@ -894,7 +894,7 @@ character_event = {			#Stable Empire#
 	}
 }
 
-character_event = {			#Perfectly Normal Man#
+long_character_event = {			#Perfectly Normal Man#
 	id = DMPlay.31
 	title = DMCoreEvttitle31
 	desc = DMCoreEvtdesc31
@@ -975,7 +975,7 @@ narrative_event = {			#Gary#
 	}
 }
 
-character_event = {			#Get out of Jail Free#
+long_character_event = {			#Get out of Jail Free#
 	id = DMPlay.34
 	title = DMCoreEvttitle34
 	desc = DMCoreEvtdesc34
@@ -1149,7 +1149,7 @@ character_event = {			#Bob Ross
 	option = {
 		name = DMCoreEvt38OptA
 		custom_tooltip = {
-			text = DMEventTooltip38A
+			text = DMEventTooltip38
 		}
 		random_list = {
 			1 = {					#happy little accident

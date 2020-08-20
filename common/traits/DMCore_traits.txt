@@ -46,6 +46,8 @@ kf_trait = {
 	diplomacy = 1
 	sex_appeal_opinion = 50
 	fertility = 0.5
+	random = no 
+	customizer = no 
 }
 
 joris_trait = {

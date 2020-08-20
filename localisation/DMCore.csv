@@ -256,8 +256,7 @@ DMCoreEvt20OptA;"Please stop milling about. Really.";;;;;;;;;;;;;x
 DMEventTooltip20;All positive congenital traits become negative congenital traits, and vice versa!;;;;;;;;;;;;;x
 
 DMCoreEvttitle21;The Horse² Lord;;;;;;;;;;;;;x
-DMCoreEvtdesc21;The Dungeon Master appears, points right at you, and laughs like a madman. Suddenly a great flash of lightning strikes the sky followed shortly by a deafening horn. Some of your soldiers drop the floor screaming, your diplomat has an instant heart attack and grandma's head explodes, painting the castle walls the colour of bingo and sherry. 
-"MORTALS", a voice neighs from a great distance, or perhaps not if you're living in a realm where horses might appear suddenly, "I AM THE HORSE HORSE-LORD, ENDER OF THIS EARTH AND SCORCHER OF MAN, SCOURGE OF GLUE FACTORIES AND CHEAP FROZEN LASANGA!"
+DMCoreEvtdesc21;The Dungeon Master appears, points right at you, and laughs like a madman. Suddenly a great flash of lightning strikes the sky followed shortly by a deafening horn. Some of your soldiers drop the floor screaming, your diplomat has an instant heart attack and grandma's head explodes, painting the castle walls the colour of bingo and sherry.\n"MORTALS", a voice neighs from a great distance, or perhaps not if you're living in a realm where horses might appear suddenly, "I AM THE HORSE HORSE-LORD, ENDER OF THIS EARTH AND SCORCHER OF MAN, SCOURGE OF GLUE FACTORIES AND CHEAP FROZEN LASANGA!"
 A great flash of light appears in the sky, this time taking the form of the Horse Horse-Lord, and great trepidation takes hold.;;;;;;;;;;;;;x
 DMCoreEvt21OptA;"We're going to need a bigger saddle...";;;;;;;;;;;;;x
 DMEventTooltip21;A great Khan of Khan of Khan's appears intent on the destruction of man.;;;;;;;;;;;;;x
@@ -270,15 +269,13 @@ DMCoreEvt22OptC;"This is... interesting...";;;;;;;;;;;;;x
 DMEventTooltip22;Some rulers may convert to [religion_proven.GetName]!;;;;;;;;;;;;;x
 
 DMCoreEvttitle23;Lost City of Gold Uncovered!;;;;;;;;;;;;;x
-DMCoreEvtdesc23;Rumours have always persisted around [lost_province_of_gold.GetName] speaking of the lost city of gold, but many dismissed it as the dreams of a deseperately poor people. The Dungeon Master, feeling a great pity for the people in [lost_city_of_gold.GetName] decided to make all of their dreams come true and transformed the whole city, including it's foundations, and natural resources, into solid gold! 
-Unfortunately, the tricky caused by the Dungeon Master had an unintended side effect - people were randomly turning to gold and infecting others with the same curse!;;;;;;;;;;;;;x
+DMCoreEvtdesc23;Rumours have always persisted around [lost_province_of_gold.GetName] speaking of the lost city of gold, but many dismissed it as the dreams of a deseperately poor people. The Dungeon Master, feeling a great pity for the people in [lost_city_of_gold.GetName] decided to make all of their dreams come true and transformed the whole city, including it's foundations, and natural resources, into solid gold!\nUnfortunately, the tricky caused by the Dungeon Master had an unintended side effect - people were randomly turning to gold and infecting others with the same curse!;;;;;;;;;;;;;x
 DMCoreEvt23OptA;"To own such a city... but the risk is too great!";;;;;;;;;;;;;x
 DMEventTooltip23B;Random characters have a chance of turning into solid gold.;;;;;;;;;;;;;x
 DMEventTooltip23;The owner of [lost_city_of_gold.GetName] will be tremendously wealthy.;;;;;;;;;;;;;x
 
 DMCoreEvttitle24;Balance;;;;;;;;;;;;;x
-DMCoreEvtdesc24;The Dungeon Master appears in front of you. 
-He raises his hand and snaps his fingers.;;;;;;;;;;;;;x
+DMCoreEvtdesc24;The Dungeon Master appears in front of you.\nHe raises his hand and snaps his fingers.;;;;;;;;;;;;;x
 DMCoreEvt24OptA;"Wha...";;;;;;;;;;;;;x
 DMEventTooltip24;Half of all living people die.;;;;;;;;;;;;;x
 
@@ -288,10 +285,7 @@ DMCoreEvt25OptA;"What did you do...?";;;;;;;;;;;;;x
 DMEventTooltip25;The oldest child of each ruler dies!;;;;;;;;;;;;;x
 
 DMCoreEvttitle26;King of Kings;;;;;;;;;;;;;x
-DMCoreEvtdesc26;"I've lived a very long life and met some interesting fellows - Oh! I know, I'll introduce you to one now!" You turn and try and tell the Dungeon Master to stop, but he had already disappeared in a cloud of... sand?
-A great voice echoes around the halls speaking a foreign tongue that slowly begins to fade into your own language:
-"My name is Ozymandias, king of kings:
-Look on my works, ye Mighty, and despair!";;;;;;;;;;;;;x
+DMCoreEvtdesc26;"I've lived a very long life and met some interesting fellows - Oh! I know, I'll introduce you to one now!" You turn and try and tell the Dungeon Master to stop, but he had already disappeared in a cloud of... sand?\n\nA great voice echoes around the halls speaking a foreign tongue that slowly begins to fade into your own language:\n\n"My name is Ozymandias, king of kings:\nLook on my works, ye Mighty, and despair!";;;;;;;;;;;;;x
 DMCoreEvt26OptA;"Batten down the hatches! Quickly!";;;;;;;;;;;;;x
 DMEventTooltip26;An ancient king stirs...;;;;;;;;;;;;;x
 
@@ -321,15 +315,13 @@ DMCoreEvt31OptA;"My apologies my perfectly normal friend, welcome!";;;;;;;;;;;;;
 DMEventTooltip31;A perfectly normal person joins your court.;;;;;;;;;;;;;x
 
 DMCoreEvttitle32;Fountain of Youth Uncovered!;;;;;;;;;;;;;x
-DMCoreEvtdesc32;During routine maintenance in the temple of [fountain_of_youth_holding.GetName] in [fountain_of_youth_province.GetName] a great wellspring was discovered unlike any other - through the rockface beneath the foundation flows a seemingly unlimited source of crystal clear, glowing, water. Believing it to be a divine gift, the local ruler of the province bathed in the waters and drank deeply, only to discover that their strength grew rapidly and the ravages of time seemed to be reversed!
-The local holy man has declared the site as sacred, with only the blessed ruler being allowed entrance into the divine fountain. Though for some jealous rulers perhaps, this may not be enough to prevent their curiosity...;;;;;;;;;;;;;x
+DMCoreEvtdesc32;During routine maintenance in the temple of [fountain_of_youth_holding.GetName] in [fountain_of_youth_province.GetName] a great wellspring was discovered unlike any other - through the rockface beneath the foundation flows a seemingly unlimited source of crystal clear, glowing, water. Believing it to be a divine gift, the local ruler of the province bathed in the waters and drank deeply, only to discover that their strength grew rapidly and the ravages of time seemed to be reversed!\nThe local holy man has declared the site as sacred, with only the blessed ruler being allowed entrance into the divine fountain. Though for some jealous rulers perhaps, this may not be enough to prevent their curiosity...;;;;;;;;;;;;;x
 DMCoreEvt32OptA;"Bountiful health and long life...?";;;;;;;;;;;;;x
 DMEventTooltip32;The Fountain of Youth is discovered!;;;;;;;;;;;;;x
 DMEventTooltip32B;The owner of the province will occasionally gain health and grow younger!;;;;;;;;;;;;;x
 
 DMCoreEvttitle33;Gary;;;;;;;;;;;;;x
-DMCoreEvtdesc33;"Let me introduce you to my friend Gary. Gary loves playing my games, don't you Gary?" asks the Dungeon Master as he slaps a timid and shellshocked man on the back, who in turn audibly squeaks. "See Gary has always dreamt big, but he never quite made it, so I'm going to let him live vicariously! Every court throughout the land will get their very own Gary, fruit directly from the loin's of Gary Prime!" 
-\nSuddenly a nefarious looking copy of Gary pops into your court, "Buuuut..." continues the Dungeon Master, "These Gary's will be slightly amped up. Much more ambitious and skilled than the original, so watch your back!";;;;;;;;;;;;;x
+DMCoreEvtdesc33;"Let me introduce you to my friend Gary. Gary loves playing my games, don't you Gary?" asks the Dungeon Master as he slaps a timid and shellshocked man on the back, who in turn audibly squeaks. "See Gary has always dreamt big, but he never quite made it, so I'm going to let him live vicariously! Every court throughout the land will get their very own Gary, fruit directly from the loin's of Gary Prime!"\nSuddenly a nefarious looking copy of Gary pops into your court, "Buuuut..." continues the Dungeon Master, "These Gary's will be slightly amped up. Much more ambitious and skilled than the original, so watch your back!";;;;;;;;;;;;;x
 DMCoreEvt33OptA;"Erm... welcome... Gary?";;;;;;;;;;;;;x
 DMEventTooltip33;Gary.;;;;;;;;;;;;;x
 
@@ -339,8 +331,7 @@ DMCoreEvt34OptA;"This could come in handy...";;;;;;;;;;;;;x
 DMEventTooltip34;All rulers gain a single-use 'Get Out of Jail Free' allowing for instant release from imprisonment.;;;;;;;;;;;;;x
 
 DMCoreEvttitle35;Prison Riot!;;;;;;;;;;;;;x
-DMCoreEvtdesc35;"I've been doing some snooping around and noticed there were some people stuck in your basement behind bars, and try as they might they just couldn't find a way out!" You take a sharp breath and brace yourself. 
-"So, I happily showed the the way out! You don't have to thank me!";;;;;;;;;;;;;x
+DMCoreEvtdesc35;"I've been doing some snooping around and noticed there were some people stuck in your basement behind bars, and try as they might they just couldn't find a way out!" You take a sharp breath and brace yourself.\n"So, I happily showed the the way out! You don't have to thank me!";;;;;;;;;;;;;x
 DMCoreEvt35OptA;"Fetch my guards...";;;;;;;;;;;;;x
 DMEventTooltip35;All imprisoned characters are released and become rivals with their jailer!;;;;;;;;;;;;;x
 
@@ -350,14 +341,14 @@ DMCoreEvt36OptA;"No... he wouldn't...?";;;;;;;;;;;;;x
 DMEventTooltip36;All characters with serious crimes such as §PImpalers§! or §RKinslayers§! will be forced into Gavelkind.;;;;;;;;;;;;;x
 
 DMCoreEvttitle37;Spa Day!;;;;;;;;;;;;;x
-DMCoreEvtdesc37;"I've got plans today, can't do any of the usual evil!" says the Dungeon Master, dashing through your court with a suitcase, "A Hotelier friend of mine gave me these tickets, claimed he was a huge fan of my work, but the hotel is all the way in the north west of Britainia, wherever that is. There yours if you want them!";;;;;;;;;;;;;x
+DMCoreEvtdesc37;"I've got plans today, can't do any of the usual evil!" says the Dungeon Master, dashing through your court with a suitcase, "A Hotelier friend of mine gave me these tickets, claimed he was a huge fan of my work, but the hotel is all the way in the north west of Britainia, wherever that is. They're yours if you want them!";;;;;;;;;;;;;x
 DMCoreEvt37OptA;"Free Personal Trainer?";;;;;;;;;;;;;x
 DMCoreEvt37OptB;"Free Mud Baths?";;;;;;;;;;;;;x
 DMEventTooltip37A;You push yourself in a work out.;;;;;;;;;;;;;x
 DMEventTooltip37B;You cover yourself in mud.;;;;;;;;;;;;;x
 
 DMCoreEvttitle38;Happy Little Accident;;;;;;;;;;;;;x
-DMCoreEvtdesc38;"I was visiting a friend of mine and it turns out he had someone there that definitely fit in with his... regular crowd. Anyway he far too nice to be left down there so I'm putting him under your care, he tells me he's quite talented!";;;;;;;;;;;;;x
+DMCoreEvtdesc38;"I was visiting a friend of mine and it turns out he had someone there that definitely fit in with his... regular crowd. Anyway he's far too nice to be left down there so I'm putting him under your care. He tells me he's quite talented!";;;;;;;;;;;;;x
 DMCoreEvt38OptA;"Welcome Mr... Ross was it?";;;;;;;;;;;;;x
 DMEventTooltip38;A talented courtier arrives in your court who will produce happy little accidents while he's around.;;;;;;;;;;;;;x
 
