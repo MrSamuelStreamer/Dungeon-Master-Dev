@@ -41,7 +41,7 @@ character_event = {
 					value = dm_freq_true_random
 				}
 			}
-			character_event = { id = DMCore.1 days = 1 random = 5475 } # no minumum, 10 years maximum.
+			character_event = { id = DMCore.1 years = 10 random = 3650 } # no minumum, 10 years maximum.
 		}
 		else = {
 			character_event = { id = DMCore.1 years = 14 random = 365 } # 14 years minumum, 15 years maximum.
@@ -687,9 +687,9 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 
 character_event = {			#work out if the map is modded or not#
 	id = DMCore.2
-	title = DMCoretitle2
-	desc = DMCoredesc2
-	picture = GFX_evt_lunatic
+#	title = DMCoretitle2
+#	desc = DMCoredesc2
+#	picture = GFX_evt_lunatic
 
 	hide_window = yes
 
@@ -718,7 +718,7 @@ character_event = {			#work out if the map is modded or not#
 	}
 	
 	option = {
-		name = DMCore2OptA
+		# name = DMCore2OptA
 		trigger = {
 			has_global_flag = base_game_enough
 		}
@@ -727,7 +727,7 @@ character_event = {			#work out if the map is modded or not#
 		}
 	}
 	option = {
-		name = DMCore2OptA
+		# name = DMCore2OptA
 		trigger = {
 			has_global_flag = not_base_game
 		}

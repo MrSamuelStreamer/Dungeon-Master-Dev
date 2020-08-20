@@ -1447,6 +1447,17 @@ character_event = {			#Senate - rewrite this whole event at some point#
 	immediate = {
 		while = {
 			count = 20
+			limit = {
+				any_character = {
+					is_ruler = no
+					has_job_title = job_chancellor
+					OR = {
+						trait = ambitious
+						trait = brave
+						trait = wroth
+					}
+				}
+			}
 			any_character = {
 				limit = {
 					is_ruler = no
@@ -1960,10 +1971,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = catholic			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -1976,10 +1987,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = orthodox			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -1992,10 +2003,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = miaphysite			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2008,10 +2019,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = nestorian			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2024,10 +2035,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = sunni			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2040,10 +2051,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = shiite			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2056,10 +2067,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = ibadi			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2072,10 +2083,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = jewish			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2088,10 +2099,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = zoroastrian			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2104,10 +2115,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = hindu			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2120,10 +2131,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = buddhist			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2136,10 +2147,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = jain			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2152,10 +2163,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = taoist			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2168,10 +2179,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = norse_pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2184,10 +2195,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = slavic_pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2200,10 +2211,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = tengri_pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2216,10 +2227,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = baltic_pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2232,10 +2243,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = finnish_pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2248,10 +2259,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = west_african_pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2264,10 +2275,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = aztec			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2280,10 +2291,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2296,10 +2307,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = zun_pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2312,10 +2323,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = bon			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2328,10 +2339,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = hellenic_pagan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2344,10 +2355,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = cathar			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2360,10 +2371,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = fraticelli			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2376,10 +2387,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = waldensian			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2392,10 +2403,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = lollard			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2408,10 +2419,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = monophysite			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2424,10 +2435,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = messalian			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2440,10 +2451,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = bogomilist			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2456,10 +2467,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = monothelite			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2472,10 +2483,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = iconoclast			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2488,10 +2499,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = paulician			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2504,10 +2515,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = zikri			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2520,10 +2531,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = yazidi			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2536,10 +2547,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = kharijite			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2552,10 +2563,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = druze			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2568,10 +2579,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = hurufi			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2584,10 +2595,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = qarmatian			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2600,10 +2611,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = mazdaki			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2616,10 +2627,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = manichean			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2632,10 +2643,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = khurmazta			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2648,10 +2659,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = samaritan			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2664,10 +2675,10 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 								religion = karaite			#convert to new religion
 							}
 							1 = {
-								trait = cynical	
+								add_trait = cynical	
 							}
 							1 = {
-								trait = zealous
+								add_trait = zealous
 							}
 						}
 					}
@@ -2681,6 +2692,19 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				religion_scope = {
 					save_event_target_as = religion_proven
+				}
+			}
+			any_playable_ruler = {
+				random_list = {
+					1 = {
+						religion = event_target:religion_proven
+					}
+					1 = {
+						add_trait = cynical	
+					}
+					1 = {
+						add_trait = zealous
+					}
 				}
 			}
 		}
@@ -2740,7 +2764,7 @@ character_event = {			#The Snap#
 	option = {
 		name = DMCoreEvt24OptA
 		any_player = {
-			character_event = { id = DMPlay.24 }
+			narrative_event = { id = DMPlay.24 }
 		}
 		any_character = {
 			limit = {				#Limited now to prevent horrible horrible lag#
@@ -2752,7 +2776,7 @@ character_event = {			#The Snap#
 			random = {
 				chance = 50
 				death = {
-					death_reason = death_snapped
+					death_reason = death_missing
 					killer = ROOT
 				}
 			}
@@ -3262,7 +3286,7 @@ narrative_event = {			#Gary#
 			name = "Gary Prime"
 			dynasty = 700001
 			religion = ROOT
-			culture = ROOT
+			culture = gary_culture
 			female = no
 			age = 69
 			health = 20
@@ -3287,12 +3311,17 @@ narrative_event = {			#Gary#
 		new_character = {
 			random_list = {
 				10 = {
-					add_trait = snail
+					add_trait = slow
 				}
 				10 = {
 					add_trait = dwarf
 					give_nickname = nick_coleman
-					set_graphical_culture = manden
+					if = {
+						limit = {
+							has_global_flag = base_game_enough
+						}
+						set_graphical_culture = manden
+					}
 				}
 				1 = {
 					add_artifact = hermetic_handgun
@@ -3329,7 +3358,7 @@ narrative_event = {			#Gary#
 					name = "Gary"
 					dynasty = 700001
 					religion = ROOT
-					culture = ROOT
+					culture = gary_culture
 					female = no
 					age = 21
 					health = 6
@@ -3369,7 +3398,6 @@ narrative_event = {			#Gary#
 					set_character_flag = gary
 					set_father = event_target:gary_prime
 					add_claim = location
-					culture = location
 					religion = location
 				}
 			}

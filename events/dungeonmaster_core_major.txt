@@ -41,7 +41,7 @@ character_event = {
 					value = dm_freq_true_random_major
 				}
 			}
-			character_event = { id = DMCore.1 days = 1 random = 7300 } # no minimum, 20 years maximum.
+			character_event = { id = DMCore.1 years = 20 random = 7300 } # no minimum, 20 years maximum.
 		}
 		else = {
 			character_event = { id = DMCoremajor.1 years = 20 random = 1825 } # 20 min, 25 max
@@ -51,10 +51,10 @@ character_event = {
 
 character_event = {					#This is a system with a lot of stuff baked in, no repeated events, etc, 
 	id = DMCoremajor.1
-	title = DMCoremajortitle1
-	desc = DMCoremajordesc1
-	picture = GFX_evt_lunatic
-	
+#	title = DMCoremajortitle1
+#	desc = DMCoremajordesc1
+#	picture = GFX_evt_lunatic
+	hide_window = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -67,7 +67,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 	}
 	
 	option = {
-		name = DMCoremajor1OptA
+		# name = DMCoremajor1OptA
 		custom_tooltip = {
 			text = dungeon_master_rolls
 			random_list = {
@@ -259,7 +259,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 							has_global_flag = scenario_initialized   #no empire tiers in ATE: Fan Fork
 						}
 					}
-					character_event = { id = DMCoreEvt.33 }
+					narrative_event = { id = DMCoreEvt.33 }
 					set_variable = { which = global_eventTombola_major value = 9 }
 					variable_shuffle_major = yes
 				}
@@ -282,6 +282,27 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					}
 					character_event = { id = DMCoreEvt.34 }
 					set_variable = { which = global_eventTombola_major value = 10 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 11
+					trigger = {
+						NOR = {
+							check_variable  = { which = global_eventA_major value == 11 }
+							check_variable  = { which = global_eventB_major value == 11 }
+							check_variable  = { which = global_eventC_major value == 11 }
+							check_variable  = { which = global_eventD_major value == 11 }
+							check_variable  = { which = global_eventE_major value == 11 }
+							check_variable  = { which = global_eventF_major value == 11 }
+							check_variable  = { which = global_eventG_major value == 11 }
+							check_variable  = { which = global_eventH_major value == 11 }
+							check_variable  = { which = global_eventI_major value == 11 }
+							check_variable  = { which = global_eventJ_major value == 11 }
+							check_variable  = { which = global_eventK_major value == 11 }
+							check_variable  = { which = global_eventL_major value == 11 }
+						}
+					}
+					character_event = { id = DMCoreEvt.39 }
+					set_variable = { which = global_eventTombola_major value = 11 }
 					variable_shuffle_major = yes
 				}
 			}

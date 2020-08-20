@@ -24,10 +24,11 @@ joris_trait_desc;This is a perfectly normal man, despite what you believe. Would
 kf_trait;Super Seducer;;;;;;;;;;;;;x
 kf_trait_desc;This character was selected as the super seducer, a man destined to father a thousand children, or, perhaps, just as many as the game can handle without crashing.;;;;;;;;;;;;;x
 
+bobross_trait;Bob Ross;;;;;;;;;;;;;x
+bobross_trait_desc;This man spends his time painting happy little trees and lulling those around him into a deep, comfortable sleep with his voice.;;;;;;;;;;;;;x
+
 ### Dungeon Master Character Misc ###
 
-dm_culture;Chaotic Neutral;;;;;;;;;;;;;x
-dungeon_master_group;Dungeon Mastery;;;;;;;;;;;;;x
 e_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
 k_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
 dungeon_master;DM;;;;;;;;;;;;;x
@@ -40,11 +41,20 @@ dungeon_guide;Dungeon Master's Guide;;;;;;;;;;;;;x
 master;Master;;;;;;;;;;;;;x
 cruelty;Cruelty;;;;;;;;;;;;;x
 
+dm_culture_group;Dungeon Mastery;;;;;;;;;;;;;x
+dm_culture;Chaotic Neutral;;;;;;;;;;;;;x
+dm_culture_adj;Chaotic;;;;;;;;;;;;;x
+gary_culture;Gary;;;;;;;;;;;;;x
+gary_culture_adj;Gary;;;;;;;;;;;;;x
+gary_prime_2_point_oh;Gary Prime 2.0;;;;;;;;;;;;;x
+gary_prime_2_point_oh_desc;This Gary has ascended. He is no longer Gary. He is... GARY.;;;;;;;;;;;;;x
+
 e_horse_lord;Horse Lord's Horse-Horde;;;;;;;;;;;;;x
 horse_lord;Horse Lord;;;;;;;;;;;;;x
 
 e_gary;Gary;;;;;;;;;;;;;x
 gary_lord;Gary;;;;;;;;;;;;;x
+
 
 k_kemet;Kemet;;;;;;;;;;;;;x
 pharoah;Pharoah;;;;;;;;;;;;;x

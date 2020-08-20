@@ -398,8 +398,6 @@ religion_tomfoolery = {
 		}
 		80 = { }
 	}
-
-	}
 	random_list = {
 		20 = {
 			set_allow_rivermovement = yes

@@ -386,10 +386,11 @@ character_event = {			#Follow-up from DMCoreEvt.32 - Fountain of Youth#
 
 character_event = {			#Follow-up from DMCoreEvt.33 - Gary's Unknown Battlegrounds#
 	id = DMCoreFollow.9
-	title = DMCoreFollowtitle9
-	picture = GFX_evt_danse_macabre
-	desc =  DMCoreFollowtitledesc9
+#	title = DMCoreFollowtitle9
+#	picture = GFX_evt_danse_macabre
+#	desc =  DMCoreFollowtitledesc9
 	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
 		NOT = {
 			has_global_flag = crowned_gary
@@ -400,6 +401,10 @@ character_event = {			#Follow-up from DMCoreEvt.33 - Gary's Unknown Battleground
 	immediate = {
 		set_global_flag = crowned_gary
 		set_character_flag = emperor_gary_DM
+		add_character_modifier = {
+			name = gary_prime_2_point_oh
+			years = 10
+		}
 		set_defacto_liege = ROOT
 		activate_title = {
 			title = e_gary
@@ -408,6 +413,98 @@ character_event = {			#Follow-up from DMCoreEvt.33 - Gary's Unknown Battleground
 		e_gary = {
 			grant_title = PREV
 		}
+		if = {
+			limit = {
+				religion_group = muslim
+			}
+			set_government_type = muslim_government
+		}
+		else_if = {
+			limit = {
+				culture_group = tibetan_group
+				OR = {
+					religion = bon
+					religion = bon_reformed
+					religion = buddhist
+				}
+			}
+			set_government_type = theocratic_feudal_government
+		}
+		else = {
+			set_government_type = feudal_government
+		}		
+		capital_scope = {
+			set_name = "Gary"
+			while = {
+				limit = {
+					num_of_max_settlements < 7
+				}
+				add_holding_slot = 1
+			}
+			while = {
+				limit = {
+					has_empty_holding = yes
+				}
+					
+				build_holding = {
+					type = castle
+					holder = ROOT
+				}
+			}
+			while = {
+				limit = {
+					any_province_holding = {
+						holding_type = tribal
+					}
+				}
+				any_province_holding = {
+					limit = {
+						holding_type = tribal
+					}
+					convert_to = CASTLE
+				}
+			}
+			any_province_holding = {
+				if = {
+					limit = {
+						is_holy_site = yes
+						NOT = { holding_type = temple }
+					}
+					destroy_settlement = THIS
+					build_holding = {
+						type = temple
+						holder = ROOT
+					}
+				}
+				refill_holding_levy = yes
+			}
+			any_neighbor_province = {
+				limit = {
+					has_owner = yes # Sea tile prevention
+				}
+				if = {
+					limit = {
+						owner = {
+							capital_scope = {
+								province = PREVPREV
+							}
+							ai = no
+						}
+					}
+					any_province_holding = {
+						add_claim = ROOT
+					}
+				}
+				else = {
+					any_province_holding = {
+						usurp_title = ROOT
+					}
+				}
+			}
+		}
+		any_realm_province = {
+			culture = gary_culture
+		}
 		any_character = {
 			limit = {
 				has_character_flag = gary
@@ -415,12 +512,19 @@ character_event = {			#Follow-up from DMCoreEvt.33 - Gary's Unknown Battleground
 					has_landed_title = e_gary
 				}
 			}
-			force_host = ROOT
+			random_list = {
+				50 = {
+					death = { death_reason = death_suicide }
+				}
+				50 = {
+					force_host = ROOT
+				}
+			}
 		}
 	}
 
 	option = {
-		name = DMCoreFollow9OptA
+		# name = DMCoreFollow9OptA
 		any_player = {
 			character_event = { id = DMCoreFollow.10 }
 		}
@@ -453,7 +557,7 @@ character_event = {			#Bob Ross#
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		years = 6
 	}
 
 	option = {

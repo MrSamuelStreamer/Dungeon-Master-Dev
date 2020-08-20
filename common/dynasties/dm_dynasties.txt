@@ -1,6 +1,6 @@
 696969 = {
 	name="Master"
-	culture="roman"
+	culture="dm_culture"
 }
 700000 = {
 	name="XIX"
@@ -8,5 +8,5 @@
 }
 700001 = {
 	name="Gary"
-	culture="roman"
+	culture="gary_culture"
 }

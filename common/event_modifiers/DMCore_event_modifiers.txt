@@ -35,3 +35,11 @@ mud_wraps = {
 	sex_appeal_opinion = -20
 	icon = 39
 }
+
+gary_prime_2_point_oh = {
+	levy_size = 1.5
+	health = 3
+	global_revolt_risk = -0.05
+	defensive_plot_power_modifier = 1
+	global_tax_modifier = 0.25
+}
