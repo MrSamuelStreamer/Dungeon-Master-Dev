@@ -1,0 +1,441 @@
+### Traits ###
+
+adult_of_destiny;Adult of Destiny;;;;;;;;;;;;;x
+adult_of_destiny_desc;Even though this character had a particularly mediocre childhood, they were thrust into the limelight overnight, and they didn't even have to be go through all the trouble of killing snakes and reading books.;;;;;;;;;;;;;x
+
+age_shifted;Age Shifted;;;;;;;;;;;;;x
+age_shifted_desc;This character had their age shifted, and as a result their diplomatic skills have suffered greatly.;;;;;;;;;;;;;x
+
+dungeon_master;Dungeon Master;;;;;;;;;;;;;x
+dungeon_master_desc;The Dungeon Master, mighty dice roller and occasional controller of destiny.;;;;;;;;;;;;;x
+
+midas_plague;Midas Plague;;;;;;;;;;;;;x
+midas_plague_desc;This character has the Midas Plague, a terrifying affliction which slowly turns the infected into solid gold!;;;;;;;;;;;;;x
+
+ozyman_trait;Ozymandias;;;;;;;;;;;;;x
+ozyman_trait_desc;This character is an ancient king risen again to reclaim the lands lost to the ravages of time.;;;;;;;;;;;;;x
+
+glitterstomp_trait;Glitterstomp;;;;;;;;;;;;;x
+glitterstomp_trait_desc;The horse-horse lord, 60ft tall and a destructive force unlike any other.;;;;;;;;;;;;;x 
+
+joris_trait;A Perfectly Normal Man;;;;;;;;;;;;;x
+joris_trait_desc;This is a perfectly normal man, despite what you believe. Would you rather this said 'Genius' or 'Proud', I don't understand, it's just a regular guy.;;;;;;;;;;;;;x
+
+kf_trait;Super Seducer;;;;;;;;;;;;;x
+kf_trait_desc;This character was selected as the super seducer, a man destined to father a thousand children, or, perhaps, just as many as the game can handle without crashing.;;;;;;;;;;;;;x
+
+### Dungeon Master Character Misc ###
+
+dm_culture;Chaotic Neutral;;;;;;;;;;;;;x
+dungeon_master_group;Dungeon Mastery;;;;;;;;;;;;;x
+e_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
+k_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
+dungeon_master;DM;;;;;;;;;;;;;x
+dungeon_master_title;DM;;;;;;;;;;;;;x
+god_rng;RNG;;;;;;;;;;;;;x
+dungeon_religion;Dungeon Mastery;;;;;;;;;;;;;x
+dungeon_religion_DESC;Dungeon Mastery is the ancient and formidable art of manipulating the luck of the foolhardy into interesting and cruel outcomes.;;;;;;;;;;;;;x
+dungeon_religion_group;DM Group;;;;;;;;;;;;;x
+dungeon_guide;Dungeon Master's Guide;;;;;;;;;;;;;x
+master;Master;;;;;;;;;;;;;x
+cruelty;Cruelty;;;;;;;;;;;;;x
+
+e_horse_lord;Horse Lord's Horse-Horde;;;;;;;;;;;;;x
+horse_lord;Horse Lord;;;;;;;;;;;;;x
+
+e_gary;Gary;;;;;;;;;;;;;x
+gary_lord;Gary;;;;;;;;;;;;;x
+
+k_kemet;Kemet;;;;;;;;;;;;;x
+pharoah;Pharoah;;;;;;;;;;;;;x
+kemetic;Kemetic;;;;;;;;;;;;;x
+kemetic_desc;Kemeticism is the ancient religion of the Old Kingdom of Egypt, spanning through to Egypt's fall to the Roman Empire. As the mythology spans across nearly three millennia, the myths and gods of the faith vary, however there is a common thread of Maat, Ra, Osiris, and others, throughout the entire history of the faith.;;;;;;;;;;;;;x
+AMUN_RA;Amun-Ra;;;;;;;;;;;;;x
+MUT;Mut;;;;;;;;;;;;;x
+OSIRIS;Osiris;;;;;;;;;;;;;x
+ANUBIS;Anubis;;;;;;;;;;;;;x
+HORUS;Horus;;;;;;;;;;;;;x
+THOTH;Thoth;;;;;;;;;;;;;x
+HATHOR;Hathor;;;;;;;;;;;;;x
+SEKHMET;Sekhmet;;;;;;;;;;;;;x
+GEB;Geb;;;;;;;;;;;;;x
+APEP;Apep;;;;;;;;;;;;;x
+SETH;Seth;;;;;;;;;;;;;x
+
+city_of_gold;Legendary City of Gold;;;;;;;;;;;;;x
+MIDAS_PLAGUE_INFO;This province has been struck with the Midas Plague - an incredibly deadly disease that either leaves the afflicted horribly maimed by only transforming extremeties, or spreads from the torso until it leaves a statue of solid gold.;;;;;;;;;;;;;x
+
+### buildings ###
+
+city_of_gold;Lost City of Gold;;;;;;;;;;;;;x
+city_of_gold_desc;After a run-in with the Dungeon Master, this city found itself built on the sight of inexhaustible gold mines, and a deadly and terrible disease.;;;;;;;;;;;;;x
+
+fountain_of_youth;Fountain of Youth;;;;;;;;;;;;;x
+fountain_of_youth_desc;The mythical Fountain of Youth was discovered in the foundations of a temple in this very province. Naturally, the ruler of the province takes a great interest in such a find...;;;;;;;;;;;;;x
+
+### Artifacts ###
+
+cursed_ring;Cursed Ring;;;;;;;;;;;;;x
+cursed_ring_desc;This is one of the nine cursed rings given out by the Dungeon Master's good friend to the mortal rulers of kingdoms.;;;;;;;;;;;;;x
+
+cursed_ring_of_one;Cursed Ring of One;;;;;;;;;;;;;x
+cursed_ring_of_one_desc;A strange glowing ring owned by the Dungeon Master, it bears a striking resemblance to the other cursed rings.;;;;;;;;;;;;;x
+
+stinkrot_reaver;Fish;;;;;;;;;;;;;x
+stinkrot_reaver_desc;This is a fish, you could potentially hit people with it, or use it as a makeshift mining tool, but it has feelings too.;;;;;;;;;;;;;x
+
+blackfish_scale;Fish;;;;;;;;;;;;;x
+blackfish_scale_desc;From a distance this armour looks to be oddly coloured chainmail, until you get close enough to realise that it is simply fish scales, haphazardly crafted to mimic the appearance of chainmail, with absolutely none of the benefits.;;;;;;;;;;;;;x
+
+### Event Modifiers ###
+
+the_purge;The Purge;;;;;;;;;;;;;x
+the_purge_desc;For 12 months everyone has decided to turn a blind eye to crimes and attrocities.;;;;;;;;;;;;;x
+
+dwarf_fortress;Dwarf Fortress;;;;;;;;;;;;;x
+dwarf_fortress_desc;For some strange reason, this person seems to have some extremely skilled defenders.;;;;;;;;;;;;;x
+
+mud_wraps;Mud Wraps;;;;;;;;;;;;;x
+mud_wraps_desc;This character decided that health was more important than appearances.;;;;;;;;;;;;;x
+
+sacrifices_for_beauty;Sore and Sweaty;;;;;;;;;;;;;x
+sacrifices_for_beauty_desc;After a spar day this character decided that sometimes looking good is better than feeling good.;;;;;;;;;;;;;x
+
+### Decisions ###
+
+begin_DMCore;Awaken the Dungeon Master!;;;;;;;;;;;;;x
+begin_DMCore_desc;The Dungeon Master will awaken. Every 15 years he will present the world with an event ranging from amusing to downright catastrophic.;;;;;;;;;;;;;x
+
+death_note_decision;Tell Name to the Dungeon Master;;;;;;;;;;;;;x
+death_note_decision_desc;You can speak this characters name to the Dungeon Master, who in turn will write their name in the Murder Book, resulting in the characters death. There family wont be best pleased by this...;;;;;;;;;;;;;x
+
+get_out_of_jail_free;Use Get Out of Jail Free Card;;;;;;;;;;;;;x
+get_out_of_jail_free_desc;Use the Get Out of Jail Free Card given to you by the Dungeon Master to guarantee your freedom. Warning: This is a single-use item and will be consumed!;;;;;;;;;;;;;x
+
+### Tombola Mechanics ###
+
+DMCoretitle1;Dungeon Master Cometh;;;;;;;;;;;;;x
+DMCoredesc1;"Mortals, it is time once again for my influence to help shape this world! Brace yourself for the mediocre, or the insane. The unbalanced, or the overpowered!" 
+Random Number of the Day is: [global_eventTombola.GetValue];;;;;;;;;;;;;x
+DMCore1OptA;"Brace yourselves!";;;;;;;;;;;;;x
+
+### Custom Tooltip ###
+
+DMAwakens;The Dungeon Master awakens...;;;;;;;;;;;;;x
+DMMultiplayer;In §GMultiplayer§!, one player will be the messenger of the Dungeon Master, this will be the player that fires the decision.;;;;;;;;;;;;;x
+DMWarning;§RWarning§!: The first event will fire immediately, be prepared!;;;;;;;;;;;;;x
+dungeon_master_rolls;Dungeon Master rolls his dice...;;;;;;;;;;;;;x
+
+### Mechanics ###
+
+DMmanagementtitle101;After the End?!;;;;;;;;;;;;;x
+DMmanagementdesc101;"Well, well, well, this is not quite right is it? 
+America? That's going to stop things working properly. Not my jurisdiction you see. Already enough chaos there to last a life time. Look, I can offer you the usual chaos, here and there, but that's it.";;;;;;;;;;;;;x
+DMmanagementOptA;"Oh, nevermind then.";;;;;;;;;;;;;x
+DMmanagementTooltip1;Certain events have been disabled to allow for compatibility with After the Ends wacky Empire mechanics!;;;;;;;;;;;;;x
+
+### Events ###
+
+DMCoretitle3;Dungeon Master Awakens;;;;;;;;;;;;;x
+DMCoredesc3;"Greetings players of the game, I am the Dungeon Master, guider of destiny and occasional roller of dice. What a boring player - you're playing the regular game this time around I see? I have adjusted the dice rolls and outcomes to fit a base game map, or at least a map that is fairly close to that. Good luck...";;;;;;;;;;;;;x
+DMCore3OptA;"What did he call me?";;;;;;;;;;;;;x
+
+DMCoretitle4;Dungeon Master Awakens;;;;;;;;;;;;;x
+DMCoredesc4;"Greetings players of the game, I am the Dungeon Master, guider of destiny and occasional roller of dice.\nA contratian not happy with the base game? Fine. I have adjusted the dice rolls and outcomes to fit your total conversion mod, or at least a map that is fairly close to that. Good luck...";;;;;;;;;;;;;x
+DMCore4OptA;"What did he call me?";;;;;;;;;;;;;x
+
+DMCoreEvttitle1;Prince and the Pauper;;;;;;;;;;;;;x
+DMCoreEvtdesc1;The Dungeon Master has decided to redistribute the world's wealth equally - unfortunately, he himself is in a staggering amount of debt due to his crippling addiction to mobile games. After the money is gathered up and equalised the grand total is... less than what everyone expected.;;;;;;;;;;;;;x
+DMCoreEvt1OptA;"How many lootboxes!?";;;;;;;;;;;;;x
+DMEventTooltip1;All landed rulers fall into debt equal to their average earnings.;;;;;;;;;;;;;x
+
+DMCoreEvttitle2;Lover's Lab;;;;;;;;;;;;;x
+DMCoreEvtdesc2;"I've recently concocted a new potion!" cries the Dungeon Master, "Okay, fine, it's my bathwater - but I've been told it's incredibly potent stuff! I call it "Gamer Guy Bathwater" and my favourite game is getting you all to take a sip!";;;;;;;;;;;;;x
+DMCoreEvt2OptA;"There's something floating in it!";;;;;;;;;;;;;x
+DMEventTooltip2;All landed rulers become Lustful Hedonists.;;;;;;;;;;;;;x
+
+DMCoreEvttitle3;The All Father...?;;;;;;;;;;;;;x
+DMCoreEvtdesc3;It's no secret that the Dungeon Master, like most Dungeon Masters, is an incredibly lonely and isolated man, living out his fantasies by controlling the lives of characters all day for his sadistic enjoyment. "I just wish I could have a family of my own..." says the Dungeon Master with a solemn sigh, "Wait a minute! That's it! Oh, ladies!";;;;;;;;;;;;;x
+DMCoreEvt3OptA;"What do you mean 'he called it his special move'!?";;;;;;;;;;;;;x
+DMEventTooltip3;All married ruler's wives become mysteriously pregnant.;;;;;;;;;;;;;x
+
+DMCoreEvttitle4;There Can Be Only One;;;;;;;;;;;;;x
+DMCoreEvtdesc4;"Sometimes it's not fun being the only omnipotent immortal being in this realm, well besides all those characters that conveniently became immortal gods through some convoluted event chain. Anyway, let's sprinkle some more deus ex machina out there and see what chaos they can cause!";;;;;;;;;;;;;x
+DMCoreEvt4OptA;"This is the end of civilisation as we know it...";;;;;;;;;;;;;x
+DMEventTooltip4;Twenty rulers ascend to become Immortal rulers of Destiny, who are rivals with one another.;;;;;;;;;;;;;x
+
+DMCoreEvttitle5;Happy Birthday!;;;;;;;;;;;;;x
+DMCoreEvtdesc5;"You mortals, always growing old and dying and having your children cry or complain about whatever the hell 'gavelkind' is, it's such a dull affair - let's speed it up! Or reverse it! Now if I could get some volunteers... how about you, with the fancy hat!";;;;;;;;;;;;;x
+DMCoreEvt5OptA;"Fetch a priest... or a doctor! Or both!";;;;;;;;;;;;;x
+DMEventTooltip5;Kings ages will adjust randomly anywhere between minus 30 to plus 30 years of age. Affected characters will be given the §RAge Shifted§! trait.;;;;;;;;;;;;;x
+
+DMCoreEvttitle6;Chaos Reigns!;;;;;;;;;;;;;x
+DMCoreEvtdesc6;"You with your fancy chairs and castles, you make rules for other people and don't follow them yourselves! It makes me sick, playing with peoples lives like that. Well we're taking away the rules, morality is out the window. Do whatever you want, good luck with your squishy moral existence now it's an equal playing field!";;;;;;;;;;;;;x
+DMCoreEvt6OptA;"You're telling me people have just... stopped caring?";;;;;;;;;;;;;x
+DMEventTooltip6;All landed rules have become morally flexible, §Garrests§! and §Gplots§! will be far easier for the next year!;;;;;;;;;;;;;x
+
+DMCoreEvttitle7;Short Fortress;;;;;;;;;;;;;x
+DMCoreEvtdesc7;"This is gonna be sweet" mutters the Dungeon Master as he clicks his fingers. Reports of rulers drastically shrinking, becoming stubborn, and gaining the uncanny ability of defence become known far and wide. No one quite understands why.;;;;;;;;;;;;;x
+DMCoreEvt7OptA;"These bastions of short men make for formidable defenders.";;;;;;;;;;;;;x
+DMEventTooltip7;Some lucky rulers lose height but make up for it in their defensive skills.;;;;;;;;;;;;;x
+
+DMCoreEvttitle8;Renderer Thigh;;;;;;;;;;;;;x
+DMCoreEvtdesc8;"The greatest mystery of all!" proclaims the Dungeon Master "Long ago my brother died horribly in a fish related incident, and as the river became stained with his blood he cried out "RENDERER THIGH!" and still to this day I have no idea what the hell he was talking about. For whoever solves the challenge of the Renderer Thigh, I will grant you a gift beyond even those of your wildest dreams and fantasies!";;;;;;;;;;;;;x
+DMCoreEvt8OptA;"A... what?";;;;;;;;;;;;;x
+DMEventTooltip8;Everyone becomes more confused.;;;;;;;;;;;;;x
+
+DMCoreEvttitle9;[poopy.GetName] Latrine Disaster;;;;;;;;;;;;;x
+DMCoreEvtdesc9;Your spymaster receives word of a castle in [poopy.GetName] that suffered a terrible tragedy - the ruler was hosting a gathering for all the lords and ladies of the realm. Unfortuantely, the weight was too much for the castle to bear and the entire dining area fell into a latrine pit, causing all who attended to drown horribly in the remains of the feasts from the week prior...;;;;;;;;;;;;;x
+DMCoreEvt9OptA;"I think I'm going to be sick...";;;;;;;;;;;;;x
+DMEventTooltip9;The provincial ruler, and all courtiers, drown horrible in a fecal related accident.;;;;;;;;;;;;;x
+
+DMCoreEvttitle10;Murder Book;;;;;;;;;;;;;x
+DMCoreEvtdesc10;"You know, around here somewhere I have a very magic book, and on each page I can write the name of my enemies and they just seem to disappear! I'll do you all a favour - you tell me a name and I'll write it down on your behalf! And people say I never do anything nice around here.";;;;;;;;;;;;;x
+DMCoreEvt10OptA;"Maybe we should post some more guards...";;;;;;;;;;;;;x
+DMEventTooltip10;Every character gets a permanent, single-use, decision that will instantly kill one their enemies. Be warned - this murder will be publicly known by the person's surviving family.;;;;;;;;;;;;;x
+
+DMCoreEvttitle11;The Greatest Gift;;;;;;;;;;;;;x
+DMCoreEvtdesc11;"Sometimes I think I am far too cruel. Today is your lucky day my friend, to you I give the greatest gift of all. It might help you against some of my... other plans.";;;;;;;;;;;;;x
+DMCoreEvt11OptA;"I feel... strange...?";;;;;;;;;;;;;x
+DMEventTooltip11;You sense a great adventure approaching...;;;;;;;;;;;;;x
+DMCoreFollowTooltip1;You hear cackling off in the distance...;;;;;;;;;;;;;x
+
+DMCoreEvttitle12;Plague Inc.;;;;;;;;;;;;;x
+DMCoreEvtdesc12;"I have a friend I want to introduce you to" begins the Dungeon Master "He is very dear to me, and very very skilled with alchemy. I think you'll both get along well!";;;;;;;;;;;;;x
+DMCoreEvt12OptA;"This could be useful, I am going into battle...";;;;;;;;;;;;;x
+DMEventTooltip12;A man approaches...;;;;;;;;;;;;;x
+
+DMCoreEvttitle13;Mature Student;;;;;;;;;;;;;x
+DMCoreEvtdesc13;"You know, I didn't actually train to be a Dungeon Master until late into my 600s, before then I was a maths teacher, but I didn't want to be that cruel my entire life. I think you all deserve a second chance as well!";;;;;;;;;;;;;x
+DMCoreEvt13OptA;"My head...";;;;;;;;;;;;;x
+DMEventTooltip13;All rulers gain a second education.;;;;;;;;;;;;;x
+
+DMCoreEvttitle14;Mrs Doubtfire.;;;;;;;;;;;;;x
+DMCoreEvtdesc14;"One my favourite movies," begins the Dungeon Master, "is Lethal weapon two. Anyway, I'm flipping all your sexes, enjoy!";;;;;;;;;;;;;x
+DMCoreEvt14OptA;"Wait wha.. AGH!";;;;;;;;;;;;;x
+DMEventTooltip14;All landed rulers flip sex, forever.;;;;;;;;;;;;;x
+
+DMCoreEvttitle15;Facts and Logic;;;;;;;;;;;;;x
+DMCoreEvtdesc15;"I've been doing some science recently, and I have discovered that actually [religion_destroyed.GetName] is wrong. All wrong. It always has been. Here's my notes, do with it what you will.";;;;;;;;;;;;;x
+DMCoreEvt15OptA;"Is he allowed to say that?";;;;;;;;;;;;;x
+DMEventTooltip15;All [religion_destroyed.GetName] rulers will convert to a heresy or other religion of the same group.;;;;;;;;;;;;;x
+
+DMCoreEvttitle16;Player's Well Known Battlegrounds;;;;;;;;;;;;;x
+DMCoreEvtdesc16;"I get a strange feeling that some of you really like going out there and killing each other just for the sport of it. Well all good sports deserve a trophy! Whoever holds [battle_royale.GetName] by the end of 6 years will be given a prize worthy of such bloodshed!";;;;;;;;;;;;;x
+DMCoreEvt16OptA;"Ready the troops...?";;;;;;;;;;;;;x
+DMEventTooltip16;All rulers are given a claim on [battle_royale.GetName] and whoever holds the province after six years have elapsed will be granted massive amounts of gold, prestige, and piety!;;;;;;;;;;;;;x
+
+DMCoreEvttitle17;Thunderous Applause;;;;;;;;;;;;;x
+DMCoreEvtdesc17;"It's like the old expression goes 'Never trust an ambitious chancellor who has his eyes on your primary title and wants to usurp the republic'... wait no, I just made that up...";;;;;;;;;;;;;x
+DMCoreEvt17OptA;"So this is how democracy dies...";;;;;;;;;;;;;x
+DMEventTooltip17;All unlanded, ambitious chancellors will usurp their lieges primary title!;;;;;;;;;;;;;x
+
+DMCoreEvttitle18;Home Sweet Home..?;;;;;;;;;;;;;x
+DMCoreEvtdesc18;"Does it not get boring sitting around in your big fancy castle, with all your nice furniture, and your nice servants speaking your nice language?" asks the Dungeon Master, "You need to try something different! Spice up your life a little!";;;;;;;;;;;;;x
+DMCoreEvt18OptA;"There's no place like... home?";;;;;;;;;;;;;x
+DMEventTooltip18;Rulers selected at random will have their capital swapped with another random ruler!;;;;;;;;;;;;;x
+
+DMCoreEvttitle19;Friends in Low Places;;;;;;;;;;;;;x
+DMCoreEvtdesc19;"I know a guy, a really good guy, a great friend of mine..." says the Dungeon Master, peering over his shoulder as if he's expecting someone, "And I sort of owe him. In exchange for not interupting with my meddling, I promised I'd help him out with a small thing that's been bothering him a few... thousand years. A small, popey, problem...";;;;;;;;;;;;;x
+DMCoreEvt19OptA;"You're saying they've all gone a bit strange?";;;;;;;;;;;;;x
+DMEventTooltip19;All religious heads seems to fall under a strange influence...;;;;;;;;;;;;;x
+
+DMCoreEvttitle20;Lobotomiser!;;;;;;;;;;;;;x
+DMCoreEvtdesc20;"I've been working on a machine in my spare time, it's nothing too impressive, just do me a favour and put your face on it... right there, that's it! Now you might feel a slight tingle in your nervous system...";;;;;;;;;;;;;x
+DMCoreEvt20OptA;"Please stop milling about. Really.";;;;;;;;;;;;;x
+DMEventTooltip20;All positive congenital traits become negative congenital traits, and vice versa!;;;;;;;;;;;;;x
+
+DMCoreEvttitle21;The Horse² Lord;;;;;;;;;;;;;x
+DMCoreEvtdesc21;The Dungeon Master appears, points right at you, and laughs like a madman. Suddenly a great flash of lightning strikes the sky followed shortly by a deafening horn. Some of your soldiers drop the floor screaming, your diplomat has an instant heart attack and grandma's head explodes, painting the castle walls the colour of bingo and sherry. 
+"MORTALS", a voice neighs from a great distance, or perhaps not if you're living in a realm where horses might appear suddenly, "I AM THE HORSE HORSE-LORD, ENDER OF THIS EARTH AND SCORCHER OF MAN, SCOURGE OF GLUE FACTORIES AND CHEAP FROZEN LASANGA!"
+A great flash of light appears in the sky, this time taking the form of the Horse Horse-Lord, and great trepidation takes hold.;;;;;;;;;;;;;x
+DMCoreEvt21OptA;"We're going to need a bigger saddle...";;;;;;;;;;;;;x
+DMEventTooltip21;A great Khan of Khan of Khan's appears intent on the destruction of man.;;;;;;;;;;;;;x
+
+DMCoreEvttitle22;Divine Intervention;;;;;;;;;;;;;x
+DMCoreEvtdesc22;"I've been doing some MORE science recently, and I have discovered that actually [religion_proven.GetName] is probably right! I can't guarantee it, but I've just casually slid the important documents under every rulers door. It's up to them what they do with it - I'm not their mother.";;;;;;;;;;;;;x
+DMCoreEvt22OptA;"My god... he's right.";;;;;;;;;;;;;x
+DMCoreEvt22OptB;"My god, he's gone completely mad...";;;;;;;;;;;;;x
+DMCoreEvt22OptC;"This is... interesting...";;;;;;;;;;;;;x
+DMEventTooltip22;Some rulers may convert to [religion_proven.GetName]!;;;;;;;;;;;;;x
+
+DMCoreEvttitle23;Lost City of Gold Uncovered!;;;;;;;;;;;;;x
+DMCoreEvtdesc23;Rumours have always persisted around [lost_province_of_gold.GetName] speaking of the lost city of gold, but many dismissed it as the dreams of a deseperately poor people. The Dungeon Master, feeling a great pity for the people in [lost_city_of_gold.GetName] decided to make all of their dreams come true and transformed the whole city, including it's foundations, and natural resources, into solid gold! 
+Unfortunately, the tricky caused by the Dungeon Master had an unintended side effect - people were randomly turning to gold and infecting others with the same curse!;;;;;;;;;;;;;x
+DMCoreEvt23OptA;"To own such a city... but the risk is too great!";;;;;;;;;;;;;x
+DMEventTooltip23B;Random characters have a chance of turning into solid gold.;;;;;;;;;;;;;x
+DMEventTooltip23;The owner of [lost_city_of_gold.GetName] will be tremendously wealthy.;;;;;;;;;;;;;x
+
+DMCoreEvttitle24;Balance;;;;;;;;;;;;;x
+DMCoreEvtdesc24;The Dungeon Master appears in front of you. 
+He raises his hand and snaps his fingers.;;;;;;;;;;;;;x
+DMCoreEvt24OptA;"Wha...";;;;;;;;;;;;;x
+DMEventTooltip24;Half of all living people die.;;;;;;;;;;;;;x
+
+DMCoreEvttitle25;A Rose by Any Other Name;;;;;;;;;;;;;x
+DMCoreEvtdesc25;"Hello!" shouts the Dungeon Master, scaring courtiers and priests alike, "I've had quite a few names given to me by frightened men, some scarier than others. One of the most memorable was a few years back - the locals used to call me the Angel of... something, but that's not important. The point is it was incredibly rude of them, I mean, all I did was this!";;;;;;;;;;;;;x
+DMCoreEvt25OptA;"What did you do...?";;;;;;;;;;;;;x
+DMEventTooltip25;The oldest child of each ruler dies!;;;;;;;;;;;;;x
+
+DMCoreEvttitle26;King of Kings;;;;;;;;;;;;;x
+DMCoreEvtdesc26;"I've lived a very long life and met some interesting fellows - Oh! I know, I'll introduce you to one now!" You turn and try and tell the Dungeon Master to stop, but he had already disappeared in a cloud of... sand?
+A great voice echoes around the halls speaking a foreign tongue that slowly begins to fade into your own language:
+"My name is Ozymandias, king of kings:
+Look on my works, ye Mighty, and despair!";;;;;;;;;;;;;x
+DMCoreEvt26OptA;"Batten down the hatches! Quickly!";;;;;;;;;;;;;x
+DMEventTooltip26;An ancient king stirs...;;;;;;;;;;;;;x
+
+DMCoreEvttitle27;Ruler of the Jewels;;;;;;;;;;;;;x
+DMCoreEvtdesc27;"I'm friends with a great jeweler, he's quite a tame guy by my standards, but he has a real talent when it comes to making rings - pretty generous too! He gave me a whole bunch of rings to hand out to lucky people! I'll see if I have one for you here.";;;;;;;;;;;;;x
+DMCoreEvt27OptA;"This doesn't sound suspicious in the least!";;;;;;;;;;;;;x
+DMEventTooltip27;Nine for Mortal Men...;;;;;;;;;;;;;x
+
+DMCoreEvttitle28;Cultural Exchange;;;;;;;;;;;;;x
+DMCoreEvtdesc28;"I've decided that [culture1.GetName] and [culture2.GetName] are both very backwards cultures. I've decided that both of you horribly boring people are going to speak each others languages, eat each others disgusting foods, and wear each others stupid shoes.";;;;;;;;;;;;;x
+DMCoreEvt28OptA;"Well that's not very sensitive, this is a civilised time!";;;;;;;;;;;;;x
+DMEventTooltip28;All characters of the two cultures switch.;;;;;;;;;;;;;x
+
+DMCoreEvttitle29;Blessing in Disguise...?;;;;;;;;;;;;;x
+DMCoreEvtdesc29;"I've been doing a bit of poking around and at the bottom of a lake I found a age-old container filled to the brim with religious texts! I have no idea who put those there but, in my usually helpful nature, I've decided to forward a copy to the relevant religious heads so they can study and make the changes that their religion must have conveniently forgotten about!";;;;;;;;;;;;;x
+DMCoreEvt29OptA;"We have to do WHAT now?!";;;;;;;;;;;;;x
+DMEventTooltip29;Random religions randomly gain random alterations from a random list.;;;;;;;;;;;;;x
+
+DMCoreEvttitle30;Realm fit for a King;;;;;;;;;;;;;x
+DMCoreEvtdesc30;"Maybe I've been looking at it all wrong..." says the Dungeon Master, stroking his beard, "You sick people. You actually ENJOY this don't you? This is all game to you isn't it. Unbelievable. Well, I know exactly what will solve that problem!";;;;;;;;;;;;;x
+DMCoreEvt30OptA;"There's... nothing left to do...";;;;;;;;;;;;;x
+DMEventTooltip30;Empires are stabilised and vassals become content.;;;;;;;;;;;;;x
+
+DMCoreEvttitle31;Perfectly Normal Man;;;;;;;;;;;;;x
+DMCoreEvtdesc31;"What is WRONG with you people!?" screams the Dungeon Master, "Look at this person, this person RIGHT HERE" he says, gesturing to a perfectly normal person standing in your court. You don't recognise them but they certainly look very normal to you. "NOTHING at ALL looks strange about this person here?!" You gesture to your guards to have the Dungeon Master removed, clearly he has lost his mind.;;;;;;;;;;;;;x
+DMCoreEvt31OptA;"My apologies my perfectly normal friend, welcome!";;;;;;;;;;;;;x
+DMEventTooltip31;A perfectly normal person joins your court.;;;;;;;;;;;;;x
+
+DMCoreEvttitle32;Fountain of Youth Uncovered!;;;;;;;;;;;;;x
+DMCoreEvtdesc32;During routine maintenance in the temple of [fountain_of_youth_holding.GetName] in [fountain_of_youth_province.GetName] a great wellspring was discovered unlike any other - through the rockface beneath the foundation flows a seemingly unlimited source of crystal clear, glowing, water. Believing it to be a divine gift, the local ruler of the province bathed in the waters and drank deeply, only to discover that their strength grew rapidly and the ravages of time seemed to be reversed!
+The local holy man has declared the site as sacred, with only the blessed ruler being allowed entrance into the divine fountain. Though for some jealous rulers perhaps, this may not be enough to prevent their curiosity...;;;;;;;;;;;;;x
+DMCoreEvt32OptA;"Bountiful health and long life...?";;;;;;;;;;;;;x
+DMEventTooltip32;The Fountain of Youth is discovered!;;;;;;;;;;;;;x
+DMEventTooltip32B;The owner of the province will occasionally gain health and grow younger!;;;;;;;;;;;;;x
+
+DMCoreEvttitle33;Gary;;;;;;;;;;;;;x
+DMCoreEvtdesc33;"Let me introduce you to my friend Gary. Gary loves playing my games, don't you Gary?" asks the Dungeon Master as he slaps a timid and shellshocked man on the back, who in turn audibly squeaks. "See Gary has always dreamt big, but he never quite made it, so I'm going to let him live vicariously! Every court throughout the land will get their very own Gary, fruit directly from the loin's of Gary Prime!" 
+\nSuddenly a nefarious looking copy of Gary pops into your court, "Buuuut..." continues the Dungeon Master, "These Gary's will be slightly amped up. Much more ambitious and skilled than the original, so watch your back!";;;;;;;;;;;;;x
+DMCoreEvt33OptA;"Erm... welcome... Gary?";;;;;;;;;;;;;x
+DMEventTooltip33;Gary.;;;;;;;;;;;;;x
+
+DMCoreEvttitle34;Friends in High Places;;;;;;;;;;;;;x
+DMCoreEvtdesc34;"I basically only exist to watch the suffering of others, but you people just do suffering so much more efficiently. There are the occasional occasions where occasionally you do take things a bit too far. Ruin the fun entirely. Here." the Dungeon Master fishes around into his pocket before handing you a small paper card - 'Get out of Jail Free' is written on it, "Just so that the suffering isn't interupted too much...";;;;;;;;;;;;;x
+DMCoreEvt34OptA;"This could come in handy...";;;;;;;;;;;;;x
+DMEventTooltip34;All rulers gain a single-use 'Get Out of Jail Free' allowing for instant release from imprisonment.;;;;;;;;;;;;;x
+
+DMCoreEvttitle35;Prison Riot!;;;;;;;;;;;;;x
+DMCoreEvtdesc35;"I've been doing some snooping around and noticed there were some people stuck in your basement behind bars, and try as they might they just couldn't find a way out!" You take a sharp breath and brace yourself. 
+"So, I happily showed the the way out! You don't have to thank me!";;;;;;;;;;;;;x
+DMCoreEvt35OptA;"Fetch my guards...";;;;;;;;;;;;;x
+DMEventTooltip35;All imprisoned characters are released and become rivals with their jailer!;;;;;;;;;;;;;x
+
+DMCoreEvttitle36;Gavelkindness;;;;;;;;;;;;;x
+DMCoreEvtdesc36;The Dungeon Master appears looking pensive "I have no idea what this Gavelkind is but everytime I bring it up you land owners always turn a funny colour." You feel your stomach turn at the sound of the forbidden word. "I've decided that a punishment for all those naughty rulers will be this 'Gavelkind' thing... whatever it is.";;;;;;;;;;;;;x
+DMCoreEvt36OptA;"No... he wouldn't...?";;;;;;;;;;;;;x
+DMEventTooltip36;All characters with serious crimes such as §PImpalers§! or §RKinslayers§! will be forced into Gavelkind.;;;;;;;;;;;;;x
+
+DMCoreEvttitle37;Spa Day!;;;;;;;;;;;;;x
+DMCoreEvtdesc37;"I've got plans today, can't do any of the usual evil!" says the Dungeon Master, dashing through your court with a suitcase, "A Hotelier friend of mine gave me these tickets, claimed he was a huge fan of my work, but the hotel is all the way in the north west of Britainia, wherever that is. There yours if you want them!";;;;;;;;;;;;;x
+DMCoreEvt37OptA;"Free Personal Trainer?";;;;;;;;;;;;;x
+DMCoreEvt37OptB;"Free Mud Baths?";;;;;;;;;;;;;x
+DMEventTooltip37A;You push yourself in a work out.;;;;;;;;;;;;;x
+DMEventTooltip37B;You cover yourself in mud.;;;;;;;;;;;;;x
+
+DMCoreEvttitle38;Happy Little Accident;;;;;;;;;;;;;x
+DMCoreEvtdesc38;"I was visiting a friend of mine and it turns out he had someone there that definitely fit in with his... regular crowd. Anyway he far too nice to be left down there so I'm putting him under your care, he tells me he's quite talented!";;;;;;;;;;;;;x
+DMCoreEvt38OptA;"Welcome Mr... Ross was it?";;;;;;;;;;;;;x
+DMEventTooltip38;A talented courtier arrives in your court who will produce happy little accidents while he's around.;;;;;;;;;;;;;x
+
+DMCoreEvttitle39;Everyone's Under 4;;;;;;;;;;;;;x
+DMCoreEvtdesc39;"I just found a brilliant new game to play! It's called EU4. You take control of a kingdom somewhere in the world, and then you 'paint the map' as all my friends would say. Would you like to give it a go?";;;;;;;;;;;;;x
+DMCoreEvt39OptA;"I have a bad feeling about this...";;;;;;;;;;;;;x
+DMEventTooltip39A;playing a nice game of EU4 with the Dungeon Master.;;;;;;;;;;;;;x
+DMEventTooltip39B;playing a nice game of EU4 with the Dungeon Master, but you cant help but wonder why he's smirking...\n;;;;;;;;;;;;;x
+DMEventTooltip39C;All playable rulers are forced to play.;;;;;;;;;;;;;x
+
+### Follow-up Events ###
+
+DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x
+DMCoreFollowtitledesc2;You walk up to the man, who has just arrived in your court and proclaim that you are going into battle, and require his strongest potions. "You don't know what you ask, traveler," he begins, "My strongest potions will kill a dragon, let alone a man. You need a seller that sells weaker potions, because my potions are too strong!";;;;;;;;;;;;;x
+DMCoreFollow2OptA;"No respect for anything... except your potions!";;;;;;;;;;;;;x
+DMCoreFollowTooltip2;You take one of the potions despite the warning...;;;;;;;;;;;;;x
+
+DMCoreFollowtitle3;Time's Up!;;;;;;;;;;;;;x
+DMCoreFollowtitledesc2;"Well done, well done!" exclaims the Dungeon Master, "you have all outdone yourselves again! Slaying, crushing, trampling, and impaling your way to victory, but of course the rules were whoever holds it now time is up! Congratulations to [winner_winner_chicken_meal.GetName]!;;;;;;;;;;;;;x
+DMCoreFollow3OptA;"That's a lot of gold...";;;;;;;;;;;;;x
+DMCoreFollowTooltip3;The ruler of [battle_royale.GetName] wins their victory purse.;;;;;;;;;;;;;x
+
+DMCoreFollowtitle5;Midas Plague!;;;;;;;;;;;;;x
+DMCoreFollowtitledesc5;The Midas Plague has struck me and my body has started turning into gold!;;;;;;;;;;;;;x
+DMCoreFollow8OptA;"Help me!";;;;;;;;;;;;;x
+DMCoreFollowTooltip5;The Midasa Plague takes part of your body!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle8;Sipping from the Fountain of Youth;;;;;;;;;;;;;x
+DMCoreFollowtitledesc8;You visit the Fountain of Youth at the local temple where it was uncovered. As the ruler of the province the local holy man believes you to have a divine blessing and lets you into the fountain. You drink from the fountain and feel reinvigorated!;;;;;;;;;;;;;x
+DMCoreFollow8OptA;"I can feel the years slipping away!";;;;;;;;;;;;;x
+
+DMCoreFollowtitle10;Empire of Gary;;;;;;;;;;;;;x
+DMCoreFollowtitledesc10;Empire of Gary has been formed by one ambitious Gary who rose above the rest! All Garys are rounded up and sent to the new Empire where it will stand, united in Garydom, for the rest of time!;;;;;;;;;;;;;x
+DMCoreFollow10OptA;"They... what?";;;;;;;;;;;;;x
+
+DMCoreFollowtitle11;Happy Little Accident;;;;;;;;;;;;;x
+DMCoreFollowtitledesc11;Bob Ross, your local painter, gardener, and all round nice guy, has once again blessed your court with some kind gifts and warm feelings!;;;;;;;;;;;;;x
+DMCoreFollow11OptA;"Wow, that's really great!";;;;;;;;;;;;;x
+
+DMCoreFollowtitle12;Hunting Accident;;;;;;;;;;;;;x
+DMCoreFollowdesc12;[dead_heir.GetHerHisCap] body has been draped, by whom you do not know, in a white cloth now stained red by [dead_heir.GetHerHis] lost vitae. They say [dead_heir.GetSheHe] was found by [dead_heir.GetHerHis] horse, in a clearing in the woods. You know the place they speak of. [dead_heir.GetHerHisCap] face is calm, almost serene. You reach out to touch [dead_heir.GetHerHim]. The terrible reality of the situation dawns on you. The cold you feel is that of death.;;;;;;;;;;;;;x
+DMCoreFollow12OptA;Sorrow overtakes you.;;;;;;;;;;;;;x
+DMCoreFollow12OptATooltip;Lose §R1§! stability;;;;;;;;;;;;;x
+DMCoreFollow12OptB;Oh well...;;;;;;;;;;;;;x
+DMCoreFollow12OptBTooltip;Lose §R10§! prestige;;;;;;;;;;;;;x
+
+### Game Rules ###
+
+RULE_DUNGEON_MASTER;Dungeon Master;;;;;;;;;;;;;x
+DM_CYCLE;§KDM:§! Minor Event Cycling;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL;Normal;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL_DESC;The Dungeon Master will cycle through six §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE;Double;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE_DESC;The Dungeon Master will cycle through twelve §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_HALF;Half;;;;;;;;;;;;;x
+DM_CYCLE_HALF_DESC;The Dungeon Master will cycle through three §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_FREQ;§KDM:§! Minor Event Frequency;;;;;;;;;;;;;x
+DM_FREQ_15;Normal - 15 Years;;;;;;;;;;;;;x
+DM_FREQ_15_DESC;The Dungeon Master will cause chaos roughly once every 15 years.;;;;;;;;;;;;;x
+DM_FREQ_30;Slow - 30 Years;;;;;;;;;;;;;x
+DM_FREQ_30_DESC;The Dungeon Master will give the world time to breathe by causing chaos roughly once every thirty years.;;;;;;;;;;;;;x
+DM_FREQ_5;Chaos - 5 Years;;;;;;;;;;;;;x
+DM_FREQ_5_DESC;The Dungeon Master just wants to see the world burn with events happening roughly every five years.;;;;;;;;;;;;;x
+DM_FREQ_TRUE_RANDOM;Normal - No Cooldown;;;;;;;;;;;;;x
+DM_FREQ_TRUE_RANDOM_DESC;Events have no minimum time and could fire randomly!;;;;;;;;;;;;;x
+DM_FREQ_NONE;Disabled;;;;;;;;;;;;;x
+DM_FREQ_NONE_DESC;Events will be §Rdisabled§!.;;;;;;;;;;;;;x
+
+DM_CYCLE_MAJOR;§KDM:§! Major Event Cycling;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL_MAJOR;Normal;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL_MAJOR_DESC;The Dungeon Master will cycle through six §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE_MAJOR;Double;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE_MAJOR_DESC;The Dungeon Master will cycle through twelve §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_HALF_MAJOR;Half;;;;;;;;;;;;;x
+DM_CYCLE_HALF_MAJOR_DESC;The Dungeon Master will cycle through three §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_FREQ_MAJOR;§KDM:§! Major Event Frequency;;;;;;;;;;;;;x
+DM_FREQ_25_MAJOR;Normal - 25 Years;;;;;;;;;;;;;x
+DM_FREQ_25_MAJOR_DESC;The Dungeon Master will cause world-defining chaos roughly once every 15 years.;;;;;;;;;;;;;x
+DM_FREQ_50_MAJOR;Slow - 50 Years;;;;;;;;;;;;;x
+DM_FREQ_50_MAJOR_DESC;The Dungeon Master will give the world time to breathe by causing chaos roughly once every thirty years.;;;;;;;;;;;;;x
+DM_FREQ_10_MAJOR;Chaos Max - 10 Years;;;;;;;;;;;;;x
+DM_FREQ_10_MAJOR_DESC;Every 10 years you will regret this decision.;;;;;;;;;;;;;x
+DM_FREQ_TRUE_RANDOM_MAJOR;Normal - No Cooldown;;;;;;;;;;;;;x
+DM_FREQ_TRUE_RANDOM_MAJOR_DESC;§BMAJOR§! events have no minimum time and could fire randomly!;;;;;;;;;;;;;x
+DM_FREQ_NONE_MAJOR;Disabled;;;;;;;;;;;;;x
+DM_FREQ_NONE_MAJOR_DESC;§BMAJOR§! events will be §Rdisabled§!.;;;;;;;;;;;;;x
+
+### Nicknames ###
+
+nick_coleman;the Coal Man;;;;;;;;;;;;;x
+nick_cleptomaniac;the Kleptomaniac;;;;;;;;;;;;;x

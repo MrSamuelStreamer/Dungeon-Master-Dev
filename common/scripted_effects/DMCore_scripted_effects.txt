@@ -1,0 +1,517 @@
+dm_create = {
+	if = {
+        limit = {
+            any_independent_ruler = {
+                has_character_flag = dungeon_master
+            }
+        }
+        break = yes
+	}
+	else = {
+		create_character = {
+			name = "Dungeon Master"
+			female = no
+		
+			dynasty = 696969
+			religion = dungeon_religion		#also religious head
+			culture = dm_culture		#placeholder
+		
+			diplomacy = 90
+			martial = 90
+			stewardship = 90
+			intrigue = 90
+			learning = 90
+		
+			historical = yes 
+			easter_egg = yes
+			disallow_random_traits = yes
+	
+			trait = dungeon_master
+		}
+		new_character = {
+			set_character_flag = dungeon_master
+			grant_title = {
+				target = k_dungeon
+			}
+		}
+	}
+}
+
+variable_shuffle = {			#holds events in storage so they can't be reused too soon
+	if = {
+		limit = {
+			has_game_rule = {
+				name = dungeon_master_cycle
+				value = dm_cycle_double
+			}
+		}
+		set_variable = { which = global_eventL which = global_eventK }
+		set_variable = { which = global_eventK which = global_eventJ }
+		set_variable = { which = global_eventJ which = global_eventI }
+		set_variable = { which = global_eventI which = global_eventH }
+		set_variable = { which = global_eventH which = global_eventG }
+		set_variable = { which = global_eventG which = global_eventF }
+		set_variable = { which = global_eventF which = global_eventE }
+		set_variable = { which = global_eventE which = global_eventD }
+		set_variable = { which = global_eventD which = global_eventC }
+		set_variable = { which = global_eventC which = global_eventB }
+		set_variable = { which = global_eventB which = global_eventA }
+		set_variable = { which = global_eventA which = global_eventTombola }
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				name = dungeon_master_cycle
+				value = dm_cycle_half
+			}
+		}
+		set_variable = { which = global_eventC which = global_eventB }
+		set_variable = { which = global_eventB which = global_eventA }
+		set_variable = { which = global_eventA which = global_eventTombola }
+	}
+	else = {
+		set_variable = { which = global_eventF which = global_eventE }
+		set_variable = { which = global_eventE which = global_eventD }
+		set_variable = { which = global_eventD which = global_eventC }
+		set_variable = { which = global_eventC which = global_eventB }
+		set_variable = { which = global_eventB which = global_eventA }
+		set_variable = { which = global_eventA which = global_eventTombola }
+	}
+}
+
+variable_shuffle_major = {			#holds major events in storage so they can't be reused too soon
+	if = {
+		limit = {
+			has_game_rule = {
+				name = dungeon_master_cycle_major
+				value = dm_cycle_double_major
+			}
+		}
+		set_variable = { which = global_eventL_major which = global_eventK_major }
+		set_variable = { which = global_eventK_major which = global_eventJ_major }
+		set_variable = { which = global_eventJ_major which = global_eventI_major }
+		set_variable = { which = global_eventI_major which = global_eventH_major }
+		set_variable = { which = global_eventH_major which = global_eventG_major }
+		set_variable = { which = global_eventG_major which = global_eventF_major }
+		set_variable = { which = global_eventF_major which = global_eventE_major }
+		set_variable = { which = global_eventE_major which = global_eventD_major }
+		set_variable = { which = global_eventD_major which = global_eventC_major }
+		set_variable = { which = global_eventC_major which = global_eventB_major }
+		set_variable = { which = global_eventB_major which = global_eventA_major }
+		set_variable = { which = global_eventA_major which = global_eventTombola_major }
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				name = dungeon_master_cycle_major
+				value = dm_cycle_half_major
+			}
+		}
+		set_variable = { which = global_eventC_major which = global_eventB_major }
+		set_variable = { which = global_eventB_major which = global_eventA_major }
+		set_variable = { which = global_eventA_major which = global_eventTombola_major }
+	}
+	else = {
+		set_variable = { which = global_eventF_major which = global_eventE_major }
+		set_variable = { which = global_eventE_major which = global_eventD_major }
+		set_variable = { which = global_eventD_major which = global_eventC_major }
+		set_variable = { which = global_eventC_major which = global_eventB_major }
+		set_variable = { which = global_eventB_major which = global_eventA_major }
+		set_variable = { which = global_eventA_major which = global_eventTombola_major }
+	}
+}
+
+stinky_random_for_caveman_paradox = { 			#just fucking what even is this 
+	random_list = {			#MUST equal number of events 							#for confused modders and reviewers of code, CK2 has no implicit rand() function outside of lists or percentages, this list is an overly complicated random number generator basically.
+		1 = {																		#the reason I use this rather than a tombola is that they're basically the same thing but the variable is saved and shunted through a system to prevent the same variable coming back, think automated global flags basically
+			set_variable = { which = global_eventTombola value = 1 }				#there is almost certainly a much easier way of doing this but I had around 30 minutes to rewrite it before I had to record the next episode and this is all I had off the top of my head at the time.
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 2 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 3 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 4 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 5 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 6 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 7 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 8 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 9 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 10 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 11 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 12 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 13 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 14 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 15 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 16 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 17 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 18 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 19 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 20 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 21 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 22 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 23 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 24 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 25 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 26 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 27 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 28 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 29 }
+		}
+	}
+}
+
+stinky_random_for_caveman_paradox_major = { 			#just fucking what even is this 
+	random_list = {			#MUST equal number of events 						
+		1 = {																
+			set_variable = { which = global_eventTombola_major value = 1 }				
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 2 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 3 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 4 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 5 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 6 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 7 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 8 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 9 }
+		}
+	}
+}
+
+random_age_mod = {
+	random_list = {
+		1 = {
+			set_variable = { which = global_add_age value = 2 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 4 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 6 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 8 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 10 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 12 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 14 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 16 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 18 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 20 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 22 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 24 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 26 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 28 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 30 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -2 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -4 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -6 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -8 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -10 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -12 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -14 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -16 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -18 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -20 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -22 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -24 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -26 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -28 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -30 }
+		}
+	}
+}
+
+religion_tomfoolery = {
+	random_list = {
+		20 = {
+			random_list = {
+				1 = {			#bane of r/gaming
+					set_feminist = yes
+					set_allows_matrilineal_marriage = yes
+					set_women_can_take_consorts = yes
+					set_female_temple_holders = yes
+					set_male_temple_holders = no
+				}
+				1 = {
+					set_feminist = no
+					set_allows_matrilineal_marriage = no
+					set_men_can_take_consorts = yes
+					set_female_temple_holders = no
+					set_male_temple_holders = yes
+					random_list = {
+						1 = {
+							set_max_wives = 25
+						}
+						1 = {
+							set_max_wives = 20
+						}
+						1 = {
+							set_max_wives = 15
+						}
+						1 = {
+							set_max_wives = 10
+						}
+						1 = {
+							set_max_wives = 5
+						}
+					}
+				}
+			}
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = { 
+			set_ai_aggression = 1.5 
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_allow_looting = yes
+			set_seafaring = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_allow_matrilineal_marriage = yes
+		}
+		80 = { }
+	}
+
+	}
+	random_list = {
+		20 = {
+			set_allow_rivermovement = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_uses_decadence = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_bs_marriage = yes
+			set_pc_marriage = yes
+			set_psc_marriage = yes
+			set_cousin_marriage = yes
+			set_divine_blood = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_raised_vassal_opinion_loss = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_priests_can_inherit = yes
+			set_priests_can_marry = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_heir_designation = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			random_list = {
+				33 = { # defensive
+					set_convert_same_group = 1
+					set_convert_other_group = 1
+					set_raised_vassal_opinion_loss = yes
+					set_piety_loss_for_attacking_same_religion = yes
+					set_ignores_defensive_attrition = yes
+					set_peace_prestige_loss = no
+					set_ai_aggression = 1
+					set_unit_home_modifier = {
+						land_morale = 0.8
+						light_infantry_defensive = 0.8
+						heavy_infantry_defensive = 0.8
+						pikemen_defensive = 0.8
+						light_cavalry_defensive = 0.8
+						knights_defensive = 0.8
+						archers_defensive = 0.8 
+						horse_archers_defensive = 0.8
+						camel_cavalry_defensive = 0.8
+						war_elephants_defensive = 0.8
+						garrison_size = 0.4
+						key = DEF_RELIGION_HOME_TERRITORY
+					}
+				}
+				33 = {		#passive
+					set_pacifist = yes
+					set_hard_to_convert = yes
+					set_convert_other_group = 0
+					set_convert_same_group = 0
+					set_ai_aggression = 0
+					set_unit_home_modifier = {
+						land_morale = 1.8
+						garrison_size = 1.5
+						key = DEF_RELIGION_HOME_TERRITORY
+					}
+					set_character_modifier = {
+						learning = 2
+						key = MONASTIC_ATTR_RELIGION
+					}
+				}
+				33 = {		#offensive
+					set_convert_same_group = 2
+					set_convert_other_group = 2
+					set_ai_aggression = 2
+					set_unit_home_modifier = {
+						land_morale = 0.8
+						light_infantry_defensive = 0.8
+						heavy_infantry_defensive = 0.8
+						pikemen_defensive = 0.8
+						light_cavalry_defensive = 0.8
+						knights_defensive = 0.8
+						archers_defensive = 0.8 
+						horse_archers_defensive = 0.8
+						camel_cavalry_defensive = 0.8
+						war_elephants_defensive = 0.8
+					
+						garrison_size = 0.4
+					
+						key = DEF_RELIGION_HOME_TERRITORY
+					}
+				}
+			}
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_can_retire_to_monastery = yes
+		}
+		80 = { }
+	}
+}

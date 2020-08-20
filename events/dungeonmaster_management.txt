@@ -1,0 +1,204 @@
+namespace = DMmanagement
+
+character_event = {
+	id = DMmanagement.1
+	hide_window = yes
+	
+	ai = no
+
+	is_triggered_only = yes
+
+	trigger = {
+        NOT = { has_global_flag = dungeon_master_lives }
+    }
+
+	immediate = {
+		set_global_flag = dungeon_master_lives
+		dm_create = yes
+	}
+	
+	option = {
+		name = DMCore1OptA
+		character_event = { id = DMCore.2 }
+	}
+}
+
+character_event = {
+	id = DMmanagement.2			#Fired on dungeon masters death, if it happens#
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = dungeon_master
+	}
+
+	immediate = {
+		dm_create = yes
+		set_global_flag = dungeon_master_lives
+	}
+	
+	option = {
+		name = DMCore1OptA
+	}
+}
+
+character_event = {
+	id = DMmanagement.3			#To deal with the false dungeon master#
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_character_flag = dungeon_master
+		NOT = {
+			has_landed_title = k_dungeon
+		}
+	}
+
+	option = {
+		name = DMCore1OptA
+		clr_character_flag = dungeon_master
+		death = {
+			death_reason = death_execution
+			killer = ROOT
+		}
+	}
+}
+
+character_event = {
+	id = DMmanagement.4			#To deal with the false ramesses and tidy titles in event of two spawning, this is all just emergency code#
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_character_flag = ozymandius				#If a new ozy spawns without kemet, or if one exists without kemet (usurped, lost in war, whatever)
+		NOT = {
+			has_landed_title = e_kemet
+		}
+	}
+
+	immediate = {
+		if = {					#if Ozymandius already exists, kill the newly spawned and grant REAL ozymandius new FAKE ozymandius' titles
+			limit = {
+				e_kemet = {
+					owner = {
+						has_character_flag = ozymandius
+					}
+				}
+				save_event_target_as = real_ozymandius
+			}
+			ROOT = {
+				abdicate_to = event_target:real_ozymandius
+				death = {
+					death_reason = death_execution
+					killer = event_target:real_ozymandius
+				}
+			}
+		}
+		else = {					#if there is no Ozymandius, give e_kemet to the new guy/bugged guy/dethroned ozymandius
+			e_kemet = {
+				grant_title = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = DMCore4OptA
+	}
+}
+
+character_event = {
+	id = DMmanagement.5			#To deal with the false horselords and tidy titles in event of two spawning, this is all just emergency code#
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_character_flag = horse_lord				#If a new horselords spawns without e_horse, or if one exists without e_horse (usurped, lost in war, whatever)
+		NOT = {
+			has_landed_title = e_horse_lord
+		}
+	}
+
+	immediate = {
+		if = {					#if horselords already exists, kill the newly spawned and grant REAL horselords new FAKE horselords' titles
+			limit = {
+				e_horse_lord = {
+					owner = {
+						has_character_flag = horse_lord
+					}
+				}
+				save_event_target_as = real_horse_lord
+			}
+			ROOT = {
+				abdicate_to = event_target:real_horse_lord
+				death = {
+					death_reason = death_execution
+					killer = event_target:real_horse_lord
+				}
+			}
+		}
+		else = {					#if there is no horse_lord, give e_kemet to the new guy/bugged guy/dethroned horse_lord
+		e_horse_lord = {
+				grant_title = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = DMCore4OptA
+	}
+}
+
+### Mod Incompatibilities ###
+
+character_event = {
+	id = DMmanagement.100
+	hide_window = yes
+	
+	ai = no
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = complained_about_ate_fan_fork }
+    }
+
+	option = {
+		name = DMCore1OptA
+		any_player = {
+			character_event = { id = DMmanagement.101 days = 1 }
+		}
+	}
+}
+
+character_event = {
+	id = DMmanagement.101
+	title = DMmanagementtitle101
+	desc = DMmanagementdesc101
+	picture = GFX_evt_stressed_ruler
+	
+	ai = no
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_global_flag = complained_about_ate_fan_fork }
+		has_global_flag = scenario_initialized   #no empire tiers in ATE: Fan Fork
+    }
+	immediate = {
+		set_global_flag = complained_about_ate_fan_fork
+	}
+	
+	option = {
+		name = DMmanagementOptA
+		custom_tooltip = {
+			text = DMmanagementTooltip1
+		}	
+	}
+}

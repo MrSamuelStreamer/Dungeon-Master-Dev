@@ -1,0 +1,349 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_DM_portrait"
+		texturefile = "gfx/portraits/DM_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_joris_portrait"
+		texturefile = "gfx/portraits/joris_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_kf_portrait"
+		texturefile = "gfx/portraits/kf_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_ozyman_portrait"
+		texturefile = "gfx/portraits/ozyman_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_glitterstomp_portrait"
+		texturefile = "gfx/portraits/glitterstomp_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_bobross_portrait"
+		texturefile = "gfx/portraits/bobross_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   portraitType = {
+      name = "DM_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = dungeon_master
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_DM_portrait:c5"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = dungeon_master }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "joris_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = joris_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_joris_portrait:c5"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = joris_trait }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "kf_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = kf_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_kf_portrait:c5"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = kf_trait }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "ozyman_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = ozyman_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_ozyman_portrait:c5"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = ozyman_trait }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "glitterstomp_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = glitterstomp_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_glitterstomp_portrait:c5"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = glitterstomp_trait }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "bobross_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = bobross_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_bobross_portrait:c5"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = bobross_trait }
+			}
+		}
+	}
+}

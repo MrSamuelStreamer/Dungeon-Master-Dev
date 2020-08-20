@@ -1,0 +1,76 @@
+cursed_ring = {
+	monthly_character_prestige = 0.5
+	martial = 4
+	combat_rating = 25
+	global_levy_size = 0.15
+	health = -1
+	quality = 4
+	command_modifier = {
+		morale_offence = 0.5
+	}
+	indestructible = yes
+	active = {
+		is_ruler = yes
+	}
+	allowed_gift = {
+		always = no
+	}
+	flags = { ring curse dungeon_master_ring }
+	stacking = no
+	picture = "GFX_cursed_ring"
+	
+	slot = wrist
+
+	indestructible = yes
+}
+
+cursed_ring_of_one = {
+	monthly_character_prestige = 1.5
+	martial = 8
+	intrigue = 12
+	combat_rating = 55
+	global_levy_size = 0.15
+	health = 15
+	quality = 5
+	command_modifier = {
+		morale_offence = 1.5
+	}
+	indestructible = yes
+	active = {
+		has_character_flag = dungeon_master
+	}
+	allowed_gift = {
+		always = no
+	}
+	flags = { ring curse dungeon_master_ring }
+	stacking = no
+	picture = "GFX_cursed_ring_of_one"
+	
+	slot = wrist
+
+	indestructible = yes
+}
+
+stinkrot_reaver = {
+	martial = 3 #intimidating 
+	combat_rating = 4
+	quality = 2
+	flags = { combat_weapon easter_egg fish_item }
+	stacking = no
+	picture = "GFX_fishk_weapon"
+	slot = weapon
+}
+
+blackfish_scale = {
+	learning = 1
+	general_opinion = 7
+	combat_rating = 13 #probably better than nothing
+	sex_appeal_opinion = -10 #stinky
+	monthly_character_prestige = 0.25
+	command_modifier = { morale_offence = 0.05 }
+	quality = 2
+	flags = { armor fish_item }
+	picture = "GFX_fishk_armour"
+	stacking = no
+	slot = torso
+}

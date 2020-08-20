@@ -1,0 +1,290 @@
+namespace = DMCoremajor
+
+character_event = {
+	id = DMCoremajor.1000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = dungeon_master
+		NOT = { has_global_flag = dungeon_master_working_major }
+		NOT = {
+			has_game_rule = {
+				name = dungeon_master_frequency_major
+				value = dm_freq_no_major
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = dungeon_master_working_major
+		if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency_major
+					value = dm_freq_10_major
+				}
+			}
+			character_event = { id = DMCoremajor.1 years = 9 random = 365 }
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency_major
+					value = dm_freq_50_major
+				}
+			}
+			character_event = { id = DMCoremajor.1 years = 45 random = 1825 } # 45 min, 50 max
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency_major
+					value = dm_freq_true_random_major
+				}
+			}
+			character_event = { id = DMCore.1 days = 1 random = 7300 } # no minimum, 20 years maximum.
+		}
+		else = {
+			character_event = { id = DMCoremajor.1 years = 20 random = 1825 } # 20 min, 25 max
+		}
+	}
+}			
+
+character_event = {					#This is a system with a lot of stuff baked in, no repeated events, etc, 
+	id = DMCoremajor.1
+	title = DMCoremajortitle1
+	desc = DMCoremajordesc1
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = dungeon_master
+	}
+
+	immediate = {
+		clr_global_flag = dungeon_master_working
+		stinky_random_for_caveman_paradox_major = yes
+	}
+	
+	option = {
+		name = DMCoremajor1OptA
+		custom_tooltip = {
+			text = dungeon_master_rolls
+			random_list = {
+				1 = {			#event 1
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 1 }
+							check_variable  = { which = global_eventB_major value == 1 }
+							check_variable  = { which = global_eventC_major value == 1 }
+							check_variable  = { which = global_eventD_major value == 1 }
+							check_variable  = { which = global_eventE_major value == 1 }
+							check_variable  = { which = global_eventF_major value == 1 }
+							check_variable  = { which = global_eventG_major value == 1 }
+							check_variable  = { which = global_eventH_major value == 1 }
+							check_variable  = { which = global_eventI_major value == 1 }
+							check_variable  = { which = global_eventJ_major value == 1 }
+							check_variable  = { which = global_eventK_major value == 1 }
+							check_variable  = { which = global_eventL_major value == 1 }
+						}
+					}
+					character_event = { id = DMCoreEvt.4 }
+					set_variable = { which = global_eventTombola_major value = 1 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 2
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 2 }
+							check_variable  = { which = global_eventB_major value == 2 }
+							check_variable  = { which = global_eventC_major value == 2 }
+							check_variable  = { which = global_eventD_major value == 2 }
+							check_variable  = { which = global_eventE_major value == 2 }
+							check_variable  = { which = global_eventF_major value == 2 }
+							check_variable  = { which = global_eventG_major value == 2 }
+							check_variable  = { which = global_eventH_major value == 2 }
+							check_variable  = { which = global_eventI_major value == 2 }
+							check_variable  = { which = global_eventJ_major value == 2 }
+							check_variable  = { which = global_eventK_major value == 2 }
+							check_variable  = { which = global_eventL_major value == 2 }
+						}
+					}
+					character_event = { id = DMCoreEvt.15 }
+					set_variable = { which = global_eventTombola_major value = 2 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 3
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 3 }
+							check_variable  = { which = global_eventB_major value == 3 }
+							check_variable  = { which = global_eventC_major value == 3 }
+							check_variable  = { which = global_eventD_major value == 3 }
+							check_variable  = { which = global_eventE_major value == 3 }
+							check_variable  = { which = global_eventF_major value == 3 }
+							check_variable  = { which = global_eventG_major value == 3 }
+							check_variable  = { which = global_eventH_major value == 3 }
+							check_variable  = { which = global_eventI_major value == 3 }
+							check_variable  = { which = global_eventJ_major value == 3 }
+							check_variable  = { which = global_eventK_major value == 3 }
+							check_variable  = { which = global_eventL_major value == 3 }
+							has_global_flag = scenario_initialized   #no empire tiers in ATE: Fan Fork
+						}
+					}
+					character_event = { id = DMCoreEvt.21 }
+					set_variable = { which = global_eventTombola_major value = 3 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 4
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 4 }
+							check_variable  = { which = global_eventB_major value == 4 }
+							check_variable  = { which = global_eventC_major value == 4 }
+							check_variable  = { which = global_eventD_major value == 4 }
+							check_variable  = { which = global_eventE_major value == 4 }
+							check_variable  = { which = global_eventF_major value == 4 }
+							check_variable  = { which = global_eventG_major value == 4 }
+							check_variable  = { which = global_eventH_major value == 4 }
+							check_variable  = { which = global_eventI_major value == 4 }
+							check_variable  = { which = global_eventJ_major value == 4 }
+							check_variable  = { which = global_eventK_major value == 4 }
+							check_variable  = { which = global_eventL_major value == 4 }
+						}
+					}
+					character_event = { id = DMCoreEvt.22 }
+					set_variable = { which = global_eventTombola_major value = 4 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 5
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 5 }
+							check_variable  = { which = global_eventB_major value == 5 }
+							check_variable  = { which = global_eventC_major value == 5 }
+							check_variable  = { which = global_eventD_major value == 5 }
+							check_variable  = { which = global_eventE_major value == 5 }
+							check_variable  = { which = global_eventF_major value == 5 }
+							check_variable  = { which = global_eventG_major value == 5 }
+							check_variable  = { which = global_eventH_major value == 5 }
+							check_variable  = { which = global_eventI_major value == 5 }
+							check_variable  = { which = global_eventJ_major value == 5 }
+							check_variable  = { which = global_eventK_major value == 5 }
+							check_variable  = { which = global_eventL_major value == 5 }
+						}
+					}
+					character_event = { id = DMCoreEvt.24 }
+					set_variable = { which = global_eventTombola_major value = 5 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 6
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 6 }
+							check_variable  = { which = global_eventB_major value == 6 }
+							check_variable  = { which = global_eventC_major value == 6 }
+							check_variable  = { which = global_eventD_major value == 6 }
+							check_variable  = { which = global_eventE_major value == 6 }
+							check_variable  = { which = global_eventF_major value == 6 }
+							check_variable  = { which = global_eventG_major value == 6 }
+							check_variable  = { which = global_eventH_major value == 6 }
+							check_variable  = { which = global_eventI_major value == 6 }
+							check_variable  = { which = global_eventJ_major value == 6 }
+							check_variable  = { which = global_eventK_major value == 6 }
+							check_variable  = { which = global_eventL_major value == 6 }
+						}
+					}
+					character_event = { id = DMCoreEvt.25 }
+					set_variable = { which = global_eventTombola_major value = 6 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 7
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 7 }
+							check_variable  = { which = global_eventB_major value == 7 }
+							check_variable  = { which = global_eventC_major value == 7 }
+							check_variable  = { which = global_eventD_major value == 7 }
+							check_variable  = { which = global_eventE_major value == 7 }
+							check_variable  = { which = global_eventF_major value == 7 }
+							check_variable  = { which = global_eventG_major value == 7 }
+							check_variable  = { which = global_eventH_major value == 7 }
+							check_variable  = { which = global_eventI_major value == 7 }
+							check_variable  = { which = global_eventJ_major value == 7 }
+							check_variable  = { which = global_eventK_major value == 7 }
+							check_variable  = { which = global_eventL_major value == 7 }
+							has_global_flag = scenario_initialized   #no empire tiers in ATE: Fan Fork
+						}
+					}
+					character_event = { id = DMCoreEvt.26 }
+					set_variable = { which = global_eventTombola_major value = 7 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 8
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 8 }
+							check_variable  = { which = global_eventB_major value == 8 }
+							check_variable  = { which = global_eventC_major value == 8 }
+							check_variable  = { which = global_eventD_major value == 8 }
+							check_variable  = { which = global_eventE_major value == 8 }
+							check_variable  = { which = global_eventF_major value == 8 }
+							check_variable  = { which = global_eventG_major value == 8 }
+							check_variable  = { which = global_eventH_major value == 8 }
+							check_variable  = { which = global_eventI_major value == 8 }
+							check_variable  = { which = global_eventJ_major value == 8 }
+							check_variable  = { which = global_eventK_major value == 8 }
+							check_variable  = { which = global_eventL_major value == 8 }
+						}
+					}
+					character_event = { id = DMCoreEvt.29}
+					set_variable = { which = global_eventTombola_major value = 8 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 9
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA_major value == 9 }
+							check_variable  = { which = global_eventB_major value == 9 }
+							check_variable  = { which = global_eventC_major value == 9 }
+							check_variable  = { which = global_eventD_major value == 9 }
+							check_variable  = { which = global_eventE_major value == 9 }
+							check_variable  = { which = global_eventF_major value == 9 }
+							check_variable  = { which = global_eventG_major value == 9 }
+							check_variable  = { which = global_eventH_major value == 9 }
+							check_variable  = { which = global_eventI_major value == 9 }
+							check_variable  = { which = global_eventJ_major value == 9 }
+							check_variable  = { which = global_eventK_major value == 9 }
+							check_variable  = { which = global_eventL_major value == 9 }
+							has_global_flag = scenario_initialized   #no empire tiers in ATE: Fan Fork
+						}
+					}
+					character_event = { id = DMCoreEvt.33 }
+					set_variable = { which = global_eventTombola_major value = 9 }
+					variable_shuffle_major = yes
+				}
+				1 = {			#event 10
+					trigger = {
+						NOR = {
+							check_variable  = { which = global_eventA_major value == 10 }
+							check_variable  = { which = global_eventB_major value == 10 }
+							check_variable  = { which = global_eventC_major value == 10 }
+							check_variable  = { which = global_eventD_major value == 10 }
+							check_variable  = { which = global_eventE_major value == 10 }
+							check_variable  = { which = global_eventF_major value == 10 }
+							check_variable  = { which = global_eventG_major value == 10 }
+							check_variable  = { which = global_eventH_major value == 10 }
+							check_variable  = { which = global_eventI_major value == 10 }
+							check_variable  = { which = global_eventJ_major value == 10 }
+							check_variable  = { which = global_eventK_major value == 10 }
+							check_variable  = { which = global_eventL_major value == 10 }
+						}
+					}
+					character_event = { id = DMCoreEvt.34 }
+					set_variable = { which = global_eventTombola_major value = 10 }
+					variable_shuffle_major = yes
+				}
+			}
+		}
+	}
+}

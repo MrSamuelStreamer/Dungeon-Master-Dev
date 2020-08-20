@@ -1,0 +1,37 @@
+ the_purge = {			
+	arrest_chance_modifier = 5.0
+	plot_power_modifier = 5.0
+	icon = 5
+}
+
+dwarf_fortress = {
+	garrison_size = 1.0
+	build_time_modifier = -0.25
+	icon = 31
+}
+
+city_of_gold = {
+	global_tax_modifier = 0.1
+	local_tax_modifier = 0.2
+	monthly_character_wealth = 5	#originally was 10 gold per month, but with 5 personal and 5 tax you can gain extra with modifiers (steward actions etc)
+	tax_income = 5
+	icon = 6
+}
+
+fountain_of_youth = {
+	global_revolt_risk = -0.05
+	land_morale = 0.25
+	icon = 39
+}
+
+sacrifices_for_beauty = {
+	health = -1
+	sex_appeal_opinion = 20
+	icon = 40
+}
+
+mud_wraps = {
+	health = 1
+	sex_appeal_opinion = -20
+	icon = 39
+}

@@ -1,0 +1,764 @@
+namespace = DMCore
+
+character_event = {
+	id = DMCore.999
+	hide_window = yes
+	is_triggered_only = yes # on_yearly_pulse
+	trigger = {
+		has_character_flag = dungeon_master
+		NOT = { has_global_flag = dungeon_master_working }
+		NOT = {
+			has_game_rule = {
+				name = dungeon_master_frequency
+				value = dm_freq_none
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = dungeon_master_working
+		if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency
+					value = dm_freq_5
+				}
+			}
+			character_event = { id = DMCore.1 years = 4 random = 365 } # Four years minumum, five years maximum.
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency
+					value = dm_freq_30
+				}
+			}
+			character_event = { id = DMCore.1 years = 29 random = 365 } # 29 years minumum, 30 years maximum.
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency
+					value = dm_freq_true_random
+				}
+			}
+			character_event = { id = DMCore.1 days = 1 random = 5475 } # no minumum, 10 years maximum.
+		}
+		else = {
+			character_event = { id = DMCore.1 years = 14 random = 365 } # 14 years minumum, 15 years maximum.
+		}
+	}
+}
+
+character_event = {					#This is a system with a lot of stuff baked in, no repeated events, etc, 
+	id = DMCore.1
+	title = DMCoretitle1
+	desc = DMCoredesc1
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = dungeon_master
+	}
+
+	immediate = {
+		clr_global_flag = dungeon_master_working
+		stinky_random_for_caveman_paradox = yes
+	}
+	
+	option = {
+		name = DMCore1OptA
+		custom_tooltip = {
+			text = dungeon_master_rolls
+			random_list = {
+				1 = {			#event 1
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 1 }
+							check_variable  = { which = global_eventB value == 1 }
+							check_variable  = { which = global_eventC value == 1 }
+							check_variable  = { which = global_eventD value == 1 }
+							check_variable  = { which = global_eventE value == 1 }
+							check_variable  = { which = global_eventF value == 1 }
+							check_variable  = { which = global_eventG value == 1 }
+							check_variable  = { which = global_eventH value == 1 }
+							check_variable  = { which = global_eventI value == 1 }
+							check_variable  = { which = global_eventJ value == 1 }
+							check_variable  = { which = global_eventK value == 1 }
+							check_variable  = { which = global_eventL value == 1 }
+						}
+					}
+					character_event = { id = DMCoreEvt.1 }
+					set_variable = { which = global_eventTombola value = 1 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 2
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 2 }
+							check_variable  = { which = global_eventB value == 2 }
+							check_variable  = { which = global_eventC value == 2 }
+							check_variable  = { which = global_eventD value == 2 }
+							check_variable  = { which = global_eventE value == 2 }
+							check_variable  = { which = global_eventF value == 2 }
+							check_variable  = { which = global_eventG value == 2 }
+							check_variable  = { which = global_eventH value == 2 }
+							check_variable  = { which = global_eventI value == 2 }
+							check_variable  = { which = global_eventJ value == 2 }
+							check_variable  = { which = global_eventK value == 2 }
+							check_variable  = { which = global_eventL value == 2 }
+						}
+					}
+					character_event = { id = DMCoreEvt.2 }
+					set_variable = { which = global_eventTombola value = 2 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 3
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 3 }
+							check_variable  = { which = global_eventB value == 3 }
+							check_variable  = { which = global_eventC value == 3 }
+							check_variable  = { which = global_eventD value == 3 }
+							check_variable  = { which = global_eventE value == 3 }
+							check_variable  = { which = global_eventF value == 3 }
+							check_variable  = { which = global_eventG value == 3 }
+							check_variable  = { which = global_eventH value == 3 }
+							check_variable  = { which = global_eventI value == 3 }
+							check_variable  = { which = global_eventJ value == 3 }
+							check_variable  = { which = global_eventK value == 3 }
+							check_variable  = { which = global_eventL value == 3 }
+						}
+					}
+					character_event = { id = DMCoreEvt.3 }
+					set_variable = { which = global_eventTombola value = 3 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 4
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 4 }
+							check_variable  = { which = global_eventB value == 4 }
+							check_variable  = { which = global_eventC value == 4 }
+							check_variable  = { which = global_eventD value == 4 }
+							check_variable  = { which = global_eventE value == 4 }
+							check_variable  = { which = global_eventF value == 4 }
+							check_variable  = { which = global_eventG value == 4 }
+							check_variable  = { which = global_eventH value == 4 }
+							check_variable  = { which = global_eventI value == 4 }
+							check_variable  = { which = global_eventJ value == 4 }
+							check_variable  = { which = global_eventK value == 4 }
+							check_variable  = { which = global_eventL value == 4 }
+						}
+					}
+					character_event = { id = DMCoreEvt.5 }
+					set_variable = { which = global_eventTombola value = 4 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 5
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 5 }
+							check_variable  = { which = global_eventB value == 5 }
+							check_variable  = { which = global_eventC value == 5 }
+							check_variable  = { which = global_eventD value == 5 }
+							check_variable  = { which = global_eventE value == 5 }
+							check_variable  = { which = global_eventF value == 5 }
+							check_variable  = { which = global_eventG value == 5 }
+							check_variable  = { which = global_eventH value == 5 }
+							check_variable  = { which = global_eventI value == 5 }
+							check_variable  = { which = global_eventJ value == 5 }
+							check_variable  = { which = global_eventK value == 5 }
+							check_variable  = { which = global_eventL value == 5 }
+						}
+					}
+					character_event = { id = DMCoreEvt.6 }
+					set_variable = { which = global_eventTombola value = 5 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 6
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 6 }
+							check_variable  = { which = global_eventB value == 6 }
+							check_variable  = { which = global_eventC value == 6 }
+							check_variable  = { which = global_eventD value == 6 }
+							check_variable  = { which = global_eventE value == 6 }
+							check_variable  = { which = global_eventF value == 6 }
+							check_variable  = { which = global_eventG value == 6 }
+							check_variable  = { which = global_eventH value == 6 }
+							check_variable  = { which = global_eventI value == 6 }
+							check_variable  = { which = global_eventJ value == 6 }
+							check_variable  = { which = global_eventK value == 6 }
+							check_variable  = { which = global_eventL value == 6 }
+						}
+					}
+					character_event = { id = DMCoreEvt.7 }
+					set_variable = { which = global_eventTombola value = 6 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 7
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 7 }
+							check_variable  = { which = global_eventB value == 7 }
+							check_variable  = { which = global_eventC value == 7 }
+							check_variable  = { which = global_eventD value == 7 }
+							check_variable  = { which = global_eventE value == 7 }
+							check_variable  = { which = global_eventF value == 7 }
+							check_variable  = { which = global_eventG value == 7 }
+							check_variable  = { which = global_eventH value == 7 }
+							check_variable  = { which = global_eventI value == 7 }
+							check_variable  = { which = global_eventJ value == 7 }
+							check_variable  = { which = global_eventK value == 7 }
+							check_variable  = { which = global_eventL value == 7 }
+						}
+					}
+					character_event = { id = DMCoreEvt.8 }
+					set_variable = { which = global_eventTombola value = 7 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 8
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 8 }
+							check_variable  = { which = global_eventB value == 8 }
+							check_variable  = { which = global_eventC value == 8 }
+							check_variable  = { which = global_eventD value == 8 }
+							check_variable  = { which = global_eventE value == 8 }
+							check_variable  = { which = global_eventF value == 8 }
+							check_variable  = { which = global_eventG value == 8 }
+							check_variable  = { which = global_eventH value == 8 }
+							check_variable  = { which = global_eventI value == 8 }
+							check_variable  = { which = global_eventJ value == 8 }
+							check_variable  = { which = global_eventK value == 8 }
+							check_variable  = { which = global_eventL value == 8 }
+						}
+					}
+					character_event = { id = DMCoreEvt.9 }
+					set_variable = { which = global_eventTombola value = 8 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 9
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 9 }
+							check_variable  = { which = global_eventB value == 9 }
+							check_variable  = { which = global_eventC value == 9 }
+							check_variable  = { which = global_eventD value == 9 }
+							check_variable  = { which = global_eventE value == 9 }
+							check_variable  = { which = global_eventF value == 9 }
+							check_variable  = { which = global_eventG value == 9 }
+							check_variable  = { which = global_eventH value == 9 }
+							check_variable  = { which = global_eventI value == 9 }
+							check_variable  = { which = global_eventJ value == 9 }
+							check_variable  = { which = global_eventK value == 9 }
+							check_variable  = { which = global_eventL value == 9 }
+						}
+					}
+					character_event = { id = DMCoreEvt.10 }
+					set_variable = { which = global_eventTombola value = 9 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 10
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 10 }
+							check_variable  = { which = global_eventB value == 10 }
+							check_variable  = { which = global_eventC value == 10 }
+							check_variable  = { which = global_eventD value == 10 }
+							check_variable  = { which = global_eventE value == 10 }
+							check_variable  = { which = global_eventF value == 10 }
+							check_variable  = { which = global_eventG value == 10 }
+							check_variable  = { which = global_eventH value == 10 }
+							check_variable  = { which = global_eventI value == 10 }
+							check_variable  = { which = global_eventJ value == 10 }
+							check_variable  = { which = global_eventK value == 10 }
+							check_variable  = { which = global_eventL value == 10 }
+						}
+					}
+					character_event = { id = DMCoreEvt.11 }
+					set_variable = { which = global_eventTombola value = 10 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 11
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 11 }
+							check_variable  = { which = global_eventB value == 11 }
+							check_variable  = { which = global_eventC value == 11 }
+							check_variable  = { which = global_eventD value == 11 }
+							check_variable  = { which = global_eventE value == 11 }
+							check_variable  = { which = global_eventF value == 11 }
+							check_variable  = { which = global_eventG value == 11 }
+							check_variable  = { which = global_eventH value == 11 }
+							check_variable  = { which = global_eventI value == 11 }
+							check_variable  = { which = global_eventJ value == 11 }
+							check_variable  = { which = global_eventK value == 11 }
+							check_variable  = { which = global_eventL value == 11 }
+						}
+					}
+					character_event = { id = DMCoreEvt.12 }
+					set_variable = { which = global_eventTombola value = 11 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 12
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 12 }
+							check_variable  = { which = global_eventB value == 12 }
+							check_variable  = { which = global_eventC value == 12 }
+							check_variable  = { which = global_eventD value == 12 }
+							check_variable  = { which = global_eventE value == 12 }
+							check_variable  = { which = global_eventF value == 12 }
+							check_variable  = { which = global_eventG value == 12 }
+							check_variable  = { which = global_eventH value == 12 }
+							check_variable  = { which = global_eventI value == 12 }
+							check_variable  = { which = global_eventJ value == 12 }
+							check_variable  = { which = global_eventK value == 12 }
+							check_variable  = { which = global_eventL value == 12 }
+						}
+					}
+					character_event = { id = DMCoreEvt.13 }
+					set_variable = { which = global_eventTombola value = 12 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 13
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 13 }
+							check_variable  = { which = global_eventB value == 13 }
+							check_variable  = { which = global_eventC value == 13 }
+							check_variable  = { which = global_eventD value == 13 }
+							check_variable  = { which = global_eventE value == 13 }
+							check_variable  = { which = global_eventF value == 13 }
+							check_variable  = { which = global_eventG value == 13 }
+							check_variable  = { which = global_eventH value == 13 }
+							check_variable  = { which = global_eventI value == 13 }
+							check_variable  = { which = global_eventJ value == 13 }
+							check_variable  = { which = global_eventK value == 13 }
+							check_variable  = { which = global_eventL value == 13 }
+						}
+					}
+					character_event = { id = DMCoreEvt.14 }
+					set_variable = { which = global_eventTombola value = 13 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 14
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 14 }
+							check_variable  = { which = global_eventB value == 14 }
+							check_variable  = { which = global_eventC value == 14 }
+							check_variable  = { which = global_eventD value == 14 }
+							check_variable  = { which = global_eventE value == 14 }
+							check_variable  = { which = global_eventF value == 14 }
+							check_variable  = { which = global_eventG value == 14 }
+							check_variable  = { which = global_eventH value == 14 }
+							check_variable  = { which = global_eventI value == 14 }
+							check_variable  = { which = global_eventJ value == 14 }
+							check_variable  = { which = global_eventK value == 14 }
+							check_variable  = { which = global_eventL value == 14 }
+						}
+					}
+					character_event = { id = DMCoreEvt.16 }
+					set_variable = { which = global_eventTombola value = 14 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 15
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 15 }
+							check_variable  = { which = global_eventB value == 15 }
+							check_variable  = { which = global_eventC value == 15 }
+							check_variable  = { which = global_eventD value == 15 }
+							check_variable  = { which = global_eventE value == 15 }
+							check_variable  = { which = global_eventF value == 15 }
+							check_variable  = { which = global_eventG value == 15 }
+							check_variable  = { which = global_eventH value == 15 }
+							check_variable  = { which = global_eventI value == 15 }
+							check_variable  = { which = global_eventJ value == 15 }
+							check_variable  = { which = global_eventK value == 15 }
+							check_variable  = { which = global_eventL value == 15 }
+						}
+					}
+					character_event = { id = DMCoreEvt.17 }
+					set_variable = { which = global_eventTombola value = 15 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 16
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 16 }
+							check_variable  = { which = global_eventB value == 16 }
+							check_variable  = { which = global_eventC value == 16 }
+							check_variable  = { which = global_eventD value == 16 }
+							check_variable  = { which = global_eventE value == 16 }
+							check_variable  = { which = global_eventF value == 16 }
+							check_variable  = { which = global_eventG value == 16 }
+							check_variable  = { which = global_eventH value == 16 }
+							check_variable  = { which = global_eventI value == 16 }
+							check_variable  = { which = global_eventJ value == 16 }
+							check_variable  = { which = global_eventK value == 16 }
+							check_variable  = { which = global_eventL value == 16 }
+						}
+					}
+					character_event = { id = DMCoreEvt.18 }
+					set_variable = { which = global_eventTombola value = 16 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 17
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 17 }
+							check_variable  = { which = global_eventB value == 17 }
+							check_variable  = { which = global_eventC value == 17 }
+							check_variable  = { which = global_eventD value == 17 }
+							check_variable  = { which = global_eventE value == 17 }
+							check_variable  = { which = global_eventF value == 17 }
+							check_variable  = { which = global_eventG value == 17 }
+							check_variable  = { which = global_eventH value == 17 }
+							check_variable  = { which = global_eventI value == 17 }
+							check_variable  = { which = global_eventJ value == 17 }
+							check_variable  = { which = global_eventK value == 17 }
+							check_variable  = { which = global_eventL value == 17 }
+						}
+					}
+					character_event = { id = DMCoreEvt.19 }
+					set_variable = { which = global_eventTombola value = 17 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 18
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 18 }
+							check_variable  = { which = global_eventB value == 18 }
+							check_variable  = { which = global_eventC value == 18 }
+							check_variable  = { which = global_eventD value == 18 }
+							check_variable  = { which = global_eventE value == 18 }
+							check_variable  = { which = global_eventF value == 18 }
+							check_variable  = { which = global_eventG value == 18 }
+							check_variable  = { which = global_eventH value == 18 }
+							check_variable  = { which = global_eventI value == 18 }
+							check_variable  = { which = global_eventJ value == 18 }
+							check_variable  = { which = global_eventK value == 18 }
+							check_variable  = { which = global_eventL value == 18 }
+						}
+					}
+					character_event = { id = DMCoreEvt.20 }
+					set_variable = { which = global_eventTombola value = 18 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 19
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 19 }
+							check_variable  = { which = global_eventB value == 19 }
+							check_variable  = { which = global_eventC value == 19 }
+							check_variable  = { which = global_eventD value == 19 }
+							check_variable  = { which = global_eventE value == 19 }
+							check_variable  = { which = global_eventF value == 19 }
+							check_variable  = { which = global_eventG value == 19 }
+							check_variable  = { which = global_eventH value == 19 }
+							check_variable  = { which = global_eventI value == 19 }
+							check_variable  = { which = global_eventJ value == 19 }
+							check_variable  = { which = global_eventK value == 19 }
+							check_variable  = { which = global_eventL value == 19 }
+						}
+					}
+					character_event = { id = DMCoreEvt.23 }
+					set_variable = { which = global_eventTombola value = 19 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 20
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 20 }
+							check_variable  = { which = global_eventB value == 20 }
+							check_variable  = { which = global_eventC value == 20 }
+							check_variable  = { which = global_eventD value == 20 }
+							check_variable  = { which = global_eventE value == 20 }
+							check_variable  = { which = global_eventF value == 20 }
+							check_variable  = { which = global_eventG value == 20 }
+							check_variable  = { which = global_eventH value == 20 }
+							check_variable  = { which = global_eventI value == 20 }
+							check_variable  = { which = global_eventJ value == 20 }
+							check_variable  = { which = global_eventK value == 20 }
+							check_variable  = { which = global_eventL value == 20 }
+						}
+					}
+					character_event = { id = DMCoreEvt.27 }
+					set_variable = { which = global_eventTombola value = 20 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 21
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 21 }
+							check_variable  = { which = global_eventB value == 21 }
+							check_variable  = { which = global_eventC value == 21 }
+							check_variable  = { which = global_eventD value == 21 }
+							check_variable  = { which = global_eventE value == 21 }
+							check_variable  = { which = global_eventF value == 21 }
+							check_variable  = { which = global_eventG value == 21 }
+							check_variable  = { which = global_eventH value == 21 }
+							check_variable  = { which = global_eventI value == 21 }
+							check_variable  = { which = global_eventJ value == 21 }
+							check_variable  = { which = global_eventK value == 21 }
+							check_variable  = { which = global_eventL value == 21 }
+						}
+					}
+					character_event = { id = DMCoreEvt.28 }
+					set_variable = { which = global_eventTombola value = 21 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 22
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 22 }
+							check_variable  = { which = global_eventB value == 22 }
+							check_variable  = { which = global_eventC value == 22 }
+							check_variable  = { which = global_eventD value == 22 }
+							check_variable  = { which = global_eventE value == 22 }
+							check_variable  = { which = global_eventF value == 22 }
+							check_variable  = { which = global_eventG value == 22 }
+							check_variable  = { which = global_eventH value == 22 }
+							check_variable  = { which = global_eventI value == 22 }
+							check_variable  = { which = global_eventJ value == 22 }
+							check_variable  = { which = global_eventK value == 22 }
+							check_variable  = { which = global_eventL value == 22 }
+						}
+					}
+					character_event = { id = DMCoreEvt.30 }
+					set_variable = { which = global_eventTombola value = 22 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 23
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 23 }
+							check_variable  = { which = global_eventB value == 23 }
+							check_variable  = { which = global_eventC value == 23 }
+							check_variable  = { which = global_eventD value == 23 }
+							check_variable  = { which = global_eventE value == 23 }
+							check_variable  = { which = global_eventF value == 23 }
+							check_variable  = { which = global_eventG value == 23 }
+							check_variable  = { which = global_eventH value == 23 }
+							check_variable  = { which = global_eventI value == 23 }
+							check_variable  = { which = global_eventJ value == 23 }
+							check_variable  = { which = global_eventK value == 23 }
+							check_variable  = { which = global_eventL value == 23 }
+						}
+					}
+					character_event = { id = DMCoreEvt.31 }
+					set_variable = { which = global_eventTombola value = 23 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 24
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 24 }
+							check_variable  = { which = global_eventB value == 24 }
+							check_variable  = { which = global_eventC value == 24 }
+							check_variable  = { which = global_eventD value == 24 }
+							check_variable  = { which = global_eventE value == 24 }
+							check_variable  = { which = global_eventF value == 24 }
+							check_variable  = { which = global_eventG value == 24 }
+							check_variable  = { which = global_eventH value == 24 }
+							check_variable  = { which = global_eventI value == 24 }
+							check_variable  = { which = global_eventJ value == 24 }
+							check_variable  = { which = global_eventK value == 24 }
+							check_variable  = { which = global_eventL value == 24 }
+						}
+					}
+					character_event = { id = DMCoreEvt.32 }
+					set_variable = { which = global_eventTombola value = 24 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 25
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 25 }
+							check_variable  = { which = global_eventB value == 25 }
+							check_variable  = { which = global_eventC value == 25 }
+							check_variable  = { which = global_eventD value == 25 }
+							check_variable  = { which = global_eventE value == 25 }
+							check_variable  = { which = global_eventF value == 25 }
+							check_variable  = { which = global_eventG value == 25 }
+							check_variable  = { which = global_eventH value == 25 }
+							check_variable  = { which = global_eventI value == 25 }
+							check_variable  = { which = global_eventJ value == 25 }
+							check_variable  = { which = global_eventK value == 25 }
+							check_variable  = { which = global_eventL value == 25 }
+						}
+					}
+					character_event = { id = DMCoreEvt.34 }
+					set_variable = { which = global_eventTombola value = 25 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 26 - prison riot
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 26 }
+							check_variable  = { which = global_eventB value == 26 }
+							check_variable  = { which = global_eventC value == 26 }
+							check_variable  = { which = global_eventD value == 26 }
+							check_variable  = { which = global_eventE value == 26 }
+							check_variable  = { which = global_eventF value == 26 }
+							check_variable  = { which = global_eventG value == 26 }
+							check_variable  = { which = global_eventH value == 26 }
+							check_variable  = { which = global_eventI value == 26 }
+							check_variable  = { which = global_eventJ value == 26 }
+							check_variable  = { which = global_eventK value == 26 }
+							check_variable  = { which = global_eventL value == 26 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.35 }
+					set_variable = { which = global_eventTombola value = 26 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 27 - Gavelkind
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 27 }
+							check_variable  = { which = global_eventB value == 27 }
+							check_variable  = { which = global_eventC value == 27 }
+							check_variable  = { which = global_eventD value == 27 }
+							check_variable  = { which = global_eventE value == 27 }
+							check_variable  = { which = global_eventF value == 27 }
+							check_variable  = { which = global_eventG value == 27 }
+							check_variable  = { which = global_eventH value == 27 }
+							check_variable  = { which = global_eventI value == 27 }
+							check_variable  = { which = global_eventJ value == 27 }
+							check_variable  = { which = global_eventK value == 27 }
+							check_variable  = { which = global_eventL value == 26 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.36 }
+					set_variable = { which = global_eventTombola value = 27 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 28 - Spa Day
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 28 }
+							check_variable  = { which = global_eventB value == 28 }
+							check_variable  = { which = global_eventC value == 28 }
+							check_variable  = { which = global_eventD value == 28 }
+							check_variable  = { which = global_eventE value == 28 }
+							check_variable  = { which = global_eventF value == 28 }
+							check_variable  = { which = global_eventG value == 28 }
+							check_variable  = { which = global_eventH value == 28 }
+							check_variable  = { which = global_eventI value == 28 }
+							check_variable  = { which = global_eventJ value == 28 }
+							check_variable  = { which = global_eventK value == 28 }
+							check_variable  = { which = global_eventL value == 28 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.37 }
+					set_variable = { which = global_eventTombola value = 28 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 29 - Spa Day
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 29 }
+							check_variable  = { which = global_eventB value == 29 }
+							check_variable  = { which = global_eventC value == 29 }
+							check_variable  = { which = global_eventD value == 29 }
+							check_variable  = { which = global_eventE value == 29 }
+							check_variable  = { which = global_eventF value == 29 }
+							check_variable  = { which = global_eventG value == 29 }
+							check_variable  = { which = global_eventH value == 29 }
+							check_variable  = { which = global_eventI value == 29 }
+							check_variable  = { which = global_eventJ value == 29 }
+							check_variable  = { which = global_eventK value == 29 }
+							check_variable  = { which = global_eventL value == 29 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.38 }
+					set_variable = { which = global_eventTombola value = 29 }
+					variable_shuffle = yes
+				}
+			}
+		}
+	}
+}
+
+character_event = {			#work out if the map is modded or not#
+	id = DMCore.2
+	title = DMCoretitle2
+	desc = DMCoredesc2
+	picture = GFX_evt_lunatic
+
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOR = {
+			has_global_flag = base_game_enough
+			has_global_flag = not_base_game
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				k_papal_state = {
+					has_holder = yes
+					region = world_europe_south_italy
+				}
+			}
+			set_global_flag = base_game_enough
+		}
+		else = {
+			set_global_flag = not_base_game
+		}
+	}
+	
+	option = {
+		name = DMCore2OptA
+		trigger = {
+			has_global_flag = base_game_enough
+		}
+		any_player = {
+			character_event = { id = DMCore.3 }
+		}
+	}
+	option = {
+		name = DMCore2OptA
+		trigger = {
+			has_global_flag = not_base_game
+		}
+		any_player = {
+			character_event = { id = DMCore.4 }
+		}
+	}
+}
+
+character_event = {			#Base game confirmation#
+	id = DMCore.3
+	title = DMCoretitle3
+	desc = DMCoredesc3
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DMCore3OptA
+	}
+}
+
+character_event = {			#Non base game confirmed#
+	id = DMCore.4
+	title = DMCoretitle4
+	desc = DMCoredesc4
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DMCore4OptA
+	}
+}

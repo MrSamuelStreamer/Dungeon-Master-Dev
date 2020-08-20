@@ -1,0 +1,25 @@
+on_death = {
+	events = {
+		DMmanagement.2
+	}
+}
+
+on_chronicle_start = {
+	events = {
+		DMmanagement.1
+		DMmanagement.100
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		DMCore.999
+		DMCoremajor.1000
+	}
+}
+
+on_new_holder = {
+	events = {
+		DMCoreFollow.9
+	}
+}

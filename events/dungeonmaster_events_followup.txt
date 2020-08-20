@@ -1,0 +1,514 @@
+## These are events that follow on from the main random event
+
+namespace = DMCoreFollow
+
+narrative_event = {			#Follow-up from DMCoreEvt.11
+	id = DMCoreFollow.1
+	title = EVTNAME_RIP_21000
+	border = GFX_event_narrative_frame_religion
+	picture = GFX_evt_danse_macabre
+	desc =  EVTDSC_RIP_21000_FALLBACK
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = EVTOPTA_RIP_21000
+		add_character_modifier = {
+			modifier = broken_spirit
+			duration = 180
+		}
+		custom_tooltip = {
+			text = DMCoreFollowTooltip1
+		}	
+	}
+}
+
+character_event = {			#Potion Seller#
+	id = DMCoreFollow.2
+	title = DMCoreFollowtitle2
+	desc = DMCoreFollowtitledesc2
+	picture = GFX_potion_seller
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	immediate = {
+		any_playable_ruler = {
+			random = {
+				chance = 5
+				add_trait = has_aztec_disease
+			}
+			random = {
+				chance = 5
+				add_trait = has_typhus
+			}
+			random = {
+				chance = 5
+				add_trait = cancer
+			}
+			random = {
+				chance = 5
+				add_trait = has_tuberculosis
+			}
+			random = {
+				chance = 5
+				add_trait = dancing_plague
+			}
+			random = {
+				chance = 5
+				add_trait = dysentery
+			}
+			random = {
+				chance = 5
+				add_trait = flu 
+			}
+			random = {
+				chance = 5
+				add_trait = food_poisoning
+			}
+			random = {
+				chance = 5
+				add_trait = gout
+			}
+			random = {
+				chance = 5
+				add_trait = syphilitic
+			}
+			random = {
+				chance = 5
+				add_trait = has_typhoid_fever
+			}
+			random = {
+				chance = 5
+				add_trait = leper 
+			}
+			random = {
+				chance = 5
+				add_trait = has_measles
+			}
+			random = {
+				chance = 5
+				add_trait = pneumonic
+			}
+			random = {
+				chance = 5
+				add_trait = rabies 
+			}
+			random = {
+				chance = 5
+				add_trait = scurvy 
+			}
+			random = {
+				chance = 5
+				add_trait = sickly 
+			}
+			random = {
+				chance = 5
+				add_trait = has_small_pox
+			}
+			random = {
+				chance = 5
+				add_trait = has_bubonic_plague
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreFollow2OptA
+		custom_tooltip = {
+			text = DMCoreFollowTooltip2
+			random = {
+				chance = 5
+				add_trait = has_aztec_disease
+			}
+			random = {
+				chance = 5
+				add_trait = has_typhus
+			}
+			random = {
+				chance = 5
+				add_trait = cancer
+			}
+			random = {
+				chance = 5
+				add_trait = has_tuberculosis
+			}
+			random = {
+				chance = 5
+				add_trait = dancing_plague
+			}
+			random = {
+				chance = 5
+				add_trait = dysentery
+			}
+			random = {
+				chance = 5
+				add_trait = flu 
+			}
+			random = {
+				chance = 5
+				add_trait = food_poisoning
+			}
+			random = {
+				chance = 5
+				add_trait = gout
+			}
+			random = {
+				chance = 5
+				add_trait = syphilitic
+			}
+			random = {
+				chance = 5
+				add_trait = has_typhoid_fever
+			}
+			random = {
+				chance = 5
+				add_trait = leper 
+			}
+			random = {
+				chance = 5
+				add_trait = has_measles
+			}
+			random = {
+				chance = 5
+				add_trait = pneumonic
+			}
+			random = {
+				chance = 5
+				add_trait = rabies 
+			}
+			random = {
+				chance = 5
+				add_trait = scurvy 
+			}
+			random = {
+				chance = 5
+				add_trait = sickly 
+			}
+			random = {
+				chance = 5
+				add_trait = has_small_pox
+			}
+			random = {
+				chance = 5
+				add_trait = has_bubonic_plague
+			}
+		}
+	}
+}
+
+character_event = {			#Follow-up from DMCoreEvt.16 
+	id = DMCoreFollow.3
+	title = DMCoreFollowtitle3
+	picture = GFX_evt_recieve_letter
+	desc =  DMCoreFollowtitledesc3
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				has_landed_title = event_target:battle_royale
+			}
+			save_event_target_as = winner_winner_chicken_meal
+		}
+	}
+
+	option = {
+		name = DMCoreFollow3OptA
+		any_playable_ruler = {
+			limit = {
+				has_landed_title = event_target:battle_royale
+			}
+			piety = 2500
+			prestige = 2500
+			scaled_wealth = 6
+		}
+		custom_tooltip = {
+			text = DMCoreFollowTooltip3
+		}	
+	}
+}
+
+character_event = {			#Follow-up from DMCoreEvt.23 - I have turned to gold!#
+	id = DMCoreFollow.4
+	title = DMCoreFollowtitle4
+	picture = GFX_evt_recieve_letter
+	desc =  DMCoreFollowtitledesc4
+	
+	trigger = {
+		has_trait = midas_plague
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	option = {
+		name = DMCoreFollow4OptA
+		scaled_wealth = 10
+		death = {
+    		death_reason = death_midas
+		}
+		custom_tooltip = {
+			text = DMCoreFollowTooltip4
+		}	
+	}
+}
+
+character_event = {			#Follow-up from DM_disease.txt - I have turned midas plague!#
+	id = DMCoreFollow.5
+	title = DMCoreFollowtitle5
+	picture = GFX_evt_recieve_letter
+	desc =  DMCoreFollowtitledesc5
+	
+	is_triggered_only = yes
+
+	option = {
+		name = DMCoreFollow4OptA
+		add_trait = midas_plague
+		random_list = {
+			1 = {
+				add_trait = one_eyed
+				scaled_wealth = 1
+			}
+			1 = {
+				add_trait = one_handed
+				scaled_wealth = 2
+			}
+			1 = {
+				add_trait = one_legged
+				scaled_wealth = 3
+			}
+		}
+		custom_tooltip = {
+			text = DMCoreFollowTooltip5
+		}	
+	}
+}
+
+character_event = {			#Follow-up from DMCoreEvt.21 - Horse Lord gets Troops#
+	id = DMCoreFollow.6
+	title = DMCoreFollowtitle6
+	picture = GFX_evt_recieve_letter
+	desc =  DMCoreFollowtitledesc6
+	
+	trigger = {
+		has_character_flag = horse_lord
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = DMCoreFollow4OptA
+		spawn_unit = {
+			owner = ROOT
+			province = ROOT
+			home = ROOT
+		  
+			troops = {
+				light_cavalry = { 2500 2500 }
+				heavy_cavalry = { 1500 1500 }
+				horse_archers = { 2000 2000 }
+			}
+		
+			attrition = 0.3
+			disband_on_peace = no
+			maintenance_multiplier = 0.0
+		}
+	}
+}
+
+narrative_event = {			#Follow-up from DMCoreEvt.26 - Ozymandias#
+id = DMCoreFollow.7
+title = DMCoreFollowtitle7
+picture = GFX_evt_recieve_letter
+desc =  DMCoreFollowtitledesc7
+
+trigger = {
+	has_character_flag = ozymandius
+}
+
+mean_time_to_happen = {
+	months = 12
+}
+
+option = {
+	name = DMCoreFollow4OptA
+	spawn_unit = {
+		owner = ROOT
+		province = ROOT
+		home = ROOT
+	  
+		troops = {
+			light_infantry = { 2500 2500 }
+			light_cavalry = { 2500 2500 }
+			heavy_cavalry = { 1500 1500 }
+		}
+	
+		attrition = 0.3
+		disband_on_peace = no
+		maintenance_multiplier = 0.0
+	}
+}
+}
+
+character_event = {			#Follow-up from DMCoreEvt.32 - Fountain of Youth#
+	id = DMCoreFollow.8
+	title = DMCoreFollowtitle8
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFollowtitledesc8
+	
+	mean_time_to_happen = {
+		years = 4			#monkeys paw
+	}
+
+	trigger = {
+		owns = persistent_event_target:fountain_of_youth_province
+	}
+
+	option = {
+		name = DMCoreFollow8OptA
+		add_age = -5
+		health = 1
+		custom_tooltip = {
+			text = DMCoreFollowTooltip1
+		}	
+	}
+}
+
+character_event = {			#Follow-up from DMCoreEvt.33 - Gary's Unknown Battlegrounds#
+	id = DMCoreFollow.9
+	title = DMCoreFollowtitle9
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFollowtitledesc9
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_global_flag = crowned_gary
+		}
+		has_character_flag = gary
+	}
+
+	immediate = {
+		set_global_flag = crowned_gary
+		set_character_flag = emperor_gary_DM
+		set_defacto_liege = ROOT
+		activate_title = {
+			title = e_gary
+			status = yes
+		}
+		e_gary = {
+			grant_title = PREV
+		}
+		any_character = {
+			limit = {
+				has_character_flag = gary
+				NOT = {
+					has_landed_title = e_gary
+				}
+			}
+			force_host = ROOT
+		}
+	}
+
+	option = {
+		name = DMCoreFollow9OptA
+		any_player = {
+			character_event = { id = DMCoreFollow.10 }
+		}
+	}
+}
+
+character_event = {			#Follow-up from DMCoreFollow.9 - players are informed about the empire of gary?#
+	id = DMCoreFollow.10
+	title = DMCoreFollowtitle10
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFollowtitledesc10
+
+	is_triggered_only = yes
+
+	option = {
+		name = DMCoreFollow10OptA
+	}
+}
+
+character_event = {			#Bob Ross#
+	id = DMCoreFollow.11
+	title = DMCoreFollowtitle11
+	picture = GFX_evt_council_speaker
+	desc =  DMCoreFollowtitledesc11
+
+	trigger = {
+		any_courtier = {
+			has_character_flag = bob_ross
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = DMCoreFollow11OptA
+		random_list = {
+			1 = {					#happy little accident
+				trigger = {
+					is_married = yes
+				}
+				unsafe_impregnate = any_spouse
+				any_spouse = {
+					unsafe_impregnate = ROOT
+				}
+			}
+			1 = {
+				add_trait = gardener 			#happy little tree
+			}
+			1 = {
+				current_heir = {
+					add_trait = genius
+				}
+			}
+			1 = {
+				random_vassal = {
+					add_trait = content
+				}
+			}
+		}
+	}
+}
+
+character_event = {			# Followup to EU4 Dickery
+	id = DMCoreFollow.12
+	desc = DMCoreFollowdesc12
+	title = DMCoreFollowtitle12
+	picture = GFX_evt_died_funeral
+	ai = no
+	is_triggered_only = yes
+	immediate = {
+		current_heir = {
+			save_event_target_as = dead_heir
+			death = { death_reason = death_accident }
+		}
+	}	
+	option = { # Sorrow Overtakes You
+		name = DMCoreFollow12OptA
+		custom_tooltip = {
+			text = DMCoreFollow12OptATooltip
+		}
+	}
+	option = { # Oh well.
+		name = DMCoreFollow12OptB
+		custom_tooltip = {
+			text = DMCoreFollow12OptBTooltip
+			prestige = -10
+		}
+	}
+}

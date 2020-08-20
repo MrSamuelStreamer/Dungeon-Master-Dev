@@ -1,0 +1,12 @@
+696969 = {
+	name="Master"
+	culture="roman"
+}
+700000 = {
+	name="XIX"
+	culture="coptic"
+}
+700001 = {
+	name="Gary"
+	culture="roman"
+}
