@@ -2804,6 +2804,9 @@ character_event = {			#Angel of Death (not the slayer song obviously it's a text
 			character_event = { id = DMPlay.25 }
 		}
 		any_playable_ruler = {
+			limit = {
+				ai = yes
+			}
 			random_child  = {
 				limit = {
 					any_sibling = {
