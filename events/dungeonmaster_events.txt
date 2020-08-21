@@ -661,6 +661,18 @@ character_event = {			#Mrs Doubtfire#
 				ai = yes
 			}
 			set_gender = opposite
+			if = {
+				limit = {
+					trait = homosexual
+				}
+				remove_trait = homosexual
+			}
+			else_if = {
+				limit = {
+					NOT = { trait = homosexual }
+				}
+				add_trait = homosexual
+			}
 		}
 	}
 
