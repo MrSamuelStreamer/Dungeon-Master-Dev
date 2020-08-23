@@ -27,6 +27,9 @@ kf_trait_desc;This character was selected as the super seducer, a man destined t
 bobross_trait;Bob Ross;;;;;;;;;;;;;x
 bobross_trait_desc;This man spends his time painting happy little trees and lulling those around him into a deep, comfortable sleep with his voice.;;;;;;;;;;;;;x
 
+genius_fake;Genius;;;;;;;;;;;;;x
+genius_fake_desc;This character is blessed with a towering intellect.\nMartial: §G+5§!\nIntrigue: §G+5§!\nDiplomacy: §G+5§!\nStewardship: §G+5§!\nLearning: §G+5§!\nPersonal Combat Skill: §G+10§!\nVassal Opinion: §G+5§!;;;;;;;;;;;;;x
+
 ### Dungeon Master Character Misc ###
 
 e_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
@@ -358,6 +361,16 @@ DMCoreEvt39OptA;"I have a bad feeling about this...";;;;;;;;;;;;;x
 DMEventTooltip39A;playing a nice game of EU4 with the Dungeon Master.;;;;;;;;;;;;;x
 DMEventTooltip39B;playing a nice game of EU4 with the Dungeon Master, but you cant help but wonder why he's smirking...\n;;;;;;;;;;;;;x
 DMEventTooltip39C;All playable rulers are forced to play.;;;;;;;;;;;;;x
+
+DMCoreEvttitle40;Duke Nukem;;;;;;;;;;;;;x
+DMCoreEvtdesc40;"I've never understood Dukes, they're just Counts but with vassals, like Kings, or Emperors, but smaller. And don't even get me started on Petty Kings, or Dukes called Kings, or Dukes formally known as Prince? None of this makes any sense! I'm simplifying the entire system - Dukes are now banned. Emperors are next, mark my words.";;;;;;;;;;;;;x
+DMCoreEvt40OptA;"Nobody steals our titles... and lives!";;;;;;;;;;;;;x
+DMEventTooltip40A;All Duke tier titles are destroyed!;;;;;;;;;;;;;x
+
+DMCoreEvttitle41;Stroke of Genius;;;;;;;;;;;;;x
+DMCoreEvtdesc40;"It's always the same with you people" begins a very judgemental Dungeon Master, "It's always genius, strong, fair, claims, whatever with you people, never what's on the INSIDE. And that's all that counts. Well, in hindsight, I guess genius is on the inside, now that I think about it... and claims too... Well don't think you're getting away with it that easily!";;;;;;;;;;;;;x
+DMCoreEvt41OptA;"You seem... different?";;;;;;;;;;;;;x
+DMEventTooltip41A;Everyone becomes Genius...?;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 

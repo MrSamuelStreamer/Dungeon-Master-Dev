@@ -84,3 +84,15 @@ bobross_trait = {
 	ai_greed = -50	#accept ransoms, bribes, etc
 	customizer = no 
 }
+
+genius_fake = {
+	random = no
+	inherit_chance = 5
+	
+	opposites =  {
+		genius
+		quick
+		imbecile
+		slow
+	}
+}

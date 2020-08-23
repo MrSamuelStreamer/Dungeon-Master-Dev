@@ -1228,3 +1228,40 @@ character_event = {			# EU4 Dickery
 		}
 	}
 }
+
+character_event = {			#Duke nukem, all duke titles destroyed!
+	id = DMPlay.40
+	title = DMCoreEvttitle40
+	desc = DMCoreEvtdesc40
+	picture = GFX_evt_fishing
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreEvt40OptA
+		custom_tooltip = {
+			text = DMEventTooltip40
+		}
+	}
+}
+
+character_event = {			#Fake Genius
+	id = DMPlay.41
+	title = DMCoreEvttitle41
+	desc = DMCoreEvtdesc41
+	picture = GFX_evt_fishing
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreEvt41OptA
+		add_trait = genius_fake
+		custom_tooltip = {
+			text = DMEventTooltip41
+		}
+	}
+}
