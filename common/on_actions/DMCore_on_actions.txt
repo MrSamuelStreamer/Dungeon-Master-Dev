@@ -20,7 +20,8 @@ on_yearly_pulse = {
 
 on_new_holder = {
 	events = {
-		DMCoreFollow.9
+		DMCoreFollow.9 # Gaaaaaaaaaary
+		DMmanagement.300 # DM refuses any title he gets other than his DM title
 	}
 }
 

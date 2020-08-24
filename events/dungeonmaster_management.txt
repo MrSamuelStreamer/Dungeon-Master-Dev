@@ -221,3 +221,23 @@ character_event = {
 		set_character_flag = no_court_invites
 	}
 }
+
+### DM Title Maint ###
+
+character_event = {
+	id = DMmanagement.300
+	hide_window = yes
+	is_triggered_only = yes # on_new_holder
+	trigger = {
+		FROM = {
+			NOT = { title = k_dungeon }
+		}
+		trait = dungeon_master
+	}
+	immediate = {
+		FROM = {
+			grant_title_no_opinion = FROMFROM
+		}
+	}
+}
+	
