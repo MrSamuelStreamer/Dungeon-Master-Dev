@@ -23,3 +23,9 @@ on_new_holder = {
 		DMCoreFollow.9
 	}
 }
+
+on_host_change = {
+	events = {
+		DMmanagement.200 # Prevents newly spawned courtiers of the DM from being invited by players or AI
+	}
+}

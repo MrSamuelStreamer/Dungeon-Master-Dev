@@ -32,7 +32,8 @@ dungeon_master = {
 	ai_zeal = 10
 	immortal = yes
 	random = no 
-	customizer = no 
+	customizer = no
+	cannot_marry = yes
 }
 
 midas_plague = { 

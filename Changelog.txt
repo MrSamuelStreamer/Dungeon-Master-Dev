@@ -1,3 +1,11 @@
+1.03
+24AUG20
+
+The Dungeon Master can no longer marry.
+Courtiers of the Dungeon Master can no longer be invited.
+Angel of Death only happens once to the player's children.
+Mrs. Doubtfire will now correctly check and add/remove homosexual.
+
 1.02
 20AUG20
 

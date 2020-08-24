@@ -202,3 +202,22 @@ character_event = {
 		}	
 	}
 }
+
+### DM Courtier Maint ###
+
+character_event = {
+	id = DMmanagement.200
+	hide_window = yes
+	is_triggered_only = yes # on_host_change
+	trigger = {
+		FROM = { # Ensures this is just for newly spawned characters
+			character = no
+		}
+		liege = {
+			trait = dungeon_master
+		}
+	}
+	immediate = {
+		set_character_flag = no_court_invites
+	}
+}
