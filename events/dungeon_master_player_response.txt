@@ -1270,7 +1270,7 @@ character_event = {			#Crab Rave - Cancer for all#
 	id = DMPlay.42
 	title = DMCoreEvttitle42
 	desc = DMCoreEvtdesc42
-	picture = GFX_evt_court_physician
+	picture = GFX_evt_bring_out_your_dead
 	
 	is_triggered_only = yes	
 
@@ -1289,7 +1289,7 @@ character_event = {			#Children will inherit the earth#
 	id = DMPlay.43
 	title = DMCoreEvttitle43
 	desc = DMCoreEvtdesc43
-	picture = GFX_evt_court_physician
+	picture = GFX_evt_childrens_crusade
 	
 	is_triggered_only = yes	
 
