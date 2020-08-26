@@ -372,6 +372,16 @@ DMCoreEvtdesc40;"It's always the same with you people" begins a very judgemental
 DMCoreEvt41OptA;"You seem... different?";;;;;;;;;;;;;x
 DMEventTooltip41;Everyone becomes Genius...?;;;;;;;;;;;;;x
 
+DMCoreEvttitle42;Crab Rave;;;;;;;;;;;;;x
+DMCoreEvtdesc42;"Look, your other options are Scorpion rave, Lion rave, or Goat rave. I think your life expectancy is much better with this, trust me.";;;;;;;;;;;;;x
+DMCoreEvt42OptA;"I was born in September!";;;;;;;;;;;;;x
+DMEventTooltip42;Everyone gains Cancer!;;;;;;;;;;;;;x
+
+DMCoreEvttitle43;Meek will Inherit;;;;;;;;;;;;;x
+DMCoreEvtdesc43;"You've all had your chance and really blown it. Just absolutely ruined this earth. Temperatures are increasing, the world economy is in absolute shambles, and your kids are never going to be able to afford housing at this rate. And before you start complaing, the alternate name for this event was 'Okay Boomer' so be glad you're not going out with a bang.";;;;;;;;;;;;;x
+DMCoreEvt43OptA;"The nanny raised the children, not us!";;;;;;;;;;;;;x
+DMEventTooltip43;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
+
 ### Follow-up Events ###
 
 DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x

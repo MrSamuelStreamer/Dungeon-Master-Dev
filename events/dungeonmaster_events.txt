@@ -3688,3 +3688,57 @@ character_event = {			#Genius...?#
 	}
 }
 
+character_event = {			#Crab Rave - Cancer for all#
+	id = DMCoreEvt.42
+	title = DMCoreEvttitle42
+	desc = DMCoreEvtdesc42
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOT = { ai = no }
+			}
+			add_trait = cancer
+		}
+	}
+
+	option = {
+		name = DMCoreEvt42OptA
+		any_player = {
+			character_event = { id = DMPlay.42 }
+		}
+	}
+}
+
+character_event = {			#Meek Inherit the Earth#
+	id = DMCoreEvt.43
+	title = DMCoreEvttitle43
+	desc = DMCoreEvtdesc43
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_character = {
+			limit = {
+				NOR = { 
+					ai = no 		#player notified differently
+					age < 12
+					dynasty = none		#preferably important people so the game doesn't blow up
+				}
+			}
+			death = {
+				death_reason = death_missing
+				killer = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt43OptA
+		any_player = {
+			character_event = { id = DMPlay.43 }
+		}
+	}
+}

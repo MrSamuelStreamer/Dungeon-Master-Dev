@@ -1265,3 +1265,72 @@ character_event = {			#Fake Genius
 		}
 	}
 }
+
+character_event = {			#Crab Rave - Cancer for all#
+	id = DMPlay.42
+	title = DMCoreEvttitle42
+	desc = DMCoreEvtdesc42
+	picture = GFX_evt_court_physician
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreEvt42OptA
+		add_trait = cancer
+		custom_tooltip = {
+			text = DMEventTooltip42
+		}
+	}
+}
+
+character_event = {			#Children will inherit the earth#
+	id = DMPlay.43
+	title = DMCoreEvttitle43
+	desc = DMCoreEvtdesc43
+	picture = GFX_evt_court_physician
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	immediate = {
+		if = {
+			limit = {
+				current_heir = {
+					dynasty = ROOT
+					age > 12
+				}
+			}
+			death = {
+				death_reason = death_missing
+				killer = FROM
+			}
+		}
+		else = {
+			set_variable = { # Clearing out previous variables
+            which = ending_age
+            value = 0
+			}
+			export_to_variable = {
+				which = current_age
+				value = age
+			}
+			subtract_variable = {
+				which = ending_age
+				which = current_age
+			}
+			add_age = ending_age
+			add_age = 12
+			clear_education_trait = yes
+		}
+	}
+
+	option = {
+		name = DMCoreEvt43OptA
+		custom_tooltip = {
+			text = DMEventTooltip43
+		}
+	}
+}

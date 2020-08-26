@@ -263,7 +263,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 9 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 10
+				1 = {			#event 11
 					trigger = {
 						NOR = {
 							check_variable  = { which = global_eventA_major value == 10 }
@@ -280,11 +280,11 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 							check_variable  = { which = global_eventL_major value == 10 }
 						}
 					}
-					character_event = { id = DMCoreEvt.34 }
+					character_event = { id = DMCoreEvt.39 }
 					set_variable = { which = global_eventTombola_major value = 10 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 11
+				1 = {			#event 12 - meek will inherit the earth
 					trigger = {
 						NOR = {
 							check_variable  = { which = global_eventA_major value == 11 }
@@ -301,7 +301,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 							check_variable  = { which = global_eventL_major value == 11 }
 						}
 					}
-					character_event = { id = DMCoreEvt.39 }
+					character_event = { id = DMCoreEvt.43 }
 					set_variable = { which = global_eventTombola_major value = 11 }
 					variable_shuffle_major = yes
 				}
