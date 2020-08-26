@@ -429,12 +429,12 @@ DMCoreEvtdesc44;Across the known world great lights have been spotted falling fr
 DMCoreEvt44OptA;"I... I must collect more!";;;;;;;;;;;;;x
 DMEventTooltip44;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
 
-DMCoreEvttitle44;Marks and Angels;;;;;;;;;;;;;x
-DMCoreEvtdesc44;"So I've been reading some of the works of some fine lads called Charles Marks and Fred Angels," the Dungeon Master says, looking up from a little red book. "Their ideas of wealth redistrubution has given me an idea...";;;;;;;;;;;;;x
-DMCoreEvt44OptA;"Uh oh.";;;;;;;;;;;;;x
-DMCoreEvt44OptB;"NO, MY PRECIOUS MONEY!";;;;;;;;;;;;;x
-DMCoreEvt44OptC;"Oh, this benefits me!";;;;;;;;;;;;;x
-DMEventTooltip44;All playable rulers will have their wealth taken from them and redistributed evenly. As a side note, the Dungeon Master doesn't know what 'redistributed' means.;;;;;;;;;;;;;x
+DMCoreEvttitle45;Marks and Angels;;;;;;;;;;;;;x
+DMCoreEvtdesc45;"So I've been reading some of the works of some fine lads called Charles Marks and Fred Angels," the Dungeon Master says, looking up from a little red book. "Their ideas of wealth redistrubution has given me an idea...";;;;;;;;;;;;;x
+DMCoreEvt45OptA;"Uh oh.";;;;;;;;;;;;;x
+DMCoreEvt45OptB;"NO, MY PRECIOUS MONEY!";;;;;;;;;;;;;x
+DMCoreEvt45OptC;"Oh, this benefits me!";;;;;;;;;;;;;x
+DMEventTooltip45;All playable rulers will have their wealth taken from them and redistributed evenly. As a side note, the Dungeon Master doesn't know what 'redistributed' means.;;;;;;;;;;;;;x
 
 
 ### Follow-up Events ###
