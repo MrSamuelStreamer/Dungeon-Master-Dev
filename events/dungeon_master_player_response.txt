@@ -1233,7 +1233,7 @@ character_event = {			#Duke nukem, all duke titles destroyed!
 	id = DMPlay.40
 	title = DMCoreEvttitle40
 	desc = DMCoreEvtdesc40
-	picture = GFX_evt_fishing
+	picture = GFX_evt_burning_castle_hf
 	
 	is_triggered_only = yes	
 
@@ -1251,7 +1251,7 @@ character_event = {			#Fake Genius
 	id = DMPlay.41
 	title = DMCoreEvttitle41
 	desc = DMCoreEvtdesc41
-	picture = GFX_evt_fishing
+	picture = GFX_evt_court_physician
 	
 	is_triggered_only = yes	
 

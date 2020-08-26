@@ -3646,9 +3646,11 @@ character_event = {			#Duke Nukem - all dukes destroyed#
 			limit = {
 				tier = DUKE
 				NOR = { 
-					controls_religion = yes
-					mercenary = no
-				}
+                    controls_religion = yes
+                    mercenary = yes
+                    is_merchant_republic = yes
+                    temporary = yes
+                }
 			}
 			unsafe_destroy_landed_title = THIS
 		}
@@ -3685,4 +3687,4 @@ character_event = {			#Genius...?#
 		}
 	}
 }
-						
+

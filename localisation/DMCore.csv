@@ -365,12 +365,12 @@ DMEventTooltip39C;All playable rulers are forced to play.;;;;;;;;;;;;;x
 DMCoreEvttitle40;Duke Nukem;;;;;;;;;;;;;x
 DMCoreEvtdesc40;"I've never understood Dukes, they're just Counts but with vassals, like Kings, or Emperors, but smaller. And don't even get me started on Petty Kings, or Dukes called Kings, or Dukes formally known as Prince? None of this makes any sense! I'm simplifying the entire system - Dukes are now banned. Emperors are next, mark my words.";;;;;;;;;;;;;x
 DMCoreEvt40OptA;"Nobody steals our titles... and lives!";;;;;;;;;;;;;x
-DMEventTooltip40A;All Duke tier titles are destroyed!;;;;;;;;;;;;;x
+DMEventTooltip40;All Duke tier titles are destroyed!;;;;;;;;;;;;;x
 
 DMCoreEvttitle41;Stroke of Genius;;;;;;;;;;;;;x
 DMCoreEvtdesc40;"It's always the same with you people" begins a very judgemental Dungeon Master, "It's always genius, strong, fair, claims, whatever with you people, never what's on the INSIDE. And that's all that counts. Well, in hindsight, I guess genius is on the inside, now that I think about it... and claims too... Well don't think you're getting away with it that easily!";;;;;;;;;;;;;x
 DMCoreEvt41OptA;"You seem... different?";;;;;;;;;;;;;x
-DMEventTooltip41A;Everyone becomes Genius...?;;;;;;;;;;;;;x
+DMEventTooltip41;Everyone becomes Genius...?;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 
