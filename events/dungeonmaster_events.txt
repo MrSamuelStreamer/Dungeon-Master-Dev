@@ -3721,6 +3721,9 @@ character_event = {			#Meek Inherit the Earth#
 	
 	immediate = {
 		any_character = {
+			limit = {
+				ai = yes
+			}
 			if = {
 				limit = {
 					current_heir = {
