@@ -425,10 +425,17 @@ DMCoreEvt43OptA;"The nanny raised the children, not us!";;;;;;;;;;;;;x
 DMEventTooltip43;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
 
 DMCoreEvttitle44;Wyvernballs Arrive!;;;;;;;;;;;;;x
-DMCoreEvtdesc44;Across the known world great lights have been spotted falling from the sky. Though there are many records of rocks descending from the heavens, this time their descent is seen from every corner of the known world. Priests and holy men claim that the rocks are messages from their gods, while treasure hunters and fortune finders gear up for great expeditions to find the fallen stars.
-"I know, I know" begins the Dungeon Master "We agreed no references, but this one I've had ready for a long time and I thought I'd better put it to good use.";;;;;;;;;;;;;x
+DMCoreEvtdesc44;Across the known world great lights have been spotted falling from the sky. Though there are many records of rocks descending from the heavens, this time their descent is seen from every corner of the known world. Priests and holy men claim that the rocks are messages from their gods, while treasure hunters and fortune finders gear up for great expeditions to find the fallen stars.\n"I know, I know" begins the Dungeon Master "We agreed no references, but this one I've had ready for a long time and I thought I'd better put it to good use.";;;;;;;;;;;;;x
 DMCoreEvt44OptA;"I... I must collect more!";;;;;;;;;;;;;x
 DMEventTooltip44;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
+
+DMCoreEvttitle44;Marks and Angels;;;;;;;;;;;;;x
+DMCoreEvtdesc44;"So I've been reading some of the works of some fine lads called Charles Marks and Fred Angels," the Dungeon Master says, looking up from a little red book. "Their ideas of wealth redistrubution has given me an idea...";;;;;;;;;;;;;x
+DMCoreEvt44OptA;"Uh oh.";;;;;;;;;;;;;x
+DMCoreEvt44OptB;"NO, MY PRECIOUS MONEY!";;;;;;;;;;;;;x
+DMCoreEvt44OptC;"Oh, this benefits me!";;;;;;;;;;;;;x
+DMEventTooltip44;All playable rulers will have their wealth taken from them and redistributed evenly. As a side note, the Dungeon Master doesn't know what 'redistributed' means.;;;;;;;;;;;;;x
+
 
 ### Follow-up Events ###
 

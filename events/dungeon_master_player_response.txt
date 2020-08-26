@@ -1352,3 +1352,49 @@ character_event = {			#Wyvernballs Land#
 		}
 	}
 }
+
+character_event = {			#Marks and Angels player response#
+	id = DMPlay.45
+	title = DMCoreEvttitle45
+	desc = DMCoreEvtdesc45
+	picture = GFX_potato_chip
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	immediate = {
+		if = {
+			limit = {
+				wealth = 50
+			}
+			set_character_flag = wealth_oof
+		}
+		else = {
+			set_character_flag = wealth_ayy
+		}
+		clear_wealth = yes
+		wealth = 50
+	}
+	option = {
+		name = {
+			trigger = {
+				has_character_flag = wealth_oof
+			}
+			text = DMCoreEvt45OptB # MY CABBAGES!
+		}
+		name = {
+			trigger = {
+				has_character_flag = wealth_ayy
+			}
+			text = DMCoreEvt45OptC # Ayyyy
+		}
+		custom_tooltip = {
+			text = DMEventTooltip45
+		}
+	}
+	after = {
+		clr_character_flag = wealth_oof
+		clr_character_flag = wealth_ayy
+	}
+}

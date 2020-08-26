@@ -3838,3 +3838,28 @@ character_event = {			# Wyvernballs Landed #
 		}
 	}
 }
+
+character_event = {			#Marks and Angels#
+	id = DMCoreEvt.45
+	title = DMCoreEvttitle45
+	desc = DMCoreEvtdesc45
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				ai = yes
+			}
+			clear_wealth = yes
+			wealth = 50
+		}
+	}
+
+	option = {
+		name = DMCoreEvt45OptA
+		any_player = {
+			character_event = { id = DMPlay.45 }
+		}
+	}
+}
