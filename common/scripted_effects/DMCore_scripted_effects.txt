@@ -210,6 +210,12 @@ stinky_random_for_caveman_paradox = { 			#just fucking what even is this
 		1 = {
 			set_variable = { which = global_eventTombola value = 29 }
 		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 30 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 31 }
+		}
 	}
 }
 

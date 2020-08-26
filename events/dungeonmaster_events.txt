@@ -3633,4 +3633,56 @@ character_event = {			#EU4#
 		}
 	}
 }
+
+character_event = {			#Duke Nukem - all dukes destroyed#
+	id = DMCoreEvt.40
+	title = DMCoreEvttitle40
+	desc = DMCoreEvtdesc40
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_title = {
+			limit = {
+				tier = DUKE
+				NOR = { 
+					controls_religion = yes
+					mercenary = no
+				}
+			}
+			unsafe_destroy_landed_title = THIS
+		}
+	}
+
+	option = {
+		name = DMCoreEvt40OptA
+		any_player = {
+			character_event = { id = DMPlay.40 }
+		}
+	}
+}
+
+character_event = {			#Genius...?#
+	id = DMCoreEvt.41
+	title = DMCoreEvttitle41
+	desc = DMCoreEvtdesc41
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_character = {
+			limit = {
+				NOT = { trait = genius }
+			}
+			add_trait = genius_fake
+		}
+	}
+
+	option = {
+		name = DMCoreEvt41OptA
+		any_player = {
+			character_event = { id = DMPlay.41 }
+		}
+	}
+}
 						

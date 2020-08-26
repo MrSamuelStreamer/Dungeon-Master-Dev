@@ -680,6 +680,48 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 29 }
 					variable_shuffle = yes
 				}
+				1 = {			#event 30 - Duke Nukem
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 30 }
+							check_variable  = { which = global_eventB value == 30 }
+							check_variable  = { which = global_eventC value == 30 }
+							check_variable  = { which = global_eventD value == 30 }
+							check_variable  = { which = global_eventE value == 30 }
+							check_variable  = { which = global_eventF value == 30 }
+							check_variable  = { which = global_eventG value == 30 }
+							check_variable  = { which = global_eventH value == 30 }
+							check_variable  = { which = global_eventI value == 30 }
+							check_variable  = { which = global_eventJ value == 30 }
+							check_variable  = { which = global_eventK value == 30 }
+							check_variable  = { which = global_eventL value == 30 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.40 }		#duke nukem
+					set_variable = { which = global_eventTombola value = 30 }
+					variable_shuffle = yes
+				}
+				1 = {			#event 31 - Genius..?
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 31 }
+							check_variable  = { which = global_eventB value == 31 }
+							check_variable  = { which = global_eventC value == 31 }
+							check_variable  = { which = global_eventD value == 31 }
+							check_variable  = { which = global_eventE value == 31 }
+							check_variable  = { which = global_eventF value == 31 }
+							check_variable  = { which = global_eventG value == 31 }
+							check_variable  = { which = global_eventH value == 31 }
+							check_variable  = { which = global_eventI value == 31 }
+							check_variable  = { which = global_eventJ value == 31 }
+							check_variable  = { which = global_eventK value == 31 }
+							check_variable  = { which = global_eventL value == 31 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.41 }		#genius...?
+					set_variable = { which = global_eventTombola value = 31 }
+					variable_shuffle = yes
+				}
 			}
 		}
 	}
