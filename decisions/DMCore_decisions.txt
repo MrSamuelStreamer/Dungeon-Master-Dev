@@ -1,3 +1,48 @@
+decisions = {
+	unite_the_wyvernballs = {
+		is_high_prio = yes
+		potential = {
+			has_global_flag = wyvernballs_launched
+			any_artifact = { has_artifact_flag = wyvernball }
+		}
+		allow = {
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			age = 16
+			custom_tooltip = {
+				text = collected_all_wyvernballs
+				AND = {
+					any_artifact = { has_artifact_flag = wyvernball_1 }
+					any_artifact = { has_artifact_flag = wyvernball_2 }
+					any_artifact = { has_artifact_flag = wyvernball_3 }
+					any_artifact = { has_artifact_flag = wyvernball_4 }
+					any_artifact = { has_artifact_flag = wyvernball_5 }
+					any_artifact = { has_artifact_flag = wyvernball_6 }
+					any_artifact = { has_artifact_flag = wyvernball_7 }
+				}
+			}
+		}
+		effect = {
+			character_event = { id = wyvernballs.2 }
+		}
+	}
+	show_wyvernballs = {
+		is_high_prio = yes
+		potential = {
+			ai = no
+			has_global_flag = wyvernballs_launched
+			any_artifact = { has_artifact_flag = wyvernball }
+		}
+		allow = {
+			NOT = { has_character_flag = wyvernball_list }
+		}
+		effect = {
+			character_event = { id = wyvernballs.15 }
+			set_character_flag = wyvernball_list
+		}
+	}
+}
+
 targeted_decisions = {
 	death_note_decision = {
 		only_playable = yes

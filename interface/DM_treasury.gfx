@@ -31,4 +31,60 @@ spriteTypes = {
 		name = "GFX_fishk_armour_small"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\suit_of_fish_armour_small.dds"
 	}
+	spriteType = {
+		name = "GFX_wyvernball_1"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_1.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_1_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_1_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_2"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_2.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_2_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_2_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_3"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_3.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_3_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_3_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_4"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_4.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_4_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_4_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_5"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_5.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_5_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_5_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_6"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_6.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_6_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_6_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_7"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_7.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_7_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_7_small.dds"
+	}
 }

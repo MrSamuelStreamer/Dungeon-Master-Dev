@@ -100,6 +100,31 @@ stinkrot_reaver_desc;This is a fish, you could potentially hit people with it, o
 blackfish_scale;Fish;;;;;;;;;;;;;x
 blackfish_scale_desc;From a distance this armour looks to be oddly coloured chainmail, until you get close enough to realise that it is simply fish scales, haphazardly crafted to mimic the appearance of chainmail, with absolutely none of the benefits.;;;;;;;;;;;;;x
 
+wyvernball_1;One-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_2;Two-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_3;Three-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_4;Four-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_5;Five-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_6;Six-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_7;Seven-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_1_desc;The One-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_2_desc;The Two-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_3_desc;The Three-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_4_desc;The Four-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_5_desc;The Five-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_6_desc;The Six-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_7_desc;The Seven-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+
+wyvern_armour;Wyvern Armour;;;;;;;;;;;;;x
+wyvern_sword;Wyvern Sword;;;;;;;;;;;;;x
+wyvern_helmet;Wyvern Helmet;;;;;;;;;;;;;x
+wyvern_amulet;Wyvern Amulet;;;;;;;;;;;;;x
+wyvern_armour_desc;A powerful set of mythical Wyvern Armour given as a gift to one who was able to unify all seven of the Wyvernballs.;;;;;;;;;;;;;x
+wyvern_sword_desc;The mighty Wyvern Sword gifted to the person who united the Wyvernballs. It still glows with the might of the skies.;;;;;;;;;;;;;x
+wyvern_helmet_desc;The Helmet of the unicorn gifted to its friend, the Wyvern, who in turn gifted it to the one who collected all of the Wyvernballs.;;;;;;;;;;;;;x
+wyvern_amulet_desc;The original dragon amulet of the Wyvern, copied meticulously by chinese jewelers throughout the ages.;;;;;;;;;;;;;x
+
+
 ### Event Modifiers ###
 
 the_purge;The Purge;;;;;;;;;;;;;x
@@ -125,6 +150,16 @@ death_note_decision_desc;You can speak this characters name to the Dungeon Maste
 get_out_of_jail_free;Use Get Out of Jail Free Card;;;;;;;;;;;;;x
 get_out_of_jail_free_desc;Use the Get Out of Jail Free Card given to you by the Dungeon Master to guarantee your freedom. Warning: This is a single-use item and will be consumed!;;;;;;;;;;;;;x
 
+unite_the_wyvernballs;Unite the Wyvernballs;;;;;;;;;;;;;x
+unite_the_wyvernballs_desc;Myths say when all seven Wyvernballs are united then a great power will be granted to the owner.;;;;;;;;;;;;;x
+show_wyvernballs;Display the Wyvernballs;;;;;;;;;;;;;x
+show_wyvernballs_desc;Show the current owners of the seven Wyvernballs.;;;;;;;;;;;;;x
+
+### Bloodlines ###
+
+wyvern_bloodline;Wyvern Blood;;;;;;;;;;;;;x
+wyvern_bloodline_desc;This character carries the blood of [target_bloodline_founder.GetHerHim] who united the Wyvernballs against all odds.;;;;;;;;;;;;;x
+
 ### Tombola Mechanics ###
 
 DMCoretitle1;Dungeon Master Cometh;;;;;;;;;;;;;x
@@ -138,6 +173,13 @@ DMAwakens;The Dungeon Master awakens...;;;;;;;;;;;;;x
 DMMultiplayer;In §GMultiplayer§!, one player will be the messenger of the Dungeon Master, this will be the player that fires the decision.;;;;;;;;;;;;;x
 DMWarning;§RWarning§!: The first event will fire immediately, be prepared!;;;;;;;;;;;;;x
 dungeon_master_rolls;Dungeon Master rolls his dice...;;;;;;;;;;;;;x
+
+wyvernballs_are_scattered;§KWarning§!: The Wyvernballs will be scattered throughout the world once again!;;;;;;;;;;;;;x
+
+remove_illness;All §GPhysical§! and §GMental illnesses§! will be cured!;;;;;;;;;;;;;x
+remove_genetic_issues;All §GGenetic Abnormalities§! will be removed!;;;;;;;;;;;;;x
+
+collected_all_wyvernballs;Has collected all seven Wyvernballs;;;;;;;;;;;;;x
 
 ### Mechanics ###
 
@@ -382,6 +424,12 @@ DMCoreEvtdesc43;"You've all had your chance and really blown it. Just absolutely
 DMCoreEvt43OptA;"The nanny raised the children, not us!";;;;;;;;;;;;;x
 DMEventTooltip43;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
 
+DMCoreEvttitle44;Wyvernballs Arrive!;;;;;;;;;;;;;x
+DMCoreEvtdesc44;Across the known world great lights have been spotted falling from the sky. Though there are many records of rocks descending from the heavens, this time their descent is seen from every corner of the known world. Priests and holy men claim that the rocks are messages from their gods, while treasure hunters and fortune finders gear up for great expeditions to find the fallen stars.
+"I know, I know" begins the Dungeon Master "We agreed no references, but this one I've had ready for a long time and I thought I'd better put it to good use.";;;;;;;;;;;;;x
+DMCoreEvt44OptA;"I... I must collect more!";;;;;;;;;;;;;x
+DMEventTooltip44;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
+
 ### Follow-up Events ###
 
 DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x
@@ -417,6 +465,27 @@ DMCoreFollow12OptA;Sorrow overtakes you.;;;;;;;;;;;;;x
 DMCoreFollow12OptATooltip;Lose §R1§! stability;;;;;;;;;;;;;x
 DMCoreFollow12OptB;Oh well...;;;;;;;;;;;;;x
 DMCoreFollow12OptBTooltip;Lose §R10§! prestige;;;;;;;;;;;;;x
+
+DMCoreFollowtitle13;Unity;;;;;;;;;;;;;x
+DMCoreFollowdesc13;At long last, you have collected all seven of the Wyvernballs. Now all that remains is to bring them together before moonlight and wait.;;;;;;;;;;;;;x
+DMCoreFollow13OptA;"I wish to conquer age and become undying!";;;;;;;;;;;;;x
+DMCoreFollow13OptB;"I wish to become perfect, above all else!";;;;;;;;;;;;;x
+DMCoreFollow13OptC;"I wish fame and gold, more than any living man!";;;;;;;;;;;;;x
+DMCoreFollow13OptD;"I wish for the greatest armaments the world has ever seen!";;;;;;;;;;;;;x
+
+DMCoreFollowtitle14;Wyvern Arises!;;;;;;;;;;;;;x
+DMCoreFollowdesc14;Having unified all seven Wyvernballs you awaken the great power contained within. A huge wyvern, taller than any tower throughout the known world, erupts from the Wyvernballs. It begins to speak:
+"Greetings, I am the king of all lizards. Every single one of them. The ones on the flags, I knew them all, you know?" He continues like this for some time before realising your increasing boredom. "You're just like all the others, I thought coming to this place would finally give me someone to chat to who wasn't interested in just my power, but I see how it is. Fine. You get one wish, then I'm gone. You hear me? GONE.";;;;;;;;;;;;;x
+DMCoreFollow14OptA;"Unlimited Power!";;;;;;;;;;;;;x
+DMCoreFollow14OptB;"I'll wait...";;;;;;;;;;;;;x
+
+DMCoreFollowtitle15;Wyvernballs United!;;;;;;;;;;;;;x
+DMCoreFollowdesc15;The Wyvernballs have been united and have left this jolly green earth to go onto a new world, unless of course the Dungeon Master decides to start the treasure hunt all over again!;;;;;;;;;;;;;x
+DMCoreFollow15OptA;"Not again...";;;;;;;;;;;;;x
+
+DMCoreFollowtitle16;Wyvernball Owners;;;;;;;;;;;;;x
+DMCoreFollowdesc16;The current Wyvernball owners are as follows:;;;;;;;;;;;;;x
+DMCoreFollow16OptA;Fascinating!;;;;;;;;;;;;;x
 
 ### Game Rules ###
 

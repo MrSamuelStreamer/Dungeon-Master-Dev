@@ -14,4 +14,9 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\senate.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_wyvernballs_land"
+		texturefile = "gfx\\event_pictures\wyvernballs_land.tga"
+		allwaystransparent = yes
+	}
 }

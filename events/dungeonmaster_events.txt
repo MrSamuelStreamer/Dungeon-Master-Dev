@@ -3760,3 +3760,78 @@ character_event = {			#Meek Inherit the Earth#
 		}
 	}
 }
+
+character_event = {			# Wyvernballs Landed #
+	id = DMCoreEvt.44
+	title = DMCoreEvttitle44
+	desc = DMCoreEvtdesc44
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	
+	immediate = {
+		random_character = {
+			limit = {
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_1
+		}
+		random_character = {
+			limit = {
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_2
+		}
+		random_character = {
+			limit = {
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_3
+		}
+		random_character = {
+			limit = {
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_4
+		}
+		random_character = {
+			limit = {
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_5
+		}
+		random_character = {
+			limit = {
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_6
+		}
+		random_character = {
+			limit = {
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_7
+		}
+	}
+
+	option = {
+		name = DMCoreEvt44OptA
+		set_global_flag = wyvernballs_landed
+		any_player = {
+			character_event = { id = DMPlay.44 }
+		}
+	}
+}

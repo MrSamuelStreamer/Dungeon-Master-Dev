@@ -1334,3 +1334,21 @@ character_event = {			#Children will inherit the earth#
 		}
 	}
 }
+
+character_event = {			#Wyvernballs Land#
+	id = DMPlay.44
+	title = DMCoreEvttitle44
+	desc = DMCoreEvtdesc44
+	picture = GFX_wyvernballs_land
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreEvt44OptA
+		custom_tooltip = {
+			text = DMEventTooltip44
+		}
+	}
+}
