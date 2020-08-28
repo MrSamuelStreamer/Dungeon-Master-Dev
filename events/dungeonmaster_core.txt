@@ -764,6 +764,27 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 33 }
 					variable_shuffle = yes
 				}
+				1 = {			#event 34 - Pet Shop
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 34 }
+							check_variable  = { which = global_eventB value == 34 }
+							check_variable  = { which = global_eventC value == 34 }
+							check_variable  = { which = global_eventD value == 34 }
+							check_variable  = { which = global_eventE value == 34 }
+							check_variable  = { which = global_eventF value == 34 }
+							check_variable  = { which = global_eventG value == 34 }
+							check_variable  = { which = global_eventH value == 34 }
+							check_variable  = { which = global_eventI value == 34 }
+							check_variable  = { which = global_eventJ value == 34 }
+							check_variable  = { which = global_eventK value == 34 }
+							check_variable  = { which = global_eventL value == 33 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.47 }			# Pet Shop
+					set_variable = { which = global_eventTombola value = 34 }
+					variable_shuffle = yes
+				}				
 			}
 		}
 	}

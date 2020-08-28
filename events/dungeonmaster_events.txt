@@ -3977,4 +3977,88 @@ character_event = { 	# The Chessboard
 			}
 		}
 	}
-}	
+}
+
+character_event = { 	# Pet Shop
+	id = DMCoreEvt.47
+	title = DMCoreEvttitle47
+	desc = DMCoreEvtdesc47
+	picture = GFX_evt_cat
+	is_triggered_only = yes	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOR = {
+					has_character_modifier = dm_petshop_cat
+					has_character_modifier = dm_petshop_dog
+					has_character_modifier = dm_petshop_snake
+					has_character_modifier = dm_petshop_pony
+					has_character_modifier = dm_petshop_bear
+					has_character_modifier = dm_petshop_hamster
+					has_character_modifier = dm_petshop_rat
+					ai = no
+				}
+			}
+			random_list = {
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_cat
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_dog
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_snake
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_bear
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_pony
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_hamster
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_rat
+						duration = -1
+					}
+					character_event = { id = DMCoreFollow.17 }
+				}
+				200 = { }
+			}
+		}
+	}
+	option = {
+		name = DMCoreEvt47OptA
+		any_player = {
+			character_event = { id = DMPlay.47 }
+		}
+	}
+}
+				

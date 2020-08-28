@@ -43,3 +43,43 @@ gary_prime_2_point_oh = {
 	defensive_plot_power_modifier = 1
 	global_tax_modifier = 0.25
 }
+
+dm_petshop_cat = {
+	icon = 46
+	diplomacy = 2
+	plot_discovery_chance = 0.1
+}
+
+dm_petshop_dog = {
+	icon = 45
+	martial = 2
+	arrest_chance_modifier = 0.1
+}
+	
+dm_petshop_snake = {
+	icon = 50
+	intrigue = 2
+	assassinate_chance_modifier = 0.1
+}
+
+dm_petshop_bear = {
+	icon = 125
+	combat_rating = 10
+	global_revolt_risk = -0.02
+}
+
+dm_petshop_pony = {
+	icon = 56
+	demesne_size = 2
+	health = 1
+}
+
+dm_petshop_hamster = {
+	icon = 93
+	global_tax_modifier = 0.1
+	general_opinion = 5
+}
+
+dm_petshop_rat = {
+	icon = 89
+}

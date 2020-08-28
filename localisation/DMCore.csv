@@ -145,6 +145,27 @@ mud_wraps_desc;This character decided that health was more important than appear
 sacrifices_for_beauty;Sore and Sweaty;;;;;;;;;;;;;x
 sacrifices_for_beauty_desc;After a spar day this character decided that sometimes looking good is better than feeling good.;;;;;;;;;;;;;x
 
+dm_petshop_cat;Pet Shop: Cat;;;;;;;;;;;;;x
+dm_petshop_cat_desc;This character was given a cat as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_petshop_dog;Pet Shop: Dog;;;;;;;;;;;;;x
+dm_petshop_dog_desc;This character was given a dog as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_petshop_snake;Pet Shop: Snake;;;;;;;;;;;;;x
+dm_petshop_snake_desc;This character was given a snake as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_petshop_bear;Pet Shop: Bear;;;;;;;;;;;;;x
+dm_petshop_bear_desc;This character was given a bear as a pet by the Dungeon Master. Yes, really.;;;;;;;;;;;;;x
+
+dm_petshop_pony;Pet Shop: Pony;;;;;;;;;;;;;x
+dm_petshop_pony_desc;This character was given a pony as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_petshop_hamster;Pet Shop: Hamster;;;;;;;;;;;;;x
+dm_petshop_hamster_desc;This character was given a hamster as a pet by the Dungeon Master. Not a miniature giant space hamster, sadly, just a normal hamster.;;;;;;;;;;;;;x
+
+dm_petshop_rat;Pet Shop: Rat;;;;;;;;;;;;;x
+dm_petshop_rat_desc;This character was given a rat as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
 ### Decisions ###
 
 begin_DMCore;Awaken the Dungeon Master!;;;;;;;;;;;;;x
@@ -451,6 +472,14 @@ DMCoreEvt46OptD;"Pink!";;;;;;;;;;;;;x
 DMCoreEvt46CustomTooltip;This option is available because you are within diplomatic range of one of the Queens in this conflict.;;;;;;;;;;;;;x
 DMCoreEvt46CustomTooltip2;This option is available because you are not within diplomatic range of one of the Queens in this conflict.;;;;;;;;;;;;;x
 DMCoreEvt46Tooltip;Two random rulers will become the White Queen and the Black Queen, and all other rulers around them will be their tributaries. The tributaries on the losing side will suffer dire consequences for their failure. Knight to King 4.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc47;"I simply adore animals!" exclaims the Dungeon Master while playing around with a kitten, making it chase a peacock feather. "The tiny ones, the big ones, the ones with sharp teeth that will eviscerate you in a moments notice..." He looks up at you and smirks wildly. "Would you like your own pet? Only 50 coins, and it can be yours! And I promise it wont die!";;;;;;;;;;;;;x
+DMCoreEvttitle47;Pet Shop;;;;;;;;;;;;;x
+DMCoreEvt47OptA;"Sure, I'll buy one!";;;;;;;;;;;;;x
+DMCoreEvt47OptB;"Eh, another time, perhaps.";;;;;;;;;;;;;x
+DMCoreEvt47OptC;"But you already sold me one before...";;;;;;;;;;;;;x
+DMCoreEvt47TooltipA;A randomly-chosen pet will appear on your character screen as a character modifier. All are permanent and beneficial.;;;;;;;;;;;;;x
+DMCoreEvt47TooltipB;All rulers will be given the option to buy a pet of their own.;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 

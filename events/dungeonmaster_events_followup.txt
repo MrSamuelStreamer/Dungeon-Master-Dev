@@ -804,3 +804,17 @@ character_event = {
 		clr_character_flag = wyvernball_list
 	}
 }
+
+character_event = {			# Followup to pet rat from Pet Shop
+	id = DMCoreFollow.17
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_character_flag = immune_tuberculosis
+		set_character_flag = immune_typhoid_fever
+		set_character_flag = immune_typhus
+		set_character_flag = immune_measles
+		set_character_flag = immune_smallpox
+		set_character_flag = immune_dancing_plague
+	}
+}

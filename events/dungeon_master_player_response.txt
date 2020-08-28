@@ -1399,7 +1399,7 @@ character_event = {			#Marks and Angels player response#
 	}
 }
 
-narrative_event = {
+narrative_event = {			# The Chessboard
 	id = DMPlay.46
 	title = DMCoreEvttitle46
 	desc = DMCoreEvtdesc46
@@ -1458,3 +1458,113 @@ narrative_event = {
 		tooltip_info_custom = DMCoreEvt46CustomTooltip2
 	}
 }
+
+character_event = {			# Pet Shop
+	id = DMPlay.47
+	title = DMCoreEvttitle47
+	desc = DMCoreEvtdesc47
+	picture = GFX_evt_cat
+	is_triggered_only = yes
+	
+	option = { # I'll take one!
+		name = DMCoreEvt47OptA
+		trigger = {
+			NOR = {
+				has_character_modifier = dm_petshop_cat
+				has_character_modifier = dm_petshop_dog
+				has_character_modifier = dm_petshop_snake
+				has_character_modifier = dm_petshop_pony
+				has_character_modifier = dm_petshop_bear
+				has_character_modifier = dm_petshop_hamster
+				has_character_modifier = dm_petshop_rat
+			}
+		}
+		wealth = -50
+		custom_tooltip = {
+			text = DMCoreEvt47TooltipA
+			random_list = {
+				25 = {
+					add_character_modifier = {
+						name = dm_petshop_cat
+						duration = -1
+					}
+				}
+				25 = {
+					add_character_modifier = {
+						name = dm_petshop_dog
+						duration = -1
+					}
+				}
+				25 = {
+					add_character_modifier = {
+						name = dm_petshop_snake
+						duration = -1
+					}
+				}
+				25 = {
+					add_character_modifier = {
+						name = dm_petshop_bear
+						duration = -1
+					}
+				}
+				25 = {
+					add_character_modifier = {
+						name = dm_petshop_pony
+						duration = -1
+					}
+				}
+				25 = {
+					add_character_modifier = {
+						name = dm_petshop_hamster
+						duration = -1
+					}
+				}
+				25 = {
+					add_character_modifier = {
+						name = dm_petshop_rat
+						duration = -1
+					}
+					character_event = { id = DMCoreFollow.17 }
+				}
+			}
+		}
+		custom_tooltip = {
+			text = DMCoreEvt47TooltipB
+		}
+	}
+	option = { # I'm good, thanks.
+		name = DMCoreEvt47OptB
+		trigger = {
+			NOR = {
+				has_character_modifier = dm_petshop_cat
+				has_character_modifier = dm_petshop_dog
+				has_character_modifier = dm_petshop_snake
+				has_character_modifier = dm_petshop_pony
+				has_character_modifier = dm_petshop_bear
+				has_character_modifier = dm_petshop_hamster
+				has_character_modifier = dm_petshop_rat
+			}
+		}
+		custom_tooltip = {
+			text = DMCoreEvt47TooltipB
+		}
+	}
+	option = { # But I already have one.
+		name = DMCoreEvt47OptC
+		trigger = {
+			OR = {
+				has_character_modifier = dm_petshop_cat
+				has_character_modifier = dm_petshop_dog
+				has_character_modifier = dm_petshop_snake
+				has_character_modifier = dm_petshop_pony
+				has_character_modifier = dm_petshop_bear
+				has_character_modifier = dm_petshop_hamster
+				has_character_modifier = dm_petshop_rat
+			}
+		}
+		custom_tooltip = {
+			text = DMCoreEvt47TooltipB
+		}
+	}
+}
+		
