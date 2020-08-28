@@ -263,7 +263,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 9 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 11
+				1 = {			#event 10
 					trigger = {
 						NOR = {
 							check_variable  = { which = global_eventA_major value == 10 }
@@ -284,7 +284,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 10 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 12 - meek will inherit the earth
+				1 = {			#event 11 - meek will inherit the earth
 					trigger = {
 						NOR = {
 							check_variable  = { which = global_eventA_major value == 11 }
@@ -305,7 +305,27 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 11 }
 					variable_shuffle_major = yes
 				}
-			}
+				1 = {			#event 12 - The Chessboard
+					trigger = {
+						NOR = {
+							check_variable  = { which = global_eventA_major value == 12 }
+							check_variable  = { which = global_eventB_major value == 12 }
+							check_variable  = { which = global_eventC_major value == 12 }
+							check_variable  = { which = global_eventD_major value == 12 }
+							check_variable  = { which = global_eventE_major value == 12 }
+							check_variable  = { which = global_eventF_major value == 12 }
+							check_variable  = { which = global_eventG_major value == 12 }
+							check_variable  = { which = global_eventH_major value == 12 }
+							check_variable  = { which = global_eventI_major value == 12 }
+							check_variable  = { which = global_eventJ_major value == 12 }
+							check_variable  = { which = global_eventK_major value == 12 }
+							check_variable  = { which = global_eventL_major value == 12 }
+						}
+					}
+					character_event = { id = DMCoreEvt.45 }
+					set_variable = { which = global_eventTombola_major value = 12 }
+					variable_shuffle_major = yes
+				}			}
 		}
 	}
 }

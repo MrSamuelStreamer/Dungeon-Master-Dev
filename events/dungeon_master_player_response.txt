@@ -1398,3 +1398,63 @@ character_event = {			#Marks and Angels player response#
 		clr_character_flag = wealth_ayy
 	}
 }
+
+narrative_event = {
+	id = DMPlay.46
+	title = DMCoreEvttitle46
+	desc = DMCoreEvtdesc46
+	picture = GFX_evt_war_planning
+	is_triggered_only = yes
+	option = { # White Queen
+		trigger = {
+			is_within_diplo_range = event_target:slave_master1
+		}
+		name = DMCoreEvt46OptB
+		tooltip_info_custom = DMCoreEvt46CustomTooltip
+		event_target:slave_master1 = {
+			make_tributary = {
+				who = PREV
+				percentage = 0.01
+				tributary_type = default
+			}
+		}
+		custom_tooltip = {
+			text = DMCoreEvt46Tooltip
+			set_character_flag = dm_chose_side
+			join_defender_wars = event_target:slave_master1
+		}
+	}
+	option = { # Black Queen
+		trigger = {
+			is_within_diplo_range = event_target:slave_master2
+		}
+		name = DMCoreEvt46OptC
+		tooltip_info_custom = DMCoreEvt46CustomTooltip
+		event_target:slave_master2 = {
+			make_tributary = {
+				who = PREV
+				percentage = 0.01
+				tributary_type = default
+			}
+		}
+		custom_tooltip = {
+			text = DMCoreEvt46Tooltip
+			set_character_flag = dm_chose_side
+			join_attacker_wars = event_target:slave_master2
+		}
+	}
+	option = { # Sit back and watch
+		trigger = {
+			NOR = {
+				is_within_diplo_range = event_target:slave_master1
+				is_within_diplo_range = event_target:slave_master2
+			}
+		}
+		name = DMCoreEvt46OptD
+		custom_tooltip = {
+			text = DMCoreEvt46Tooltip
+			set_character_flag = dm_chose_side
+		}
+		tooltip_info_custom = DMCoreEvt46CustomTooltip2
+	}
+}

@@ -78,6 +78,12 @@ SETH;Seth;;;;;;;;;;;;;x
 city_of_gold;Legendary City of Gold;;;;;;;;;;;;;x
 MIDAS_PLAGUE_INFO;This province has been struck with the Midas Plague - an incredibly deadly disease that either leaves the afflicted horribly maimed by only transforming extremeties, or spreads from the torso until it leaves a statue of solid gold.;;;;;;;;;;;;;x
 
+
+k_slave_master1;White Queen;;;;;;;;;;;;;x
+k_slave_master1_adj;Chess;;;;;;;;;;;;;x
+k_slave_master2;Black Queen;;;;;;;;;;;;;x
+k_slave_master2_adj;Chess;;;;;;;;;;;;;x
+
 ### buildings ###
 
 city_of_gold;Lost City of Gold;;;;;;;;;;;;;x
@@ -436,6 +442,15 @@ DMCoreEvt45OptB;"NO, MY PRECIOUS MONEY!";;;;;;;;;;;;;x
 DMCoreEvt45OptC;"Oh, this benefits me!";;;;;;;;;;;;;x
 DMEventTooltip45;All playable rulers will have their wealth taken from them and redistributed evenly. As a side note, the Dungeon Master doesn't know what 'redistributed' means.;;;;;;;;;;;;;x
 
+DMCoreEvtdesc46;"Do you like chess?" the Dungeon Master asks with a wide, sinister grin on his face. "I do! In fact, I love it so much that I've invited a friend over to play with me. I forgot to bring the chesspieces, but no matter! We'll be using you lot!"\nThe Dungeon Master scratches his chin in thought and smirks. "So, tell me, what colour do you like?";;;;;;;;;;;;;x
+DMCoreEvttitle46;The Chessboard;;;;;;;;;;;;;x
+DMCoreEvt46OptA;"I like all colours!";;;;;;;;;;;;;x
+DMCoreEvt46OptB;"Uhh... white?";;;;;;;;;;;;;x
+DMCoreEvt46OptC;"Uhh... black?";;;;;;;;;;;;;x
+DMCoreEvt46OptD;"Pink!";;;;;;;;;;;;;x
+DMCoreEvt46CustomTooltip;This option is available because you are within diplomatic range of one of the Queens in this conflict.;;;;;;;;;;;;;x
+DMCoreEvt46CustomTooltip2;This option is available because you are not within diplomatic range of one of the Queens in this conflict.;;;;;;;;;;;;;x
+DMCoreEvt46Tooltip;Two random rulers will become the White Queen and the Black Queen, and all other rulers around them will be their tributaries. The tributaries on the losing side will suffer dire consequences for their failure. Knight to King 4.;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 

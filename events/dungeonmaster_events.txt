@@ -3863,3 +3863,118 @@ character_event = {			#Marks and Angels#
 		}
 	}
 }
+
+character_event = { 	# The Chessboard
+	id = DMCoreEvt.46
+	title = DMCoreEvttitle46
+	desc = DMCoreEvtdesc46
+	picture = GFX_evt_war_planning
+	is_triggered_only = yes	
+	immediate = {
+		random_independent_ruler = {
+			limit = {
+				NOR = {
+					has_character_flag = dm_battle_royale_1
+					has_character_flag = dm_battle_royale_2
+					has_character_flag = dm_battle_royale_3
+					controls_religion = yes
+					mercenary = yes
+					ai = no
+					tier = EMPEROR
+					capital_scope = {
+						is_island = yes
+					}
+				}
+			}
+			set_character_flag = dm_battle_royale_1
+			save_event_target_as = slave_master1
+			activate_title = {
+				title = k_slave_master1
+				status = yes
+			}
+			grant_title = k_slave_master1
+			k_slave_master1 = { make_primary_title = yes }
+		}
+		random_independent_ruler = {
+			limit = {
+				NOR = {
+					has_character_flag = dm_battle_royale_1
+					has_character_flag = dm_battle_royale_2
+					has_character_flag = dm_battle_royale_3
+					controls_religion = yes
+					mercenary = yes
+					ai = no
+					tier = EMPEROR
+					capital_scope = {
+						is_island = yes
+					}
+				}
+			}
+			set_character_flag = dm_battle_royale_2
+			save_event_target_as = slave_master2
+			activate_title = {
+				title = k_slave_master2
+				status = yes
+			}
+			grant_title = k_slave_master2
+			k_slave_master2 = { make_primary_title = yes }
+		}
+		any_independent_ruler = {
+			limit = {
+				NOR = {
+					has_character_flag = dm_battle_royale_1
+					has_character_flag = dm_battle_royale_2
+					has_character_flag = dm_chose_side
+					controls_religion = yes
+					mercenary = yes
+					capital_scope = {
+						is_island = yes
+					}
+				}
+			}
+			random_list = {
+				33 = {
+					trigger = {
+						is_within_diplo_range = event_target:slave_master1
+					}
+					event_target:slave_master1 = {
+						make_tributary = {
+							who = PREV
+							percentage = 0.01
+							tributary_type = default
+						}
+					}
+					set_character_flag = dm_chose_side
+				}
+				33 = {
+					trigger = {
+						is_within_diplo_range = event_target:slave_master2
+					}
+					event_target:slave_master2 = {
+						make_tributary = {
+							who = PREV
+							percentage = 0.01
+							tributary_type = default
+						}
+					}
+					set_character_flag = dm_chose_side
+				}
+			}
+		}
+		option = {
+			name = DMCoreEvt46OptA
+			event_target:slave_master1 = {
+				primary_title = {
+					reverse_unsafe_war = {
+						target = event_target:slave_master2
+						casus_belli = chessboard_invasion
+						infamy = 0
+					}
+				}
+			}
+			any_player = {
+				narrative_event = { id = DMPlay.46 }
+			}
+		}
+	}
+}	
