@@ -818,3 +818,22 @@ character_event = {			# Followup to pet rat from Pet Shop
 		set_character_flag = immune_dancing_plague
 	}
 }
+
+character_event = {			# on_death for Snow White
+	id = DMCoreFollow.18
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = dm_snow_white
+	}
+	immediate = {
+		any_courtier = {
+			limit = {
+				has_character_flag = dm_dwarf
+			}
+			death = {
+				death_reason = death_missing
+			}
+		}
+	}
+}

@@ -33,6 +33,10 @@ dm_create = {
 			grant_title = {
 				target = k_dungeon
 			}
+			add_character_modifier = {
+				name = mother_minor_rest
+				duration = -1
+			}
 		}
 	}
 }
@@ -526,5 +530,252 @@ religion_tomfoolery = {
 			set_can_retire_to_monastery = yes
 		}
 		80 = { }
+	}
+}
+
+dm_make_seven_dwarves = {
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Ragey"
+		trait = brilliant_strategist
+		trait = strong
+		trait = aggressive_leader
+		trait = wroth
+		trait = duelist
+		trait = stubborn
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Sleazy"
+		trait = grey_eminence
+		trait = fair
+		trait = lustful
+		trait = hedonist
+		trait = seducer
+		trait = groomed
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Stabby"
+		trait = elusive_shadow
+		trait = impaler
+		trait = deceitful
+		trait = shrewd
+		trait = quick
+		trait = paranoid
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Greedy"
+		trait = midas_touched
+		trait = quick
+		trait = administrator
+		trait = greedy
+		trait = envious
+		trait = shrewd
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "M'lady"
+		trait = naive_appeaser
+		trait = ugly
+		trait = is_fat
+		trait = dull
+		trait = gamer
+		trait = celibate
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Shifty"
+		trait = grey_eminence
+		trait = genius
+		trait = gregarious
+		trait = socializer
+		trait = poet
+		trait = paranoid
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Seelie"
+		trait = mastermind_theologian
+		trait = gardener
+		trait = mystic
+		trait = genius
+		trait = physician
+		trait = erudite
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
 	}
 }

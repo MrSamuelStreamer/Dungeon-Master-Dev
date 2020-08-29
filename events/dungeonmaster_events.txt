@@ -4061,4 +4061,32 @@ character_event = { 	# Pet Shop
 		}
 	}
 }
+
+character_event = { 	# Snow White
+	id = DMCoreEvt.48
+	title = DMCoreEvttitle48
+	desc = DMCoreEvtdesc48
+	picture = GFX_evt_homage_hf
+	portrait = event_target:dm_snow_white
+	is_triggered_only = yes	
+	immediate = {
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					has_character_flag = dm_snow_white
+				}
+				is_female = yes
+			}
+			set_character_flag = dm_snow_white
+			save_event_target_as = dm_snow_white
+			dm_make_seven_dwarves = yes
+		}
+	}
+	option = {
+		name = DMCoreEvt48OptA
+		any_player = {
+			character_event = { id = DMPlay.48 }
+		}
+	}
+}
 				

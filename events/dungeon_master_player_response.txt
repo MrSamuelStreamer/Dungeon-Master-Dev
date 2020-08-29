@@ -1567,4 +1567,21 @@ character_event = {			# Pet Shop
 		}
 	}
 }
-		
+
+character_event = {			# Snow White
+	id = DMPlay.48
+	title = DMCoreEvttitle48
+	desc = DMCoreEvtdesc48
+	picture = GFX_evt_homage_hf
+	portrait = event_target:dm_snow_white
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreEvt48OptA
+		custom_tooltip = {
+			text = DMEventTooltip48
+		}
+	}
+}	

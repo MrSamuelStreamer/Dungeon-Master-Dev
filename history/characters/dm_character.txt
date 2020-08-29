@@ -30,6 +30,10 @@
 	60.1.1 = {
 		trait = dungeon_master
 		immortal_age = 60		#perma oldman
+		add_character_modifier = {
+			name = mother_minor_rest
+			duration = -1
+		}
 	}
 	9999.1.1={
 		death=yes

@@ -778,11 +778,36 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 							check_variable  = { which = global_eventI value == 34 }
 							check_variable  = { which = global_eventJ value == 34 }
 							check_variable  = { which = global_eventK value == 34 }
-							check_variable  = { which = global_eventL value == 33 }
+							check_variable  = { which = global_eventL value == 34 }
 						}
 					}
 					character_event = { id =  DMCoreEvt.47 }			# Pet Shop
 					set_variable = { which = global_eventTombola value = 34 }
+					variable_shuffle = yes
+				}				
+				1 = {			#event 35 - Snow White
+					trigger = {
+						any_playable_ruler = {
+							is_female = yes
+							NOT = { has_character_flag = dm_snow_white }
+						}
+						NOR = { 
+							check_variable  = { which = global_eventA value == 35 }
+							check_variable  = { which = global_eventB value == 35 }
+							check_variable  = { which = global_eventC value == 35 }
+							check_variable  = { which = global_eventD value == 35 }
+							check_variable  = { which = global_eventE value == 35 }
+							check_variable  = { which = global_eventF value == 35 }
+							check_variable  = { which = global_eventG value == 35 }
+							check_variable  = { which = global_eventH value == 35 }
+							check_variable  = { which = global_eventI value == 35 }
+							check_variable  = { which = global_eventJ value == 35 }
+							check_variable  = { which = global_eventK value == 35 }
+							check_variable  = { which = global_eventL value == 35 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.48 }			# Snow White
+					set_variable = { which = global_eventTombola value = 35 }
 					variable_shuffle = yes
 				}				
 			}

@@ -481,6 +481,11 @@ DMCoreEvt47OptC;"But you already sold me one before...";;;;;;;;;;;;;x
 DMCoreEvt47TooltipA;A randomly-chosen pet will appear on your character screen as a character modifier. All are permanent and beneficial.;;;;;;;;;;;;;x
 DMCoreEvt47TooltipB;All rulers will be given the option to buy a pet of their own.;;;;;;;;;;;;;x
 
+DMCoreEvtdesc48;"I've recently come across seven strange men," the Dungeon Master quips. "They are a quirky bunch, all of them are dwarves, singing while they work in the salt mines. But they do seem lonely. They have expressed their desire to join the court of a delightfully-female ruler. Don't ask me how delightfully-female is different from regular female.";;;;;;;;;;;;;x
+DMCoreEvttitle48;Snow White;;;;;;;;;;;;;x
+DMCoreEvt48OptA;"Seven dwarves? What is this, a fairy tale?";;;;;;;;;;;;;x
+DMEventTooltip48;One playable female ruler in the world will receive a gift of seven dwarves of varying usefulness.;;;;;;;;;;;;;x
+
 ### Follow-up Events ###
 
 DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x
