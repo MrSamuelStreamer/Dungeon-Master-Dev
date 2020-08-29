@@ -182,6 +182,9 @@ unite_the_wyvernballs_desc;Myths say when all seven Wyvernballs are united then 
 show_wyvernballs;Display the Wyvernballs;;;;;;;;;;;;;x
 show_wyvernballs_desc;Show the current owners of the seven Wyvernballs.;;;;;;;;;;;;;x
 
+dm_kidnap_into_dynasty;Kidnap [Root.GetFirstName];;;;;;;;;;;;;x
+dm_kidnap_into_dynasty_desc;The Dungeon Master has graced you with the ability to kidnap [Root.GetFirstName] and force [Root.GetHerHim] into your dynasty.\nYou can perform this action only once. Choose wisely.;;;;;;;;;;;;;x
+
 ### Bloodlines ###
 
 wyvern_bloodline;Wyvern Blood;;;;;;;;;;;;;x
@@ -485,6 +488,13 @@ DMCoreEvtdesc48;"I've recently come across seven strange men," the Dungeon Maste
 DMCoreEvttitle48;Snow White;;;;;;;;;;;;;x
 DMCoreEvt48OptA;"Seven dwarves? What is this, a fairy tale?";;;;;;;;;;;;;x
 DMEventTooltip48;One playable female ruler in the world will receive a gift of seven dwarves of varying usefulness.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc49;"Family is the most important thing in the world," quips the Dungeon Master while stroking his chin. "But you also know what's just as important? Congenital traits and bloodlines. Trying to get them is such a hassle, so I'm going to be nice and let you kidnap any one child of your choosing."\nThe Dungeon Master lifts up a finger to silence your forthcoming questions, "There are stipulations, however. No rulers, no AI heirs, and no heirs of players unless they have a spare. Don't say I didn't do anything nice for you!";;;;;;;;;;;;;x
+DMCoreEvttitle49;Kidnapping;;;;;;;;;;;;;x
+DMCoreEvt49OptA;"Only one?";;;;;;;;;;;;;x
+DMEventTooltip49;You are given a single-use targeted decision against any child within diplomatic range. This child will move to your court and join your dynasty.;;;;;;;;;;;;;x
+DMEventTooltip49Safe;nobody finding out;;;;;;;;;;;;;x
+DMEventTooltip49Caught;the prior liege of the child is notified;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 

@@ -45,6 +45,7 @@ decisions = {
 
 targeted_decisions = {
 	death_note_decision = {
+		diplomacy_icon = GFX_dm_decisions
 		only_playable = yes
 		ai_target_filter = all
 		ai_check_interval = 6
@@ -91,6 +92,7 @@ targeted_decisions = {
 		}
 	}
 	get_out_of_jail_free = {
+		diplomacy_icon = GFX_dm_decisions
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 1
@@ -112,4 +114,96 @@ targeted_decisions = {
 			factor = 0
 		}
 	}
+
+	dm_kidnap_into_dynasty = {
+		diplomacy_icon = GFX_dm_decisions
+		filter = all
+		ai_target_filter = none
+		from_potential = {
+			ai = no
+			has_character_flag = dm_can_kidnap
+		}
+		potential = {
+			is_adult = no
+			NOT = {
+				dynasty = FROM
+			}
+		}
+		allow = {
+			FROM = {
+				is_adult = yes
+			}
+			is_within_diplo_range = FROM
+			OR = {
+				NOT = { is_heir = yes }
+				any_player = {
+					is_parent_of = ROOT
+					any_child = {
+						is_pretender = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}	
+			NOT = {
+				is_ruler = yes
+			}
+		}
+		effect = {
+			save_event_target_as = dm_kidnapped
+			FROM = {
+				save_event_target_as = dm_kidnapper
+			}
+			liege = {
+				save_event_target_as = dm_kidnapped_liege
+			}
+			FROM = {
+				clr_character_flag = dm_can_kidnap
+			}
+			dynasty = FROM
+			if = {
+				limit = {
+					trait = bastard
+				}
+				remove_trait = bastard
+			}
+			else_if = {
+				limit = {
+					trait = legit_bastard
+				}
+				remove_trait = legit_bastard
+			}
+			move_character = FROM
+			hidden_tooltip = {
+				if = {
+					limit = {
+						FROM = {
+							is_female = yes
+						}
+					}
+					set_mother = FROM
+					set_father = 0
+				}
+				else = {
+					set_father = FROM
+					set_mother = 0
+				}
+			}
+			random_list = {
+				50 = {
+					custom_tooltip = {
+						name = DMEventTooltip49Safe
+					}
+				}
+				50 = {
+					custom_tooltip = {
+						name = DMEventTooltip49Caught
+						event_target:dm_kidnapped_liege = {
+							character_event = { id = DMCoreFollow.19 }
+						}
+					}
+				}
+			}
+		}
+	}
+	
 }

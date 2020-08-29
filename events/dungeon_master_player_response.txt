@@ -1584,4 +1584,22 @@ character_event = {			# Snow White
 			text = DMEventTooltip48
 		}
 	}
-}	
+}
+
+long_character_event = {			# Kidnapping
+	id = DMPlay.49
+	title = DMCoreEvttitle49
+	desc = DMCoreEvtdesc49
+	picture = GFX_evt_guardian
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreEvt49OptA
+		set_character_flag = dm_can_kidnap
+		custom_tooltip = {
+			text = DMEventTooltip49
+		}
+	}
+}

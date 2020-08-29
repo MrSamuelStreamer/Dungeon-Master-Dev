@@ -837,3 +837,41 @@ character_event = {			# on_death for Snow White
 		}
 	}
 }
+
+character_event = {
+	id = DMCoreFollow.19
+	title = DMCoreFollowtitle16
+	desc = DMCoreFollowdesc16
+	picture = GFX_evt_guardian
+	is_triggered_only = yes
+	immediate = {
+		opinion = {
+			who = event_target:dm_kidnapper
+			modifier = opinion_attempted_abduction
+		}
+	}
+	option = {
+		name = {
+			trigger = {
+				event_target:dm_kidnapper = {
+					is_female = yes
+				}
+			}
+			text = DMCoreFollow16OptA1
+		}
+		name = {
+			trigger = {
+				event_target:dm_kidnapper = {
+					is_female = no
+				}
+			}
+			text = DMCoreFollow16OptA2
+		}
+		tooltip = {
+			opinion = {
+				who = event_target:dm_kidnapper
+				modifier = opinion_attempted_abduction
+			}
+		}
+	}
+}

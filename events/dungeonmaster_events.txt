@@ -4089,4 +4089,20 @@ character_event = { 	# Snow White
 		}
 	}
 }
+
+long_character_event = {
+	id = DMCoreEvt.49			# Kidnapping 
+	title = DMCoreEvttitle49
+	desc = DMCoreEvtdesc49
+	picture = GFX_evt_guardian
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt49OptA
+		any_player = {
+			character_event = { id = DMPlay.49 }
+		}	
+	}
+}
 				
