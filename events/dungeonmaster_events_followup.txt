@@ -840,8 +840,8 @@ character_event = {			# on_death for Snow White
 
 character_event = {
 	id = DMCoreFollow.19
-	title = DMCoreFollowtitle16
-	desc = DMCoreFollowdesc16
+	title = DMCoreFollowtitle19
+	desc = DMCoreFollowdesc19
 	picture = GFX_evt_guardian
 	is_triggered_only = yes
 	immediate = {
@@ -865,7 +865,7 @@ character_event = {
 					is_female = no
 				}
 			}
-			text = DMCoreFollow16OptA2
+			text = DMCoreFollow19OptA2
 		}
 		tooltip = {
 			opinion = {

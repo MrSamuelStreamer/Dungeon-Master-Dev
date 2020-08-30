@@ -71,7 +71,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 		custom_tooltip = {
 			text = dungeon_master_rolls
 			random_list = {
-				1 = {			#event 1
+				1 = {			#event 4
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 1 }
@@ -92,7 +92,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 1 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 2
+				1 = {			#event 15
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 2 }
@@ -113,7 +113,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 2 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 3
+				1 = {			#event 21
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 3 }
@@ -135,7 +135,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 3 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 4
+				1 = {			#event 22
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 4 }
@@ -156,7 +156,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 4 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 5
+				1 = {			#event 24
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 5 }
@@ -177,7 +177,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 5 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 6
+				1 = {			#event 25
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 6 }
@@ -198,7 +198,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 6 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 7
+				1 = {			#event 26
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 7 }
@@ -220,7 +220,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 7 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 8
+				1 = {			#event 29
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 8 }
@@ -241,7 +241,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 8 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 9
+				1 = {			#event 33
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA_major value == 9 }
@@ -263,7 +263,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 9 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 10
+				1 = {			#event 39
 					trigger = {
 						NOR = {
 							check_variable  = { which = global_eventA_major value == 10 }
@@ -284,7 +284,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 10 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 11 - meek will inherit the earth
+				1 = {			#event 43 - meek will inherit the earth
 					trigger = {
 						NOR = {
 							check_variable  = { which = global_eventA_major value == 11 }
@@ -305,7 +305,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 11 }
 					variable_shuffle_major = yes
 				}
-				1 = {			#event 12 - The Chessboard
+				1 = {			#event 46 - The Chessboard
 					trigger = {
 						NOR = {
 							check_variable  = { which = global_eventA_major value == 12 }
@@ -325,7 +325,8 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					character_event = { id = DMCoreEvt.46 }
 					set_variable = { which = global_eventTombola_major value = 12 }
 					variable_shuffle_major = yes
-				}			}
+				}
+			}
 		}
 	}
 }

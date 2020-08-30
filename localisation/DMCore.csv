@@ -496,6 +496,11 @@ DMEventTooltip49;You are given a single-use targeted decision against any child 
 DMEventTooltip49Safe;nobody finding out;;;;;;;;;;;;;x
 DMEventTooltip49Caught;the prior liege of the child is notified;;;;;;;;;;;;;x
 
+DMCoreEvtdesc50;"Humility is a weird concept," muses the Dungeon Master as he surveys the land. "I prefer fear when keeping people in line. Oh, and speaking of fear and humility..." The Dungeon Master grins from ear to ear and snaps his fingers.;;;;;;;;;;;;;x
+DMCoreEvttitle50;Vassal/Liege Swap;;;;;;;;;;;;;x
+DMCoreEvt50OptA;"Wha...?";;;;;;;;;;;;;x
+DMEventTooltip50;A random independent ruler and one of their vassals will trade titles.;;;;;;;;;;;;;x
+
 ### Follow-up Events ###
 
 DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x
@@ -552,6 +557,11 @@ DMCoreFollow15OptA;"Not again...";;;;;;;;;;;;;x
 DMCoreFollowtitle16;Wyvernball Owners;;;;;;;;;;;;;x
 DMCoreFollowdesc16;The current Wyvernball owners are as follows:;;;;;;;;;;;;;x
 DMCoreFollow16OptA;Fascinating!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle19;Kidnapped;;;;;;;;;;;;;x
+DMCoreFollowdesc19;A child, [dm_kidnapped.GetFirstName], has been kidnapped from your very court by the sinister [dm_kidnapper.GetTitledName]!:;;;;;;;;;;;;;x
+DMCoreFollow19OptA1;That bitch!;;;;;;;;;;;;;x
+DMCoreFollow19OptA2;That bastard!;;;;;;;;;;;;;x
 
 ### Game Rules ###
 

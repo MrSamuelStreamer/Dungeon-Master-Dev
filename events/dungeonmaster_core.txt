@@ -134,7 +134,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 3 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 4
+				1 = {			#event 5
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 4 }
@@ -155,7 +155,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 4 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 5
+				1 = {			#event 6
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 5 }
@@ -176,7 +176,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 5 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 6
+				1 = {			#event 7
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 6 }
@@ -197,7 +197,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 6 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 7
+				1 = {			#event 8
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 7 }
@@ -218,7 +218,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 7 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 8
+				1 = {			#event 9
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 8 }
@@ -239,7 +239,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 8 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 9
+				1 = {			#event 10
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 9 }
@@ -260,7 +260,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 9 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 10
+				1 = {			#event 11
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 10 }
@@ -281,7 +281,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 10 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 11
+				1 = {			#event 12
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 11 }
@@ -302,7 +302,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 11 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 12
+				1 = {			#event 13
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 12 }
@@ -323,7 +323,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 12 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 13
+				1 = {			#event 14
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 13 }
@@ -344,7 +344,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 13 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 14
+				1 = {			#event 16
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 14 }
@@ -365,7 +365,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 14 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 15
+				1 = {			#event 17
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 15 }
@@ -386,7 +386,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 15 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 16
+				1 = {			#event 18
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 16 }
@@ -407,7 +407,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 16 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 17
+				1 = {			#event 19
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 17 }
@@ -428,7 +428,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 17 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 18
+				1 = {			#event 20
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 18 }
@@ -449,7 +449,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 18 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 19
+				1 = {			#event 23
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 19 }
@@ -470,7 +470,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 19 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 20
+				1 = {			#event 27
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 20 }
@@ -491,7 +491,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 20 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 21
+				1 = {			#event 28
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 21 }
@@ -512,7 +512,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 21 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 22
+				1 = {			#event 30
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 22 }
@@ -533,7 +533,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 22 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 23
+				1 = {			#event 31
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 23 }
@@ -554,7 +554,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 23 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 24
+				1 = {			#event 32
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 24 }
@@ -575,7 +575,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 24 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 25
+				1 = {			#event 34
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 25 }
@@ -596,7 +596,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 25 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 26 - prison riot
+				1 = {			#event 35 - prison riot
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 26 }
@@ -617,7 +617,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 26 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 27 - Gavelkind
+				1 = {			#event 36 - Gavelkind
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 27 }
@@ -638,7 +638,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 27 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 28 - Spa Day
+				1 = {			#event 37 - Spa Day
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 28 }
@@ -659,7 +659,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 28 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 29 - Spa Day
+				1 = {			#event 38 - Spa Day
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 29 }
@@ -680,7 +680,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 29 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 30 - Duke Nukem
+				1 = {			#event 40 - Duke Nukem
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 30 }
@@ -701,7 +701,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 30 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 31 - Genius..?
+				1 = {			#event 41 - Genius..?
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 31 }
@@ -722,7 +722,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 31 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 32 - Crab Rave
+				1 = {			#event 42 - Crab Rave
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 32 }
@@ -743,7 +743,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 32 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 33 - Marks and Angels
+				1 = {			#event 45 - Marks and Angels
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 33 }
@@ -764,7 +764,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 33 }
 					variable_shuffle = yes
 				}
-				1 = {			#event 34 - Pet Shop
+				1 = {			#event 47 - Pet Shop
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 34 }
@@ -785,7 +785,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 34 }
 					variable_shuffle = yes
 				}				
-				1 = {			#event 35 - Snow White
+				1 = {			#event 48 - Snow White
 					trigger = {
 						any_playable_ruler = {
 							is_female = yes
@@ -810,7 +810,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 35 }
 					variable_shuffle = yes
 				}				
-				1 = {			#event 36 - Kidnapping
+				1 = {			#event 49 - Kidnapping
 					trigger = {
 						NOR = { 
 							check_variable  = { which = global_eventA value == 36 }
@@ -829,6 +829,27 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					}
 					character_event = { id =  DMCoreEvt.49 }			# Kidnapping
 					set_variable = { which = global_eventTombola value = 36 }
+					variable_shuffle = yes
+				}				
+				1 = {			#event 50 - Vassal/Liege Swap
+					trigger = {
+						NOR = { 
+							check_variable  = { which = global_eventA value == 37 }
+							check_variable  = { which = global_eventB value == 37 }
+							check_variable  = { which = global_eventC value == 37 }
+							check_variable  = { which = global_eventD value == 37 }
+							check_variable  = { which = global_eventE value == 37 }
+							check_variable  = { which = global_eventF value == 37 }
+							check_variable  = { which = global_eventG value == 37 }
+							check_variable  = { which = global_eventH value == 37 }
+							check_variable  = { which = global_eventI value == 37 }
+							check_variable  = { which = global_eventJ value == 37 }
+							check_variable  = { which = global_eventK value == 37 }
+							check_variable  = { which = global_eventL value == 37 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.50 }			# Vassal/Liege Swap
+					set_variable = { which = global_eventTombola value = 37 }
 					variable_shuffle = yes
 				}				
 			}
