@@ -1613,60 +1613,6 @@ character_event = {			# Vassal/Liege Swap
 	portrait = event_target:dm_vassal
 
 	ai = no
-	immediate = {
-		if = {
-			limit = {
-				event_target:dm_vassal = {
-					ai = no
-				}
-			}
-			event_target:dm_liege = {
-				any_demesne_title = {
-					limit = {
-						has_title_flag = liege_title
-					}
-					grant_title_no_opinion = event_target:dm_vassal
-				}
-			}
-			event_target:dm_vassal = {
-				any_demesne_title = {
-					limit = {
-						has_title_flag = vassal_title
-					}
-					grant_title_no_opinion = event_target:dm_liege
-				}
-			}
-		}
-		else = {
-			event_target:dm_vassal = {
-				any_demesne_title = {
-					limit = {
-						has_title_flag = vassal_title
-					}
-					grant_title_no_opinion = event_target:dm_liege
-				}
-			}	
-			event_target:dm_liege = {
-				any_demesne_title = {
-					limit = {
-						has_title_flag = liege_title
-					}
-					grant_title_no_opinion = event_target:dm_vassal
-				}
-				any_realm_title = {
-					limit = {
-						OR = {
-							has_title_flag = liege_title
-							has_title_flag = vassal_title
-						}
-					}
-					clr_title_flag = liege_title
-					clr_title_flag = vassal_title
-				}
-			}
-		}
-	}
-
 	option = {
 		name = DMCoreEvt50OptA
 		custom_tooltip = {

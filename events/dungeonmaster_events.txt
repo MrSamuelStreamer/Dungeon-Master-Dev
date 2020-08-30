@@ -2785,6 +2785,14 @@ character_event = {			#The Snap#
 				NOR = {				#No lowborns or dungeon masters, characters of significant only#
 					has_character_flag = dungeon_master
 					dynasty = none
+					AND = {
+						ai = no
+						NOT = {
+							any_child = {
+								is_heir = PREV
+							}
+						}
+					}
 				}
 			}
 			random = {
@@ -4142,6 +4150,57 @@ character_event = {
 					set_title_flag = vassal_title
 				}
 				save_event_target_as = dm_vassal
+			}
+		}
+		if = {
+			limit = {
+				event_target:dm_vassal = {
+					ai = no
+				}
+			}
+			event_target:dm_liege = {
+				any_demesne_title = {
+					limit = {
+						has_title_flag = liege_title
+					}
+					grant_title_no_opinion = event_target:dm_vassal
+				}
+			}
+			event_target:dm_vassal = {
+				any_demesne_title = {
+					limit = {
+						has_title_flag = vassal_title
+					}
+					grant_title_no_opinion = event_target:dm_liege
+				}
+			}
+		}
+		else = {
+			event_target:dm_vassal = {
+				any_demesne_title = {
+					limit = {
+						has_title_flag = vassal_title
+					}
+					grant_title_no_opinion = event_target:dm_liege
+				}
+			}	
+			event_target:dm_liege = {
+				any_demesne_title = {
+					limit = {
+						has_title_flag = liege_title
+					}
+					grant_title_no_opinion = event_target:dm_vassal
+				}
+				any_realm_title = {
+					limit = {
+						OR = {
+							has_title_flag = liege_title
+							has_title_flag = vassal_title
+						}
+					}
+					clr_title_flag = liege_title
+					clr_title_flag = vassal_title
+				}
 			}
 		}
 	}
