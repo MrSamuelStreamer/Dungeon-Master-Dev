@@ -2042,6 +2042,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					sunni = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2058,6 +2061,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					shiite = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2074,6 +2080,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					ibadi = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2090,6 +2099,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sons of Abraham"
+					}
 					jewish = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2106,6 +2118,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "The Old Gods"
+					}
 					zoroastrian = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2122,6 +2137,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Rajas of India"
+					}
 					hindu = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2138,6 +2156,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Rajas of India"
+					}
 					buddhist = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2154,6 +2175,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Rajas of India"
+					}
 					jain = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2170,6 +2194,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Jade Dragon"
+					}
 					taoist = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2186,6 +2213,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
 					norse_pagan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2202,6 +2235,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
 					slavic_pagan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2218,6 +2257,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
 					tengri_pagan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2234,6 +2279,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
 					baltic_pagan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2250,6 +2301,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
 					finnish_pagan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2266,6 +2323,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
 					west_african_pagan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2282,6 +2345,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
 					aztec = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2298,22 +2367,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
-					pagan = { save_event_target_as = religion_proven }
-					any_playable_ruler = {
-						random_list = {
-							1 = {
-								religion = pagan			#convert to new religion
-							}
-							1 = {
-								add_trait = cynical	
-							}
-							1 = {
-								add_trait = zealous
-							}
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
 						}
 					}
-				}
-				1 = {
 					zun_pagan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2330,6 +2389,13 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+							has_dlc = "Jade Dragon"
+						}
+					}
 					bon = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2346,6 +2412,12 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
 					hellenic_pagan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2522,6 +2594,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					zikri = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2538,6 +2613,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					yazidi = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2554,6 +2632,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					kharijite = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2570,6 +2651,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					druze = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2586,6 +2670,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					hurufi = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2602,6 +2689,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sword of Islam"
+					}
 					qarmatian = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2618,6 +2708,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "The Old Gods"
+					}
 					mazdaki = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2634,6 +2727,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "The Old Gods"
+					}
 					manichean = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2650,6 +2746,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Jade Dragon"
+					}
 					khurmazta = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2666,6 +2765,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sons of Abraham"
+					}
 					samaritan = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
@@ -2682,6 +2784,9 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 					}
 				}
 				1 = {
+					trigger = {
+						has_dlc = "Sons of Abraham"
+					}
 					karaite = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
 						random_list = {
