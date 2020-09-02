@@ -369,11 +369,13 @@ character_event = {			#Thigh Rendering#
 						}
 					}
 				}
-				5 = {
-					add_artifact = stinkrot_reaver
-				}
-				5 = {
-					add_artifact = blackfish_scale
+				random_list = {
+					5 = {
+						add_artifact = stinkrot_reaver
+					}
+					5 = {
+						add_artifact = blackfish_scale
+					}
 				}
 			}
 		}
