@@ -1703,7 +1703,7 @@ character_event = {			#Trait flip#
 		any_character = {
 			limit = {
 				ai = yes
-				has_character_flag = genius
+				has_character_flag = was_genius
 			}
 			add_trait = imbecile
 		}
