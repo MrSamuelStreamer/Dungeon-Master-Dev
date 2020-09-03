@@ -1548,7 +1548,7 @@ character_event = {			#Capital Swap#
 			random_playable_ruler = {
 				save_event_target_as = ruler2
 				capital_holding = {
-					save_event_target_as = capital1
+					save_event_target_as = capital2
 				}
 			}
 			event_target:ruler1 = {
@@ -1556,7 +1556,7 @@ character_event = {			#Capital Swap#
 					grant_title = PREV
 				}
 			}
-			event_target:ruler1 = {
+			event_target:ruler2 = {
 				event_target:capital1 = {
 					grant_title = PREV
 				}
