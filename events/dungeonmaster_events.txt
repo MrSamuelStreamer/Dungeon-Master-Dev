@@ -3284,20 +3284,6 @@ character_event = {			#Religious Tomfoolery#
 
 	option = {
 		name = DMCoreEvt29OptA
-		any_character = {
-			limit = {
-				culture = event_target:culture1
-			}
-			culture = event_target:culture2
-			set_character_flag = noconvertthanks
-		}
-		any_character = {
-			limit = {
-				culture = event_target:culture1
-				NOT = { has_character_flag = noconvertthanks }
-			}
-			culture = event_target:culture1
-		}
 		any_player = {
 			character_event = { id = DMPlay.29 }
 		}
