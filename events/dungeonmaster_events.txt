@@ -1485,11 +1485,36 @@ character_event = {			#Senate - rewrite this whole event at some point#
 					}
 				}
 				save_event_target_as = palpatine
-				top_liege = {
+				if = {
 					limit = {
-						NOT = { ai = no }
+						top_liege = {
+							NOT = { ai = no }
+						}
 					}
 					abdicate_to = event_target:palpatine
+				}
+				else_if = {
+					limit = {
+						top_liege = {
+							ai = no
+							higher_tier_than = COUNT
+							any_demesne_title = {
+								count >= 2
+								tier = COUNT
+								NOT = { higher_tier_than = COUNT }
+							}
+						}
+					}
+					random_demesne_title = {
+						limit = {
+							tier = COUNT
+							is_capital = no
+						}
+						grant_title_no_opinion = event_target:palpatine
+					}
+					primary_title = {
+						grant_title_no_opinion = event_target:palpatine
+					}
 				}
 			}
 		}
