@@ -156,6 +156,21 @@ character_event = {
 	}
 }
 
+character_event = {
+	id = DMmanagement.6
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_character_flag = dungeon_master
+			trait = dungeon_master
+		}
+	}
+	immediate = {
+		imprison = no
+	}
+}
+
 ### Mod Incompatibilities ###
 
 character_event = {
