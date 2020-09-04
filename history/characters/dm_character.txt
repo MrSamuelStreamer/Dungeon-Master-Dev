@@ -33,6 +33,7 @@
 		add_character_modifier = {
 			name = mother_minor_rest
 			duration = -1
+			hidden = yes
 		}
 	}
 	9999.1.1={
