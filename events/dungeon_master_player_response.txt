@@ -1259,7 +1259,9 @@ character_event = {			#Fake Genius
 
 	option = {
 		name = DMCoreEvt41OptA
-		add_trait = genius_fake
+		tooltip = {
+			add_trait = genius_fake
+		}
 		custom_tooltip = {
 			text = DMEventTooltip41
 		}
