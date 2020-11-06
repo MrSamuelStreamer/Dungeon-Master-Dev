@@ -64,7 +64,7 @@ chessboard_invasion = {
 			status = no
 		}
 		FROM = {
-			character_event = { id = LF_Test.3 }
+			character_event = { id = DMCoreFollow.20 }
 			death = { death_reason = death_execution killer = ROOT }
 		}
 	}
@@ -91,7 +91,7 @@ chessboard_invasion = {
 			status = no
 		}
 		ROOT = {
-			character_event = { id = LF_Test.4 }
+			character_event = { id = DMCoreFollow.21 }
 			death = { death_reason = death_execution killer = FROM }
 		}
 	}

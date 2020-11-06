@@ -875,3 +875,31 @@ character_event = {
 		}
 	}
 }
+
+character_event = {		# Chessboard Cleanup
+	id = DMCoreFollow.20
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		any_tributary = {
+			limit = {
+				ai = yes
+			}
+			abdicate_to = FROM
+		}
+	}
+}
+
+character_event = {		# Chessboard Cleanup
+	id = DMCoreFollow.21
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		any_tributary = {
+			limit = {
+				ai = yes
+			}
+			abdicate_to = FROMFROM
+		}
+	}
+}
