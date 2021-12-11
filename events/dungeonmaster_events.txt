@@ -4363,3 +4363,20 @@ character_event = {
 		}	
 	}
 }
+
+character_event = {			# To Dream of Death
+	id = DMCoreEvt.51
+	title = DMCoreEvttitle51
+	desc = DMCoreEvtdesc51
+	picture = GFX_evt_stressed_ruler
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvt51OptA
+		any_player = {
+			character_event = { id = DMPlay.51 }
+		}
+	}
+	
+}
+

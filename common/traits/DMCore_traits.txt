@@ -97,3 +97,9 @@ genius_fake = {
 		slow
 	}
 }
+
+dm_deaths_deal = {
+	random = no
+	customizer = no
+	immortal = yes
+}
