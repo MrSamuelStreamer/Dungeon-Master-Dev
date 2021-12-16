@@ -255,4 +255,23 @@ character_event = {
 		}
 	}
 }
+
+### DM Debug ###
+
+character_event = {
+	id = DMmanagement.400
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		any_independent_ruler = {
+			limit = {
+				has_character_flag = dungeon_master
+			}
+			death = {
+				death_reason = death_missing
+			}
+			dm_create = yes
+		}
+	}
+}
 	
