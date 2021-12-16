@@ -99,6 +99,7 @@ genius_fake = {
 }
 
 dm_deaths_deal = {
+	hidden = yes
 	random = no
 	customizer = no
 	immortal = yes
