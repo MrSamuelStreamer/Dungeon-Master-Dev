@@ -1704,3 +1704,34 @@ character_event = {			# To Dream of Death
 		}
 	}
 }
+
+character_event = {			# Blood of the Dragon
+	id = DMPlay.52
+	title = DMCoreEvttitle52
+	desc = DMCoreEvtdesc52
+	picture = GFX_evt_bloodlines
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvt52OptA
+		custom_tooltip = {
+			text = DMEventTooltip52A
+		}
+	}	
+}
+
+character_event = {			# Animal Kingdom
+	id = DMPlay.53
+	title = DMCoreEvttitle53
+	desc = DMCoreEvtdesc53
+	picture = GFX_evt_kitten_shadow
+	is_triggered_only = yes	
+	portrait = event_target:perfectly_normal
+	
+	option = {
+		name = DMCoreEvt53OptA
+		custom_tooltip = {
+			text = DMEventTooltip53A
+		}
+	}	
+}

@@ -877,8 +877,33 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 							check_variable  = { which = global_eventL value == 38 }
 						}
 					}
-					character_event = { id =  DMCoreEvt.51 }			# Vassal/Liege Swap
+					character_event = { id =  DMCoreEvt.51 }			# To Dream of Death
 					set_variable = { which = global_eventTombola value = 38 }
+					variable_shuffle = yes
+				}				
+				1 = {			#event 52 - Blood of the Dragon
+					trigger = {
+						has_dlc = "Holy Fury"
+						NOT = {
+							has_global_flag = joris_unleashed
+						}
+						NOR = { 
+							check_variable  = { which = global_eventA value == 39 }
+							check_variable  = { which = global_eventB value == 39 }
+							check_variable  = { which = global_eventC value == 39 }
+							check_variable  = { which = global_eventD value == 39 }
+							check_variable  = { which = global_eventE value == 39 }
+							check_variable  = { which = global_eventF value == 39 }
+							check_variable  = { which = global_eventG value == 39 }
+							check_variable  = { which = global_eventH value == 39 }
+							check_variable  = { which = global_eventI value == 39 }
+							check_variable  = { which = global_eventJ value == 39 }
+							check_variable  = { which = global_eventK value == 39 }
+							check_variable  = { which = global_eventL value == 39 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.52 }			# Blood of the Dragon
+					set_variable = { which = global_eventTombola value = 39 }
 					variable_shuffle = yes
 				}				
 			}

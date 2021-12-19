@@ -203,6 +203,10 @@ dm_kidnap_into_dynasty_desc;The Dungeon Master has graced you with the ability t
 wyvern_bloodline;Wyvern Blood;;;;;;;;;;;;;x
 wyvern_bloodline_desc;This character carries the blood of [target_bloodline_founder.GetHerHim] who united the Wyvernballs against all odds.;;;;;;;;;;;;;x
 
+dm_dragon_bloodline;Blood of the Dragon;;;;;;;;;;;;;x
+dm_dragon_bloodline_desc;Dragon deez nuts across your face! Ha! Gottem!;;;;;;;;;;;;;x
+
+
 ### Tombola Mechanics ###
 
 DMCoretitle1;Dungeon Master Cometh;;;;;;;;;;;;;x
@@ -525,10 +529,19 @@ DMEventTooltip51C;Choose to live another 50 years in mediocrity. After 50 years,
 DMCoreEvt51OptD;"I refuse your deal.";;;;;;;;;;;;;x
 DMEventTooltip51D;You wake up in bed. Was it just a dream, or was it real?;;;;;;;;;;;;;x
 
-DMCoreEvtdesc51;You find yourself back in the familiar forest grove, lit only by the full moon. "It is time, mortal," speaks the pale reaper. "Your time on this mortal world has come to an end.";;;;;;;;;;;;;x
-DMCoreEvttitle51;To Dream of Death;;;;;;;;;;;;;x
-DMCoreEvt51OptA;It's a sad thing that your adventures have ended here.;;;;;;;;;;;;;x
+DMCoreEvtdesc5101;You find yourself back in the familiar forest grove, lit only by the full moon. "It is time, mortal," speaks the pale reaper. "Your time on this mortal world has come to an end.";;;;;;;;;;;;;x
+DMCoreEvttitle5101;To Dream of Death;;;;;;;;;;;;;x
+DMCoreEvt5101OptA;It's a sad thing that your adventures have ended here.;;;;;;;;;;;;;x
 
+DMCoreEvtdesc52;"People tell me I'm not kind," muses the Dungeon Master. "Well, I'll show them! BEHOLD! I shall grant a fourth of the populace the power of my dragon!";;;;;;;;;;;;;x
+DMCoreEvttitle52;Blood of the Dragon;;;;;;;;;;;;;x
+DMCoreEvt52OptA;"Your dragon?";;;;;;;;;;;;;x
+DMEventTooltip52A;Every playable ruler will have a 25% chance of getting a non-inheritable bloodline.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc53;The DM appears before you with an animal cage in hand, looking worried. "I, uh..." he fidgets, "may have accidentally loosed some animals into the world. And given them sentience. And titles. Whoops.";;;;;;;;;;;;;x
+DMCoreEvttitle53;Animal Kingdom;;;;;;;;;;;;;x
+DMCoreEvt53OptA;"What do you mean, 'whoops'?";;;;;;;;;;;;;x
+DMEventTooltip53A;An animal kingdom has appeared on the map.;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 
