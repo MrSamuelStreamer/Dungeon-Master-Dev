@@ -274,4 +274,51 @@ character_event = {
 		}
 	}
 }
+
+character_event = { # Debug for dm_immortal_good
+	id = DMmanagement.401
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_character_modifier = dm_immortal_good
+		remove_character_modifier = dm_immortal_neutral
+		remove_character_modifier = dm_immortal_bad
+		remove_trait = dm_deaths_deal
+		add_character_modifier = {
+			name = dm_immortal_good
+			years = 10
+		}
+	}
+}
 	
+character_event = { # Debug for dm_immortal_neutral
+	id = DMmanagement.402
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_character_modifier = dm_immortal_good
+		remove_character_modifier = dm_immortal_neutral
+		remove_character_modifier = dm_immortal_bad
+		remove_trait = dm_deaths_deal
+		add_character_modifier = {
+			name = dm_immortal_neutral
+			years = 25
+		}
+	}
+}
+
+character_event = { # Debug for dm_immortal_bad
+	id = DMmanagement.403
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		remove_character_modifier = dm_immortal_good
+		remove_character_modifier = dm_immortal_neutral
+		remove_character_modifier = dm_immortal_bad
+		remove_trait = dm_deaths_deal
+		add_character_modifier = {
+			name = dm_immortal_bad
+			years = 50
+		}
+	}
+}

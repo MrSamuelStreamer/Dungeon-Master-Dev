@@ -30,6 +30,9 @@ bobross_trait_desc;This man spends his time painting happy little trees and lull
 genius_fake;Genius;;;;;;;;;;;;;x
 genius_fake_desc;This character is blessed with a towering intellect.\nMartial: §G+5§!\nIntrigue: §G+5§!\nDiplomacy: §G+5§!\nStewardship: §G+5§!\nLearning: §G+5§!\nPersonal Combat Skill: §G+10§!\nVassal Opinion: §G+5§!;;;;;;;;;;;;;x
 
+dm_deaths_deal;Death's Deal;;;;;;;;;;;;;x
+dm_deaths_deal_desc;This character has made a pact with Death, and is fated to not live beyond a specific date.;;;;;;;;;;;;;x
+
 ### Dungeon Master Character Misc ###
 
 e_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
@@ -518,7 +521,7 @@ DMCoreEvttitle50;Vassal/Liege Swap;;;;;;;;;;;;;x
 DMCoreEvt50OptA;"Wha...?";;;;;;;;;;;;;x
 DMEventTooltip50;A random independent ruler and one of their vassals will trade titles.;;;;;;;;;;;;;x
 
-DMCoreEvtdesc51;Everything is eerily silent. The leaves do not rustle in the wind, the birds are quiet, even your own footsteps as you walk into the forest grove are muted.\nBefore you is a woman with pale skin and raven black hair, dressed only in a robe that matches her hair color. The scythe she wields gives you no doubt as to her identity.\n\n"Be not afraid, mortal," she speaks, nary an emotion crosses her lips, "you are fast asleep in the real world. I have come to offer you a deal." She extends a hand out, waiting for you to take it into yours. "I will grant you a longer lifespan, but in return you will die on a specific date."\n\nDeath is offering you a choice to live another 10 years as an exceptional [GetManWoman], 25 years as you are, or 50 as an inferior [GetManWoman]. But at the end of those years, Death will come back to claim you. This also does not prevent your death from the sword or the dagger.;;;;;;;;;;;;;x
+DMCoreEvtdesc51;\n\nEverything is eerily silent. The leaves do not rustle in the wind, the birds are quiet, even your own footsteps as you walk into the forest grove are muted.\nBefore you is a woman with pale skin and raven black hair, dressed only in a robe that matches her hair color. The scythe she wields gives you no doubt as to her identity.\n\n"Be not afraid, mortal," she speaks, nary an emotion crosses her lips, "you are fast asleep in the real world. I have come to offer you a deal." She extends a hand out, waiting for you to take it into yours. "I will grant you a longer lifespan, but in return you will die on a specific date."\n\nDeath is offering you a choice to live another 10 years as an exceptional [GetManWoman], 25 years as you are, or 50 as an inferior [GetManWoman]. But at the end of those years, Death will come back to claim you. This also does not prevent your death from the sword or the dagger.;;;;;;;;;;;;;x
 DMCoreEvttitle51;To Dream of Death;;;;;;;;;;;;;x
 DMCoreEvt51OptA;"10 years.";;;;;;;;;;;;;x
 DMEventTooltip51A;Choose to live another 10 years in glory. After 10 years, you will die.;;;;;;;;;;;;;x

@@ -19,4 +19,10 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\wyvernballs_land.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_dm_to_dream_of_death"
+		texturefile = "gfx\\event_pictures\dm_todreamofdeath.dds"
+		allwaystransparent = yes
+	}
+	
 }
