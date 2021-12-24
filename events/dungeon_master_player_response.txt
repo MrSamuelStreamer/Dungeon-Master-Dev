@@ -1627,7 +1627,8 @@ narrative_event = {			# To Dream of Death
 	id = DMPlay.51
 	title = DMCoreEvttitle51
 	desc = DMCoreEvtdesc51
-	picture = GFX_evt_danse_macabre
+	picture = GFX_dm_to_dream_of_death
+	window = "dm_custom_narrative"
 	is_triggered_only = yes	
 	ai = no
 	
@@ -1703,4 +1704,35 @@ character_event = {			# To Dream of Death
 			death_reason = dm_deaths_deal_death
 		}
 	}
+}
+
+character_event = {			# Blood of the Dragon
+	id = DMPlay.52
+	title = DMCoreEvttitle52
+	desc = DMCoreEvtdesc52
+	picture = GFX_evt_bloodlines
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvt52OptA
+		custom_tooltip = {
+			text = DMEventTooltip52A
+		}
+	}	
+}
+
+character_event = {			# Animal Kingdom
+	id = DMPlay.53
+	title = DMCoreEvttitle53
+	desc = DMCoreEvtdesc53
+	picture = GFX_evt_kitten_shadow
+	is_triggered_only = yes	
+	portrait = event_target:perfectly_normal
+	
+	option = {
+		name = DMCoreEvt53OptA
+		custom_tooltip = {
+			text = DMEventTooltip53A
+		}
+	}	
 }

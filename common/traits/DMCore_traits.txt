@@ -1,5 +1,6 @@
 adult_of_destiny = {
 	random = no 
+	customizer = no
 
 	vassal_opinion = 15
 	same_religion_opinion = 35
@@ -19,6 +20,7 @@ adult_of_destiny = {
 }
 
 age_shifted = {
+	customizer = no
 	random = no 
 	diplomacy = -2
 }
@@ -37,6 +39,7 @@ dungeon_master = {
 }
 
 midas_plague = { 
+	customizer = no
 	general_opinion = -15
 	stewardship = 2
 	is_epidemic = yes 
@@ -88,6 +91,7 @@ bobross_trait = {
 
 genius_fake = {
 	random = no
+	customizer = no
 	inherit_chance = 5
 	
 	opposites =  {
@@ -99,6 +103,7 @@ genius_fake = {
 }
 
 dm_deaths_deal = {
+	hidden = yes
 	random = no
 	customizer = no
 	immortal = yes

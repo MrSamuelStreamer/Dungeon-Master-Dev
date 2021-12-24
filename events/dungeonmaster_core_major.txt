@@ -326,6 +326,28 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 12 }
 					variable_shuffle_major = yes
 				}
+				1 = {			#event 53 - Animal Kingdom
+					trigger = {
+						has_dlc = "Holy Fury"
+						NOR = {
+							check_variable  = { which = global_eventA_major value == 13 }
+							check_variable  = { which = global_eventB_major value == 13 }
+							check_variable  = { which = global_eventC_major value == 13 }
+							check_variable  = { which = global_eventD_major value == 13 }
+							check_variable  = { which = global_eventE_major value == 13 }
+							check_variable  = { which = global_eventF_major value == 13 }
+							check_variable  = { which = global_eventG_major value == 13 }
+							check_variable  = { which = global_eventH_major value == 13 }
+							check_variable  = { which = global_eventI_major value == 13 }
+							check_variable  = { which = global_eventJ_major value == 13 }
+							check_variable  = { which = global_eventK_major value == 13 }
+							check_variable  = { which = global_eventL_major value == 13 }
+						}
+					}
+					character_event = { id = DMCoreEvt.53 }
+					set_variable = { which = global_eventTombola_major value = 13 }
+					variable_shuffle_major = yes
+				}
 			}
 		}
 	}

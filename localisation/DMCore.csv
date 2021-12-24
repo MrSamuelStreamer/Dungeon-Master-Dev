@@ -30,6 +30,9 @@ bobross_trait_desc;This man spends his time painting happy little trees and lull
 genius_fake;Genius;;;;;;;;;;;;;x
 genius_fake_desc;This character is blessed with a towering intellect.\nMartial: §G+5§!\nIntrigue: §G+5§!\nDiplomacy: §G+5§!\nStewardship: §G+5§!\nLearning: §G+5§!\nPersonal Combat Skill: §G+10§!\nVassal Opinion: §G+5§!;;;;;;;;;;;;;x
 
+dm_deaths_deal;Death's Deal;;;;;;;;;;;;;x
+dm_deaths_deal_desc;This character has made a pact with Death, and is fated to not live beyond a specific date.;;;;;;;;;;;;;x
+
 ### Dungeon Master Character Misc ###
 
 e_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
@@ -202,6 +205,10 @@ dm_kidnap_into_dynasty_desc;The Dungeon Master has graced you with the ability t
 
 wyvern_bloodline;Wyvern Blood;;;;;;;;;;;;;x
 wyvern_bloodline_desc;This character carries the blood of [target_bloodline_founder.GetHerHim] who united the Wyvernballs against all odds.;;;;;;;;;;;;;x
+
+dm_dragon_bloodline;Blood of the Dragon;;;;;;;;;;;;;x
+dm_dragon_bloodline_desc;Dragon deez nuts across your face! Ha! Gottem!;;;;;;;;;;;;;x
+
 
 ### Tombola Mechanics ###
 
@@ -514,7 +521,7 @@ DMCoreEvttitle50;Vassal/Liege Swap;;;;;;;;;;;;;x
 DMCoreEvt50OptA;"Wha...?";;;;;;;;;;;;;x
 DMEventTooltip50;A random independent ruler and one of their vassals will trade titles.;;;;;;;;;;;;;x
 
-DMCoreEvtdesc51;Everything is eerily silent. The leaves do not rustle in the wind, the birds are quiet, even your own footsteps as you walk into the forest grove are muted.\nBefore you is a woman with pale skin and raven black hair, dressed only in a robe that matches her hair color. The scythe she wields gives you no doubt as to her identity.\n\n"Be not afraid, mortal," she speaks, nary an emotion crosses her lips, "you are fast asleep in the real world. I have come to offer you a deal." She extends a hand out, waiting for you to take it into yours. "I will grant you a longer lifespan, but in return you will die on a specific date."\n\nDeath is offering you a choice to live another 10 years as an exceptional [GetManWoman], 25 years as you are, or 50 as an inferior [GetManWoman]. But at the end of those years, Death will come back to claim you. This also does not prevent your death from the sword or the dagger.;;;;;;;;;;;;;x
+DMCoreEvtdesc51;\n\nEverything is eerily silent. The leaves do not rustle in the wind, the birds are quiet, even your own footsteps as you walk into the forest grove are muted.\nBefore you is a woman with pale skin and raven black hair, dressed only in a robe that matches her hair color. The scythe she wields gives you no doubt as to her identity.\n\n"Be not afraid, mortal," she speaks, nary an emotion crosses her lips, "you are fast asleep in the real world. I have come to offer you a deal." She extends a hand out, waiting for you to take it into yours. "I will grant you a longer lifespan, but in return you will die on a specific date."\n\nDeath is offering you a choice to live another 10 years as an exceptional [GetManWoman], 25 years as you are, or 50 as an inferior [GetManWoman]. But at the end of those years, Death will come back to claim you. This also does not prevent your death from the sword or the dagger.;;;;;;;;;;;;;x
 DMCoreEvttitle51;To Dream of Death;;;;;;;;;;;;;x
 DMCoreEvt51OptA;"10 years.";;;;;;;;;;;;;x
 DMEventTooltip51A;Choose to live another 10 years in glory. After 10 years, you will die.;;;;;;;;;;;;;x
@@ -525,10 +532,19 @@ DMEventTooltip51C;Choose to live another 50 years in mediocrity. After 50 years,
 DMCoreEvt51OptD;"I refuse your deal.";;;;;;;;;;;;;x
 DMEventTooltip51D;You wake up in bed. Was it just a dream, or was it real?;;;;;;;;;;;;;x
 
-DMCoreEvtdesc51;You find yourself back in the familiar forest grove, lit only by the full moon. "It is time, mortal," speaks the pale reaper. "Your time on this mortal world has come to an end.";;;;;;;;;;;;;x
-DMCoreEvttitle51;To Dream of Death;;;;;;;;;;;;;x
-DMCoreEvt51OptA;It's a sad thing that your adventures have ended here.;;;;;;;;;;;;;x
+DMCoreEvtdesc5101;You find yourself back in the familiar forest grove, lit only by the full moon. "It is time, mortal," speaks the pale reaper. "Your time on this mortal world has come to an end.";;;;;;;;;;;;;x
+DMCoreEvttitle5101;To Dream of Death;;;;;;;;;;;;;x
+DMCoreEvt5101OptA;It's a sad thing that your adventures have ended here.;;;;;;;;;;;;;x
 
+DMCoreEvtdesc52;"People tell me I'm not kind," muses the Dungeon Master. "Well, I'll show them! BEHOLD! I shall grant a fourth of the populace the power of my dragon!";;;;;;;;;;;;;x
+DMCoreEvttitle52;Blood of the Dragon;;;;;;;;;;;;;x
+DMCoreEvt52OptA;"Your dragon?";;;;;;;;;;;;;x
+DMEventTooltip52A;Every playable ruler will have a 25% chance of getting a non-inheritable bloodline.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc53;The DM appears before you with an animal cage in hand, looking worried. "I, uh..." he fidgets, "may have accidentally loosed some animals into the world. And given them sentience. And titles. Whoops.";;;;;;;;;;;;;x
+DMCoreEvttitle53;Animal Kingdom;;;;;;;;;;;;;x
+DMCoreEvt53OptA;"What do you mean, 'whoops'?";;;;;;;;;;;;;x
+DMEventTooltip53A;An animal kingdom has appeared on the map.;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 

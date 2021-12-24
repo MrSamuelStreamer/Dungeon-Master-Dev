@@ -4374,9 +4374,68 @@ character_event = {			# To Dream of Death
 	option = {
 		name = DMCoreEvt51OptA
 		any_player = {
-			character_event = { id = DMPlay.51 }
+			narrative_event = { id = DMPlay.51 }
 		}
 	}
 	
 }
 
+character_event = {			# Blood of the Dragon
+	id = DMCoreEvt.52
+	title = DMCoreEvttitle52
+	desc = DMCoreEvtdesc52
+	picture = GFX_evt_stressed_ruler
+	is_triggered_only = yes	
+	immediate = {
+		any_bloodline = {
+			limit = {
+				has_bloodline_flag = dm_dragon
+			}
+			destroy_bloodline = yes
+		}
+		create_bloodline = {
+			type = dm_dragon_bloodline
+		}
+		any_playable_ruler = {
+			random_list = {
+				25 = {
+					any_bloodline = {
+						limit = {
+							has_bloodline_flag = dm_dragon
+						}
+						add_bloodline_member = PREV
+					}
+				}
+				75 = {}
+			}
+		}
+	}
+	
+	option = {
+		name = DMCoreEvt52OptA
+		any_player = {
+			character_event = { id = DMPlay.52 }
+		}
+	}
+	
+}
+
+character_event = {			# Animal Kingdom
+	id = DMCoreEvt.53
+	title = DMCoreEvttitle53
+	desc = DMCoreEvtdesc53
+	picture = GFX_evt_kitten_shadow
+	is_triggered_only = yes	
+	
+	immediate = {
+		unleash_the_joris = yes
+		set_global_flag = joris_unleashed
+	}
+	
+	option = {
+		name = DMCoreEvt53OptA
+		any_player = {
+			narrative_event = { id = DMPlay.53 }
+		}
+	}
+}

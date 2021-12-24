@@ -34,7 +34,7 @@ dm_create = {
 				target = k_dungeon
 			}
 			add_character_modifier = {
-				name = mother_minor_rest
+				modifier = mother_minor_rest
 				duration = -1
 				hidden = yes
 			}
@@ -780,3 +780,125 @@ dm_make_seven_dwarves = {
 		}
 	}
 }
+
+unleash_the_joris = {
+	random_playable_ruler = {
+		limit = {
+			is_landed = yes
+			NOR = {
+				is_nomadic = yes
+				any_realm_character = {
+					ai = no
+				}
+				lower_tier_than = KING
+			}
+		}
+		any_realm_province = {
+			random_list = {
+				1 = { culture = bear }
+				1 = { culture = dog_culture }
+				1 = { culture = cat_culture }
+				1 = { culture = dragon_culture }
+				1 = { culture = duck_culture }
+				1 = { culture = hedgehog_culture }
+				1 = { culture = elephant_culture }
+				1 = { culture = horse }
+				1 = { culture = red_panda }
+			}
+		}
+		any_realm_character = {
+			random_list = {
+				1 = { 
+					culture = bear
+					set_graphical_culture = bear
+				}
+				1 = { culture = dog_culture
+					set_graphical_culture = dog_culture
+				}
+				1 = { culture = cat_culture
+					set_graphical_culture = cat_culture
+				}
+				1 = { culture = dragon_culture
+					set_graphical_culture = dragon_culture
+				}
+				1 = { culture = duck_culture
+					set_graphical_culture = duck_culture
+				}
+				1 = { culture = hedgehog_culture
+					set_graphical_culture = hedgehog_culture
+				}
+				1 = { culture = elephant_culture
+					set_graphical_culture = elephant_culture
+				}
+				1 = { culture = horse
+					set_graphical_culture = horse
+				}
+				1 = { culture = red_panda
+					set_graphical_culture = red_panda
+				}
+			}
+		}
+		capital_scope = {
+			culture = bear
+		}
+		create_character = {
+			name = "Joris"
+			dynasty = 700002
+			attributes = {
+				martial = 5
+				intrigue = 5
+				learning = 5
+				stewardship = 5
+				diplomacy = 5
+			}
+			age = 31
+			female = no
+			random_traits = no
+			health = 5
+			fertility = 0.5
+			culture = bear
+			race = bear
+			trait = midas_touched
+			trait = strong
+			trait = genius
+			trait = lustful
+			trait = greedy
+			trait = deceitful
+			trait = cynical
+			trait = stubborn
+			trait = craven
+			flag = special_npc
+		}
+		new_character = {
+			save_event_target_as = perfectly_normal
+			create_character = {
+				name = "Jorris"
+				dynasty = 700002
+				age = 0
+				female = no
+				culture = event_target:perfectly_normal
+				religion = event_target:perfectly_normal
+				race = bear
+			}
+			new_character = {
+				set_father = event_target:perfectly_normal
+			}
+			create_character = {
+				name = "Bearly"
+				dynasty = 700002
+				age = 0
+				female = yes
+				culture = event_target:perfectly_normal
+				religion = event_target:perfectly_normal
+				race = bear
+				trait = strong
+				trait = child_of_consort
+			}
+			new_character = {
+				set_father = event_target:perfectly_normal
+			}
+			recalc_succession = yes
+		}
+		abdicate_to = event_target:perfectly_normal
+	}
+}	
