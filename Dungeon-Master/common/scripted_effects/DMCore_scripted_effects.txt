@@ -1,0 +1,1035 @@
+dm_create = {
+	create_character = {
+		name = "Dungeon"
+		female = no
+	
+		dynasty = 696969
+		religion = dungeon_religion		#also religious head
+		culture = dm_culture		#placeholder
+	
+		diplomacy = 90
+		martial = 90
+		stewardship = 90
+		intrigue = 90
+		learning = 90
+	
+		historical = yes 
+		easter_egg = yes
+		disallow_random_traits = yes
+
+		trait = dungeon_master
+	}
+	new_character = {
+		set_character_flag = dungeon_master
+		add_character_modifier = {
+			modifier = mother_minor_rest
+			duration = -1
+			hidden = yes
+		}
+		offmap_dungeon_master = {
+			set_offmap_holder = PREV
+		}
+	}
+}
+
+dm_gov_create = {
+	e_dungeon_master_governor = {
+		capital_scope = {
+			create_character = {
+				name = "Dungeon"
+				female = no
+			
+				dynasty = 696969
+				religion = dungeon_religion		#also religious head
+				culture = dm_culture		#placeholder
+			
+				diplomacy = 90
+				martial = 90
+				stewardship = 90
+				intrigue = 90
+				learning = 90
+			
+				historical = yes 
+				easter_egg = yes
+				disallow_random_traits = yes
+
+				trait = dungeon_master
+			}
+			new_character = {
+				set_character_flag = dungeon_master
+				add_character_modifier = {
+					modifier = mother_minor_rest
+					duration = -1
+					hidden = yes
+				}
+				e_dungeon_master_governor = {
+					holder_scope = {
+						abdicate_to = PREVPREV
+					}
+				}
+			}
+		}
+	}
+}
+
+dm_recreate_gov = {
+	any_character = {
+		limit = {
+			trait = dungeon_master
+			is_offmap_ruler = no
+			is_offmap_governor = no
+		}
+		death = {
+			death_reason = death_missing
+		}
+	}
+	add_trait = dungeon_master
+}
+	
+
+variable_shuffle = {			#holds events in storage so they can't be reused too soon
+	if = {
+		limit = {
+			has_game_rule = {
+				name = dungeon_master_cycle
+				value = dm_cycle_double
+			}
+		}
+		set_variable = { which = global_eventL which = global_eventK }
+		set_variable = { which = global_eventK which = global_eventJ }
+		set_variable = { which = global_eventJ which = global_eventI }
+		set_variable = { which = global_eventI which = global_eventH }
+		set_variable = { which = global_eventH which = global_eventG }
+		set_variable = { which = global_eventG which = global_eventF }
+		set_variable = { which = global_eventF which = global_eventE }
+		set_variable = { which = global_eventE which = global_eventD }
+		set_variable = { which = global_eventD which = global_eventC }
+		set_variable = { which = global_eventC which = global_eventB }
+		set_variable = { which = global_eventB which = global_eventA }
+		set_variable = { which = global_eventA which = global_eventTombola }
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				name = dungeon_master_cycle
+				value = dm_cycle_half
+			}
+		}
+		set_variable = { which = global_eventC which = global_eventB }
+		set_variable = { which = global_eventB which = global_eventA }
+		set_variable = { which = global_eventA which = global_eventTombola }
+	}
+	else = {
+		set_variable = { which = global_eventF which = global_eventE }
+		set_variable = { which = global_eventE which = global_eventD }
+		set_variable = { which = global_eventD which = global_eventC }
+		set_variable = { which = global_eventC which = global_eventB }
+		set_variable = { which = global_eventB which = global_eventA }
+		set_variable = { which = global_eventA which = global_eventTombola }
+	}
+}
+
+variable_shuffle_major = {			#holds major events in storage so they can't be reused too soon
+	if = {
+		limit = {
+			has_game_rule = {
+				name = dungeon_master_cycle_major
+				value = dm_cycle_double_major
+			}
+		}
+		set_variable = { which = global_eventL_major which = global_eventK_major }
+		set_variable = { which = global_eventK_major which = global_eventJ_major }
+		set_variable = { which = global_eventJ_major which = global_eventI_major }
+		set_variable = { which = global_eventI_major which = global_eventH_major }
+		set_variable = { which = global_eventH_major which = global_eventG_major }
+		set_variable = { which = global_eventG_major which = global_eventF_major }
+		set_variable = { which = global_eventF_major which = global_eventE_major }
+		set_variable = { which = global_eventE_major which = global_eventD_major }
+		set_variable = { which = global_eventD_major which = global_eventC_major }
+		set_variable = { which = global_eventC_major which = global_eventB_major }
+		set_variable = { which = global_eventB_major which = global_eventA_major }
+		set_variable = { which = global_eventA_major which = global_eventTombola_major }
+	}
+	else_if = {
+		limit = {
+			has_game_rule = {
+				name = dungeon_master_cycle_major
+				value = dm_cycle_half_major
+			}
+		}
+		set_variable = { which = global_eventC_major which = global_eventB_major }
+		set_variable = { which = global_eventB_major which = global_eventA_major }
+		set_variable = { which = global_eventA_major which = global_eventTombola_major }
+	}
+	else = {
+		set_variable = { which = global_eventF_major which = global_eventE_major }
+		set_variable = { which = global_eventE_major which = global_eventD_major }
+		set_variable = { which = global_eventD_major which = global_eventC_major }
+		set_variable = { which = global_eventC_major which = global_eventB_major }
+		set_variable = { which = global_eventB_major which = global_eventA_major }
+		set_variable = { which = global_eventA_major which = global_eventTombola_major }
+	}
+}
+
+stinky_random_for_caveman_paradox = { 			#just fucking what even is this 
+	random_list = {			#MUST equal number of events 							#for confused modders and reviewers of code, CK2 has no implicit rand() function outside of lists or percentages, this list is an overly complicated random number generator basically.
+		1 = {																		#the reason I use this rather than a tombola is that they're basically the same thing but the variable is saved and shunted through a system to prevent the same variable coming back, think automated global flags basically
+			set_variable = { which = global_eventTombola value = 1 }				#there is almost certainly a much easier way of doing this but I had around 30 minutes to rewrite it before I had to record the next episode and this is all I had off the top of my head at the time.
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 2 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 3 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 4 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 5 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 6 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 7 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 8 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 9 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 10 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 11 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 12 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 13 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 14 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 15 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 16 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 17 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 18 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 19 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 20 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 21 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 22 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 23 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 24 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 25 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 26 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 27 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 28 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 29 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 30 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 31 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 32 }
+		}
+	}
+}
+
+stinky_random_for_caveman_paradox_major = { 			#just fucking what even is this 
+	random_list = {			#MUST equal number of events 						
+		1 = {																
+			set_variable = { which = global_eventTombola_major value = 1 }				
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 2 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 3 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 4 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 5 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 6 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 7 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 8 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 9 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 10 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 11 }
+		}
+	}
+}
+
+random_age_mod = {
+	random_list = {
+		1 = {
+			set_variable = { which = global_add_age value = 2 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 4 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 6 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 8 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 10 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 12 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 14 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 16 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 18 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 20 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 22 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 24 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 26 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 28 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = 30 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -2 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -4 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -6 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -8 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -10 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -12 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -14 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -16 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -18 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -20 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -22 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -24 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -26 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -28 }
+		}
+		1 = {
+			set_variable = { which = global_add_age value = -30 }
+		}
+	}
+}
+
+religion_tomfoolery = {
+	random_list = {
+		20 = {
+			random_list = {
+				1 = {			#bane of r/gaming
+					set_feminist = yes
+					set_allows_matrilineal_marriage = yes
+					set_women_can_take_consorts = yes
+					set_female_temple_holders = yes
+					set_male_temple_holders = no
+				}
+				1 = {
+					set_feminist = no
+					set_allows_matrilineal_marriage = no
+					set_men_can_take_consorts = yes
+					set_female_temple_holders = no
+					set_male_temple_holders = yes
+					random_list = {
+						1 = {
+							set_max_wives = 25
+						}
+						1 = {
+							set_max_wives = 20
+						}
+						1 = {
+							set_max_wives = 15
+						}
+						1 = {
+							set_max_wives = 10
+						}
+						1 = {
+							set_max_wives = 5
+						}
+					}
+				}
+			}
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = { 
+			set_ai_aggression = 1.5 
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_allow_looting = yes
+			set_seafaring = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_allow_matrilineal_marriage = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_allow_rivermovement = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_uses_decadence = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_bs_marriage = yes
+			set_pc_marriage = yes
+			set_psc_marriage = yes
+			set_cousin_marriage = yes
+			set_divine_blood = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_raised_vassal_opinion_loss = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_priests_can_inherit = yes
+			set_priests_can_marry = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_heir_designation = yes
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			random_list = {
+				33 = { # defensive
+					set_convert_same_group = 1
+					set_convert_other_group = 1
+					set_raised_vassal_opinion_loss = yes
+					set_piety_loss_for_attacking_same_religion = yes
+					set_ignores_defensive_attrition = yes
+					set_peace_prestige_loss = no
+					set_ai_aggression = 1
+					set_unit_home_modifier = {
+						land_morale = 0.8
+						light_infantry_defensive = 0.8
+						heavy_infantry_defensive = 0.8
+						pikemen_defensive = 0.8
+						light_cavalry_defensive = 0.8
+						knights_defensive = 0.8
+						archers_defensive = 0.8 
+						horse_archers_defensive = 0.8
+						camel_cavalry_defensive = 0.8
+						war_elephants_defensive = 0.8
+						garrison_size = 0.4
+						key = DEF_RELIGION_HOME_TERRITORY
+					}
+				}
+				33 = {		#passive
+					set_pacifist = yes
+					set_hard_to_convert = yes
+					set_convert_other_group = 0
+					set_convert_same_group = 0
+					set_ai_aggression = 0
+					set_unit_home_modifier = {
+						land_morale = 1.8
+						garrison_size = 1.5
+						key = DEF_RELIGION_HOME_TERRITORY
+					}
+					set_character_modifier = {
+						learning = 2
+						key = MONASTIC_ATTR_RELIGION
+					}
+				}
+				33 = {		#offensive
+					set_convert_same_group = 2
+					set_convert_other_group = 2
+					set_ai_aggression = 2
+					set_unit_home_modifier = {
+						land_morale = 0.8
+						light_infantry_defensive = 0.8
+						heavy_infantry_defensive = 0.8
+						pikemen_defensive = 0.8
+						light_cavalry_defensive = 0.8
+						knights_defensive = 0.8
+						archers_defensive = 0.8 
+						horse_archers_defensive = 0.8
+						camel_cavalry_defensive = 0.8
+						war_elephants_defensive = 0.8
+					
+						garrison_size = 0.4
+					
+						key = DEF_RELIGION_HOME_TERRITORY
+					}
+				}
+			}
+		}
+		80 = { }
+	}
+	random_list = {
+		20 = {
+			set_can_retire_to_monastery = yes
+		}
+		80 = { }
+	}
+}
+
+dm_make_seven_dwarves = {
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Ragey"
+		trait = brilliant_strategist
+		trait = strong
+		trait = aggressive_leader
+		trait = wroth
+		trait = duelist
+		trait = stubborn
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Sleazy"
+		trait = grey_eminence
+		trait = fair
+		trait = lustful
+		trait = hedonist
+		trait = seducer
+		trait = groomed
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Stabby"
+		trait = elusive_shadow
+		trait = impaler
+		trait = deceitful
+		trait = shrewd
+		trait = quick
+		trait = paranoid
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Greedy"
+		trait = midas_touched
+		trait = quick
+		trait = administrator
+		trait = greedy
+		trait = envious
+		trait = shrewd
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "M'lady"
+		trait = naive_appeaser
+		trait = ugly
+		trait = is_fat
+		trait = dull
+		trait = gamer
+		trait = celibate
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Shifty"
+		trait = grey_eminence
+		trait = genius
+		trait = gregarious
+		trait = socializer
+		trait = poet
+		trait = paranoid
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+	create_character = {
+		dynasty = none
+		random_traits = no
+		culture = THIS
+		religion = THIS
+		age = 16
+		female = no
+		name = "Seelie"
+		trait = mastermind_theologian
+		trait = gardener
+		trait = mystic
+		trait = genius
+		trait = physician
+		trait = erudite
+		trait = dwarf
+		flag = no_court_invites
+		flag = originated_from_chinese_court
+		flag = society_join_block
+		flag = dm_dwarf
+		attributes = {
+			martial = 10
+			learning = 10
+			stewardship = 10
+			intrigue = 10
+			diplomacy = 10
+		}
+	}
+	new_character = {
+		set_immune_to_pruning = yes
+		add_lover = event_target:dm_snow_white
+		opinion = {
+			modifier = opinion_loyal_servant
+			who = event_target:dm_snow_white
+		}
+	}
+}
+
+unleash_the_joris = {
+	random_playable_ruler = {
+		limit = {
+			is_landed = yes
+			NOR = {
+				is_nomadic = yes
+				any_realm_character = {
+					ai = no
+				}
+				lower_tier_than = KING
+			}
+		}
+		any_realm_province = {
+			random_list = {
+				1 = { culture = bear }
+				1 = { culture = dog_culture }
+				1 = { culture = cat_culture }
+				1 = { culture = dragon_culture }
+				1 = { culture = duck_culture }
+				1 = { culture = hedgehog_culture }
+				1 = { culture = elephant_culture }
+				1 = { culture = horse }
+				1 = { culture = red_panda }
+			}
+		}
+		any_realm_character = {
+			random_list = {
+				1 = { 
+					culture = bear
+					set_graphical_culture = bear
+				}
+				1 = { culture = dog_culture
+					set_graphical_culture = dog_culture
+				}
+				1 = { culture = cat_culture
+					set_graphical_culture = cat_culture
+				}
+				1 = { culture = dragon_culture
+					set_graphical_culture = dragon_culture
+				}
+				1 = { culture = duck_culture
+					set_graphical_culture = duck_culture
+				}
+				1 = { culture = hedgehog_culture
+					set_graphical_culture = hedgehog_culture
+				}
+				1 = { culture = elephant_culture
+					set_graphical_culture = elephant_culture
+				}
+				1 = { culture = horse
+					set_graphical_culture = horse
+				}
+				1 = { culture = red_panda
+					set_graphical_culture = red_panda
+				}
+			}
+		}
+		capital_scope = {
+			culture = bear
+		}
+		create_character = {
+			name = "Joris"
+			dynasty = 700002
+			attributes = {
+				martial = 5
+				intrigue = 5
+				learning = 5
+				stewardship = 5
+				diplomacy = 5
+			}
+			age = 31
+			female = no
+			random_traits = no
+			health = 5
+			fertility = 0.5
+			culture = bear
+			race = bear
+			trait = midas_touched
+			trait = strong
+			trait = genius
+			trait = lustful
+			trait = greedy
+			trait = deceitful
+			trait = cynical
+			trait = stubborn
+			trait = craven
+			flag = special_npc
+		}
+		new_character = {
+			save_event_target_as = perfectly_normal
+			create_character = {
+				name = "Jorris"
+				dynasty = 700002
+				age = 0
+				female = no
+				culture = event_target:perfectly_normal
+				religion = event_target:perfectly_normal
+				race = bear
+			}
+			new_character = {
+				set_father = event_target:perfectly_normal
+			}
+			create_character = {
+				name = "Bearly"
+				dynasty = 700002
+				age = 0
+				female = yes
+				culture = event_target:perfectly_normal
+				religion = event_target:perfectly_normal
+				race = bear
+				trait = strong
+				trait = child_of_consort
+			}
+			new_character = {
+				set_father = event_target:perfectly_normal
+			}
+			recalc_succession = yes
+		}
+		abdicate_to = event_target:perfectly_normal
+	}
+}
+
+dm_belongs_in_a_museum = {
+	any_character = {
+		limit = {
+			has_character_flag = dungeon_master
+		}
+		save_event_target_as = dungeon_master
+	}
+	any_playable_ruler = {
+		limit = {
+			any_artifact = {
+				count >= 2
+				quality >= 5
+				NOR = {
+					has_artifact_flag = cursed
+					has_artifact_flag = irae	# House Irae compatibility
+					# has_artifact_flag = XXX	# Add more flag conditions if needed
+				}
+			}
+		}
+		while = {
+			limit = {
+				any_artifact = {
+					count >= 2
+					limit = {
+						quality >= 5
+						NOR = {
+							has_artifact_flag = cursed
+							has_artifact_flag = irae	# House Irae compatibility
+							# has_artifact_flag = XXX	# Add more flag conditions if needed
+						}
+					}
+				}
+			}
+			random_artifact = {
+				limit = {
+					quality >= 5
+					NOR = {
+						has_artifact_flag = cursed
+						has_artifact_flag = irae	# House Irae compatibility
+						# has_artifact_flag = XXX	# Add more flag conditions if needed
+					}
+				}
+				random_list = {
+					95 = {
+						transfer_artifact = {
+							from = PREV
+							to = event_target:dungeon_master
+						}
+					}
+					5 = {
+						random_list = {
+							10 = {
+								random_player = {
+									save_event_target_as = dungeon_master_oopsy
+								}
+								transfer_artifact = {
+									from = PREV
+									to = event_target:dungeon_master_oopsy
+								}
+								event_target:dungeon_master_oopsy = {
+									clear_event_target = dungeon_master_oopsy
+								}
+							}
+							90 = {		
+								random_playable_ruler = {
+									save_event_target_as = dungeon_master_oopsy
+								}
+								transfer_artifact = {
+									from = PREV
+									to = event_target:dungeon_master_oopsy
+								}
+								event_target:dungeon_master_oopsy = {
+									clear_event_target = dungeon_master_oopsy
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+				
+			
+				

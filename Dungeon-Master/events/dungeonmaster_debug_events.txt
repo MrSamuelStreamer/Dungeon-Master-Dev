@@ -1,0 +1,770 @@
+namespace = dmdebug
+
+#
+# Toggles the flag to show/hide the offmap empire
+# Offmap empires check display triggers once a month
+#
+
+character_event = {
+	id = dmdebug.999
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		if = {
+			limit = {
+				has_character_flag = show_dm_offmap
+			}
+			clr_character_flag = show_dm_offmap
+		}
+		else = {
+			set_character_flag = show_dm_offmap
+		}
+	}
+}
+
+#
+# Debug events to properly fire DM events from the DM himself
+#
+
+character_event = {
+	id = dmdebug.1
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.1 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.2
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.2 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.3
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.3 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.4
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.4 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.5
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.5 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.6
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.6 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.7
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.7 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.8
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.8 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.9
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.9 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.10
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.10 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.11
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.11 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.12
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.12 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.13
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.13 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.14
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.14 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.15
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.15 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.16
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.16 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.17
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.17 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.18
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.18 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.19
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.19 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.20
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.20 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.21
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.21 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.22
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.22 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.23
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.23 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.24
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.24 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.25
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.25 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.26
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.26 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.27
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.27 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.28
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.28 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.29
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.29 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.30
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.30 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.31
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.31 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.32
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.32 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.33
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.33 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.34
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.34 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.35
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.35 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.36
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.36 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.37
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.37 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.38
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.38 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.39
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.39 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.40
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.40 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.41
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.41 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.42
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.42 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.43
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.43 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.44
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.44 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.45
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.45 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.46
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.46 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.47
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.47 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.48
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.48 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.49
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.49 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.50
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.50 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.51
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.51 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.52
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.52 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.53
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.53 }
+			}
+		}
+	}
+}

@@ -1,6 +1,0 @@
-is_valid_target_for_tomfoolery = {
-	NOR = {
-		trait = ruin
-		culture = ruin
-	}
-}
