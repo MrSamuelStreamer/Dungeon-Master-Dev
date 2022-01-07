@@ -105,3 +105,13 @@ dm_immortal_bad = {
 dm_immortal_neutral = {
 	icon = 41
 }
+
+dm_bovid19 = {
+	icon = 51
+	health = -1
+	general_opinion = -5
+}
+
+dm_milk_stores = {
+	icon = 79
+}

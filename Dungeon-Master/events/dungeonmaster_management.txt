@@ -365,4 +365,34 @@ character_event = {
 		set_character_flag = society_join_block
 	}
 }
-	
+
+#
+# Moo
+#
+
+# Sets the maximum milk upon adulthood for cows
+character_event = {
+	id = DMmanagement.600
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		dm_is_cow = yes
+	}
+	immediate = {
+		set_max_milk = yes
+	}
+}
+
+# Yearly mana increase
+character_event = {
+	id = DMmanagement.601
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_adult = yes
+		dm_is_cow = yes
+	}
+	immediate = {
+		yearly_milk_increase = yes
+	}
+}

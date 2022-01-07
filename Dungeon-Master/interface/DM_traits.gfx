@@ -1,5 +1,12 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_trait_dm_bovid19"
+		texturefile = "gfx/traits/dm_bovid19.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_adult_of_destiny"
 		texturefile = "gfx/traits/adult_of_destiny.dds"
 		noOfFrames = 1

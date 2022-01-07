@@ -17,6 +17,7 @@ on_yearly_pulse = {
 		DMCore.999
 		DMCoremajor.1000
 		DMmanagement.500 # Forces DM and governor out of societies
+		DMmanagement.601 # Adults get milky
 	}
 }
 
@@ -36,5 +37,11 @@ on_host_change = {
 on_become_imprisoned_any_reason = {
 	events = {
 		# DMManagement.6 # DM breaks free
+	}
+}
+
+on_adulthood = {
+	events = {
+		DMmanagement.600 # Children get milky
 	}
 }

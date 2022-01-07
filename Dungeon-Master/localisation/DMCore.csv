@@ -50,6 +50,8 @@ cruelty;Cruelty;;;;;;;;;;;;;x
 dm_culture_group;Dungeon Mastery;;;;;;;;;;;;;x
 dm_culture;Chaotic Neutral;;;;;;;;;;;;;x
 dm_culture_adj;Chaotic;;;;;;;;;;;;;x
+dm_cow_culture;Cow;;;;;;;;;;;;;x
+dm_cow_culture_adj;Bovine;;;;;;;;;;;;;x
 gary_culture;Gary;;;;;;;;;;;;;x
 gary_culture_adj;Gary;;;;;;;;;;;;;x
 gary_prime_2_point_oh;Gary Prime 2.0;;;;;;;;;;;;;x
@@ -181,6 +183,9 @@ dm_immortal_neutral_desc;This character has made a deal with Death.;;;;;;;;;;;;;
 
 dm_immortal_bad;Death's Deal;;;;;;;;;;;;;x
 dm_immortal_bad_desc;This character has made a deal with Death.;;;;;;;;;;;;;x
+
+dm_bovid19;BOVID-19;;;;;;;;;;;;;x
+dm_bovid19_desc;This character forgot to wear a mask out in public and has contracted BOVID-19. On the bright side, their milk is delicious.;;;;;;;;;;;;;x
 
 ### Decisions ###
 
@@ -663,3 +668,15 @@ e_dungeon_master_governor;Dungeon Master;;;;;;;;;;;;;x
 e_dungeon_master_governor_adj;Chaotic;;;;;;;;;;;;;x
 e_dungeon_master_governor_female;Dungeon Mistress;;;;;;;;;;;;;x
 e_dungeon_master_governor_male;Dungeon Master;;;;;;;;;;;;;x
+
+### Moo ###
+
+dm_milky;Milk;;;;;;;;;;;;;x
+dm_moo;Moo;;;;;;;;;;;;;x
+dm_milk_stores;Milk Stores;;;;;;;;;;;;;x
+dm_milk_stores_desc;Current milk: [current_milk.GetValue]/[max_milk.GetValue]\nMilk is regained little by little each year.;;;;;;;;;;;;;x
+current_milk;current milk;;;;;;;;;;;;;x
+max_milk;maximum milk;;;;;;;;;;;;;x
+tt_has_enough_milk_minor;Has 10 milk.;;;;;;;;;;;;;x
+tt_has_enough_milk_moderate;Has 25 milk.;;;;;;;;;;;;;x
+tt_has_enough_milk_major;Has 50 milk.;;;;;;;;;;;;;x

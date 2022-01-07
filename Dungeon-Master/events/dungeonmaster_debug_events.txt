@@ -22,7 +22,39 @@ character_event = {
 		}
 	}
 }
-
+character_event = {
+	id = dmdebug.998
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		add_character_modifier = {
+			name = dm_bovid19
+			duration = -1
+		}
+		culture = dm_cow_culture
+		set_graphical_culture = dm_cow_culture
+		if = {
+			limit = {
+				is_adult = yes
+			}
+			set_max_milk = yes
+		}
+		any_realm_character = {
+			add_character_modifier = {
+				name = dm_bovid19
+				duration = -1
+			}
+			culture = dm_cow_culture
+			set_graphical_culture = dm_cow_culture
+			if = {
+				limit = {
+					is_adult = yes
+				}
+				set_max_milk = yes
+			}
+		}
+	}
+}
 #
 # Debug events to properly fire DM events from the DM himself
 #
