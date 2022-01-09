@@ -112,3 +112,35 @@ set_max_milk = {
 		}
 	}
 }
+
+dm_can_you_hear_me_now = {
+	set_variable = {
+		which = dm_moo_count
+		value = 20
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = dm_moo_count
+				value >= 1
+			}
+		}
+		random_playable_ruler = {
+			limit = {
+				any_demesne_province = {
+					NOT = { has_province_modifier = dm_1G_tower }
+				}
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = dm_1G_tower
+					duration = -1
+				}
+			}
+		}
+		subtract_variable = {
+			which = dm_moo_count
+			value = 1
+		}
+	}
+}

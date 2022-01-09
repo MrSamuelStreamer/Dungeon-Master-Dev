@@ -184,9 +184,6 @@ dm_immortal_neutral_desc;This character has made a deal with Death.;;;;;;;;;;;;;
 dm_immortal_bad;Death's Deal;;;;;;;;;;;;;x
 dm_immortal_bad_desc;This character has made a deal with Death.;;;;;;;;;;;;;x
 
-dm_bovid19;BOVID-19;;;;;;;;;;;;;x
-dm_bovid19_desc;This character forgot to wear a mask out in public and has contracted BOVID-19. On the bright side, their milk is delicious.;;;;;;;;;;;;;x
-
 ### Decisions ###
 
 begin_DMCore;Awaken the Dungeon Master!;;;;;;;;;;;;;x
@@ -218,8 +215,7 @@ dm_dragon_bloodline_desc;Dragon deez nuts across your face! Ha! Gottem!;;;;;;;;;
 ### Tombola Mechanics ###
 
 DMCoretitle1;Dungeon Master Cometh;;;;;;;;;;;;;x
-DMCoredesc1;"Mortals, it is time once again for my influence to help shape this world! Brace yourself for the mediocre, or the insane. The unbalanced, or the overpowered!" 
-Random Number of the Day is: [global_eventTombola.GetValue];;;;;;;;;;;;;x
+DMCoredesc1;"Mortals, it is time once again for my influence to help shape this world! Brace yourself for the mediocre, or the insane. The unbalanced, or the overpowered!"\nRandom Number of the Day is: [global_eventTombola.GetValue];;;;;;;;;;;;;x
 DMCore1OptA;"Brace yourselves!";;;;;;;;;;;;;x
 
 ### Custom Tooltip ###
@@ -551,6 +547,17 @@ DMCoreEvttitle53;Animal Kingdom;;;;;;;;;;;;;x
 DMCoreEvt53OptA;"What do you mean, 'whoops'?";;;;;;;;;;;;;x
 DMEventTooltip53A;An animal kingdom has appeared on the map.;;;;;;;;;;;;;x
 
+DMCoreEvttitle54;The Network;;;;;;;;;;;;;x
+DMCoreEvtdesc54NoTower;"5G!" the Dungeon Master exclaims happily. "Such a wonderful technology! It was given to me by the Lizard People, and will prooooo-" he stops to clear his throat before continuing, "...prove to be a real game changer.";;;;;;;;;;;;;x
+DMCoreEvtdesc54TTANoTower;"Five... gee...? What?";;;;;;;;;;;;;x
+DMCoreEvtdesc54;While walking through your demense one day, you come across the damnest sight: a herd of cows- all dressed like human laborers- building a giant metal tower of some kind. You suspect it's time to take up drinking as a hobbby.;;;;;;;;;;;;;x
+DMCoreEvtdesc54TTA;"This is such a mooving sight to see.";;;;;;;;;;;;;x
+DMCoreEvtdesc54TTAQueen;"COW!";;;;;;;;;;;;;x
+DMCoreEvtdesc54TTAQueenTT;You are given this option because you are the Queen of England.;;;;;;;;;;;;;x
+DMCoreEvtdesc54TTACustomTT;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§GYou were not chosen.§!;;;;;;;;;;;;;x
+DMCoreEvtdesc54TTACustomTTTower;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§RYou were chosen.§!;;;;;;;;;;;;;x
+
+
 ### Follow-up Events ###
 
 DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x
@@ -612,6 +619,11 @@ DMCoreFollowtitle19;Kidnapped;;;;;;;;;;;;;x
 DMCoreFollowdesc19;A child, [dm_kidnapped.GetFirstName], has been kidnapped from your very court by the sinister [dm_kidnapper.GetTitledName]!:;;;;;;;;;;;;;x
 DMCoreFollow19OptA1;That bitch!;;;;;;;;;;;;;x
 DMCoreFollow19OptA2;That bastard!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle23;5G Unleashed!;;;;;;;;;;;;;x
+DMCoreFollowdesc23;With the completion of the 5G tower, the plans of the Lizard People have finally come to fruition!\n\nGENTLEMEN, BEHOLD!\n\nBOVID-19!;;;;;;;;;;;;;x
+DMCoreFollow23TTA;"Oops.";;;;;;;;;;;;;x
+DMCoreFollow23TTACustomTT;The 5G tower explodes in a burst of energy, leaving behind a new and frightening disease.;;;;;;;;;;;;;x
 
 ### Game Rules ###
 
@@ -680,3 +692,26 @@ max_milk;maximum milk;;;;;;;;;;;;;x
 tt_has_enough_milk_minor;Has 10 milk.;;;;;;;;;;;;;x
 tt_has_enough_milk_moderate;Has 25 milk.;;;;;;;;;;;;;x
 tt_has_enough_milk_major;Has 50 milk.;;;;;;;;;;;;;x
+dm_bovid19_disease;BOVID-19;;;;;;;;;;;;;x
+dm_bovid19_trait;BOVID-19;;;;;;;;;;;;;x
+dm_bovid19_trait_desc;This character forgot to wear a mask out in public and has contracted BOVID-19. On the bright side, their milk is delicious.;;;;;;;;;;;;;x
+BOVID19_INFO;5G towers have unleashed the power of BOVID-19 in this province.;;;;;;;;;;;;;x
+dm_disease101;Oh dear. Apparently you've contracted BOVID-19. Next time, trust in your alchemically-certified plague doctor and don't believe dumb shit posted on Facescroll. ;;;;;;;;;;;;;x
+dm_disease101TTA;Moo.;;;;;;;;;;;;;x
+dm_disease102;Your bout of BOVID-19 has cleared up. You're still a cow, however.;;;;;;;;;;;;;x
+dm_1G_tower;1G Tower;;;;;;;;;;;;;x
+dm_1G_tower_desc;A large tower. Despite it not doing anything, the populace considers it an extremely bad omen.;;;;;;;;;;;;;x
+dm_2G_tower;2G Tower;;;;;;;;;;;;;x
+dm_2G_tower_desc;A large tower with twice the G's. Despite it not doing anything, the populace considers it a bad omen.;;;;;;;;;;;;;x
+dm_3G_tower;3G Tower;;;;;;;;;;;;;x
+dm_3G_tower_desc;A large tower with three times the G's. Despite it not doing anything, the populace finds it uncomfortable to look at.;;;;;;;;;;;;;x
+dm_4G_tower;4G Tower;;;;;;;;;;;;;x
+dm_4G_tower_desc;A large tower with four times the G's. Despite it not doing anything, the populace finds it very confusing.;;;;;;;;;;;;;x
+dm_5G_tower;5G Tower;;;;;;;;;;;;;x
+dm_5G_tower_desc;A large tower with five times the G's. Despite it not doing anything, the populace finds it very intriguing.;;;;;;;;;;;;;x
+dm_cows_working;Cows Working;;;;;;;;;;;;;x
+dm_cows_working_desc;A large herd of cows dressed in construction working clothes are busy upgrading the large tower.;;;;;;;;;;;;;x
+dm_upgrade_network;Upgrade Tower;;;;;;;;;;;;;x
+dm_upgrade_network_desc;Upgrade the large tower in your demesne.\n§YThis will take one year to complete and reduce the penalties of the tower.§!;;;;;;;;;;;;;x
+dm_unleash_the_5G;Unleash the 5G!
+dm_unleash_the_5G_desc;Unleash the power of the 5G towers!\n§YThis will destroy the tower and all penalties it brings.§!\n§RMoo.§!

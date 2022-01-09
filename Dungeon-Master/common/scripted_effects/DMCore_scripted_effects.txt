@@ -842,7 +842,7 @@ unleash_the_joris = {
 			random_list = {
 				1 = { culture = bear }
 				1 = { culture = dog_culture }
-				1 = { culture = cat_culture }
+				1 = { culture = cat }
 				1 = { culture = dragon_culture }
 				1 = { culture = duck_culture }
 				1 = { culture = hedgehog_culture }
@@ -860,8 +860,8 @@ unleash_the_joris = {
 				1 = { culture = dog_culture
 					set_graphical_culture = dog_culture
 				}
-				1 = { culture = cat_culture
-					set_graphical_culture = cat_culture
+				1 = { culture = cat
+					set_graphical_culture = cat
 				}
 				1 = { culture = dragon_culture
 					set_graphical_culture = dragon_culture

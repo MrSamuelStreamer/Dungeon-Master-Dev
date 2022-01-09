@@ -2099,7 +2099,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					sunni = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -2118,7 +2118,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					shiite = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -2137,7 +2137,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					ibadi = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -2651,7 +2651,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					zikri = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -2670,7 +2670,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					yazidi = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -2689,7 +2689,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					kharijite = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -2708,7 +2708,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					druze = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -2727,7 +2727,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					hurufi = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -2746,7 +2746,7 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 				}
 				1 = {
 					trigger = {
-						has_dlc = "Sword of Islam"
+						has_dlc = "The Sword of Islam"
 					}
 					qarmatian = { save_event_target_as = religion_proven }
 					any_playable_ruler = {
@@ -3435,7 +3435,7 @@ character_event = {			#Perfectly Normal Men#
 	option = {
 		name = DMCoreEvt31OptA
 		any_player = {
-			character_event = { id = DMPlay.31 }
+			long_character_event = { id = DMPlay.31 }
 		}
 	}
 }
@@ -3637,7 +3637,7 @@ character_event = {			#Get out of jail free card#
 	option = {
 		name = DMCoreEvt34OptA
 		any_player = {
-			character_event = { id = DMPlay.34 }
+			long_character_event = { id = DMPlay.34 }
 		}
 	}
 }
@@ -4209,20 +4209,20 @@ character_event = { 	# The Chessboard
 				}
 			}
 		}
-		option = {
-			name = DMCoreEvt46OptA
-			event_target:slave_master1 = {
-				primary_title = {
-					reverse_unsafe_war = {
-						target = event_target:slave_master2
-						casus_belli = chessboard_invasion
-						infamy = 0
-					}
+	}
+	option = {
+		name = DMCoreEvt46OptA
+		event_target:slave_master1 = {
+			primary_title = {
+				reverse_unsafe_war = {
+					target = event_target:slave_master2
+					casus_belli = chessboard_invasion
+					infamy = 0
 				}
 			}
-			any_player = {
-				narrative_event = { id = DMPlay.46 }
-			}
+		}
+		any_player = {
+			narrative_event = { id = DMPlay.46 }
 		}
 	}
 }
@@ -4352,7 +4352,7 @@ long_character_event = {
 	option = {
 		name = DMCoreEvt49OptA
 		any_player = {
-			character_event = { id = DMPlay.49 }
+			long_character_event = { id = DMPlay.49 }
 		}	
 	}
 }
@@ -4537,6 +4537,30 @@ character_event = {			# Animal Kingdom
 		name = DMCoreEvt53OptA
 		any_player = {
 			narrative_event = { id = DMPlay.53 }
+		}
+	}
+}
+
+character_event = {			# 5G Unleashed
+	id = DMCoreEvt.54
+	offmap = allow
+	title = DMCoreEvttitle54
+	desc = DMCoreEvtdesc54
+	picture = GFX_dm_herd_of_cows
+	is_triggered_only = yes	
+	
+	immediate = {
+		set_global_flag = 5G_network_created
+		e_dungeon_master_governor = {
+			holder_scope = {
+				dm_can_you_hear_me_now = yes
+			}
+		}
+	}
+	option = {
+		name = DMCoreEvtdesc54TTANoTower
+		any_player = {
+			narrative_event = { id = DMPlay.54 }
 		}
 	}
 }

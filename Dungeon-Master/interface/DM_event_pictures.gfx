@@ -24,5 +24,15 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\dm_todreamofdeath.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_dm_sick_cow"
+		texturefile = "gfx\\event_pictures\dm_sickcow.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_dm_herd_of_cows"
+		texturefile = "gfx\\event_pictures\dm_herdofcows.dds"
+		allwaystransparent = yes
+	}
 	
 }

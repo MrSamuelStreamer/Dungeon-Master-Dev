@@ -77,8 +77,8 @@ dm_culture_group = {
 			Angel Bianca Coconut Crystal Diamond Ivory Marshmallow Milky Pearl Popcorn Snowball Snowflake Snowy Sugar
 		}
 		female_names = {
-			Bessie Brownie Buttercup Clarabelle Dottie Guinness Magic Nellie Penelope Penny Rosie Snowflake Sprinkles Sugar
-			Arabella Buttercup Chloe Ella Emma Maggie Melody Millie Minnie Muffin Penelope Phoebe Princess Sadie Sweetie
+			Bessie Brownie Clarabelle Dottie Guinness Magic Nellie Penelope Penny Rosie Snowflake Sprinkles Sugar
+			Arabella Buttercup Chloe Ella Emma Maggie Melody Millie Minnie Muffin Phoebe Princess Sadie Sweetie
 		}
 		
 		prefix = no
@@ -94,7 +94,7 @@ dm_culture_group = {
 		mother_name_chance = 30
 
 		used_for_random = no
-		allow_in_ruler_designer = yes
+		allow_in_ruler_designer = no
 
 		modifier = default_culture_modifier
 		

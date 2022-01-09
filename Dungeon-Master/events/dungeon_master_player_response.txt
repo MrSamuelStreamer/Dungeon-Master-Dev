@@ -1721,7 +1721,7 @@ character_event = {			# Blood of the Dragon
 	}	
 }
 
-character_event = {			# Animal Kingdom
+narrative_event = {			# Animal Kingdom
 	id = DMPlay.53
 	title = DMCoreEvttitle53
 	desc = DMCoreEvtdesc53
@@ -1735,4 +1735,72 @@ character_event = {			# Animal Kingdom
 			text = DMEventTooltip53A
 		}
 	}	
+}
+
+narrative_event = {			# 5G Unleashed
+	id = DMPlay.54
+	title = DMCoreEvttitle54
+	desc = { # Tower in your demense
+		trigger = {
+			any_demesne_province = {
+				has_province_modifier = dm_1G_tower
+			}
+		}
+		text = DMCoreEvtdesc54
+	}
+	desc = { # No towers
+		trigger = {
+			any_demesne_province = {
+				NOT = { has_province_modifier = dm_1G_tower }
+			}
+		}
+		text = DMCoreEvtdesc54NoTower
+	}
+			
+	picture = GFX_dm_herd_of_cows
+	is_triggered_only = yes	
+	
+	option = {
+		trigger = {
+			NAND = {
+				is_female = yes
+				has_title = k_england
+			}
+			any_demesne_province = {
+				has_province_modifier = dm_1G_tower
+			}
+		}
+		name = DMCoreEvtdesc54TTA
+		custom_tooltip = {
+			text = DMCoreEvtdesc54TTACustomTTTower
+		}
+	}
+	option = {
+		tooltip_info_custom = DMCoreEvtdesc54TTAQueenTT
+		trigger = {
+			is_female = yes
+			has_title = k_england
+			any_demesne_province = {
+				has_province_modifier = dm_1G_tower
+			}
+		}
+		name = DMCoreEvtdesc54TTAQueen
+		health = 0.5
+		custom_tooltip = {
+			text = DMCoreEvtdesc54TTACustomTTTower
+		}
+	}
+	option = {
+		tooltip_info_custom = DMCoreEvtdesc54TTAQueenTT
+		trigger = {
+			any_demesne_province = {
+				NOT = { has_province_modifier = dm_1G_tower }
+			}
+		}
+		name = DMCoreEvtdesc54TTANoTower
+		custom_tooltip = {
+			text = DMCoreEvtdesc54TTACustomTT
+		}
+	}
+	
 }

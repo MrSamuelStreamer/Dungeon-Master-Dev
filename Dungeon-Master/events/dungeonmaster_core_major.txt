@@ -350,6 +350,32 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola_major value = 13 }
 					variable_shuffle_major = yes
 				}
+				1 = {			#event 54 - 5G Unleased
+					trigger = {
+						has_dlc = "Reapers"
+						NOR = {
+							has_global_flag = 5G_unleashed
+							has_global_flag = 5G_network_created
+						}
+						NOR = { 
+							check_variable  = { which = global_eventA value == 14 }
+							check_variable  = { which = global_eventB value == 14 }
+							check_variable  = { which = global_eventC value == 14 }
+							check_variable  = { which = global_eventD value == 14 }
+							check_variable  = { which = global_eventE value == 14 }
+							check_variable  = { which = global_eventF value == 14 }
+							check_variable  = { which = global_eventG value == 14 }
+							check_variable  = { which = global_eventH value == 14 }
+							check_variable  = { which = global_eventI value == 14 }
+							check_variable  = { which = global_eventJ value == 14 }
+							check_variable  = { which = global_eventK value == 14 }
+							check_variable  = { which = global_eventL value == 14 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.54 }			# 5G Unleashed
+					set_variable = { which = global_eventTombola value = 14 }
+					variable_shuffle = yes
+				}
 			}
 		}
 	}

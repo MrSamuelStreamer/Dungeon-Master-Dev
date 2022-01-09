@@ -829,7 +829,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 							check_variable  = { which = global_eventL value == 36 }
 						}
 					}
-					character_event = { id =  DMCoreEvt.49 }			# Kidnapping
+					long_character_event = { id =  DMCoreEvt.49 }			# Kidnapping
 					set_variable = { which = global_eventTombola value = 36 }
 					variable_shuffle = yes
 				}				

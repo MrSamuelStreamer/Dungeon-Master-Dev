@@ -20,8 +20,6 @@ cursed_ring = {
 	picture = "GFX_cursed_ring"
 	
 	slot = wrist
-
-	indestructible = yes
 }
 
 cursed_ring_of_one = {
@@ -47,8 +45,6 @@ cursed_ring_of_one = {
 	picture = "GFX_cursed_ring_of_one"
 	
 	slot = wrist
-
-	indestructible = yes
 }
 
 stinkrot_reaver = {
@@ -133,8 +129,8 @@ wyvern_armour = {
 	monthly_character_prestige = 0.25
 	command_modifier = { morale_offence = 0.15 }
 	quality = 5
-	active = { 
-		owner = {
+	active = {
+		OR = {
 			trait = genius
 			trait = quick
 			trait = shrewd

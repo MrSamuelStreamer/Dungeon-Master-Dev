@@ -299,9 +299,7 @@ character_event = {			#Follow-up from DM_disease.txt - I have turned midas plagu
 
 character_event = {			#Follow-up from DMCoreEvt.21 - Horse Lord gets Troops#
 	id = DMCoreFollow.6
-	title = DMCoreFollowtitle6
-	picture = GFX_evt_recieve_letter
-	desc =  DMCoreFollowtitledesc6
+	hide_window = yes
 	offmap = allow
 	
 	trigger = {
@@ -875,7 +873,7 @@ character_event = {
 					is_female = yes
 				}
 			}
-			text = DMCoreFollow16OptA1
+			text = DMCoreFollow19OptA1
 		}
 		name = {
 			trigger = {
@@ -920,6 +918,59 @@ character_event = {		# Chessboard Cleanup
 				ai = yes
 			}
 			abdicate_to = FROMFROM
+		}
+	}
+}
+
+province_event = {		# 5G network upgrading
+	id = DMCoreFollow.22
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		trigger_switch = {
+			on_trigger = has_province_modifier
+			dm_1G_tower = {
+				remove_province_modifier = dm_1G_tower
+				add_province_modifier = {
+					name = dm_2G_tower
+					duration = -1
+				}
+			}
+			dm_2G_tower = {
+				remove_province_modifier = dm_2G_tower
+				add_province_modifier = {
+					name = dm_3G_tower
+					duration = -1
+				}
+			}
+			dm_3G_tower = {
+				remove_province_modifier = dm_3G_tower
+				add_province_modifier = {
+					name = dm_4G_tower
+					duration = -1
+				}
+			}
+			dm_4G_tower = {
+				remove_province_modifier = dm_4G_tower
+				add_province_modifier = {
+					name = dm_5G_tower
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+province_event = {		# 5G finished, BOVID-19 has been unleashed
+	id = DMCoreFollow.23
+	title = DMCoreFollowtitle23
+	desc = DMCoreFollowdesc23
+	picture = GFX_dm_herd_of_cows
+	is_triggered_only = yes	
+	option = {
+		name = DMCoreFollow23TTA
+		custom_tooltip = {
+			text = DMCoreFollow23TTACustomTT
 		}
 	}
 }

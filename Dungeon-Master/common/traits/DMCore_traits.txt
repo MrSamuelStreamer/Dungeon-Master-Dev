@@ -108,3 +108,11 @@ dm_deaths_deal = {
 	customizer = no
 	immortal = yes
 }
+
+dm_bovid19_trait = { 
+	customizer = no
+	random = no
+	general_opinion = -5
+	health = -1
+	is_epidemic = yes 
+}

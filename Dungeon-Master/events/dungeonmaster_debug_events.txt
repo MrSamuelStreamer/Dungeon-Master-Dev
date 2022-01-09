@@ -55,6 +55,27 @@ character_event = {
 		}
 	}
 }
+character_event = {
+	id = dmdebug.997
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		location = {
+			activate_disease = dm_bovid19_disease
+			spawn_disease = dm_bovid19_disease
+		}
+	}
+}
+character_event = {
+	id = dmdebug.996
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		create_character = {
+			culture = dm_cow_culture
+		}
+	}
+}
 #
 # Debug events to properly fire DM events from the DM himself
 #
@@ -515,7 +536,7 @@ character_event = {
 	immediate = {
 		offmap_dungeon_master = {
 			offmap_ruler = {
-				character_event = { id = DMCoreEvt.33 }
+				narrative_event = { id = DMCoreEvt.33 }
 			}
 		}
 	}
@@ -796,6 +817,20 @@ character_event = {
 		offmap_dungeon_master = {
 			offmap_ruler = {
 				character_event = { id = DMCoreEvt.53 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.54
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.54 }
 			}
 		}
 	}

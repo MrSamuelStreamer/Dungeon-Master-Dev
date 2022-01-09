@@ -1,7 +1,7 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_trait_dm_bovid19"
-		texturefile = "gfx/traits/dm_bovid19.dds"
+		name = "GFX_trait_dm_bovid19_trait"
+		texturefile = "gfx/traits/dm_bovid19_trait.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate_linear.lua"
