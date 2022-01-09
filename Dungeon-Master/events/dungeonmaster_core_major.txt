@@ -4,7 +4,7 @@ character_event = {
 	id = DMCoremajor.1000
 	hide_window = yes
 	is_triggered_only = yes
-	offmap = only
+	offmap = allow
 	trigger = {
 		trait = dungeon_master
 		NOT = { has_global_flag = dungeon_master_working_major }
@@ -24,7 +24,11 @@ character_event = {
 					value = dm_freq_10_major
 				}
 			}
-			character_event = { id = DMCoremajor.1 years = 9 random = 365 }
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCoremajor.1 years = 9 random = 365 }
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -33,7 +37,11 @@ character_event = {
 					value = dm_freq_50_major
 				}
 			}
-			character_event = { id = DMCoremajor.1 years = 45 random = 1825 } # 45 min, 50 max
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCoremajor.1 years = 45 random = 1825 } # 45 min, 50 max
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -42,10 +50,18 @@ character_event = {
 					value = dm_freq_true_random_major
 				}
 			}
-			character_event = { id = DMCore.1 years = 20 random = 7300 } # no minimum, 20 years maximum.
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 20 random = 7300 } # no minimum, 20 years maximum.
+				}
+			}
 		}
 		else = {
-			character_event = { id = DMCoremajor.1 years = 20 random = 1825 } # 20 min, 25 max
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCoremajor.1 years = 20 random = 1825 } # 20 min, 25 max
+				}
+			}
 		}
 	}
 }			
@@ -57,11 +73,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 #	picture = GFX_evt_lunatic
 	hide_window = yes
 	is_triggered_only = yes
-	offmap = only
-	
-	trigger = {
-		trait = dungeon_master
-	}
+	offmap = allow
 
 	immediate = {
 		clr_global_flag = dungeon_master_working

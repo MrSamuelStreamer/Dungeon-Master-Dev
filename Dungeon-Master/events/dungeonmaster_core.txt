@@ -3,7 +3,7 @@ namespace = DMCore
 character_event = {
 	id = DMCore.999
 	hide_window = yes
-	offmap = only
+	offmap = allow
 	is_triggered_only = yes # on_yearly_pulse
 	trigger = {
 		trait = dungeon_master
@@ -24,7 +24,11 @@ character_event = {
 					value = dm_freq_5
 				}
 			}
-			character_event = { id = DMCore.1 years = 4 random = 365 } # Four years minumum, five years maximum.
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 4 random = 365 } # Four years minumum, five years maximum.
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -55,14 +59,10 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 	title = DMCoretitle1
 	desc = DMCoredesc1
 	picture = GFX_evt_lunatic
-	offmap = only
+	offmap = allow
 	
 	is_triggered_only = yes
 	
-	trigger = {
-		trait = dungeon_master
-	}
-
 	immediate = {
 		clr_global_flag = dungeon_master_working
 		stinky_random_for_caveman_paradox = yes
