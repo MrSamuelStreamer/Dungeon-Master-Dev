@@ -76,6 +76,31 @@ character_event = {
 		}
 	}
 }
+
+character_event = {
+	id = dmdebug.995
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		activate_title = {
+			title = k_dungeon
+			status = no
+		}
+		any_character = {
+			limit = {
+				trait = dungeon_master
+				NOR = {
+					is_offmap_governor = yes
+					is_offmap_ruler = yes
+				}
+				death = {
+					death_reason = death_missing
+				}
+			}
+		}
+	}
+}
+
 #
 # Debug events to properly fire DM events from the DM himself
 #

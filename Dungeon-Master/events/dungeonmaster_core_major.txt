@@ -52,7 +52,7 @@ character_event = {
 			}
 			offmap_dungeon_master = {
 				offmap_ruler = {
-					character_event = { id = DMCore.1 years = 20 random = 7300 } # no minimum, 20 years maximum.
+					character_event = { id = DMCore.1 years = 1 random = 7300 } # One year minimum, 20 years maximum.
 				}
 			}
 		}

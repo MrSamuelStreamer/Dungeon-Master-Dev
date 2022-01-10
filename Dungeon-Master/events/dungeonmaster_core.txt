@@ -46,7 +46,7 @@ character_event = {
 					value = dm_freq_true_random
 				}
 			}
-			character_event = { id = DMCore.1 years = 10 random = 3650 } # no minumum, 10 years maximum.
+			character_event = { id = DMCore.1 years = 1 random = 3650 } # One year minumum, 10 years maximum.
 		}
 		else = {
 			character_event = { id = DMCore.1 years = 14 random = 365 } # 14 years minumum, 15 years maximum.
