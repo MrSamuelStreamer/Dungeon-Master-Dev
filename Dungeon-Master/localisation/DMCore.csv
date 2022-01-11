@@ -33,6 +33,9 @@ genius_fake_desc;This character is blessed with a towering intellect.\nMartial: 
 dm_deaths_deal;Death's Deal;;;;;;;;;;;;;x
 dm_deaths_deal_desc;This character has made a pact with Death, and is fated to not live beyond a specific date.;;;;;;;;;;;;;x
 
+nazgul_trait;Corrupted Man;;;;;;;;;;;;;x
+nazgul_trait_desc;This character accepted a dark gift and succumbed to its temptations...;;;;;;;;;;;;;x
+
 ### Dungeon Master Character Misc ###
 
 e_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
@@ -624,6 +627,16 @@ DMCoreFollowtitle23;5G Unleashed!;;;;;;;;;;;;;x
 DMCoreFollowdesc23;With the completion of the 5G tower, the plans of the Lizard People have finally come to fruition!\n\nGENTLEMEN, BEHOLD!\n\nBOVID-19!;;;;;;;;;;;;;x
 DMCoreFollow23TTA;"Oops.";;;;;;;;;;;;;x
 DMCoreFollow23TTACustomTT;The 5G tower explodes in a burst of energy, leaving behind a new and frightening disease.;;;;;;;;;;;;;x
+
+DMCoreFollowtitle24;The Whispers in your Mind;;;;;;;;;;;;;x
+DMCoreFollowdesc24;Your cursed ring has imbued you with all sorts of power, and through it you have achieved great feats of glory. But some days a great whisper rattles in your skull and it's lure is almsot too difficult to resist.;;;;;;;;;;;;;x
+DMCoreFollow24a;"I... I am strong enough!";;;;;;;;;;;;;x
+DMCoreFollow24b;"I submit! No more, please!";;;;;;;;;;;;;x
+curse_warning_tooltip;You feel as if you will not be able to resist the whispers any longer.;;;;;;;;;;;;;x
+
+DMCoreFollowtitle25;Ash Nazg Durbatulûk;;;;;;;;;;;;;x
+DMCoreFollowdesc25;The whispers become all too much to bear. You collapse to your knees and cough up a pitch black fog which begins to engulf you. A face fills your mind, the face of the one who gifted you this ring all that time ago...;;;;;;;;;;;;;x
+DMCoreFollow24a;Agh burzum-ishi krimpatul;;;;;;;;;;;;;x
 
 ### Game Rules ###
 
