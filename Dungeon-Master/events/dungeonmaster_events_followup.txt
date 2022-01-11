@@ -974,3 +974,73 @@ province_event = {		# 5G finished, BOVID-19 has been unleashed
 		}
 	}
 }
+
+character_event = {			#Cursed ring follow up - chance to become "nazgul"
+	id = DMCoreFollow.24
+	title = DMCoreFollowtitle24
+	picture = GFX_evt_mysterious_forest
+	desc =  DMCoreFollowdesc24
+	
+	trigger = {
+		any_artifact = {
+			artifact_type = cursed_ring
+			is_artifact_equipped = yes
+		}
+		NOT = {
+			trait = nazgul_trait
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+	
+	option = {				#one safety net
+		trigger = { 
+			NOT = { has_character_flag = curse_warning }
+		}
+		name = DMCoreFollow24a
+		custom_tooltip = { text = curse_warning_tooltip }
+		set_character_flag = curse_warning
+	}
+
+	option = {
+		trigger = { 
+			has_character_flag = curse_warning
+		}
+		name = DMCoreFollow24b
+		character_event = { id = DMCoreFollow.25 }
+	}
+}
+
+character_event = {			#becomes a nazgul
+	id = DMCoreFollow.25
+	title = DMCoreFollowtitle25
+	picture = GFX_evt_mysterious_forest
+	desc =  DMCoreFollowdesc25
+	
+	is_triggered_only = yes
+	
+	option = {				#could make character and copy name over, but I like them keeping their family, achievements, etc
+		name = DMCoreFollow25
+		hidden_tooltip = {
+			give_nickname = nick_the_black_rider
+			add_trait = nazgul_trait
+			add_trait = cruel
+			add_trait = wroth
+			add_trait = immortal
+			add_trait = possessed
+			add_trait = disfigured
+			add_trait = frail
+			add_trait = duelist
+			add_trait = impaler
+			add_trait = zealous
+			remove_spouse = spouse
+			transfer_scaled_wealth = {
+				to = current_heir
+				value = all
+			}
+		}
+		abdicate = yes
+	}
+}

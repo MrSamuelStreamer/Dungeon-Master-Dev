@@ -10,7 +10,10 @@ cursed_ring = {
 	}
 	indestructible = yes
 	active = {
-		is_ruler = yes
+		OR = {
+			is_ruler = yes
+			trait = nazgul_trait
+		}
 	}
 	allowed_gift = {
 		always = no
