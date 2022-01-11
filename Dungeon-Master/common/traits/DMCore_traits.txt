@@ -124,13 +124,15 @@ nazgul_trait = {
 	combat_rating = 250 
 	general_opinion = -50
 	health = 10
-	immortal = yes
 	command_modifier = {
 		speed = 0.5
 	}
 	ai_zeal = 50
 	ai_greed = 50	
 	ai_ambition = 50	
+	immortal = yes
+	cannot_marry = yes
+	cannot_inherit = yes
 	random = no 
 	customizer = no 
 }
