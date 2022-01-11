@@ -886,9 +886,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 				1 = {			#event 52 - Blood of the Dragon
 					trigger = {
 						has_dlc = "Holy Fury"
-						NOT = {
-							has_global_flag = joris_unleashed
-						}
 						NOR = { 
 							check_variable  = { which = global_eventA value == 39 }
 							check_variable  = { which = global_eventB value == 39 }
@@ -906,6 +903,33 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					}
 					character_event = { id =  DMCoreEvt.52 }			# Blood of the Dragon
 					set_variable = { which = global_eventTombola value = 39 }
+					variable_shuffle = yes
+				}				
+				1 = {			#event 55 - Inept Tea
+					trigger = {
+						has_dlc = "Mystics"
+						NOT = {
+							any_player = {
+								has_artifact = dm_inept_tea
+							}
+						}
+						NOR = { 
+							check_variable  = { which = global_eventA value == 40 }
+							check_variable  = { which = global_eventB value == 40 }
+							check_variable  = { which = global_eventC value == 40 }
+							check_variable  = { which = global_eventD value == 40 }
+							check_variable  = { which = global_eventE value == 40 }
+							check_variable  = { which = global_eventF value == 40 }
+							check_variable  = { which = global_eventG value == 40 }
+							check_variable  = { which = global_eventH value == 40 }
+							check_variable  = { which = global_eventI value == 40 }
+							check_variable  = { which = global_eventJ value == 40 }
+							check_variable  = { which = global_eventK value == 40 }
+							check_variable  = { which = global_eventL value == 40 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.55 }			# Inept Tea
+					set_variable = { which = global_eventTombola value = 40 }
 					variable_shuffle = yes
 				}				
 			}

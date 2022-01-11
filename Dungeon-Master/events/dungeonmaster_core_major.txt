@@ -388,6 +388,28 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					set_variable = { which = global_eventTombola value = 14 }
 					variable_shuffle = yes
 				}
+				1 = {			#event 56 - It Belongs In A Museum
+					trigger = {
+						has_dlc = "Mystics"
+						NOR = { 
+							check_variable  = { which = global_eventA value == 15 }
+							check_variable  = { which = global_eventB value == 15 }
+							check_variable  = { which = global_eventC value == 15 }
+							check_variable  = { which = global_eventD value == 15 }
+							check_variable  = { which = global_eventE value == 15 }
+							check_variable  = { which = global_eventF value == 15 }
+							check_variable  = { which = global_eventG value == 15 }
+							check_variable  = { which = global_eventH value == 15 }
+							check_variable  = { which = global_eventI value == 15 }
+							check_variable  = { which = global_eventJ value == 15 }
+							check_variable  = { which = global_eventK value == 15 }
+							check_variable  = { which = global_eventL value == 15 }
+						}
+					}
+					character_event = { id =  DMCoreEvt.56 }			# It Belongs In A Museum
+					set_variable = { which = global_eventTombola value = 15 }
+					variable_shuffle = yes
+				}
 			}
 		}
 	}

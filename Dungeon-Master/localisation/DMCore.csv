@@ -139,6 +139,14 @@ wyvern_sword_desc;The mighty Wyvern Sword gifted to the person who united the Wy
 wyvern_helmet_desc;The Helmet of the unicorn gifted to its friend, the Wyvern, who in turn gifted it to the one who collected all of the Wyvernballs.;;;;;;;;;;;;;x
 wyvern_amulet_desc;The original dragon amulet of the Wyvern, copied meticulously by chinese jewelers throughout the ages.;;;;;;;;;;;;;x
 
+dm_inept_tea;Inept Tea;;;;;;;;;;;;;x
+dm_inept_tea_desc;This weird monkey is a receipt for blackmarket tea. You own neither the tea nor the monkey.;;;;;;;;;;;;;x
+dm_laundering_modifier;Money Laundering: ;;;;;;;;;;;;;x
+dm_cryptic;Cryptic Currencies: ;;;;;;;;;;;;;x
+dm_inept_tea_respect;Respect: ;;;;;;;;;;;;;x
+
+dm_fedora;Fedora;;;;;;;;;;;;;x
+dm_fedora_desc;Not to be confused with a trilby, the fedora is a symbol of adventure and pairs great with a whip. Warning: keep out of reach of creepy virgin men.;;;;;;;;;;;;;x
 
 ### Event Modifiers ###
 
@@ -556,6 +564,15 @@ DMCoreEvtdesc54TTAQueen;"COW!";;;;;;;;;;;;;x
 DMCoreEvtdesc54TTAQueenTT;You are given this option because you are the Queen of England.;;;;;;;;;;;;;x
 DMCoreEvtdesc54TTACustomTT;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§GYou were not chosen.§!;;;;;;;;;;;;;x
 DMCoreEvtdesc54TTACustomTTTower;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§RYou were chosen.§!;;;;;;;;;;;;;x
+
+DMCoreEvttitle55;Inept Tea;;;;;;;;;;;;;x
+DMCoreEvtdesc55;The Dungeon Master runs up to you with a wide grin on his face and a badly-dressed primate in his arms. "I've got a shipment of inept tea coming in, and I want you to be the first to buy in to this new craze! Here's the proof of purchase! Thanks!" He tosses the confused ape at you and steals your gold before leaving.;;;;;;;;;;;;;x
+DMCoreEvtdesc55TTA;"Inept tea? What?";;;;;;;;;;;;;x
+
+DMCoreEvttitle56;It Belongs In A Museum;;;;;;;;;;;;;x
+DMCoreEvtdesc56;The Dungeon Master barges into your throneroom dressed in a leather jacket and carrying a bullwhip. "Treasures! They belong in a museum," he rants. "But don't worry. We've got top men working on it. Top men." He gives you a wide grin and places a hat on your head. "Fortune and glory, kid. Fortune and glory.";;;;;;;;;;;;;x
+DMCoreEvtdesc56TTA;"You mean YOUR fortune and glory.";;;;;;;;;;;;;x
+DMCoreEvtdesc56TTACustom;Despite the obvious risk of a copyright lawsuit, the Dungeon Master has taken it up upon himself to liberate valuable artifacts from around the world. Though, some of them may get lost in transport.;;;;;;;;;;;;;x
 
 
 ### Follow-up Events ###

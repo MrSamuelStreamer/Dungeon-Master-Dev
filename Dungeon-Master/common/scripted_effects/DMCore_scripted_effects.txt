@@ -951,7 +951,8 @@ unleash_the_joris = {
 dm_belongs_in_a_museum = {
 	any_character = {
 		limit = {
-			has_character_flag = dungeon_master
+			trait = dungeon_master
+			is_offmap_governor = yes
 		}
 		save_event_target_as = dungeon_master
 	}

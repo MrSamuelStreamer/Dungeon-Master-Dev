@@ -12,3 +12,24 @@ dm_milky = {
 	is_hidden = no
 	max_decimals = 0
 }
+dm_laundering_modifier = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+dm_cryptic = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+dm_inept_tea_respect = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}

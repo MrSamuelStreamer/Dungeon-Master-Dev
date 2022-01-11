@@ -4564,3 +4564,39 @@ character_event = {			# 5G Unleashed
 		}
 	}
 }
+
+character_event = {			# Inept Tea
+	id = DMCoreEvt.55
+	offmap = allow
+	title = DMCoreEvttitle55
+	desc = DMCoreEvtdesc55
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc55TTA
+		any_player = {
+			character_event = { id = DMPlay.55 }
+		}
+	}
+}
+
+character_event = {			# It Belongs In A Museum
+	id = DMCoreEvt.56
+	offmap = allow
+	title = DMCoreEvttitle56
+	desc = DMCoreEvtdesc56
+	picture = GFX_evt_council_speaker
+	is_triggered_only = yes	
+	
+	immediate = {
+		dm_belongs_in_a_museum = yes
+	}
+	
+	option = {
+		name = DMCoreEvtdesc56TTA
+		any_player = {
+			character_event = { id = DMPlay.56 }
+		}
+	}
+}

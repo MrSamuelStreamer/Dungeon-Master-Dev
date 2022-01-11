@@ -860,3 +860,31 @@ character_event = {
 		}
 	}
 }
+
+character_event = {
+	id = dmdebug.55
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.55 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.56
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.56 }
+			}
+		}
+	}
+}

@@ -1802,5 +1802,37 @@ narrative_event = {			# 5G Unleashed
 			text = DMCoreEvtdesc54TTACustomTT
 		}
 	}
-	
 }
+
+character_event = {			# Inept Tea
+	id = DMPlay.55
+	offmap = allow
+	title = DMCoreEvttitle55
+	desc = DMCoreEvtdesc55
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc55TTA
+		scaled_wealth = -5
+		add_artifact = dm_inept_tea
+	}
+}
+
+character_event = {			# It Belongs In A Museum
+	id = DMPlay.56
+	offmap = allow
+	title = DMCoreEvttitle56
+	desc = DMCoreEvtdesc56
+	picture = GFX_evt_council_speaker
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc56TTA
+		add_artifact = dm_fedora
+		custom_tooltip = {
+			text = DMCoreEvtdesc56TTACustom
+		}
+	}
+}
+

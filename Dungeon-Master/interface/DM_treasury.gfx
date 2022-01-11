@@ -95,5 +95,13 @@ spriteTypes = {
 		name = "GFX_dm_fedora_small"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\dm_fedora_small.dds"
 	}
+	spriteType = {
+		name = "GFX_dm_inept_tea"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dm_inept_tea.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_inept_tea_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dm_inept_tea_small.dds"
+	}
 
 }

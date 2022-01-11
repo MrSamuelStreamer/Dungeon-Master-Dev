@@ -195,5 +195,15 @@ dm_fedora = {
 	flags = { dungeon_master_hat cursed }
 	picture = "GFX_dm_fedora"
 	stacking = no
-	slot = dm_head
+	slot = crown
 }
+
+dm_inept_tea = {
+	dm_laundering_modifier = 0.15
+	dm_cryptic = 0.1
+	dm_inept_tea_respect = -15
+	quality = 1
+	flags = { dungeon_master_hat cursed }
+	picture = "GFX_dm_inept_tea"
+	stacking = no
+}	
