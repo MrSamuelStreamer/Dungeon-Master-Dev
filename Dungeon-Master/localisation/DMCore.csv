@@ -33,7 +33,7 @@ genius_fake_desc;This character is blessed with a towering intellect.\nMartial: 
 dm_deaths_deal;Death's Deal;;;;;;;;;;;;;x
 dm_deaths_deal_desc;This character has made a pact with Death, and is fated to not live beyond a specific date.;;;;;;;;;;;;;x
 
-nazgul_trait;Corrupted Man;;;;;;;;;;;;;x
+nazgul_trait;Black Rider;;;;;;;;;;;;;x
 nazgul_trait_desc;This character accepted a dark gift and succumbed to its temptations...;;;;;;;;;;;;;x
 
 ### Dungeon Master Character Misc ###
@@ -636,7 +636,7 @@ curse_warning_tooltip;You feel as if you will not be able to resist the whispers
 
 DMCoreFollowtitle25;Ash Nazg Durbatulûk;;;;;;;;;;;;;x
 DMCoreFollowdesc25;The whispers become all too much to bear. You collapse to your knees and cough up a pitch black fog which begins to engulf you. A face fills your mind, the face of the one who gifted you this ring all that time ago...;;;;;;;;;;;;;x
-DMCoreFollow24a;Agh burzum-ishi krimpatul;;;;;;;;;;;;;x
+DMCoreFollow25;Agh burzum-ishi krimpatul;;;;;;;;;;;;;x
 
 ### Game Rules ###
 
@@ -683,6 +683,7 @@ DM_FREQ_NONE_MAJOR_DESC;§BMAJOR§! events will be §Rdisabled§!.;;;;;;;;;;;;;x
 
 nick_coleman;the Coal Man;;;;;;;;;;;;;x
 nick_cleptomaniac;the Kleptomaniac;;;;;;;;;;;;;x
+nick_the_black_rider;the Black Rider;;;;;;;;;;;;;x
 
 ### Offmap ###
 
