@@ -992,7 +992,7 @@ character_event = {			#Cursed ring follow up - chance to become "nazgul"
 	}
 
 	mean_time_to_happen = {
-		years = 1
+		years = 2
 	}
 	
 	option = {				#one safety net
