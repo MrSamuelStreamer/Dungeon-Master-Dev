@@ -81,6 +81,14 @@ spriteTypes = {
       can_be_lowres = yes
    }
 
+   spriteType = {
+	name = "GFX_nazgul_portrait"
+	  texturefile = "gfx/portraits/nazgul_portrait.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+	can_be_lowres = yes
+ }
+
    portraitType = {
       name = "DM_portrait_1"
 		effectFile = "gfx/FX/portrait.lua"
@@ -522,4 +530,57 @@ spriteTypes = {
 			}
 		}
 	}
+
+	portraitType = {
+		name = "nazgul_portrait_1"
+		  effectFile = "gfx/FX/portrait.lua"
+		weight = {
+		   additive_modifier = {
+			  value = 1000000
+			  portrait_clothing = yes
+				 portrait_has_trait = nazgul_trait
+			   }
+		}
+  
+		layer = {
+		   "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+		   "GFX_empty:c2"
+		   "GFX_empty:c3"
+		   "GFX_empty:c1"
+		   "GFX_empty:c4"
+		   "GFX_empty:p1:h:y"
+		   "GFX_nazgul_portrait:c5"
+			  "GFX_character_imprisoned:p6"
+			  "GFX_lover_overlay:p37"
+			  "GFX_player_overlay:p11"
+		}
+  
+		allow_property_values = {
+		   1 = {
+				  0  = { always = yes }
+		   }
+		   19 = {
+				  0  = { always = yes }
+		   }
+			  33 = {
+				  0  = { always = yes }
+		   }
+		   34 = {
+				  0  = { always = yes }
+		   }
+		   35 = {
+				  0  = { always = yes }
+		   }
+		   36 = {
+				  0  = { always = yes }
+		   }
+			  6 = {
+				  0 = { always = yes }
+		   }
+		   5 = {
+				  0 = { always = no }
+				 1 = { portrait_has_trait = nazgul_trait }
+			  }
+		  }
+	  }
 }
