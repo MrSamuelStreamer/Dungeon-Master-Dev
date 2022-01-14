@@ -35,15 +35,10 @@ character_event = {
 
 	trigger = {
 		trait = dungeon_master
-		is_ruler = yes
 	}
 
 	immediate = {
 		dm_recreate_gov = yes
-	}
-	
-	option = {
-		name = DMCore1OptA
 	}
 }
 
@@ -357,7 +352,11 @@ character_event = {
 	trigger = {
 		OR = {
 			is_offmap_ruler = yes
-			is_offmap_governor = yes
+			e_dungeon_master_governor = {
+				owner = {
+					character = ROOT
+				}
+			}
 		}
 		is_in_society = yes
 	}

@@ -2,12 +2,18 @@ namespace = DMCore
 
 character_event = {
 	id = DMCore.999
-	hide_window = yes
+	title = DMCoretitle1
+	desc = DMCoredesc1
+	picture = GFX_evt_lunatic
 	is_triggered_only = yes # on_yearly_pulse
 	offmap = allow
 	trigger = {
 		trait = dungeon_master
-		is_offmap_governor = yes
+		e_dungeon_master_governor = {
+			owner = {
+				character = ROOT
+			}
+		}
 		NOT = { has_global_flag = dungeon_master_working }
 		NOT = {
 			has_game_rule = {
@@ -25,7 +31,11 @@ character_event = {
 					value = dm_freq_5
 				}
 			}
-			province_event = { id = DMCore.998 years = 4 random = 365 } # Four years minumum, five years maximum.
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 4 random = 365 } # Four years minumum, five years maximum.
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -34,7 +44,11 @@ character_event = {
 					value = dm_freq_30
 				}
 			}
-			province_event = { id = DMCore.998 years = 29 random = 365 } # 29 years minumum, 30 years maximum.
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 29 random = 365 } # 29 years minumum, 30 years maximum.
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -43,11 +57,22 @@ character_event = {
 					value = dm_freq_true_random
 				}
 			}
-			province_event = { id = DMCore.998 years = 1 random = 3650 } # One year minumum, 10 years maximum.
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 1 random = 3650 } # One year minumum, 10 years maximum.
+				}
+			}
 		}
 		else = {
-			province_event = { id = DMCore.998 years = 14 random = 365 } # 14 years minumum, 15 years maximum.
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 14 random = 365 } # 14 years minumum, 15 years maximum.
+				}
+			}
 		}
+	}
+	option = {
+		name = "OK"
 	}
 }
 
@@ -58,7 +83,7 @@ province_event = {
 	immediate = {
 		offmap_dungeon_master = {
 			offmap_ruler = {
-				character_event = { id = DMCore.1 }
+				character_event = { id = DMCore.1 days = 5 }
 			}
 		}
 	}

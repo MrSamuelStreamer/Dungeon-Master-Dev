@@ -21,6 +21,10 @@ dm_create = {
 	}
 	new_character = {
 		set_character_flag = dungeon_master
+		set_character_flag = ai_flag_refuse_conversion
+		set_character_flag = special_npc
+		set_character_flag = society_join_block
+		set_character_flag = no_court_invites
 		add_character_modifier = {
 			modifier = mother_minor_rest
 			duration = -1
@@ -34,40 +38,19 @@ dm_create = {
 
 dm_gov_create = {
 	e_dungeon_master_governor = {
-		capital_scope = {
-			create_character = {
-				name = "Dungeon"
-				female = no
-			
-				dynasty = 696969
-				religion = dungeon_religion		#also religious head
-				culture = dm_culture		#placeholder
-			
-				diplomacy = 90
-				martial = 90
-				stewardship = 90
-				intrigue = 90
-				learning = 90
-			
-				historical = yes 
-				easter_egg = yes
-				disallow_random_traits = yes
-
-				trait = dungeon_master
+		owner = {
+			set_name = "Dungeon"
+			add_trait = dungeon_master
+			dynasty = 696969
+			add_character_modifier = {
+				modifier = mother_minor_rest
+				duration = -1
+				hidden = yes
 			}
-			new_character = {
-				set_character_flag = dungeon_master
-				add_character_modifier = {
-					modifier = mother_minor_rest
-					duration = -1
-					hidden = yes
-				}
-				e_dungeon_master_governor = {
-					holder_scope = {
-						abdicate_to = PREVPREV
-					}
-				}
-			}
+			set_character_flag = ai_flag_refuse_conversion
+			set_character_flag = special_npc
+			set_character_flag = society_join_block
+			set_character_flag = no_court_invites
 		}
 	}
 }
@@ -77,13 +60,19 @@ dm_recreate_gov = {
 		limit = {
 			trait = dungeon_master
 			is_offmap_ruler = no
-			is_offmap_governor = no
+			e_dungeon_master_governor = {
+				owner = {
+					NOT = { character = PREVPREV }
+				}
+			}
 		}
+		remove_trait = dungeon_master
+		dynasty = 0
 		death = {
 			death_reason = death_missing
 		}
 	}
-	add_trait = dungeon_master
+	dm_gov_create = yes
 }
 	
 
@@ -988,7 +977,11 @@ dm_belongs_in_a_museum = {
 	any_character = {
 		limit = {
 			trait = dungeon_master
-			is_offmap_governor = yes
+			e_dungeon_master_governor = {
+				owner = {
+					character = PREVPREV
+				}
+			}
 		}
 		save_event_target_as = dungeon_master
 	}
