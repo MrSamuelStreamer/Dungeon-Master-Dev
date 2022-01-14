@@ -3,10 +3,11 @@ namespace = DMCore
 character_event = {
 	id = DMCore.999
 	hide_window = yes
-	offmap = allow
 	is_triggered_only = yes # on_yearly_pulse
+	offmap = allow
 	trigger = {
 		trait = dungeon_master
+		is_offmap_governor = yes
 		NOT = { has_global_flag = dungeon_master_working }
 		NOT = {
 			has_game_rule = {
@@ -24,11 +25,7 @@ character_event = {
 					value = dm_freq_5
 				}
 			}
-			offmap_dungeon_master = {
-				offmap_ruler = {
-					character_event = { id = DMCore.1 years = 4 random = 365 } # Four years minumum, five years maximum.
-				}
-			}
+			province_event = { id = DMCore.998 years = 4 random = 365 } # Four years minumum, five years maximum.
 		}
 		else_if = {
 			limit = {
@@ -37,7 +34,7 @@ character_event = {
 					value = dm_freq_30
 				}
 			}
-			character_event = { id = DMCore.1 years = 29 random = 365 } # 29 years minumum, 30 years maximum.
+			province_event = { id = DMCore.998 years = 29 random = 365 } # 29 years minumum, 30 years maximum.
 		}
 		else_if = {
 			limit = {
@@ -46,10 +43,23 @@ character_event = {
 					value = dm_freq_true_random
 				}
 			}
-			character_event = { id = DMCore.1 years = 1 random = 3650 } # One year minumum, 10 years maximum.
+			province_event = { id = DMCore.998 years = 1 random = 3650 } # One year minumum, 10 years maximum.
 		}
 		else = {
-			character_event = { id = DMCore.1 years = 14 random = 365 } # 14 years minumum, 15 years maximum.
+			province_event = { id = DMCore.998 years = 14 random = 365 } # 14 years minumum, 15 years maximum.
+		}
+	}
+}
+
+province_event = {
+	id = DMCore.998
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCore.1 }
+			}
 		}
 	}
 }

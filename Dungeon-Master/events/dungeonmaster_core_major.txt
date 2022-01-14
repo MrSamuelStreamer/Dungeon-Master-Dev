@@ -7,7 +7,8 @@ character_event = {
 	offmap = allow
 	trigger = {
 		trait = dungeon_master
-		NOT = { has_global_flag = dungeon_master_working_major }
+		is_offmap_governor = yes
+		NOT = { has_global_flag = dungeon_master_working }
 		NOT = {
 			has_game_rule = {
 				name = dungeon_master_frequency_major
@@ -16,7 +17,7 @@ character_event = {
 		}
 	}
 	immediate = {
-		set_global_flag = dungeon_master_working_major
+		set_global_flag = dungeon_master_working
 		if = {
 			limit = {
 				has_game_rule = {
@@ -24,11 +25,7 @@ character_event = {
 					value = dm_freq_10_major
 				}
 			}
-			offmap_dungeon_master = {
-				offmap_ruler = {
-					character_event = { id = DMCoremajor.1 years = 9 random = 365 }
-				}
-			}
+			province_event = { id = DMCoremajor.998 years = 9 random = 365 }
 		}
 		else_if = {
 			limit = {
@@ -37,11 +34,7 @@ character_event = {
 					value = dm_freq_50_major
 				}
 			}
-			offmap_dungeon_master = {
-				offmap_ruler = {
-					character_event = { id = DMCoremajor.1 years = 45 random = 1825 } # 45 min, 50 max
-				}
-			}
+			province_event = { id = DMCoremajor.998 years = 45 random = 1825 } # 45 min, 50 max
 		}
 		else_if = {
 			limit = {
@@ -50,21 +43,25 @@ character_event = {
 					value = dm_freq_true_random_major
 				}
 			}
-			offmap_dungeon_master = {
-				offmap_ruler = {
-					character_event = { id = DMCore.1 years = 1 random = 7300 } # One year minimum, 20 years maximum.
-				}
-			}
+			province_event = { id = DMCore.998 years = 1 random = 7300 } # One year minimum, 20 years maximum.
 		}
 		else = {
-			offmap_dungeon_master = {
-				offmap_ruler = {
-					character_event = { id = DMCoremajor.1 years = 20 random = 1825 } # 20 min, 25 max
-				}
-			}
+			province_event = { id = DMCoremajor.998 years = 20 random = 1825 } # 20 min, 25 max
 		}
 	}
 }			
+province_event = {
+	id = DMCoremajor.998
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoremajor.1 }
+			}
+		}
+	}
+}
 
 character_event = {					#This is a system with a lot of stuff baked in, no repeated events, etc, 
 	id = DMCoremajor.1

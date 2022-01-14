@@ -269,6 +269,30 @@ stinky_random_for_caveman_paradox = { 			#just fucking what even is this
 		1 = {
 			set_variable = { which = global_eventTombola value = 32 }
 		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 33 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 34 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 35 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 36 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 37 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 38 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 39 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola value = 40 }
+		}
 	}
 }
 
@@ -306,6 +330,18 @@ stinky_random_for_caveman_paradox_major = { 			#just fucking what even is this
 		}
 		1 = {
 			set_variable = { which = global_eventTombola_major value = 11 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 12 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 13 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 14 }
+		}
+		1 = {
+			set_variable = { which = global_eventTombola_major value = 15 }
 		}
 	}
 }
