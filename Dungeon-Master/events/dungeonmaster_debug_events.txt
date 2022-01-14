@@ -101,6 +101,33 @@ character_event = {
 	}
 }
 
+character_event = {
+	id = dmdebug.994
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		clr_global_flag = dungeon_master_working
+		e_dungeon_master_governor = {
+			owner = {
+				character_event = { id = DMCore.999 }
+			}
+		}
+	}
+}
+character_event = {
+	id = dmdebug.993
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		clr_global_flag = dungeon_master_working
+		e_dungeon_master_governor = {
+			owner = {
+				character_event = { id = DMCoremajor.1000 }
+			}
+		}
+	}
+}
+
 #
 # Debug events to properly fire DM events from the DM himself
 #
