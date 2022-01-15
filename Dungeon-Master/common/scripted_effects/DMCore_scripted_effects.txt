@@ -79,20 +79,16 @@ dm_recreate_gov = {
 	dm_gov_create = yes
 }	
 
-duplicate_check = {			#holds events in storage so they can't be reused too soon, called from DMCore.1
+dm_duplicate_check = {			#holds events in storage so they can't be reused too soon, called from DMCore.1
 	if = {
 		limit = {
 			has_game_rule = {
 				name = dungeon_master_cycle
 				value = dm_cycle_double
 			}
+			check_variable = { which = global_tombola_var value = 12 }
 		}
-		if = {
-			limit = {
-				check_variable = { which = global_tombola_var value = 12 }
-			}
-			flag_clear = yes
-		}
+		dm_flag_clear = yes
 	}
 	else_if = {
 		limit = {
@@ -100,13 +96,9 @@ duplicate_check = {			#holds events in storage so they can't be reused too soon,
 				name = dungeon_master_cycle
 				value = dm_cycle_half
 			}
+			check_variable = { which = global_tombola_var value = 3 }
 		}
-		if = {
-			limit = {
-				check_variable = { which = global_tombola_var value = 3 }
-			}
-			flag_clear = yes
-		}
+		dm_flag_clear = yes
 	}
 	else_if = {
 		limit = {
@@ -114,17 +106,13 @@ duplicate_check = {			#holds events in storage so they can't be reused too soon,
 				name = dungeon_master_cycle
 				value = dm_cycle_half
 			}
+			check_variable = { which = global_tombola_var value = 6 }
 		}
-		if = {
-			limit = {
-				check_variable = { which = global_tombola_var value = 6 }
-			}
-			flag_clear = yes
-		}
+		dm_flag_clear = yes
 	}
 }
 
-flag_clear = {
+dm_flag_clear = {
 	clr_global_flag = DMEvent1
 	clr_global_flag = DMEvent2
 	clr_global_flag = DMEvent3
