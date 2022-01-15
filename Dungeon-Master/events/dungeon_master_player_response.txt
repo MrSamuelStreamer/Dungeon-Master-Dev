@@ -1791,7 +1791,6 @@ narrative_event = {			# 5G Unleashed
 		}
 	}
 	option = {
-		tooltip_info_custom = DMCoreEvtdesc54TTAQueenTT
 		trigger = {
 			any_demesne_province = {
 				NOT = { has_province_modifier = dm_1G_tower }
