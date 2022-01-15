@@ -42,30 +42,42 @@ character_event = {
 	}
 }
 
-#character_event = {
-#	id = DMmanagement.3			#To deal with the false dungeon master#
-#	offmap = allow
-#
-#	mean_time_to_happen = {
-#		days = 1
-#	}
-#
-#	trigger = {
-#		has_character_flag = dungeon_master
-#		NOT = {
-#			has_landed_title = k_dungeon
-#		}
-#	}
-#
-#	option = {
-#		name = DMCore1OptA
-#		clr_character_flag = dungeon_master
-#		death = {
-#			death_reason = death_execution
-#			killer = ROOT
-#		}
-#	}
-#}
+character_event = {
+	id = DMmanagement.3
+	ai = no
+	hide_window = yes
+	trigger = {
+		has_global_flag = dm_cleaned_up_prev_tombola
+	}
+	immediate = {
+		set_variable  = { which = global_eventA value = 0 }
+		set_variable  = { which = global_eventB value = 0 }
+		set_variable  = { which = global_eventC value = 0 }
+		set_variable  = { which = global_eventD value = 0 }
+		set_variable  = { which = global_eventE value = 0 }
+		set_variable  = { which = global_eventF value = 0 }
+		set_variable  = { which = global_eventG value = 0 }
+		set_variable  = { which = global_eventH value = 0 }
+		set_variable  = { which = global_eventI value = 0 }
+		set_variable  = { which = global_eventJ value = 0 }
+		set_variable  = { which = global_eventK value = 0 }
+		set_variable  = { which = global_eventL value = 0 }
+		set_variable  = { which = global_eventA_major value = 0 }
+		set_variable  = { which = global_eventB_major value = 0 }
+		set_variable  = { which = global_eventC_major value = 0 }
+		set_variable  = { which = global_eventD_major value = 0 }
+		set_variable  = { which = global_eventE_major value = 0 }
+		set_variable  = { which = global_eventF_major value = 0 }
+		set_variable  = { which = global_eventG_major value = 0 }
+		set_variable  = { which = global_eventH_major value = 0 }
+		set_variable  = { which = global_eventI_major value = 0 }
+		set_variable  = { which = global_eventJ_major value = 0 }
+		set_variable  = { which = global_eventK_major value = 0 }
+		set_variable  = { which = global_eventL_major value = 0 }
+		set_global_flag = dm_cleaned_up_prev_tombola
+	}
+}
+			
 
 character_event = {
 	id = DMmanagement.4			#To deal with the false ramesses and tidy titles in event of two spawning, this is all just emergency code#
