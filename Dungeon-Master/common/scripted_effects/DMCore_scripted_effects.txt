@@ -34,6 +34,10 @@ dm_create = {
 			set_offmap_holder = PREV
 		}
 	}
+	set_variable = {
+		which = global_tombola_var
+		value = 1
+	}
 }
 
 dm_gov_create = {
@@ -73,29 +77,18 @@ dm_recreate_gov = {
 		}
 	}
 	dm_gov_create = yes
-}
-	
+}	
 
-variable_shuffle = {			#holds events in storage so they can't be reused too soon
+dm_duplicate_check = {			#holds events in storage so they can't be reused too soon, called from DMCore.1
 	if = {
 		limit = {
 			has_game_rule = {
 				name = dungeon_master_cycle
 				value = dm_cycle_double
 			}
+			check_variable = { which = global_tombola_var value = 12 }
 		}
-		set_variable = { which = global_eventL which = global_eventK }
-		set_variable = { which = global_eventK which = global_eventJ }
-		set_variable = { which = global_eventJ which = global_eventI }
-		set_variable = { which = global_eventI which = global_eventH }
-		set_variable = { which = global_eventH which = global_eventG }
-		set_variable = { which = global_eventG which = global_eventF }
-		set_variable = { which = global_eventF which = global_eventE }
-		set_variable = { which = global_eventE which = global_eventD }
-		set_variable = { which = global_eventD which = global_eventC }
-		set_variable = { which = global_eventC which = global_eventB }
-		set_variable = { which = global_eventB which = global_eventA }
-		set_variable = { which = global_eventA which = global_eventTombola }
+		dm_flag_clear = yes
 	}
 	else_if = {
 		limit = {
@@ -103,331 +96,63 @@ variable_shuffle = {			#holds events in storage so they can't be reused too soon
 				name = dungeon_master_cycle
 				value = dm_cycle_half
 			}
+			check_variable = { which = global_tombola_var value = 3 }
 		}
-		set_variable = { which = global_eventC which = global_eventB }
-		set_variable = { which = global_eventB which = global_eventA }
-		set_variable = { which = global_eventA which = global_eventTombola }
-	}
-	else = {
-		set_variable = { which = global_eventF which = global_eventE }
-		set_variable = { which = global_eventE which = global_eventD }
-		set_variable = { which = global_eventD which = global_eventC }
-		set_variable = { which = global_eventC which = global_eventB }
-		set_variable = { which = global_eventB which = global_eventA }
-		set_variable = { which = global_eventA which = global_eventTombola }
-	}
-}
-
-variable_shuffle_major = {			#holds major events in storage so they can't be reused too soon
-	if = {
-		limit = {
-			has_game_rule = {
-				name = dungeon_master_cycle_major
-				value = dm_cycle_double_major
-			}
-		}
-		set_variable = { which = global_eventL_major which = global_eventK_major }
-		set_variable = { which = global_eventK_major which = global_eventJ_major }
-		set_variable = { which = global_eventJ_major which = global_eventI_major }
-		set_variable = { which = global_eventI_major which = global_eventH_major }
-		set_variable = { which = global_eventH_major which = global_eventG_major }
-		set_variable = { which = global_eventG_major which = global_eventF_major }
-		set_variable = { which = global_eventF_major which = global_eventE_major }
-		set_variable = { which = global_eventE_major which = global_eventD_major }
-		set_variable = { which = global_eventD_major which = global_eventC_major }
-		set_variable = { which = global_eventC_major which = global_eventB_major }
-		set_variable = { which = global_eventB_major which = global_eventA_major }
-		set_variable = { which = global_eventA_major which = global_eventTombola_major }
+		dm_flag_clear = yes
 	}
 	else_if = {
 		limit = {
 			has_game_rule = {
-				name = dungeon_master_cycle_major
-				value = dm_cycle_half_major
+				name = dungeon_master_cycle
+				value = dm_cycle_half
 			}
+			check_variable = { which = global_tombola_var value = 6 }
 		}
-		set_variable = { which = global_eventC_major which = global_eventB_major }
-		set_variable = { which = global_eventB_major which = global_eventA_major }
-		set_variable = { which = global_eventA_major which = global_eventTombola_major }
-	}
-	else = {
-		set_variable = { which = global_eventF_major which = global_eventE_major }
-		set_variable = { which = global_eventE_major which = global_eventD_major }
-		set_variable = { which = global_eventD_major which = global_eventC_major }
-		set_variable = { which = global_eventC_major which = global_eventB_major }
-		set_variable = { which = global_eventB_major which = global_eventA_major }
-		set_variable = { which = global_eventA_major which = global_eventTombola_major }
+		dm_flag_clear = yes
 	}
 }
 
-stinky_random_for_caveman_paradox = { 			#just fucking what even is this 
-	random_list = {			#MUST equal number of events 							#for confused modders and reviewers of code, CK2 has no implicit rand() function outside of lists or percentages, this list is an overly complicated random number generator basically.
-		1 = {																		#the reason I use this rather than a tombola is that they're basically the same thing but the variable is saved and shunted through a system to prevent the same variable coming back, think automated global flags basically
-			set_variable = { which = global_eventTombola value = 1 }				#there is almost certainly a much easier way of doing this but I had around 30 minutes to rewrite it before I had to record the next episode and this is all I had off the top of my head at the time.
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 2 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 3 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 4 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 5 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 6 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 7 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 8 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 9 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 10 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 11 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 12 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 13 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 14 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 15 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 16 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 17 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 18 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 19 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 20 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 21 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 22 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 23 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 24 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 25 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 26 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 27 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 28 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 29 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 30 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 31 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 32 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 33 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 34 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 35 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 36 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 37 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 38 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 39 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola value = 40 }
-		}
-	}
-}
-
-stinky_random_for_caveman_paradox_major = { 			#just fucking what even is this 
-	random_list = {			#MUST equal number of events 						
-		1 = {																
-			set_variable = { which = global_eventTombola_major value = 1 }				
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 2 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 3 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 4 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 5 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 6 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 7 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 8 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 9 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 10 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 11 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 12 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 13 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 14 }
-		}
-		1 = {
-			set_variable = { which = global_eventTombola_major value = 15 }
-		}
-	}
-}
-
-random_age_mod = {
-	random_list = {
-		1 = {
-			set_variable = { which = global_add_age value = 2 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 4 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 6 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 8 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 10 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 12 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 14 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 16 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 18 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 20 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 22 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 24 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 26 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 28 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = 30 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -2 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -4 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -6 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -8 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -10 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -12 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -14 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -16 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -18 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -20 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -22 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -24 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -26 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -28 }
-		}
-		1 = {
-			set_variable = { which = global_add_age value = -30 }
-		}
-	}
+dm_flag_clear = {
+	clr_global_flag = DMEvent1
+	clr_global_flag = DMEvent2
+	clr_global_flag = DMEvent3
+	clr_global_flag = DMEvent4
+	clr_global_flag = DMEvent6
+	clr_global_flag = DMEvent7
+	clr_global_flag = DMEvent8
+	clr_global_flag = DMEvent9
+	clr_global_flag = DMEvent10
+	clr_global_flag = DMEvent11
+	clr_global_flag = DMEvent12
+	clr_global_flag = DMEvent13
+	clr_global_flag = DMEvent14
+	clr_global_flag = DMEvent16
+	clr_global_flag = DMEvent17
+	clr_global_flag = DMEvent18
+	clr_global_flag = DMEvent19
+	clr_global_flag = DMEvent20
+	clr_global_flag = DMEvent23
+	clr_global_flag = DMEvent27
+	clr_global_flag = DMEvent28
+	clr_global_flag = DMEvent30
+	clr_global_flag = DMEvent31
+	clr_global_flag = DMEvent32
+	clr_global_flag = DMEvent34
+	clr_global_flag = DMEvent35
+	clr_global_flag = DMEvent36
+	clr_global_flag = DMEvent37
+	clr_global_flag = DMEvent38
+	clr_global_flag = DMEvent40
+	clr_global_flag = DMEvent41
+	clr_global_flag = DMEvent42
+	clr_global_flag = DMEvent45
+	clr_global_flag = DMEvent47
+	clr_global_flag = DMEvent48
+	clr_global_flag = DMEvent49
+	clr_global_flag = DMEvent50
+	clr_global_flag = DMEvent51
+	clr_global_flag = DMEvent52
+	clr_global_flag = DMEvent55
 }
 
 religion_tomfoolery = {
