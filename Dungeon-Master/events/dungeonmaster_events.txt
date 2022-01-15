@@ -2945,11 +2945,12 @@ character_event = {			#The Snap#
 		}
 		e_dungeon_master_governor = {
 			holder_scope = {
-				any_character = {
+				any_independent_ruler = {
 					limit = {				#Limited now to prevent horrible horrible lag#
 						NOR = {				#No lowborns or dungeon masters, characters of significant only#
 							trait = dungeon_master
 							dynasty = none
+							has_character_flag = special_npc # Compatibility with certain mods
 							AND = {
 								ai = no
 								NOT = {
@@ -2965,6 +2966,26 @@ character_event = {			#The Snap#
 						death = {
 							death_reason = death_missing
 							killer = PREV
+						}
+					}
+					any_realm_characters = {
+						limit = {
+							NOT = { has_character_flag = special_npc # Compatibility with certain mods }
+							NAND = {
+								ai = no
+								NOT = {
+									any_child = {
+										is_heir = PREV
+									}
+								}
+							}
+						}
+						random = {
+							chance = 50
+							death = {
+								death_reason = death_missing
+								killer = PREV
+							}
 						}
 					}
 				}
