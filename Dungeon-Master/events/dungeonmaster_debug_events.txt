@@ -93,9 +93,9 @@ character_event = {
 					is_offmap_governor = yes
 					is_offmap_ruler = yes
 				}
-				death = {
-					death_reason = death_missing
-				}
+			}
+			death = {
+				death_reason = death_missing
 			}
 		}
 	}
@@ -911,6 +911,20 @@ character_event = {
 		offmap_dungeon_master = {
 			offmap_ruler = {
 				character_event = { id = DMCoreEvt.56 }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = dmdebug.57
+	hide_window = yes
+	is_triggered_only = yes
+	offmap = allow
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCoreEvt.57 }
 			}
 		}
 	}

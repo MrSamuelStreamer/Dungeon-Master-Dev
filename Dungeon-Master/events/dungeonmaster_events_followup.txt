@@ -1044,3 +1044,59 @@ character_event = {			#becomes a nazgul
 		abdicate = yes
 	}
 }
+
+character_event = {		# Dooter Dies
+	id = DMCoreFollow.26
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_character_modifier = dm_dootdoot
+	}
+	immediate = {
+		save_event_target_as = dm_dead_dooter
+		current_heir = {
+			character_event = { id = DMCoreFollow.27 days = 1 }
+		}
+	}
+}
+
+character_event = {		# Dooter's hair gets a bonus
+	id = DMCoreFollow.27
+	title = DMCoreFollowtitle27
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFollowdesc27
+	is_triggered_only = yes
+	option = {
+		name = DMCoreFollow27TTA
+		random_list = {
+			75 = {
+				add_trait = sturdy
+			}
+			25 = {
+				health = 1
+			}
+		}
+	}
+	option = {
+		name = DMCoreFollow27TTB
+		random_list = {
+			50 = {
+				add_trait = robust
+			}
+			50 = {
+				health = 1
+			}
+		}
+	}
+	option = {
+		name = DMCoreFollow27TTC
+		random_list = {
+			25 = {
+				add_trait = strong
+			}
+			75 = {
+				health = 1
+			}
+		}
+	}
+}

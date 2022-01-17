@@ -76,7 +76,7 @@ character_event = {
 	}
 }
 
-province_event = {
+character_event = {
 	id = DMCore.998
 	hide_window = yes
 	is_triggered_only = yes
@@ -464,7 +464,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 							has_global_flag = DMEvent49
 						}
 					}
-					character_event = { id = DMCoreEvt.49 }
+					long_character_event = { id = DMCoreEvt.49 }
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent49
 				}
@@ -509,6 +509,17 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					character_event = { id = DMCoreEvt.55 }
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent55
+				}				
+				1 = {			#event 57
+					trigger = {
+						has_dlc = "Mystics"
+						NOT = {
+							has_global_flag = DMEvent57
+						}
+					}
+					character_event = { id = DMCoreEvt.57 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent57
 				}				
 			}
 		}

@@ -195,6 +195,9 @@ dm_immortal_neutral_desc;This character has made a deal with Death.;;;;;;;;;;;;;
 dm_immortal_bad;Death's Deal;;;;;;;;;;;;;x
 dm_immortal_bad_desc;This character has made a deal with Death.;;;;;;;;;;;;;x
 
+dm_dootdoot;The Horn of Dootage;;;;;;;;;;;;;x
+dm_dootdoot_desc;This character can doot the horn once while in combat to almost immediately route the enemy.\nOr they can save it. Who knows what might happen?;;;;;;;;;;;;;x
+
 ### Decisions ###
 
 begin_DMCore;Awaken the Dungeon Master!;;;;;;;;;;;;;x
@@ -213,6 +216,9 @@ show_wyvernballs_desc;Show the current owners of the seven Wyvernballs.;;;;;;;;;
 
 dm_kidnap_into_dynasty;Kidnap [Root.GetFirstName];;;;;;;;;;;;;x
 dm_kidnap_into_dynasty_desc;The Dungeon Master has graced you with the ability to kidnap [Root.GetFirstName] and force [Root.GetHerHim] into your dynasty.\nYou can perform this action only once. Choose wisely.;;;;;;;;;;;;;x
+
+dm_doot_doot;Doot Doot!;;;;;;;;;;;;;x
+dm_doot_doot_desc;Ask not for whom the horn doots. It doots for thee.;;;;;;;;;;;;;x
 
 ### Bloodlines ###
 
@@ -246,8 +252,7 @@ collected_all_wyvernballs;Has collected all seven Wyvernballs;;;;;;;;;;;;;x
 ### Mechanics ###
 
 DMmanagementtitle101;After the End?!;;;;;;;;;;;;;x
-DMmanagementdesc101;"Well, well, well, this is not quite right is it? 
-America? That's going to stop things working properly. Not my jurisdiction you see. Already enough chaos there to last a life time. Look, I can offer you the usual chaos, here and there, but that's it.";;;;;;;;;;;;;x
+DMmanagementdesc101;"Well, well, well, this is not quite right is it?\nAmerica? That's going to stop things working properly. Not my jurisdiction you see. Already enough chaos there to last a life time. Look, I can offer you the usual chaos, here and there, but that's it.";;;;;;;;;;;;;x
 DMmanagementOptA;"Oh, nevermind then.";;;;;;;;;;;;;x
 DMmanagementTooltip1;Certain events have been disabled to allow for compatibility with After the Ends wacky Empire mechanics!;;;;;;;;;;;;;x
 
@@ -577,6 +582,11 @@ DMCoreEvtdesc56;The Dungeon Master barges into your throneroom dressed in a leat
 DMCoreEvtdesc56TTA;"You mean YOUR fortune and glory.";;;;;;;;;;;;;x
 DMCoreEvtdesc56TTACustom;Despite the obvious risk of a copyright lawsuit, the Dungeon Master has taken it up upon himself to liberate valuable artifacts from around the world. Though, some of them may get lost in transport.;;;;;;;;;;;;;x
 
+DMCoreEvttitle57;For Whom The Horn Doots;;;;;;;;;;;;;x
+DMCoreEvtdesc57;No man is an island, entire of itself. Each is a piece of the continent, a part of the main. If a clod be washed away by the sea, Europe is the less. As well as if a promontory were. As well as if a manor of thine own or of thine friend's were. Each man's death diminishes me, for I am involved in mankind. Therefore, send not to know for whom the horn doots, It doots for thee.;;;;;;;;;;;;;x
+DMCoreEvtdesc57TTA;"Thank you, Mr Skeltal.";;;;;;;;;;;;;x
+DMCoreEvtdesc57TTACustom;You are granted a one-time useage of the Horn of Dootage during battle. From peasants to emperors, all tremble at the sound of the mighty doot doot!;;;;;;;;;;;;;x
+
 
 ### Follow-up Events ###
 
@@ -654,6 +664,12 @@ curse_warning_tooltip;You feel as if you will not be able to resist the whispers
 DMCoreFollowtitle25;Ash Nazg Durbatulûk;;;;;;;;;;;;;x
 DMCoreFollowdesc25;The whispers become all too much to bear. You collapse to your knees and cough up a pitch black fog which begins to engulf you. A face fills your mind, the face of the one who gifted you this ring all that time ago...;;;;;;;;;;;;;x
 DMCoreFollow25;Agh burzum-ishi krimpatul;;;;;;;;;;;;;x
+
+DMCoreFollowtitle27;The Last Doot;;;;;;;;;;;;;x
+DMCoreFollowdesc27;Oh dear. It seems [dm_dead_dooter.GetFirstNameWithNick] has dooted [dm_dead_dooter.GetHerHis] last doot. On the bright side, [dm_dead_dooter.GetSheHe] had a stockpile of calcium you inherited.;;;;;;;;;;;;;x
+DMCoreFollow27TTA;Doot?;;;;;;;;;;;;;x
+DMCoreFollow27TTB;Doot!;;;;;;;;;;;;;x
+DMCoreFollow27TTC;DOOT DOOT!;;;;;;;;;;;;;x
 
 ### Game Rules ###
 

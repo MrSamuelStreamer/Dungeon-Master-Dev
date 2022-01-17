@@ -239,3 +239,7 @@ dm_5G_tower = {
 dm_cows_working = {
 	icon = 101
 }
+
+dm_dootdoot = {
+	icon = 41
+}

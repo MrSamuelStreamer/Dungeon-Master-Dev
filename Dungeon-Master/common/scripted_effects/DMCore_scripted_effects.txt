@@ -153,6 +153,7 @@ dm_flag_clear = {
 	clr_global_flag = DMEvent51
 	clr_global_flag = DMEvent52
 	clr_global_flag = DMEvent55
+	clr_global_flag = DMEvent57
 }
 
 religion_tomfoolery = {

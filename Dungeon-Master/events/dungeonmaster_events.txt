@@ -2970,7 +2970,7 @@ character_event = {			#The Snap#
 					}
 					any_realm_characters = {
 						limit = {
-							NOT = { has_character_flag = special_npc # Compatibility with certain mods }
+							NOT = { has_character_flag = special_npc } # Compatibility with certain mods 
 							NAND = {
 								ai = no
 								NOT = {
@@ -4621,3 +4621,20 @@ character_event = {			# It Belongs In A Museum
 		}
 	}
 }
+
+character_event = {			# For Whom The Horn Doots
+	id = DMCoreEvt.57
+	offmap = allow
+	title = DMCoreEvttitle57
+	desc = DMCoreEvtdesc57
+	picture = GFX_evt_danse_macabre
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc57TTA
+		any_player = {
+			character_event = { id = DMPlay.57 }
+		}
+	}
+}
+
