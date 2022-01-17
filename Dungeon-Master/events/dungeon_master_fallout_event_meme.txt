@@ -1,0 +1,186 @@
+namespace = DMCoreFallout
+
+narrative_event = {			#Exceptionally long meme event to parody the *extremely* long and unironic Oblivion intro from VIET - this is a bad idea. 
+	id = DMCoreFallout.1
+	title = DMCoreFalloutTitle1
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc1
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreFallout1OptA		#only one option for now
+		narrative_event = { id = DMCoreFallout.2 }
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.2
+	title = DMCoreFalloutTitle2
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc2
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreFallout2OptA		#only one option for now
+		narrative_event = { id = DMCoreFallout.3 }
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.3
+	title = DMCoreFalloutTitle3
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc3
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreFallout3OptA		#only one option for now
+		narrative_event = { id = DMCoreFallout.4 }
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.4
+	title = DMCoreFalloutTitle4
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc4
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreFallout4OptA		#only one option for now
+		narrative_event = { id = DMCoreFallout.5 }
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.5
+	title = DMCoreFalloutTitle5
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc5
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreFallout5OptA		
+		narrative_event = { id = DMCoreFallout.6 }
+	}
+
+	option = {
+		name = DMCoreFallout5OptB						#LET ME OUT
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.6
+	title = DMCoreFalloutTitle6
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc6
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreFallout6OptA		
+		narrative_event = { id = DMCoreFallout.7 }
+	}
+
+	option = {
+		name = DMCoreFallout6OptB						#LET ME OUT
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.7
+	title = DMCoreFalloutTitle7
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc7
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreFallout7OptA		
+		narrative_event = { id = DMCoreFallout.8 }
+	}
+
+	option = {
+		name = DMCoreFallout7OptB						#LET ME OUT
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.8
+	title = DMCoreFalloutTitle8
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc8
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {										#Pulled a sneaky
+		name = DMCoreFallout8OptA		
+		
+	}
+
+	option = {
+		name = DMCoreFallout8OptB						
+		narrative_event = { id = DMCoreFallout.9 }
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.9
+	title = DMCoreFalloutTitle9
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc9
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {										
+		name = DMCoreFallout9OptA		
+		narrative_event = { id = DMCoreFallout.10 }
+	}
+
+	option = {
+		name = DMCoreFallout9OptB						
+	}
+}
+
+narrative_event = {	
+	id = DMCoreFallout.10
+	title = DMCoreFalloutTitle10
+	picture = GFX_evt_danse_macabre
+	desc =  DMCoreFalloutDesc10
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {										
+		name = DMCoreFallout10OptA		
+		narrative_event = { id = DMCoreFallout.11 }
+	}
+
+	option = {
+		name = DMCoreFallout10OptB						
+	}
+}
