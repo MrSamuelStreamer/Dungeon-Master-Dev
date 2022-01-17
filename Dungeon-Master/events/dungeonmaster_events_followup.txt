@@ -1042,6 +1042,7 @@ character_event = {			#becomes a nazgul
 			}
 		}
 		abdicate = yes
+		recalc_succession = yes
 	}
 }
 
