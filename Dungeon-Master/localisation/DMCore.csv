@@ -594,13 +594,13 @@ DMCoreEvtdesc56;The Dungeon Master barges into your throneroom dressed in a leat
 DMCoreEvtdesc56TTA;"You mean YOUR fortune and glory.";;;;;;;;;;;;;x
 DMCoreEvtdesc56TTACustom;Despite the obvious risk of a copyright lawsuit, the Dungeon Master has taken it up upon himself to liberate valuable artifacts from around the world. Though, some of them may get lost in transport.;;;;;;;;;;;;;x
 
-DMCoreEvttitle57;Eternity Battle;;;;;;;;;;;;;x
-DMCoreEvtdesc57;The Dungeon Master suddenly appears in front of you looking exasperated and almost... scared? "Listen, these are your problem now," he begins, as he opens his hand revealing six bright stones of various colours, "Fight, bribe, kill each other over them - I don't care." He begins to run out of the room, but suddenly snaps back to face you. "Just don't let HIM get them.";;;;;;;;;;;;;x
-DMCoreEvtdesc57TTA;"All of that over brightly coloured rocks?";;;;;;;;;;;;;x
-DMCoreEvtdesc57TTACustom;The §BEternity Pebbles§! are now active in the world and have been randomly distributed to six rulers.;;;;;;;;;;;;;x
-DMCoreEvtdesc57TTBCustom;The §BEternity Pebbles§! are artifacts of unrivaled power, and a ruler who collects all six will unlock a §Munique decision§!. ;;;;;;;;;;;;;x
-DMCoreEvtdesc57TTCCustom;Owners of the §BEternity Pebbles§! can be targeted by unique §GCasus Beli§! by others attempting to gain the Pebbles.;;;;;;;;;;;;;x
-DMCoreEvtdesc57TTDCustom;Owners of the §BEternity Pebbles§! may find themselves attracting the attention of an §Kunwanted guest§!...;;;;;;;;;;;;;x
+DMCoreEvttitle58;Eternity Battle;;;;;;;;;;;;;x
+DMCoreEvtdesc58;The Dungeon Master suddenly appears in front of you looking exasperated and almost... scared? "Listen, these are your problem now," he begins, as he opens his hand revealing six bright stones of various colours, "Fight, bribe, kill each other over them - I don't care." He begins to run out of the room, but suddenly snaps back to face you. "Just don't let HIM get them.";;;;;;;;;;;;;x
+DMCoreEvtdesc58TTA;"All of that over brightly coloured rocks?";;;;;;;;;;;;;x
+DMCoreEvtdesc58TTACustom;The §BEternity Pebbles§! are now active in the world and have been randomly distributed to six rulers.;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTBCustom;The §BEternity Pebbles§! are artifacts of unrivaled power, and a ruler who collects all six will unlock a §Munique decision§!. ;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTCCustom;Owners of the §BEternity Pebbles§! can be targeted by unique §GCasus Beli§! by others attempting to gain the Pebbles.;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTDCustom;Owners of the §BEternity Pebbles§! may find themselves attracting the attention of an §Kunwanted guest§!...;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 

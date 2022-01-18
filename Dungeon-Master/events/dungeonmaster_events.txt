@@ -4623,10 +4623,10 @@ character_event = {			# It Belongs In A Museum
 }
 
 character_event = {			# Eternity Stones
-	id = DMCoreEvt.57
+	id = DMCoreEvt.58
 	offmap = allow
-	title = DMCoreEvttitle57
-	desc = DMCoreEvtdesc57
+	title = DMCoreEvttitle58
+	desc = DMCoreEvtdesc58
 	picture = GFX_evt_council_speaker
 	is_triggered_only = yes	
 	
@@ -4694,9 +4694,9 @@ character_event = {			# Eternity Stones
 	}
 	
 	option = {
-		name = DMCoreEvtdesc57TTA
+		name = DMCoreEvtdesc58TTA
 		any_player = {
-			character_event = { id = DMPlay.57 }
+			character_event = { id = DMPlay.58 }
 		}
 	}
 }
