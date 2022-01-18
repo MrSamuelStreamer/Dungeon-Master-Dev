@@ -25,7 +25,7 @@ character_event = {
 			}
 			offmap_dungeon_master = {
 				offmap_ruler = {
-					character_event = { id = DMCoremajor.998 years = 9 random = 365 }
+					character_event = { id = DMCoremajor.1 years = 9 random = 365 }
 				}
 			}
 		}
@@ -38,7 +38,7 @@ character_event = {
 			}
 			offmap_dungeon_master = {
 				offmap_ruler = {
-					character_event = { id = DMCoremajor.998 years = 45 random = 1825 } # 45 min, 50 max
+					character_event = { id = DMCoremajor.1 years = 45 random = 1825 } # 45 min, 50 max
 				}
 			}
 		}
@@ -51,20 +51,20 @@ character_event = {
 			}
 			offmap_dungeon_master = {
 				offmap_ruler = {
-					character_event = { id = DMCore.998 years = 1 random = 7300 } # One year minimum, 20 years maximum.
+					character_event = { id = DMCore.1 years = 1 random = 7300 } # One year minimum, 20 years maximum.
 				}
 			}
 		}
 		else = {
 			offmap_dungeon_master = {
 				offmap_ruler = {
-					character_event = { id = DMCoremajor.998 years = 20 random = 1825 } # 20 min, 25 max
+					character_event = { id = DMCoremajor.1 years = 20 random = 1825 } # 20 min, 25 max
 				}
 			}
 		}
 	}
 }			
-province_event = {
+character_event = {
 	id = DMCoremajor.998
 	hide_window = yes
 	is_triggered_only = yes
@@ -170,7 +170,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 							has_global_flag = DMEvent33
 						}
 					}
-					character_event = { id = DMCoreEvt.33}
+					narrative_event = { id = DMCoreEvt.33}
 					set_global_flag = DMEvent33
 				}
 				1 = {			#event 39

@@ -2,6 +2,7 @@ on_death = {
 	events = {
 		DMmanagement.2
 		DMCoreFollow.18 # Remove dwarves
+		DMCoreFollow.26 # Doot :(
 	}
 }
 

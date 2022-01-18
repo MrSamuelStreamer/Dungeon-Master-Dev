@@ -93,9 +93,9 @@ character_event = {
 					is_offmap_governor = yes
 					is_offmap_ruler = yes
 				}
-				death = {
-					death_reason = death_missing
-				}
+			}
+			death = {
+				death_reason = death_missing
 			}
 		}
 	}

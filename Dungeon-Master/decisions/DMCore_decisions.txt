@@ -1,5 +1,44 @@
 decisions = {
 
+	dm_doot_doot = {
+		is_high_prio = yes
+		potential = {
+			ai = no
+			in_battle = yes
+			in_command = yes
+			has_character_modifier = dm_dootdoot
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			any_current_enemy = {
+				limit = { 
+					at_location = ROOT
+					in_command = yes
+					prisoner = no
+				}
+				morale = -0.75
+			}
+			any_current_enemy = {
+				any_realm_character = {
+					limit = { 
+						at_location = ROOT
+						in_command = yes
+						prisoner = no
+					}
+					morale = -0.75
+				}
+			}
+			remove_character_modifier = dm_dootdoot			
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+	}
+	
 	dm_upgrade_network = {
 		is_high_prio = yes
 		only_playable = yes

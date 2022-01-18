@@ -1835,6 +1835,26 @@ character_event = {			# It Belongs In A Museum
 	}
 }
 
+character_event = {			# For Whom The Horn Doots
+	id = DMPlay.57
+	offmap = allow
+	title = DMCoreEvttitle57
+	desc = DMCoreEvtdesc57
+	picture = GFX_evt_danse_macabre
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc57TTA
+		add_character_modifier = {
+			name = dm_dootdoot
+			duration = -1
+		}
+		custom_tooltip = {
+			text = DMCoreEvtdesc57TTACustom
+		}
+	}
+}
+
 character_event = {			# Eternity Pebbles
 	id = DMPlay.58
 	offmap = allow
