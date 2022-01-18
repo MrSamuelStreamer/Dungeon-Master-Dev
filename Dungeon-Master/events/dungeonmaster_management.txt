@@ -408,3 +408,74 @@ character_event = {
 		yearly_milk_increase = yes
 	}
 }
+
+# Soul Pebble Soul Check #
+character_event = {
+	id = DMmanagement.602
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		if = {
+        	 limit = {
+                any_artifact = {
+                    artifact_type = dm_soul_pebble
+                    is_artifact_equipped = yes
+                }
+				OR = {
+					trait = stressed
+					trait = depressed
+					trait = lunatic
+					trait = posessed
+				}
+            }
+        }
+	}
+	immediate = {
+		remove_trait = stressed
+		remove_trait = depressed
+		remove_trait = lunatic
+		remove_trait = posessed
+	}
+}
+
+# Time Pebble Add Immortal #
+character_event = {
+	id = DMmanagement.603
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		if = {
+        	 limit = {
+                any_artifact = {
+                    artifact_type = dm_time_pebble
+                    is_artifact_equipped = yes
+                }
+				NOT = { trait = time_pebble_immortal }
+            }
+        }
+	}
+	immediate = {
+		add_trait = time_pebble_immortal
+	}
+}
+
+# Time Pebble Remove Immortal #
+character_event = {
+	id = DMmanagement.604
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		if = {
+        	 limit = {
+                any_artifact = {
+                    artifact_type = dm_time_pebble
+                    is_artifact_equipped = no
+				}
+				trait = time_pebble_immortal 
+            }
+        }
+	}
+	immediate = {
+		remove_trait = time_pebble_immortal
+	}
+}

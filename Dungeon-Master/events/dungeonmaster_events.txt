@@ -2970,7 +2970,7 @@ character_event = {			#The Snap#
 					}
 					any_realm_characters = {
 						limit = {
-							NOT = { has_character_flag = special_npc # Compatibility with certain mods }
+							NOT = { has_character_flag = special_npc } # Compatibility with certain mods 
 							NAND = {
 								ai = no
 								NOT = {
@@ -4618,6 +4618,85 @@ character_event = {			# It Belongs In A Museum
 		name = DMCoreEvtdesc56TTA
 		any_player = {
 			character_event = { id = DMPlay.56 }
+		}
+	}
+}
+
+character_event = {			# Eternity Stones
+	id = DMCoreEvt.57
+	offmap = allow
+	title = DMCoreEvttitle57
+	desc = DMCoreEvtdesc57
+	picture = GFX_evt_council_speaker
+	is_triggered_only = yes	
+	
+	immediate = {
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_mind_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_power_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_reality_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_soul_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_space_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_time_pebble
+		}
+	}
+	
+	option = {
+		name = DMCoreEvtdesc57TTA
+		any_player = {
+			character_event = { id = DMPlay.57 }
 		}
 	}
 }

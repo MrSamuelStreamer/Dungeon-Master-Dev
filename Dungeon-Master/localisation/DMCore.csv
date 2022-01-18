@@ -151,6 +151,23 @@ dm_inept_tea_respect;Respect: ;;;;;;;;;;;;;x
 dm_fedora;Fedora;;;;;;;;;;;;;x
 dm_fedora_desc;Not to be confused with a trilby, the fedora is a symbol of adventure and pairs great with a whip. Warning: keep out of reach of creepy virgin men.;;;;;;;;;;;;;x
 
+dm_mind_pebble;Mind Pebble;;;;;;;;;;;;;x
+dm_mind_pebble_desc;One of the six Eternity Pebbles. This Pebble gives mastery over the minds of yourself and others.;;;;;;;;;;;;;x
+dm_power_pebble;Power Pebble;;;;;;;;;;;;;x
+dm_power_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user unrivaled physical power.;;;;;;;;;;;;;x
+dm_reality_pebble;Reality Pebble;;;;;;;;;;;;;x
+dm_reality_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user control over tangible objects, such as gold or stone.;;;;;;;;;;;;;x
+dm_soul_pebble;Soul Pebble;;;;;;;;;;;;;x
+dm_soul_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user domination of their very own soul.;;;;;;;;;;;;;x
+dm_space_pebble;Space Pebble;;;;;;;;;;;;;x
+dm_space_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user the ability to manipulate the space around them.;;;;;;;;;;;;;x
+dm_time_pebble;Time Pebble;;;;;;;;;;;;;x
+dm_time_pebble_desc;One of the six Eternity Pebbles. This Pebble grants the user the power to guide time itself.;;;;;;;;;;;;;x
+
+dm_time_pebble_modifier;Imbues the user with §GImmortality§!;;;;;;;;;;;;;x
+
+dm_soul_pebble_modifier;Will remove §RStressed§!, §RDepressed§!, §RLunatic§!, or §RPossessed§!!;;;;;;;;;;;;;x
+
 ### Event Modifiers ###
 
 the_purge;The Purge;;;;;;;;;;;;;x
@@ -577,6 +594,13 @@ DMCoreEvtdesc56;The Dungeon Master barges into your throneroom dressed in a leat
 DMCoreEvtdesc56TTA;"You mean YOUR fortune and glory.";;;;;;;;;;;;;x
 DMCoreEvtdesc56TTACustom;Despite the obvious risk of a copyright lawsuit, the Dungeon Master has taken it up upon himself to liberate valuable artifacts from around the world. Though, some of them may get lost in transport.;;;;;;;;;;;;;x
 
+DMCoreEvttitle57;Eternity Battle;;;;;;;;;;;;;x
+DMCoreEvtdesc57;The Dungeon Master suddenly appears in front of you looking exasperated and almost... scared? "Listen, these are your problem now," he begins, as he opens his hand revealing six bright stones of various colours, "Fight, bribe, kill each other over them - I don't care." He begins to run out of the room, but suddenly snaps back to face you. "Just don't let HIM get them.";;;;;;;;;;;;;x
+DMCoreEvtdesc57TTA;"All of that over brightly coloured rocks?";;;;;;;;;;;;;x
+DMCoreEvtdesc57TTACustom;The §BEternity Pebbles§! are now active in the world and have been randomly distributed to six rulers.;;;;;;;;;;;;;x
+DMCoreEvtdesc57TTBCustom;The §BEternity Pebbles§! are artifacts of unrivaled power, and a ruler who collects all six will unlock a §Munique decision§!. ;;;;;;;;;;;;;x
+DMCoreEvtdesc57TTCCustom;Owners of the §BEternity Pebbles§! can be targeted by unique §GCasus Beli§! by others attempting to gain the Pebbles.;;;;;;;;;;;;;x
+DMCoreEvtdesc57TTDCustom;Owners of the §BEternity Pebbles§! may find themselves attracting the attention of an §Kunwanted guest§!...;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 

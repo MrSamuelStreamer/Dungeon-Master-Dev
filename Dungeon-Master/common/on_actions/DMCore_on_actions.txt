@@ -19,6 +19,9 @@ on_yearly_pulse = {
 		DMCoremajor.1000
 		DMmanagement.500 # Forces DM and governor out of societies
 		DMmanagement.601 # Adults get milky
+		DMmanagement.602 # Soul Pebble trait check
+		DMmanagement.603 # Time Pebble add immortal
+		DMmanagement.603 # Time Pebble remove immortal
 	}
 }
 

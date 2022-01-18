@@ -34,5 +34,9 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\dm_herdofcows.dds"
 		allwaystransparent = yes
 	}
-	
+	spriteType = {
+		name = "GFX_dm_eternity_pebbles"
+		texturefile = "gfx\\event_pictures\dm_eternity_pebbles.dds"
+		allwaystransparent = yes
+	}
 }

@@ -230,6 +230,15 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					character_event = { id = DMCoreEvt.56 }
 					set_global_flag = DMEvent56
 				}
+				1 = {			#event 57
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent57
+						}
+					}
+					character_event = { id = DMCoreEvt.57 }
+					set_global_flag = DMEvent57
+				}
 			}
 		}
 	}

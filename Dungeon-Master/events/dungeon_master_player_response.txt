@@ -1835,3 +1835,27 @@ character_event = {			# It Belongs In A Museum
 	}
 }
 
+character_event = {			# Eternity Pebbles
+	id = DMPlay.57
+	offmap = allow
+	title = DMCoreEvttitle57
+	desc = DMCoreEvtdesc57
+	picture = GFX_dm_eternity_pebbles
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc57TTA
+		custom_tooltip = {
+			text = DMCoreEvtdesc57TTACustom
+		}
+		custom_tooltip = {
+			text = DMCoreEvtdesc57TTBCustom
+		}
+		custom_tooltip = {
+			text = DMCoreEvtdesc57TTCCustom
+		}
+		custom_tooltip = {
+			text = DMCoreEvtdesc57TTDCustom
+		}
+	}
+}
