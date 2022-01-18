@@ -103,5 +103,52 @@ spriteTypes = {
 		name = "GFX_dm_inept_tea_small"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\dm_inept_tea_small.dds"
 	}
-
+	spriteType = {
+		name = "GFX_dm_mind_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\mind_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_mind_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\mind_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_power_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\power_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_power_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\power_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_reality_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\reality_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_reality_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\reality_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_soul_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\soul_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_soul_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\soul_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_space_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\space_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_space_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\space_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_time_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\time_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_time_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\time_pebble_small.dds"
+	}
 }

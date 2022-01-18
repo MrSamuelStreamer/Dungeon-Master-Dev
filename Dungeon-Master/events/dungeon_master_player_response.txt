@@ -1855,3 +1855,27 @@ character_event = {			# For Whom The Horn Doots
 	}
 }
 
+character_event = {			# Eternity Pebbles
+	id = DMPlay.58
+	offmap = allow
+	title = DMCoreEvttitle58
+	desc = DMCoreEvtdesc58
+	picture = GFX_dm_eternity_pebbles
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc58TTA
+		custom_tooltip = {
+			text = DMCoreEvtdesc58TTACustom
+		}
+		custom_tooltip = {
+			text = DMCoreEvtdesc58TTBCustom
+		}
+		custom_tooltip = {
+			text = DMCoreEvtdesc58TTCCustom
+		}
+		custom_tooltip = {
+			text = DMCoreEvtdesc58TTDCustom
+		}
+	}
+}
