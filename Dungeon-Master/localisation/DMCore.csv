@@ -28,7 +28,7 @@ bobross_trait;Bob Ross;;;;;;;;;;;;;x
 bobross_trait_desc;This man spends his time painting happy little trees and lulling those around him into a deep, comfortable sleep with his voice.;;;;;;;;;;;;;x
 
 genius_fake;Genius;;;;;;;;;;;;;x
-genius_fake_desc;This character is blessed with a towering intellect.\nMartial: Â§G+5Â§!\nIntrigue: Â§G+5Â§!\nDiplomacy: Â§G+5Â§!\nStewardship: Â§G+5Â§!\nLearning: Â§G+5Â§!\nPersonal Combat Skill: Â§G+10Â§!\nVassal Opinion: Â§G+5Â§!;;;;;;;;;;;;;x
+genius_fake_desc;This character is blessed with a towering intellect.\nMartial: §G+5§!\nIntrigue: §G+5§!\nDiplomacy: §G+5§!\nStewardship: §G+5§!\nLearning: §G+5§!\nPersonal Combat Skill: §G+10§!\nVassal Opinion: §G+5§!;;;;;;;;;;;;;x
 
 dm_deaths_deal;Death's Deal;;;;;;;;;;;;;x
 dm_deaths_deal_desc;This character has made a pact with Death, and is fated to not live beyond a specific date.;;;;;;;;;;;;;x
@@ -164,9 +164,9 @@ dm_space_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user
 dm_time_pebble;Time Pebble;;;;;;;;;;;;;x
 dm_time_pebble_desc;One of the six Eternity Pebbles. This Pebble grants the user the power to guide time itself.;;;;;;;;;;;;;x
 
-dm_time_pebble_modifier;Imbues the user with Â§GImmortalityÂ§!;;;;;;;;;;;;;x
+dm_time_pebble_modifier;Imbues the user with §GImmortality§!;;;;;;;;;;;;;x
 
-dm_soul_pebble_modifier;Will remove Â§RStressedÂ§!, Â§RDepressedÂ§!, Â§RLunaticÂ§!, or Â§RPossessedÂ§!!;;;;;;;;;;;;;x
+dm_soul_pebble_modifier;Will remove §RStressed§!, §RDepressed§!, §RLunatic§!, or §RPossessed§!!;;;;;;;;;;;;;x
 
 ### Event Modifiers ###
 
@@ -255,14 +255,14 @@ DMCore1OptA;"Brace yourselves!";;;;;;;;;;;;;x
 ### Custom Tooltip ###
 
 DMAwakens;The Dungeon Master awakens...;;;;;;;;;;;;;x
-DMMultiplayer;In Â§GMultiplayerÂ§!, one player will be the messenger of the Dungeon Master, this will be the player that fires the decision.;;;;;;;;;;;;;x
-DMWarning;Â§RWarningÂ§!: The first event will fire immediately, be prepared!;;;;;;;;;;;;;x
+DMMultiplayer;In §GMultiplayer§!, one player will be the messenger of the Dungeon Master, this will be the player that fires the decision.;;;;;;;;;;;;;x
+DMWarning;§RWarning§!: The first event will fire immediately, be prepared!;;;;;;;;;;;;;x
 dungeon_master_rolls;Dungeon Master rolls his dice...;;;;;;;;;;;;;x
 
-wyvernballs_are_scattered;Â§KWarningÂ§!: The Wyvernballs will be scattered throughout the world once again!;;;;;;;;;;;;;x
+wyvernballs_are_scattered;§KWarning§!: The Wyvernballs will be scattered throughout the world once again!;;;;;;;;;;;;;x
 
-remove_illness;All Â§GPhysicalÂ§! and Â§GMental illnessesÂ§! will be cured!;;;;;;;;;;;;;x
-remove_genetic_issues;All Â§GGenetic AbnormalitiesÂ§! will be removed!;;;;;;;;;;;;;x
+remove_illness;All §GPhysical§! and §GMental illnesses§! will be cured!;;;;;;;;;;;;;x
+remove_genetic_issues;All §GGenetic Abnormalities§! will be removed!;;;;;;;;;;;;;x
 
 collected_all_wyvernballs;Has collected all seven Wyvernballs;;;;;;;;;;;;;x
 
@@ -306,12 +306,12 @@ DMEventTooltip4;Twenty rulers ascend to become Immortal rulers of Destiny, who a
 DMCoreEvttitle5;Happy Birthday!;;;;;;;;;;;;;x
 DMCoreEvtdesc5;"You mortals, always growing old and dying and having your children cry or complain about whatever the hell 'gavelkind' is, it's such a dull affair - let's speed it up! Or reverse it! Now if I could get some volunteers... how about you, with the fancy hat!";;;;;;;;;;;;;x
 DMCoreEvt5OptA;"Fetch a priest... or a doctor! Or both!";;;;;;;;;;;;;x
-DMEventTooltip5;Kings ages will adjust randomly anywhere between minus 30 to plus 30 years of age. Affected characters will be given the Â§RAge ShiftedÂ§! trait.;;;;;;;;;;;;;x
+DMEventTooltip5;Kings ages will adjust randomly anywhere between minus 30 to plus 30 years of age. Affected characters will be given the §RAge Shifted§! trait.;;;;;;;;;;;;;x
 
 DMCoreEvttitle6;Chaos Reigns!;;;;;;;;;;;;;x
 DMCoreEvtdesc6;"You with your fancy chairs and castles, you make rules for other people and don't follow them yourselves! It makes me sick, playing with peoples lives like that. Well we're taking away the rules, morality is out the window. Do whatever you want, good luck with your squishy moral existence now it's an equal playing field!";;;;;;;;;;;;;x
 DMCoreEvt6OptA;"You're telling me people have just... stopped caring?";;;;;;;;;;;;;x
-DMEventTooltip6;All landed rules have become morally flexible, Â§GarrestsÂ§! and Â§GplotsÂ§! will be far easier for the next year!;;;;;;;;;;;;;x
+DMEventTooltip6;All landed rules have become morally flexible, §Garrests§! and §Gplots§! will be far easier for the next year!;;;;;;;;;;;;;x
 
 DMCoreEvttitle7;Short Fortress;;;;;;;;;;;;;x
 DMCoreEvtdesc7;"This is gonna be sweet" mutters the Dungeon Master as he clicks his fingers. Reports of rulers drastically shrinking, becoming stubborn, and gaining the uncanny ability of defence become known far and wide. No one quite understands why.;;;;;;;;;;;;;x
@@ -384,7 +384,7 @@ DMCoreEvtdesc20;"I've been working on a machine in my spare time, it's nothing t
 DMCoreEvt20OptA;"Please stop milling about. Really.";;;;;;;;;;;;;x
 DMEventTooltip20;All positive congenital traits become negative congenital traits, and vice versa!;;;;;;;;;;;;;x
 
-DMCoreEvttitle21;The HorseÂ² Lord;;;;;;;;;;;;;x
+DMCoreEvttitle21;The Horse² Lord;;;;;;;;;;;;;x
 DMCoreEvtdesc21;The Dungeon Master appears, points right at you, and laughs like a madman. Suddenly a great flash of lightning strikes the sky followed shortly by a deafening horn. Some of your soldiers drop the floor screaming, your diplomat has an instant heart attack and grandma's head explodes, painting the castle walls the colour of bingo and sherry.\n"MORTALS", a voice neighs from a great distance, or perhaps not if you're living in a realm where horses might appear suddenly, "I AM THE HORSE HORSE-LORD, ENDER OF THIS EARTH AND SCORCHER OF MAN, SCOURGE OF GLUE FACTORIES AND CHEAP FROZEN LASANGA!"
 A great flash of light appears in the sky, this time taking the form of the Horse Horse-Lord, and great trepidation takes hold.;;;;;;;;;;;;;x
 DMCoreEvt21OptA;"We're going to need a bigger saddle...";;;;;;;;;;;;;x
@@ -467,7 +467,7 @@ DMEventTooltip35;All imprisoned characters are released and become rivals with t
 DMCoreEvttitle36;Gavelkindness;;;;;;;;;;;;;x
 DMCoreEvtdesc36;The Dungeon Master appears looking pensive "I have no idea what this Gavelkind is but everytime I bring it up you land owners always turn a funny colour." You feel your stomach turn at the sound of the forbidden word. "I've decided that a punishment for all those naughty rulers will be this 'Gavelkind' thing... whatever it is.";;;;;;;;;;;;;x
 DMCoreEvt36OptA;"No... he wouldn't...?";;;;;;;;;;;;;x
-DMEventTooltip36;All characters with serious crimes such as Â§PImpalersÂ§! or Â§RKinslayersÂ§! will be forced into Gavelkind.;;;;;;;;;;;;;x
+DMEventTooltip36;All characters with serious crimes such as §PImpalers§! or §RKinslayers§! will be forced into Gavelkind.;;;;;;;;;;;;;x
 
 DMCoreEvttitle37;Spa Day!;;;;;;;;;;;;;x
 DMCoreEvtdesc37;"I've got plans today, can't do any of the usual evil!" says the Dungeon Master, dashing through your court with a suitcase, "A Hotelier friend of mine gave me these tickets, claimed he was a huge fan of my work, but the hotel is all the way in the north west of Britainia, wherever that is. They're yours if you want them!";;;;;;;;;;;;;x
@@ -587,8 +587,8 @@ DMCoreEvtdesc54;While walking through your demense one day, you come across the 
 DMCoreEvtdesc54TTA;"This is such a mooving sight to see.";;;;;;;;;;;;;x
 DMCoreEvtdesc54TTAQueen;"COW!";;;;;;;;;;;;;x
 DMCoreEvtdesc54TTAQueenTT;You are given this option because you are the Queen of England.;;;;;;;;;;;;;x
-DMCoreEvtdesc54TTACustomTT;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\nÂ§GYou were not chosen.Â§!;;;;;;;;;;;;;x
-DMCoreEvtdesc54TTACustomTTTower;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\nÂ§RYou were chosen.Â§!;;;;;;;;;;;;;x
+DMCoreEvtdesc54TTACustomTT;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§GYou were not chosen.§!;;;;;;;;;;;;;x
+DMCoreEvtdesc54TTACustomTTTower;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§RYou were chosen.§!;;;;;;;;;;;;;x
 
 DMCoreEvttitle55;Inept Tea;;;;;;;;;;;;;x
 DMCoreEvtdesc55;The Dungeon Master runs up to you with a wide grin on his face and a badly-dressed primate in his arms. "I've got a shipment of inept tea coming in, and I want you to be the first to buy in to this new craze! Here's the proof of purchase! Thanks!" He tosses the confused ape at you and steals your gold before leaving.;;;;;;;;;;;;;x
@@ -607,10 +607,10 @@ DMCoreEvtdesc57TTACustom;You are granted a one-time useage of the Horn of Dootag
 DMCoreEvttitle58;Eternity Battle;;;;;;;;;;;;;x
 DMCoreEvtdesc58;The Dungeon Master suddenly appears in front of you looking exasperated and almost... scared? "Listen, these are your problem now," he begins, as he opens his hand revealing six bright stones of various colours, "Fight, bribe, kill each other over them - I don't care." He begins to run out of the room, but suddenly snaps back to face you. "Just don't let HIM get them.";;;;;;;;;;;;;x
 DMCoreEvtdesc58TTA;"All of that over brightly coloured rocks?";;;;;;;;;;;;;x
-DMCoreEvtdesc58TTACustom;The Â§BEternity PebblesÂ§! are now active in the world and have been randomly distributed to six rulers.;;;;;;;;;;;;;x
-DMCoreEvtdesc58TTBCustom;The Â§BEternity PebblesÂ§! are artifacts of unrivaled power, and a ruler who collects all six will unlock a Â§Munique decisionÂ§!. ;;;;;;;;;;;;;x
-DMCoreEvtdesc58TTCCustom;Owners of the Â§BEternity PebblesÂ§! can be targeted by unique Â§GCasus BeliÂ§! by others attempting to gain the Pebbles.;;;;;;;;;;;;;x
-DMCoreEvtdesc58TTDCustom;Owners of the Â§BEternity PebblesÂ§! may find themselves attracting the attention of an Â§Kunwanted guestÂ§!...;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTACustom;The §BEternity Pebbles§! are now active in the world and have been randomly distributed to six rulers.;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTBCustom;The §BEternity Pebbles§! are artifacts of unrivaled power, and a ruler who collects all six will unlock a §Munique decision§!. ;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTCCustom;Owners of the §BEternity Pebbles§! can be targeted by unique §GCasus Beli§! by others attempting to gain the Pebbles.;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTDCustom;Owners of the §BEternity Pebbles§! may find themselves attracting the attention of an §Kunwanted guest§!...;;;;;;;;;;;;;x
 
 ### Follow-up Events ###
 
@@ -644,9 +644,9 @@ DMCoreFollow11OptA;"Wow, that's really great!";;;;;;;;;;;;;x
 DMCoreFollowtitle12;Hunting Accident;;;;;;;;;;;;;x
 DMCoreFollowdesc12;[dead_heir.GetHerHisCap] body has been draped, by whom you do not know, in a white cloth now stained red by [dead_heir.GetHerHis] lost vitae. They say [dead_heir.GetSheHe] was found by [dead_heir.GetHerHis] horse, in a clearing in the woods. You know the place they speak of. [dead_heir.GetHerHisCap] face is calm, almost serene. You reach out to touch [dead_heir.GetHerHim]. The terrible reality of the situation dawns on you. The cold you feel is that of death.;;;;;;;;;;;;;x
 DMCoreFollow12OptA;Sorrow overtakes you.;;;;;;;;;;;;;x
-DMCoreFollow12OptATooltip;Lose Â§R1Â§! stability;;;;;;;;;;;;;x
+DMCoreFollow12OptATooltip;Lose §R1§! stability;;;;;;;;;;;;;x
 DMCoreFollow12OptB;Oh well...;;;;;;;;;;;;;x
-DMCoreFollow12OptBTooltip;Lose Â§R10Â§! prestige;;;;;;;;;;;;;x
+DMCoreFollow12OptBTooltip;Lose §R10§! prestige;;;;;;;;;;;;;x
 
 DMCoreFollowtitle13;Unity;;;;;;;;;;;;;x
 DMCoreFollowdesc13;At long last, you have collected all seven of the Wyvernballs. Now all that remains is to bring them together before moonlight and wait.;;;;;;;;;;;;;x
@@ -685,7 +685,7 @@ DMCoreFollow24a;"I... I am strong enough!";;;;;;;;;;;;;x
 DMCoreFollow24b;"I submit! No more, please!";;;;;;;;;;;;;x
 curse_warning_tooltip;You feel as if you will not be able to resist the whispers any longer.;;;;;;;;;;;;;x
 
-DMCoreFollowtitle25;Ash Nazg DurbatulÃ»k;;;;;;;;;;;;;x
+DMCoreFollowtitle25;Ash Nazg Durbatulûk;;;;;;;;;;;;;x
 DMCoreFollowdesc25;The whispers become all too much to bear. You collapse to your knees and cough up a pitch black fog which begins to engulf you. A face fills your mind, the face of the one who gifted you this ring all that time ago...;;;;;;;;;;;;;x
 DMCoreFollow25;Agh burzum-ishi krimpatul;;;;;;;;;;;;;x
 
@@ -698,14 +698,14 @@ DMCoreFollow27TTC;DOOT DOOT!;;;;;;;;;;;;;x
 ### Game Rules ###
 
 RULE_DUNGEON_MASTER;Dungeon Master;;;;;;;;;;;;;x
-DM_CYCLE;Â§KDM:Â§! Minor Event Cycling;;;;;;;;;;;;;x
+DM_CYCLE;§KDM:§! Minor Event Cycling;;;;;;;;;;;;;x
 DM_CYCLE_NORMAL;Normal;;;;;;;;;;;;;x
-DM_CYCLE_NORMAL_DESC;The Dungeon Master will cycle through six Â§GMinorÂ§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL_DESC;The Dungeon Master will cycle through six §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
 DM_CYCLE_DOUBLE;Double;;;;;;;;;;;;;x
-DM_CYCLE_DOUBLE_DESC;The Dungeon Master will cycle through twelve Â§GMinorÂ§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE_DESC;The Dungeon Master will cycle through twelve §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
 DM_CYCLE_HALF;Half;;;;;;;;;;;;;x
-DM_CYCLE_HALF_DESC;The Dungeon Master will cycle through three Â§GMinorÂ§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
-DM_FREQ;Â§KDM:Â§! Minor Event Frequency;;;;;;;;;;;;;x
+DM_CYCLE_HALF_DESC;The Dungeon Master will cycle through three §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_FREQ;§KDM:§! Minor Event Frequency;;;;;;;;;;;;;x
 DM_FREQ_15;Normal - 15 Years;;;;;;;;;;;;;x
 DM_FREQ_15_DESC;The Dungeon Master will cause chaos roughly once every 15 years.;;;;;;;;;;;;;x
 DM_FREQ_30;Slow - 30 Years;;;;;;;;;;;;;x
@@ -715,16 +715,16 @@ DM_FREQ_5_DESC;The Dungeon Master just wants to see the world burn with events h
 DM_FREQ_TRUE_RANDOM;Normal - No Cooldown;;;;;;;;;;;;;x
 DM_FREQ_TRUE_RANDOM_DESC;Events have no minimum time and could fire randomly!;;;;;;;;;;;;;x
 DM_FREQ_NONE;Disabled;;;;;;;;;;;;;x
-DM_FREQ_NONE_DESC;Events will be Â§RdisabledÂ§!.;;;;;;;;;;;;;x
+DM_FREQ_NONE_DESC;Events will be §Rdisabled§!.;;;;;;;;;;;;;x
 
-DM_CYCLE_MAJOR;Â§KDM:Â§! Major Event Cycling;;;;;;;;;;;;;x
+DM_CYCLE_MAJOR;§KDM:§! Major Event Cycling;;;;;;;;;;;;;x
 DM_CYCLE_NORMAL_MAJOR;Normal;;;;;;;;;;;;;x
-DM_CYCLE_NORMAL_MAJOR_DESC;The Dungeon Master will cycle through six Â§BMAJORÂ§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL_MAJOR_DESC;The Dungeon Master will cycle through six §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
 DM_CYCLE_DOUBLE_MAJOR;Double;;;;;;;;;;;;;x
-DM_CYCLE_DOUBLE_MAJOR_DESC;The Dungeon Master will cycle through twelve Â§BMAJORÂ§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE_MAJOR_DESC;The Dungeon Master will cycle through twelve §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
 DM_CYCLE_HALF_MAJOR;Half;;;;;;;;;;;;;x
-DM_CYCLE_HALF_MAJOR_DESC;The Dungeon Master will cycle through three Â§BMAJORÂ§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
-DM_FREQ_MAJOR;Â§KDM:Â§! Major Event Frequency;;;;;;;;;;;;;x
+DM_CYCLE_HALF_MAJOR_DESC;The Dungeon Master will cycle through three §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_FREQ_MAJOR;§KDM:§! Major Event Frequency;;;;;;;;;;;;;x
 DM_FREQ_25_MAJOR;Normal - 25 Years;;;;;;;;;;;;;x
 DM_FREQ_25_MAJOR_DESC;The Dungeon Master will cause world-defining chaos roughly once every 15 years.;;;;;;;;;;;;;x
 DM_FREQ_50_MAJOR;Slow - 50 Years;;;;;;;;;;;;;x
@@ -732,9 +732,9 @@ DM_FREQ_50_MAJOR_DESC;The Dungeon Master will give the world time to breathe by 
 DM_FREQ_10_MAJOR;Chaos Max - 10 Years;;;;;;;;;;;;;x
 DM_FREQ_10_MAJOR_DESC;Every 10 years you will regret this decision.;;;;;;;;;;;;;x
 DM_FREQ_TRUE_RANDOM_MAJOR;Normal - No Cooldown;;;;;;;;;;;;;x
-DM_FREQ_TRUE_RANDOM_MAJOR_DESC;Â§BMAJORÂ§! events have no minimum time and could fire randomly!;;;;;;;;;;;;;x
+DM_FREQ_TRUE_RANDOM_MAJOR_DESC;§BMAJOR§! events have no minimum time and could fire randomly!;;;;;;;;;;;;;x
 DM_FREQ_NONE_MAJOR;Disabled;;;;;;;;;;;;;x
-DM_FREQ_NONE_MAJOR_DESC;Â§BMAJORÂ§! events will be Â§RdisabledÂ§!.;;;;;;;;;;;;;x
+DM_FREQ_NONE_MAJOR_DESC;§BMAJOR§! events will be §Rdisabled§!.;;;;;;;;;;;;;x
 
 ### Nicknames ###
 
@@ -783,6 +783,6 @@ dm_5G_tower_desc;A large tower with five times the G's. Despite it not doing any
 dm_cows_working;Cows Working;;;;;;;;;;;;;x
 dm_cows_working_desc;A large herd of cows dressed in construction working clothes are busy upgrading the large tower.;;;;;;;;;;;;;x
 dm_upgrade_network;Upgrade Tower;;;;;;;;;;;;;x
-dm_upgrade_network_desc;Upgrade the large tower in your demesne.\nÂ§YThis will take one year to complete and reduce the penalties of the tower.Â§!;;;;;;;;;;;;;x
+dm_upgrade_network_desc;Upgrade the large tower in your demesne.\n§YThis will take one year to complete and reduce the penalties of the tower.§!;;;;;;;;;;;;;x
 dm_unleash_the_5G;Unleash the 5G!
-dm_unleash_the_5G_desc;Unleash the power of the 5G towers!\nÂ§YThis will destroy the tower and all penalties it brings.Â§!\nÂ§RMoo.Â§!
+dm_unleash_the_5G_desc;Unleash the power of the 5G towers!\n§YThis will destroy the tower and all penalties it brings.§!\n§RMoo.§!
