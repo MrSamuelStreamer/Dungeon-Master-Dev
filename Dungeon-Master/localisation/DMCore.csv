@@ -84,7 +84,7 @@ APEP;Apep;;;;;;;;;;;;;x
 SETH;Seth;;;;;;;;;;;;;x
 
 city_of_gold;Legendary City of Gold;;;;;;;;;;;;;x
-MIDAS_PLAGUE_INFO;This province has been struck with the Midas Plague - an incredibly deadly disease that either leaves the afflicted horribly maimed by only transforming extremeties, or spreads from the torso until it leaves a statue of solid gold.;;;;;;;;;;;;;x
+MIDAS_PLAGUE_INFO;This province has been struck with the Midas Plague - an incredibly deadly disease that either leaves the afflicted horribly maimed by only transforming extremities, or spreads from the torso until it leaves a statue of solid gold.;;;;;;;;;;;;;x
 
 
 k_slave_master1;White Queen;;;;;;;;;;;;;x
@@ -140,7 +140,7 @@ wyvern_amulet;Wyvern Amulet;;;;;;;;;;;;;x
 wyvern_armour_desc;A powerful set of mythical Wyvern Armour given as a gift to one who was able to unify all seven of the Wyvernballs.;;;;;;;;;;;;;x
 wyvern_sword_desc;The mighty Wyvern Sword gifted to the person who united the Wyvernballs. It still glows with the might of the skies.;;;;;;;;;;;;;x
 wyvern_helmet_desc;The Helmet of the unicorn gifted to its friend, the Wyvern, who in turn gifted it to the one who collected all of the Wyvernballs.;;;;;;;;;;;;;x
-wyvern_amulet_desc;The original dragon amulet of the Wyvern, copied meticulously by chinese jewelers throughout the ages.;;;;;;;;;;;;;x
+wyvern_amulet_desc;The original dragon amulet of the Wyvern, copied meticulously by Chinese jewelers throughout the ages.;;;;;;;;;;;;;x
 
 dm_inept_tea;Inept Tea;;;;;;;;;;;;;x
 dm_inept_tea_desc;This weird monkey is a receipt for blackmarket tea. You own neither the tea nor the monkey.;;;;;;;;;;;;;x
@@ -171,7 +171,7 @@ dm_soul_pebble_modifier;Will remove §RStressed§!, §RDepressed§!, §RLunatic§!, or
 ### Event Modifiers ###
 
 the_purge;The Purge;;;;;;;;;;;;;x
-the_purge_desc;For 12 months everyone has decided to turn a blind eye to crimes and attrocities.;;;;;;;;;;;;;x
+the_purge_desc;For 12 months everyone has decided to turn a blind eye to crimes and atrocities.;;;;;;;;;;;;;x
 
 dwarf_fortress;Dwarf Fortress;;;;;;;;;;;;;x
 dwarf_fortress_desc;For some strange reason, this person seems to have some extremely skilled defenders.;;;;;;;;;;;;;x
@@ -280,7 +280,7 @@ DMCoredesc3;"Greetings players of the game, I am the Dungeon Master, guider of d
 DMCore3OptA;"What did he call me?";;;;;;;;;;;;;x
 
 DMCoretitle4;Dungeon Master Awakens;;;;;;;;;;;;;x
-DMCoredesc4;"Greetings players of the game, I am the Dungeon Master, guider of destiny and occasional roller of dice.\nA contratian not happy with the base game? Fine. I have adjusted the dice rolls and outcomes to fit your total conversion mod, or at least a map that is fairly close to that. Good luck...";;;;;;;;;;;;;x
+DMCoredesc4;"Greetings players of the game, I am the Dungeon Master, guider of destiny and occasional roller of dice.\nA contrarian not happy with the base game? Fine. I have adjusted the dice rolls and outcomes to fit your total conversion mod, or at least a map that is fairly close to that. Good luck...";;;;;;;;;;;;;x
 DMCore4OptA;"What did he call me?";;;;;;;;;;;;;x
 
 DMCoreEvttitle1;Prince and the Pauper;;;;;;;;;;;;;x
@@ -324,7 +324,7 @@ DMCoreEvt8OptA;"A... what?";;;;;;;;;;;;;x
 DMEventTooltip8;Everyone becomes more confused.;;;;;;;;;;;;;x
 
 DMCoreEvttitle9;[poopy.GetName] Latrine Disaster;;;;;;;;;;;;;x
-DMCoreEvtdesc9;Your spymaster receives word of a castle in [poopy.GetName] that suffered a terrible tragedy - the ruler was hosting a gathering for all the lords and ladies of the realm. Unfortuantely, the weight was too much for the castle to bear and the entire dining area fell into a latrine pit, causing all who attended to drown horribly in the remains of the feasts from the week prior...;;;;;;;;;;;;;x
+DMCoreEvtdesc9;Your spymaster receives word of a castle in [poopy.GetName] that suffered a terrible tragedy - the ruler was hosting a gathering for all the lords and ladies of the realm. Unfortunately, the weight was too much for the castle to bear and the entire dining area fell into a latrine pit, causing all who attended to drown horribly in the remains of the feasts from the week prior...;;;;;;;;;;;;;x
 DMCoreEvt9OptA;"I think I'm going to be sick...";;;;;;;;;;;;;x
 DMEventTooltip9;The provincial ruler, and all courtiers, drown horrible in a fecal related accident.;;;;;;;;;;;;;x
 
@@ -375,7 +375,7 @@ DMCoreEvt18OptA;"There's no place like... home?";;;;;;;;;;;;;x
 DMEventTooltip18;Rulers selected at random will have their capital swapped with another random ruler!;;;;;;;;;;;;;x
 
 DMCoreEvttitle19;Friends in Low Places;;;;;;;;;;;;;x
-DMCoreEvtdesc19;"I know a guy, a really good guy, a great friend of mine..." says the Dungeon Master, peering over his shoulder as if he's expecting someone, "And I sort of owe him. In exchange for not interupting with my meddling, I promised I'd help him out with a small thing that's been bothering him a few... thousand years. A small, popey, problem...";;;;;;;;;;;;;x
+DMCoreEvtdesc19;"I know a guy, a really good guy, a great friend of mine..." says the Dungeon Master, peering over his shoulder as if he's expecting someone, "And I sort of owe him. In exchange for not interrupting with my meddling, I promised I'd help him out with a small thing that's been bothering him a few... thousand years. A small, popey, problem...";;;;;;;;;;;;;x
 DMCoreEvt19OptA;"You're saying they've all gone a bit strange?";;;;;;;;;;;;;x
 DMEventTooltip19;All religious heads seems to fall under a strange influence...;;;;;;;;;;;;;x
 
@@ -398,7 +398,7 @@ DMCoreEvt22OptC;"This is... interesting...";;;;;;;;;;;;;x
 DMEventTooltip22;Some rulers may convert to [religion_proven.GetName]!;;;;;;;;;;;;;x
 
 DMCoreEvttitle23;Lost City of Gold Uncovered!;;;;;;;;;;;;;x
-DMCoreEvtdesc23;Rumours have always persisted around [lost_province_of_gold.GetName] speaking of the lost city of gold, but many dismissed it as the dreams of a deseperately poor people. The Dungeon Master, feeling a great pity for the people in [lost_city_of_gold.GetName] decided to make all of their dreams come true and transformed the whole city, including it's foundations, and natural resources, into solid gold!\nUnfortunately, the tricky caused by the Dungeon Master had an unintended side effect - people were randomly turning to gold and infecting others with the same curse!;;;;;;;;;;;;;x
+DMCoreEvtdesc23;Rumours have always persisted around [lost_province_of_gold.GetName] speaking of the lost city of gold, but many dismissed it as the dreams of a desperately poor people. The Dungeon Master, feeling a great pity for the people in [lost_city_of_gold.GetName] decided to make all of their dreams come true and transformed the whole city, including it's foundations, and natural resources, into solid gold!\nUnfortunately, the tricky caused by the Dungeon Master had an unintended side effect - people were randomly turning to gold and infecting others with the same curse!;;;;;;;;;;;;;x
 DMCoreEvt23OptA;"To own such a city... but the risk is too great!";;;;;;;;;;;;;x
 DMEventTooltip23B;Random characters have a chance of turning into solid gold.;;;;;;;;;;;;;x
 DMEventTooltip23;The owner of [lost_city_of_gold.GetName] will be tremendously wealthy.;;;;;;;;;;;;;x
@@ -455,7 +455,7 @@ DMCoreEvt33OptA;"Erm... welcome... Gary?";;;;;;;;;;;;;x
 DMEventTooltip33;Gary.;;;;;;;;;;;;;x
 
 DMCoreEvttitle34;Friends in High Places;;;;;;;;;;;;;x
-DMCoreEvtdesc34;"I basically only exist to watch the suffering of others, but you people just do suffering so much more efficiently. There are the occasional occasions where occasionally you do take things a bit too far. Ruin the fun entirely. Here." the Dungeon Master fishes around into his pocket before handing you a small paper card - 'Get out of Jail Free' is written on it, "Just so that the suffering isn't interupted too much...";;;;;;;;;;;;;x
+DMCoreEvtdesc34;"I basically only exist to watch the suffering of others, but you people just do suffering so much more efficiently. There are the occasional occasions where occasionally you do take things a bit too far. Ruin the fun entirely. Here." the Dungeon Master fishes around into his pocket before handing you a small paper card - 'Get out of Jail Free' is written on it, "Just so that the suffering isn't interrupted too much...";;;;;;;;;;;;;x
 DMCoreEvt34OptA;"This could come in handy...";;;;;;;;;;;;;x
 DMEventTooltip34;All rulers gain a single-use 'Get Out of Jail Free' allowing for instant release from imprisonment.;;;;;;;;;;;;;x
 
@@ -465,7 +465,7 @@ DMCoreEvt35OptA;"Fetch my guards...";;;;;;;;;;;;;x
 DMEventTooltip35;All imprisoned characters are released and become rivals with their jailer!;;;;;;;;;;;;;x
 
 DMCoreEvttitle36;Gavelkindness;;;;;;;;;;;;;x
-DMCoreEvtdesc36;The Dungeon Master appears looking pensive "I have no idea what this Gavelkind is but everytime I bring it up you land owners always turn a funny colour." You feel your stomach turn at the sound of the forbidden word. "I've decided that a punishment for all those naughty rulers will be this 'Gavelkind' thing... whatever it is.";;;;;;;;;;;;;x
+DMCoreEvtdesc36;The Dungeon Master appears looking pensive "I have no idea what this Gavelkind is but every time I bring it up you land owners always turn a funny colour." You feel your stomach turn at the sound of the forbidden word. "I've decided that a punishment for all those naughty rulers will be this 'Gavelkind' thing... whatever it is.";;;;;;;;;;;;;x
 DMCoreEvt36OptA;"No... he wouldn't...?";;;;;;;;;;;;;x
 DMEventTooltip36;All characters with serious crimes such as §PImpalers§! or §RKinslayers§! will be forced into Gavelkind.;;;;;;;;;;;;;x
 
@@ -504,7 +504,7 @@ DMCoreEvt42OptA;"I was born in September!";;;;;;;;;;;;;x
 DMEventTooltip42;Everyone gains Cancer!;;;;;;;;;;;;;x
 
 DMCoreEvttitle43;Meek will Inherit;;;;;;;;;;;;;x
-DMCoreEvtdesc43;"You've all had your chance and really blown it. Just absolutely ruined this earth. Temperatures are increasing, the world economy is in absolute shambles, and your kids are never going to be able to afford housing at this rate. And before you start complaing, the alternate name for this event was 'Okay Boomer' so be glad you're not going out with a bang.";;;;;;;;;;;;;x
+DMCoreEvtdesc43;"You've all had your chance and really blown it. Just absolutely ruined this earth. Temperatures are increasing, the world economy is in absolute shambles, and your kids are never going to be able to afford housing at this rate. And before you start complaining, the alternate name for this event was 'Okay Boomer' so be glad you're not going out with a bang.";;;;;;;;;;;;;x
 DMCoreEvt43OptA;"The nanny raised the children, not us!";;;;;;;;;;;;;x
 DMEventTooltip43;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
 
@@ -520,7 +520,7 @@ DMCoreEvt45OptB;"NO, MY PRECIOUS MONEY!";;;;;;;;;;;;;x
 DMCoreEvt45OptC;"Oh, this benefits me!";;;;;;;;;;;;;x
 DMEventTooltip45;All playable rulers will have their wealth taken from them and redistributed evenly. As a side note, the Dungeon Master doesn't know what 'redistributed' means.;;;;;;;;;;;;;x
 
-DMCoreEvtdesc46;"Do you like chess?" the Dungeon Master asks with a wide, sinister grin on his face. "I do! In fact, I love it so much that I've invited a friend over to play with me. I forgot to bring the chesspieces, but no matter! We'll be using you lot!"\nThe Dungeon Master scratches his chin in thought and smirks. "So, tell me, what colour do you like?";;;;;;;;;;;;;x
+DMCoreEvtdesc46;"Do you like chess?" the Dungeon Master asks with a wide, sinister grin on his face. "I do! In fact, I love it so much that I've invited a friend over to play with me. I forgot to bring the chess pieces, but no matter! We'll be using you lot!"\nThe Dungeon Master scratches his chin in thought and smirks. "So, tell me, what colour do you like?";;;;;;;;;;;;;x
 DMCoreEvttitle46;The Chessboard;;;;;;;;;;;;;x
 DMCoreEvt46OptA;"I like all colours!";;;;;;;;;;;;;x
 DMCoreEvt46OptB;"Uhh... white?";;;;;;;;;;;;;x
@@ -627,7 +627,7 @@ DMCoreFollowTooltip3;The ruler of [battle_royale.GetName] wins their victory pur
 DMCoreFollowtitle5;Midas Plague!;;;;;;;;;;;;;x
 DMCoreFollowtitledesc5;The Midas Plague has struck me and my body has started turning into gold!;;;;;;;;;;;;;x
 DMCoreFollow8OptA;"Help me!";;;;;;;;;;;;;x
-DMCoreFollowTooltip5;The Midasa Plague takes part of your body!;;;;;;;;;;;;;x
+DMCoreFollowTooltip5;The Midas Plague takes part of your body!;;;;;;;;;;;;;x
 
 DMCoreFollowtitle8;Sipping from the Fountain of Youth;;;;;;;;;;;;;x
 DMCoreFollowtitledesc8;You visit the Fountain of Youth at the local temple where it was uncovered. As the ruler of the province the local holy man believes you to have a divine blessing and lets you into the fountain. You drink from the fountain and feel reinvigorated!;;;;;;;;;;;;;x
