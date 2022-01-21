@@ -479,3 +479,26 @@ character_event = {
 		remove_trait = time_pebble_immortal
 	}
 }
+
+# Kill Extraneous Nazgul #
+character_event = {
+	id = DMmanagement.605
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		AND = {
+			trait = dm_nazgul_trait 
+			any_artifact = {
+				artifact_type = dm_time_pebble
+				is_artifact_equipped = no
+			}
+		}
+	}
+	immediate = {
+		ROOT = {
+			death = {
+				death_reason = dm_nazgul_withering
+			}
+		}
+	}
+}

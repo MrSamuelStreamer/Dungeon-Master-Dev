@@ -22,7 +22,8 @@ on_yearly_pulse = {
 		DMmanagement.601 # Adults get milky
 		DMmanagement.602 # Soul Pebble trait check
 		DMmanagement.603 # Time Pebble add immortal
-		DMmanagement.603 # Time Pebble remove immortal
+		DMmanagement.604 # Time Pebble remove immortal
+		DMmanagement.605 # Kill Nazgul without Ring
 	}
 }
 
