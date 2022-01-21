@@ -12,9 +12,10 @@ cursed_ring = {
 	}
 	indestructible = yes
 	active = {
+		NOT = { has_character_modifier = dm_resisted_ring }
 		OR = {
 			is_ruler = yes
-			trait = nazgul_trait
+			trait = dm_nazgul_trait
 		}
 	}
 	allowed_gift = {
@@ -23,8 +24,6 @@ cursed_ring = {
 	flags = { ring curse dungeon_master_ring }
 	stacking = no
 	picture = "GFX_cursed_ring"
-	
-	slot = wrist
 }
 
 cursed_ring_of_one = {

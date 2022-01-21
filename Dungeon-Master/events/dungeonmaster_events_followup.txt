@@ -984,10 +984,10 @@ character_event = {			#Cursed ring follow up - chance to become "nazgul"
 	trigger = {
 		any_artifact = {
 			artifact_type = cursed_ring
-			is_artifact_equipped = yes
 		}
-		NOT = {
-			trait = nazgul_trait
+		NOR = {
+			trait = dm_nazgul_trait
+			has_character_modifier = dm_resist_cursed_ring
 		}
 	}
 
@@ -1025,7 +1025,7 @@ character_event = {			#becomes a nazgul
 		name = DMCoreFollow25
 		hidden_tooltip = {
 			give_nickname = nick_the_black_rider
-			add_trait = nazgul_trait
+			add_trait = dm_nazgul_trait
 			add_trait = cruel
 			add_trait = wroth
 			add_trait = immortal
@@ -1098,6 +1098,56 @@ character_event = {		# Dooter's hair gets a bonus
 			75 = {
 				health = 1
 			}
+		}
+	}
+}
+
+character_event = {		#Remove ring success
+	id = DMCoreFollow.28
+	title = DMCoreFollowtitle28
+	picture = GFX_evt_mysterious_forest
+	desc =  DMCoreFollowdesc28
+	is_triggered_only = yes
+	option = {
+		name = DMCoreFollow28OptA
+		add_character_modifier = {
+			modifier = dm_resisted_ring
+			duration = -1
+		}
+		custom_tooltip = {
+			text = DMCoreFollowTooltip28
+		}
+	}
+}
+
+character_event = {		#Remove ring failure
+	id = DMCoreFollow.29
+	title = DMCoreFollowtitle29
+	picture = GFX_evt_mysterious_forest
+	desc =  DMCoreFollowdesc29
+	is_triggered_only = yes
+	option = {
+		name = DMCoreFollow29OptA
+		add_character_modifier = {
+			modifier = dm_recently_resisted_ring
+			duration = 30
+		}
+		custom_tooltip = {
+			text = DMCoreFollowTooltip29
+		}
+	}
+}
+
+character_event = {		#Put ring back on because you're insane or something IDK
+	id = DMCoreFollow.30
+	title = DMCoreFollowtitle30
+	picture = GFX_evt_mysterious_forest
+	desc =  DMCoreFollowdesc30
+	is_triggered_only = yes
+	option = {
+		name = DMCoreFollow30OptA
+		custom_tooltip = {
+			text = DMCoreFollowTooltip30
 		}
 	}
 }

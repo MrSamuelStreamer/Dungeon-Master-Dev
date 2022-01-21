@@ -117,15 +117,16 @@ dm_bovid19_trait = {
 	is_epidemic = yes 
 }
 
-nazgul_trait = {
+dm_nazgul_trait = {
 	diplomacy = -15
 	martial = 15
 	intrigue = 10
 	combat_rating = 250 
-	general_opinion = -50
+	general_opinion = -100
+	same_opinion = 200
 	health = 10
 	command_modifier = {
-		speed = 0.5
+		speed = 0.25
 	}
 	ai_zeal = 50
 	ai_greed = 50	

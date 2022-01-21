@@ -33,8 +33,8 @@ genius_fake_desc;This character is blessed with a towering intellect.\nMartial: 
 dm_deaths_deal;Death's Deal;;;;;;;;;;;;;x
 dm_deaths_deal_desc;This character has made a pact with Death, and is fated to not live beyond a specific date.;;;;;;;;;;;;;x
 
-nazgul_trait;Black Rider;;;;;;;;;;;;;x
-nazgul_trait_desc;This character accepted a dark gift and succumbed to its temptations...;;;;;;;;;;;;;x
+dm_nazgul_trait;Black Rider;;;;;;;;;;;;;x
+dm_nazgul_trait;This character accepted a dark gift and succumbed to its temptations...;;;;;;;;;;;;;x
 
 ### Dungeon Master Character Misc ###
 
@@ -95,6 +95,7 @@ k_slave_master2_adj;Chess;;;;;;;;;;;;;x
 ### Deaths ###
 
 DEATH_DEATHS_DEAL;made a bargain with Death;;;;;;;;;;;;;x
+DEATH_DM_NAZGUL_WITHER;withered after being separated from their cursed ring;;;;;;;;;;;;;x
 
 ### buildings ###
 
@@ -165,8 +166,9 @@ dm_time_pebble;Time Pebble;;;;;;;;;;;;;x
 dm_time_pebble_desc;One of the six Eternity Pebbles. This Pebble grants the user the power to guide time itself.;;;;;;;;;;;;;x
 
 dm_time_pebble_modifier;Imbues the user with §GImmortality§!;;;;;;;;;;;;;x
-
 dm_soul_pebble_modifier;Will remove §RStressed§!, §RDepressed§!, §RLunatic§!, or §RPossessed§!!;;;;;;;;;;;;;x
+
+dm_resisted_ring;Has Previously Resisted The Ring's Influence;;;;;;;;;;;;;x
 
 ### Event Modifiers ###
 
@@ -236,6 +238,13 @@ dm_kidnap_into_dynasty_desc;The Dungeon Master has graced you with the ability t
 
 dm_doot_doot;Doot Doot!;;;;;;;;;;;;;x
 dm_doot_doot_desc;Ask not for whom the horn doots. It doots for thee.;;;;;;;;;;;;;x
+
+dm_put_on_cursed_ring;Put on the Cursed Ring;;;;;;;;;;;;;x
+dm_put_on_cursed_ring_desc;So small, and so shiny - it's precious to me.;;;;;;;;;;;;;x
+dm_resist_cursed_ring;Resist the Cursed Ring;;;;;;;;;;;;;x
+dm_resist_cursed_ring_desc;Remove the Cursed Ring and stop it gnawing at your will and reason.;;;;;;;;;;;;;x
+
+
 
 ### Bloodlines ###
 
@@ -687,13 +696,25 @@ curse_warning_tooltip;You feel as if you will not be able to resist the whispers
 
 DMCoreFollowtitle25;Ash Nazg Durbatulûk;;;;;;;;;;;;;x
 DMCoreFollowdesc25;The whispers become all too much to bear. You collapse to your knees and cough up a pitch black fog which begins to engulf you. A face fills your mind, the face of the one who gifted you this ring all that time ago...;;;;;;;;;;;;;x
-DMCoreFollow25;Agh burzum-ishi krimpatul;;;;;;;;;;;;;x
+DMCoreFollow25;Agh burzum-ishi krimpatul!;;;;;;;;;;;;;x
 
 DMCoreFollowtitle27;The Last Doot;;;;;;;;;;;;;x
 DMCoreFollowdesc27;Oh dear. It seems [dm_dead_dooter.GetFirstNameWithNick] has dooted [dm_dead_dooter.GetHerHis] last doot. On the bright side, [dm_dead_dooter.GetSheHe] had a stockpile of calcium you inherited.;;;;;;;;;;;;;x
 DMCoreFollow27TTA;Doot?;;;;;;;;;;;;;x
 DMCoreFollow27TTB;Doot!;;;;;;;;;;;;;x
 DMCoreFollow27TTC;DOOT DOOT!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle28;Fading Whispers;;;;;;;;;;;;;x
+DMCoreFollowdesc28;Having suffered the constant dark words in your mind for too long you grab at your finger and yank the ring from it with all of your might. Though it grips to your skin at first, eventually the ring relents, and with a solid thud, it hits the ground.;;;;;;;;;;;;;x
+DMCoreFollow28OptA;I will put this away, but perhaps not too far.;;;;;;;;;;;;;x
+DMCoreFollowTooltip28;You successfully remove the ring, though you could wear it again at any time.;;;;;;;;;;;;;x
+DMCoreFollowTooltip28Chance;resisting the ring;;;;;;;;;;;;;x
+
+DMCoreFollowtitle29;Darkness Binds Them;;;;;;;;;;;;;x
+DMCoreFollowdesc29;In a mad fit of desperation you take hold of the cursed ring that sits on your finger and try to pull it off with all of your strength. Thought you try with all your might, you find yourself thinking... it is your ring. Afterall, why shouldn't you keep it? It has already gotten you so far!;;;;;;;;;;;;;x
+DMCoreFollow29OptA;Silly me, what was I thinking?;;;;;;;;;;;;;x
+DMCoreFollowTooltip29;Characters with more morally good traits, and self-control, will have a higher chance of the resisting the ring!;;;;;;;;;;;;;x
+DMCoreFollowTooltip29Chance;being ensnared by the ring;;;;;;;;;;;;;x
 
 ### Game Rules ###
 

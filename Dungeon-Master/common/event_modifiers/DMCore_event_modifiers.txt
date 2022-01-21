@@ -243,3 +243,12 @@ dm_cows_working = {
 dm_dootdoot = {
 	icon = 41
 }
+
+dm_resisted_ring = {
+	icon = 42
+}
+
+dm_recently_resisted_ring = {
+	icon = 42
+	health = -0.5
+}

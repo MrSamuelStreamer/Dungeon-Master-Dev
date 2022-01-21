@@ -9,3 +9,15 @@ dm_deaths_deal_death = {
 		}
 	}
 }
+
+dm_nazgul_withering = {
+	long_desc = "DEATH_DM_NAZGUL_WITHER"
+	sound_list = {
+		female = {
+			"death_female_illness_01"
+		}
+		male = {
+			"death_male_illness_01"
+		}
+	}
+}
