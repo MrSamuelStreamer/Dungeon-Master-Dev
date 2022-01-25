@@ -984,10 +984,11 @@ character_event = {			#Cursed ring follow up - chance to become "nazgul"
 	trigger = {
 		any_artifact = {
 			artifact_type = cursed_ring
+			is_artifact_equipped = yes
 		}
 		NOR = {
 			trait = dm_nazgul_trait
-			has_character_modifier = dm_resist_cursed_ring
+			has_character_modifier = dm_resisted_ring
 		}
 	}
 
