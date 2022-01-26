@@ -621,6 +621,13 @@ DMCoreEvtdesc58TTBCustom;The §BEternity Pebbles§! are artifacts of unrivaled pow
 DMCoreEvtdesc58TTCCustom;Owners of the §BEternity Pebbles§! can be targeted by unique §GCasus Beli§! by others attempting to gain the Pebbles.;;;;;;;;;;;;;x
 DMCoreEvtdesc58TTDCustom;Owners of the §BEternity Pebbles§! may find themselves attracting the attention of an §Kunwanted guest§!...;;;;;;;;;;;;;x
 
+DMCoreEvttitle59;Rabid Dog!;;;;;;;;;;;;;x
+DMCoreEvtdesc59;Lately, your dog has been acting strangely. It has become overly violent and refuses to drink water. Just as you were taking it out for a morning stroll, the damned thing bit you! You can see the dog foaming at the mouth.;;;;;;;;;;;;;x
+DMCoreEvtdesc59NoDog;The Dungeon Master bursts into the room wearing various furs, including a canine headdress that would look more at home on a shaman. "Can I nuzzle wuzzle you? uwu you're so warm!" he says, playfully batting at you with his fake wolf paws. He suddenly sees a cat and starts chasing after it. "SNUGGLE WUGGLE!";;;;;;;;;;;;;x
+DMCoreEvtdesc59TTA;"Oh no, this can't be good!";;;;;;;;;;;;;x
+DMCoreEvtdesc59TTB;"What.";;;;;;;;;;;;;x
+
+
 ### Follow-up Events ###
 
 DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x
@@ -719,14 +726,14 @@ DMCoreFollowTooltip29Chance;being ensnared by the ring;;;;;;;;;;;;;x
 ### Game Rules ###
 
 RULE_DUNGEON_MASTER;Dungeon Master;;;;;;;;;;;;;x
-DM_CYCLE;§KDM:§! Minor Event Cycling;;;;;;;;;;;;;x
+DM_CYCLE;§KDM:§! Event Cycling;;;;;;;;;;;;;x
 DM_CYCLE_NORMAL;Normal;;;;;;;;;;;;;x
-DM_CYCLE_NORMAL_DESC;The Dungeon Master will cycle through six §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL_DESC;The Dungeon Master will cycle through six events before previously-seen events will be available again.;;;;;;;;;;;;;x
 DM_CYCLE_DOUBLE;Double;;;;;;;;;;;;;x
-DM_CYCLE_DOUBLE_DESC;The Dungeon Master will cycle through twelve §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE_DESC;The Dungeon Master will cycle through twelve events before previously-seen events will be available again.;;;;;;;;;;;;;x
 DM_CYCLE_HALF;Half;;;;;;;;;;;;;x
-DM_CYCLE_HALF_DESC;The Dungeon Master will cycle through three §GMinor§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
-DM_FREQ;§KDM:§! Minor Event Frequency;;;;;;;;;;;;;x
+DM_CYCLE_HALF_DESC;The Dungeon Master will cycle through three events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_FREQ;§KDM:§! Event Frequency;;;;;;;;;;;;;x
 DM_FREQ_15;Normal - 15 Years;;;;;;;;;;;;;x
 DM_FREQ_15_DESC;The Dungeon Master will cause chaos roughly once every 15 years.;;;;;;;;;;;;;x
 DM_FREQ_30;Slow - 30 Years;;;;;;;;;;;;;x
@@ -737,25 +744,6 @@ DM_FREQ_TRUE_RANDOM;Normal - No Cooldown;;;;;;;;;;;;;x
 DM_FREQ_TRUE_RANDOM_DESC;Events have no minimum time and could fire randomly!;;;;;;;;;;;;;x
 DM_FREQ_NONE;Disabled;;;;;;;;;;;;;x
 DM_FREQ_NONE_DESC;Events will be §Rdisabled§!.;;;;;;;;;;;;;x
-
-DM_CYCLE_MAJOR;§KDM:§! Major Event Cycling;;;;;;;;;;;;;x
-DM_CYCLE_NORMAL_MAJOR;Normal;;;;;;;;;;;;;x
-DM_CYCLE_NORMAL_MAJOR_DESC;The Dungeon Master will cycle through six §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
-DM_CYCLE_DOUBLE_MAJOR;Double;;;;;;;;;;;;;x
-DM_CYCLE_DOUBLE_MAJOR_DESC;The Dungeon Master will cycle through twelve §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
-DM_CYCLE_HALF_MAJOR;Half;;;;;;;;;;;;;x
-DM_CYCLE_HALF_MAJOR_DESC;The Dungeon Master will cycle through three §BMAJOR§! events before previously-seen events will be available again.;;;;;;;;;;;;;x
-DM_FREQ_MAJOR;§KDM:§! Major Event Frequency;;;;;;;;;;;;;x
-DM_FREQ_25_MAJOR;Normal - 25 Years;;;;;;;;;;;;;x
-DM_FREQ_25_MAJOR_DESC;The Dungeon Master will cause world-defining chaos roughly once every 15 years.;;;;;;;;;;;;;x
-DM_FREQ_50_MAJOR;Slow - 50 Years;;;;;;;;;;;;;x
-DM_FREQ_50_MAJOR_DESC;The Dungeon Master will give the world time to breathe by causing chaos roughly once every thirty years.;;;;;;;;;;;;;x
-DM_FREQ_10_MAJOR;Chaos Max - 10 Years;;;;;;;;;;;;;x
-DM_FREQ_10_MAJOR_DESC;Every 10 years you will regret this decision.;;;;;;;;;;;;;x
-DM_FREQ_TRUE_RANDOM_MAJOR;Normal - No Cooldown;;;;;;;;;;;;;x
-DM_FREQ_TRUE_RANDOM_MAJOR_DESC;§BMAJOR§! events have no minimum time and could fire randomly!;;;;;;;;;;;;;x
-DM_FREQ_NONE_MAJOR;Disabled;;;;;;;;;;;;;x
-DM_FREQ_NONE_MAJOR_DESC;§BMAJOR§! events will be §Rdisabled§!.;;;;;;;;;;;;;x
 
 ### Nicknames ###
 

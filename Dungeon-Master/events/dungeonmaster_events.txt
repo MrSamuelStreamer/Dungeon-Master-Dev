@@ -4716,3 +4716,31 @@ character_event = {			# Eternity Stones
 		}
 	}
 }
+
+character_event = {			# Rabies
+	id = DMCoreEvt.59
+	offmap = allow
+	title = DMCoreEvttitle59
+	desc = DMCoreEvtdesc59
+	picture = GFX_evt_wolf
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				ai = yes
+				dm_has_dog = yes
+			}
+			add_trait_silently_wounded_effect = yes
+			character_event = { id = RIP.5024 days = 14 random = 14 }
+			dm_remove_dog = yes
+		}
+	}
+	
+	option = {
+		name = DMCoreEvtdesc59TTA
+		any_player = {
+			character_event = { id = DMPlay.59 }
+		}
+	}
+}

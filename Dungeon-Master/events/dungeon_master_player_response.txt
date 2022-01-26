@@ -1879,3 +1879,39 @@ character_event = {			# Eternity Pebbles
 		}
 	}
 }
+
+character_event = {			# Rabies
+	id = DMPlay.59
+	offmap = allow
+	title = DMCoreEvttitle59
+	desc = {
+		trigger = {
+			dm_has_dog = yes
+		}
+		text = DMCoreEvtdesc59
+	}
+	desc = {
+		trigger = {
+			dm_has_dog = no
+		}
+		text = DMCoreEvtdesc59NoDog
+	}
+	picture = GFX_evt_wolf
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc59TTA
+		trigger = {
+			dm_has_dog = yes
+		}
+		add_trait_silently_wounded_effect = yes
+		character_event = { id = RIP.5024 days = 14 random = 14 }
+		dm_remove_dog = yes
+	}
+	option = {
+		name = DMCoreEvtdesc59TTB
+		trigger = {
+			dm_has_dog = no
+		}
+	}
+}

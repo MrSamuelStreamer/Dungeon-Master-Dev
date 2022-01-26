@@ -154,6 +154,7 @@ dm_flag_clear = {
 	clr_global_flag = DMEvent52
 	clr_global_flag = DMEvent55
 	clr_global_flag = DMEvent57
+	clr_global_flag = DMEvent59
 }
 
 religion_tomfoolery = {
@@ -786,6 +787,16 @@ dm_belongs_in_a_museum = {
 		}
 	}
 }
-				
-			
-				
+
+dm_remove_dog = {
+	trigger_switch = {
+		on_trigger = has_character_modifier
+		guard_dogs = { remove_character_modifier = guard_dogs }
+		pet_hunting_dog = { remove_character_modifier = pet_hunting_dog }
+		guide_dog = { remove_character_modifier = guide_dog }
+		lost_dog = { remove_character_modifier = lost_dog }
+		masterless_dog = { remove_character_modifier = masterless_dog }
+		pet_masterless_dog = { remove_character_modifier = pet_masterless_dog }
+		pet_house_dog = { remove_character_modifier = pet_house_dog }
+	}
+}
