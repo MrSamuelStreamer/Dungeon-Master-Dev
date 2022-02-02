@@ -1,7 +1,7 @@
 offmap_dungeon_master = {
 	name = dungeon_master_name
-	window_name = domestic_offmaps_window
-	button_name = icon_offmaps_entry
+	window_name = dungeon_master_domestic_offmaps_window
+	button_name = icon_offmaps_dungeon_master
 	currency_name = dungeon_master_favor
 	currency_gain = monthly_dungeon_master_favor
 	currency_reset_on_dynasty_change = yes
@@ -19,10 +19,10 @@ offmap_dungeon_master = {
 		}
 	}
 	policies = {
-		china_open
+		dm_policy_chaotic
 	}
 	statuses = {
-		china_stable
+		dm_stable
 	}
 	buttons = {
 		dungeon_master_gifts = {
