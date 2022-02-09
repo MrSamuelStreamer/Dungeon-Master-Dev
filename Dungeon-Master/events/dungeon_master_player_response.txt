@@ -1639,6 +1639,7 @@ narrative_event = {			# To Dream of Death
 		}
 		add_character_modifier = {
 			name = dm_immortal_good
+			years = 10
 		}
 		hidden_tooltip = {
 			add_trait = dm_deaths_deal
@@ -1655,6 +1656,7 @@ narrative_event = {			# To Dream of Death
 		}
 		add_character_modifier = {
 			name = dm_immortal_neutral
+			years = 25
 		}
 		hidden_tooltip = {
 			add_trait = dm_deaths_deal
@@ -1671,6 +1673,7 @@ narrative_event = {			# To Dream of Death
 		}
 		add_character_modifier = {
 			name = dm_immortal_bad
+			years = 50
 		}
 		hidden_tooltip = {
 			add_trait = dm_deaths_deal
