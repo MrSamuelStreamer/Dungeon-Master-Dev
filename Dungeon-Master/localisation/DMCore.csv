@@ -753,13 +753,24 @@ nick_the_black_rider;the Black Rider;;;;;;;;;;;;;x
 
 ### Offmap ###
 
+dungeon_master_offmap_title_holder;Dungeon Master;;;;;;;;;;;;;x
+dungeon_master_offmap_full;Dungeon Master;;;;;;;;;;;;;x
+title_dungeon_master;Dungeon Master;;;;;;;;;;;;;x
+offmap_dungeon_master;Dungeon Master;;;;;;;;;;;;;x
+dungeon_master_offmap_title;Dungeon Master;;;;;;;;;;;;;x
 dungeon_master_name;Dungeon Master;;;;;;;;;;;;;x
-dungeon_master_favor;Favor;;;;;;;;;;;;;x
-monthly_dungeon_master_favor;Monthly Favor;;;;;;;;;;;;;x
+dungeon_master_favor;Chaos;;;;;;;;;;;;;x
+monthly_dungeon_master_favor;Monthly Chaos;;;;;;;;;;;;;x
 e_dungeon_master_governor;Dungeon Master;;;;;;;;;;;;;x
 e_dungeon_master_governor_adj;Chaotic;;;;;;;;;;;;;x
 e_dungeon_master_governor_female;Dungeon Mistress;;;;;;;;;;;;;x
 e_dungeon_master_governor_male;Dungeon Master;;;;;;;;;;;;;x
+dm_policy_chaotic;Chaotic;;;;;;;;;;;;;x
+dm_stable;Unstable;;;;;;;;;;;;;x
+dm_stable_desc;The Dungeon Master is currently feeling: §RUnstable§!;;;;;;;;;;;;;x
+dm_stable_effect_desc;The Dungeon Master is feeling extremely §RUnstable§!, this might sound foreboding or dangerous, but this is just very normal behaviour, and you should always be afraid.;;;;;;;;;;;;;x
+dm_policy_chaotic_desc;Dungeon Master's Strategy is: §RChaotic§!;;;;;;;;;;;;;x
+dm_policy_chaotic_effect_desc;The Dungeon Master's strategy is §RChaotic§!, this is the Dungeon Master's standard approach.;;;;;;;;;;;;;x
 
 ### Moo ###
 
