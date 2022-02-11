@@ -275,7 +275,7 @@ dm_space_pebble = {
 	martial = 5
 	combat_rating = 50
 	command_modifier = {
-		global_movement_speed = 0.25		#extremely fast
+		speed = 0.25		#extremely fast
 	}
 	quality = 5
 	flags = { cursed eternity_pebble space_pebble }
