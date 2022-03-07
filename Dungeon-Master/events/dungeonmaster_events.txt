@@ -4153,6 +4153,7 @@ character_event = { 	# The Chessboard
 						is_island = yes
 					}
 					is_offmap_governor = no
+					is_landed = no
 				}
 			}
 			set_character_flag = dm_battle_royale_1
@@ -4177,6 +4178,8 @@ character_event = { 	# The Chessboard
 					capital_scope = {
 						is_island = yes
 					}
+					is_offmap_governor = no
+					is_landed = no
 				}
 			}
 			set_character_flag = dm_battle_royale_2
@@ -4196,9 +4199,13 @@ character_event = { 	# The Chessboard
 					has_character_flag = dm_chose_side
 					controls_religion = yes
 					mercenary = yes
+					ai = no
+					tier = EMPEROR
 					capital_scope = {
 						is_island = yes
 					}
+					is_offmap_governor = no
+					is_landed = no
 				}
 			}
 			random_list = {
