@@ -4,26 +4,58 @@ character_event = {
 	id = DMmanagement.1
 	hide_window = yes
 	offmap = allow
-	
-	ai = no
-
 	is_triggered_only = yes
-
 	trigger = {
-        NOT = { has_global_flag = dungeon_master_lives }
+		NOT = {
+			has_global_flag = dungeon_master_lives
+		}
     }
 
 	immediate = {
 		set_global_flag = dungeon_master_lives
-		dm_create = yes
-		dm_gov_create = yes
-	}
-	
-	option = {
-		name = DMCore1OptA
-		character_event = { id = DMCore.2 }
+		any_player = {
+			character_event = { id = DMmanagement.1011 }
+		}
 	}
 }
+
+character_event = {
+	id = DMmanagement.1011
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_multiplayer_host_character = yes
+		NOR = {
+			has_global_flag = base_game_enough
+			has_global_flag = not_base_game
+		}
+    }
+	immediate = {
+		dm_create = yes
+		dm_gov_create = yes
+		if = {
+			limit = {
+				k_papal_state = {
+					has_holder = yes
+					region = world_europe_south_italy
+				}
+			}
+			set_global_flag = base_game_enough
+			any_player = {
+				character_event = { id = DMCore.3 }
+			}
+		}
+		else = {
+			set_global_flag = not_base_game
+			any_player = {
+				character_event = { id = DMCore.4 }
+			}
+		}
+	}
+}
+
+
 
 character_event = {
 	id = DMmanagement.2			#Fired on dungeon masters death, if it happens#

@@ -687,59 +687,55 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					character_event = { id = DMCoreEvt.59 }
 					set_global_flag = DMEvent59
 				}
-			}
-		}
-	}
-}
-
-character_event = {			#work out if the map is modded or not#
-	id = DMCore.2
-
-	hide_window = yes
-
-	is_triggered_only = yes
-	
-	trigger = {
-		NOR = {
-			has_global_flag = base_game_enough
-			has_global_flag = not_base_game
-		}
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				k_papal_state = {
-					has_holder = yes
-					region = world_europe_south_italy
+				1 = {
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent60
+						}
+					}
+					character_event = { id = DMCoreEvt.60 }
+					set_global_flag = DMEvent60
 				}
 			}
-			set_global_flag = base_game_enough
-		}
-		else = {
-			set_global_flag = not_base_game
-		}
-	}
-	
-	option = {
-		# name = DMCore2OptA
-		trigger = {
-			has_global_flag = base_game_enough
-		}
-		any_player = {
-			character_event = { id = DMCore.3 }
-		}
-	}
-	option = {
-		# name = DMCore2OptA
-		trigger = {
-			has_global_flag = not_base_game
-		}
-		any_player = {
-			character_event = { id = DMCore.4 }
 		}
 	}
 }
+
+#character_event = {			#work out if the map is modded or not#
+#	id = DMCore.2
+#
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		NOR = {
+#			has_global_flag = base_game_enough
+#			has_global_flag = not_base_game
+#		}
+#	}
+#
+#	immediate = {
+#		if = {
+#			limit = {
+#				k_papal_state = {
+#					has_holder = yes
+#					region = world_europe_south_italy
+#				}
+#			}
+#			set_global_flag = base_game_enough
+#			any_player = {
+#				character_event = { id = DMCore.3 }
+#			}
+#		}
+#		else = {
+#			set_global_flag = not_base_game
+#			any_player = {
+#				character_event = { id = DMCore.4 }
+#			}
+#		}
+#	}
+#}
 
 character_event = {			#Base game confirmation#
 	id = DMCore.3

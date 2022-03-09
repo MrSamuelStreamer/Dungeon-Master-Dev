@@ -1918,3 +1918,40 @@ character_event = {			# Rabies
 		}
 	}
 }
+
+character_event = {		# Ruina Imperii
+	id = DMPlay.60
+	offmap = allow
+	title = DMCoreEvttitle60
+	desc = DMCoreEvtdesc60
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes	
+	option = {
+		name = {
+			trigger = {
+				has_character_flag = dm_got_wrecked_lol
+			}
+			text = DMCoreEvtdesc60TTA
+		}
+		name = {
+			trigger = {
+				NOT = { has_character_flag = dm_got_wrecked_lol }
+			}
+			text = DMCoreEvtdesc60TTB
+		}
+		if = {
+			limit = {
+				has_character_flag = dm_got_wrecked_lol
+			}
+			custom_tooltip = {
+				text = DMCoreEvtdesc60TTCustomWrecked
+				clr_character_flag = dm_got_wrecked_lol
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = DMCoreEvtdesc60TTCustom
+			}
+		}
+	}
+}

@@ -4751,3 +4751,41 @@ character_event = {			# Rabies
 		}
 	}
 }
+
+character_event = {		# Ruina Imperii
+	id = DMCoreEvt.60
+	offmap = allow
+	title = DMCoreEvttitle60
+	desc = DMCoreEvtdesc60
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_landed_title = {
+			limit = {
+				tier = EMPEROR
+				holder_scope = {
+					NOR = {
+						is_offmap_ruler = yes
+						is_offmap_governor = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					holder_scope = {
+						ai = no
+					}
+				}
+				holder_scope = {
+					set_character_flag = dm_got_wrecked_lol
+				}
+			}		
+			unsafe_destroy_landed_title = THIS
+		}
+		any_player = {
+			character_event = { id = DMPlay.60 }
+		}
+	}
+}
+			
